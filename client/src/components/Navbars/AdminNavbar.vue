@@ -9,9 +9,9 @@
       <!-- Brand -->
       <a
         class="text-white text-sm uppercase hidden lg:inline-block font-semibold"
-        href="javascript:void(0)"
+        href="/"
       >
-        Dashboard
+        Profiler Dashboard
       </a>
       <!-- Form -->
       <form
@@ -31,15 +31,15 @@
         </div>
       </form>
       <!-- User -->
-      <ul class="flex-col md:flex-row list-none items-center hidden md:flex">
+      <!-- <ul class="flex-col md:flex-row list-none items-center hidden md:flex">
         <user-dropdown />
-      </ul>
+      </ul> -->
     </div>
   </nav>
   <!-- End Navbar -->
 </template>
 
-<script>
+<!-- <script>
 import UserDropdown from "@/components/Dropdowns/UserDropdown.vue";
 
 export default {
@@ -47,4 +47,4 @@ export default {
     UserDropdown,
   },
 };
-</script>
+</script> -->

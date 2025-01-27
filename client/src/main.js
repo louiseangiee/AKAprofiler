@@ -38,23 +38,23 @@ import Index from "@/views/Index.vue";
 const routes = [
   {
     path: "/admin",
-    redirect: "/admin/dashboard",
+    redirect: "/",
     component: Admin,
     children: [
       {
-        path: "/admin/dashboard",
+        path: "/",
         component: Dashboard,
       },
       {
-        path: "/admin/settings",
+        path: "/settings",
         component: Settings,
       },
       {
-        path: "/admin/tables",
+        path: "/tables",
         component: Tables,
       },
       {
-        path: "/admin/maps",
+        path: "/maps",
         component: Maps,
       },
     ],
@@ -75,7 +75,7 @@ const routes = [
     ],
   },
   {
-    path: "/landing",
+    path: "/about-us",
     component: Landing,
   },
   {
@@ -83,7 +83,7 @@ const routes = [
     component: Profile,
   },
   {
-    path: "/",
+    path: "/index",
     component: Index,
   },
   { path: "/:pathMatch(.*)*", redirect: "/" },
