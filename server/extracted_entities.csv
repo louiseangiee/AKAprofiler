@@ -1,0 +1,4339 @@
+File Name,Entity,Label
+1.txt,1,CARDINAL
+1.txt,UNITED NATIONS,ORG
+1.txt,Kosovo,GPE
+1.txt,"Intérimaire des Nations    
+       Unies",ORG
+1.txt,"UNMIK 
+Investigation Task Force  
+ 
+  Pristina",ORG
+1.txt,13 December 2004,DATE
+1.txt,Pristina Airport,FAC
+1.txt,Two,CARDINAL
+1.txt,three,CARDINAL
+1.txt,Vendor 2 Represent,ORG
+1.txt,51%,PERCENT
+1.txt,Pristina,PERSON
+1.txt,Ljubljana,GPE
+1.txt,Pristina,GPE
+1.txt,2003,DATE
+1.txt,Mounting of Sonic System,ORG
+1.txt,Fire Sta,FAC
+1.txt,Building,GPE
+1.txt,2 with €,MONEY
+1.txt,"1,530",MONEY
+1.txt,"1,620",MONEY
+1.txt,third,ORDINAL
+1.txt,Vendor 3,PERSON
+1.txt,2,CARDINAL
+1.txt,Flat Display Information System,ORG
+1.txt,"15,919",MONEY
+1.txt,two,CARDINAL
+1.txt,3,CARDINAL
+1.txt,4,CARDINAL
+1.txt,"Euro 19,702",LAW
+1.txt,"Euro 21,045",LAW
+1.txt,Cramer Antenna,PERSON
+1.txt,"3,627.99",MONEY
+1.txt,"3,921",MONEY
+1.txt,Vendor 4,PERSON
+1.txt,"€4,278 and €4,670",MONEY
+1.txt,31 st August,DATE
+1.txt,14 th  September 2004,DATE
+1.txt,Vendor 2,PERSON
+1.txt,ITF,ORG
+1.txt,the Kosovo Organised Crime Bureau,ORG
+1.txt,KOCB,ORG
+1.txt,Prizren,NORP
+1.txt,TF,ORG
+1.txt,UNMIK Department of Justic,ORG
+1.txt,October 2004,DATE
+1.txt,1 December 2004,DATE
+1.txt,the International Prosecutor,ORG
+1.txt,Economic Law,PERSON
+1.txt,the Procurement Regulation,ORG
+1.txt,Financial Agreemen,ORG
+1.txt,1999/2,CARDINAL
+1.txt,the Final Report,ORG
+1.txt,286/04,CARDINAL
+1.txt,UNMIK,ORG
+1.txt,Recommendation 1:,LAW
+1.txt,Airport,PERSON
+10.txt,UNITED NATIONS,ORG
+10.txt,Kosovo,GPE
+10.txt,"Investigation Task Force 
+ 
+ 
+Irregularities",ORG
+10.txt,"the  
+Cargo Apron",PRODUCT
+10.txt,Pristina Airport,FAC
+10.txt,"I. INTRODUCTION 
+ 
+",ORG
+10.txt,1,CARDINAL
+10.txt,28,CARDINAL
+10.txt,February 2003,DATE
+10.txt,Pristina International Airport,FAC
+10.txt,"the Chartered 
+Accountants",ORG
+10.txt,"Pristina 
+",FAC
+10.txt,International Airport,FAC
+10.txt,2,CARDINAL
+10.txt,four,CARDINAL
+10.txt,UNMIK Finance Regulation,ORG
+10.txt,1999/2,CARDINAL
+10.txt,three,CARDINAL
+10.txt,al,PERSON
+10.txt,"the UNMIK 
+Office of the Legal Adviser",ORG
+10.txt,Vendor,PRODUCT
+10.txt,1999/24,CARDINAL
+10.txt,12 December 1999,DATE
+10.txt,22 March 1989,DATE
+10.txt,UN,ORG
+10.txt,Kosovo Consolidated Budget Funds,ORG
+10.txt,Article 4 1,LAW
+10.txt,Article 4.1.1  – “All Suppliers and Contractors,LAW
+10.txt,Tender,NORP
+10.txt,Article 4.3.3 .,LAW
+10.txt,the UNMIK Kosovo Interim Administration’s,ORG
+10.txt,Tender Documents,ORG
+10.txt,Article 23.3,LAW
+10.txt,Article 23.3.4,LAW
+10.txt,110.1,CARDINAL
+10.txt,the Charter of the United Nations,LAW
+10.txt,the Staff Regulations,WORK_OF_ART
+10.txt,10.2,CARDINAL
+10.txt,3,CARDINAL
+10.txt,the Investigation Task Force,ORG
+10.txt,Pillar,ORG
+10.txt,"BACKGROUND INFORMATION 
+ 
+4",ORG
+10.txt,Yugoslavian,NORP
+10.txt,2001,DATE
+10.txt,2003,DATE
+10.txt,"the 
+Public Enterprise Airport Pristina",ORG
+10.txt,Kosovo Force,ORG
+10.txt,United Nations Sec,ORG
+10.txt,Council,ORG
+10.txt,1244,CARDINAL
+10.txt,10 June 1999,DATE
+10.txt,UNMIK Regulation No 1/,ORG
+10.txt,1999,DATE
+10.txt,25 July 1999,DATE
+10.txt,UNMIK,ORG
+10.txt,Ko,PERSON
+10.txt,5,CARDINAL
+10.txt,the end of June 2002,DATE
+10.txt,the Civil Administration,ORG
+10.txt,Official 1 and Official 2,LAW
+10.txt,Pillar II,PRODUCT
+10.txt,DOTI,ORG
+10.txt,Transport and Infrastructure,ORG
+10.txt,"the Transport 
+Sector of the UNMIK Directorate of Infrastructure A",ORG
+10.txt,31 July 2000,DATE
+10.txt,30 September 2001,DATE
+10.txt,United Nations,ORG
+10.txt,Airport Engineer 1,ORG
+10.txt,Consulting Company,ORG
+10.txt,6,CARDINAL
+10.txt,1 July 2002,DATE
+10.txt,Pillar II,EVENT
+10.txt,the Kosovo Trust Agency,ORG
+10.txt,Divisional,ORG
+10.txt,Air Traffic Control Services,ORG
+10.txt,7,CARDINAL
+10.txt,1 April 2004,DATE
+10.txt,Pristina International Airport,EVENT
+10.txt,KFOR,ORG
+10.txt,8,CARDINAL
+10.txt,9,CARDINAL
+10.txt,"774,318.63",MONEY
+10.txt,Article 23.4,LAW
+10.txt,Public Procurement,ORG
+10.txt,10,CARDINAL
+10.txt,the Project Engineer,ORG
+10.txt,the Evaluat ion Company,ORG
+10.txt,31 January 2001,DATE
+10.txt,the  Evaluation Company,ORG
+10.txt,5 April 2001,DATE
+10.txt,five,CARDINAL
+10.txt,Four,CARDINAL
+10.txt,September 2001,DATE
+10.txt,12,CARDINAL
+10.txt,May 2001,DATE
+10.txt,the Cargo Apron Extension,ORG
+10.txt,the Evaluation Company,ORG
+10.txt,17,CARDINAL
+10.txt,18,CARDINAL
+10.txt,4,CARDINAL
+10.txt,13,CARDINAL
+10.txt,Official 2,LAW
+10.txt,"18 May 
+2001",DATE
+10.txt,28 May 2001,DATE
+10.txt,Vendor,ORG
+10.txt,18 May 2001,DATE
+10.txt,2b,CARDINAL
+10.txt,Cargo Apron,NORP
+10.txt,14,DATE
+10.txt,"2 August 
+2001",DATE
+10.txt,15,CARDINAL
+10.txt,two,CARDINAL
+10.txt,16,CARDINAL
+10.txt,UNMIK Fi,ORG
+10.txt,"Consolidated Budget 
+Funds",ORG
+10.txt,Cargo Apron,LOC
+10.txt,"the Evaluation 
+Company",ORG
+10.txt,ed,PERSON
+10.txt,Procur,NORP
+10.txt,CPE,ORG
+10.txt,19,CARDINAL
+10.txt,the Procurement Official,ORG
+10.txt,"5 
+20",CARDINAL
+10.txt,21,DATE
+10.txt,2 August 2001,DATE
+10.txt,22,CARDINAL
+10.txt,24 September  2001,DATE
+10.txt,"the 
+Office of the Legal Adviser",ORG
+10.txt,"Allegation 4 
+ 
+(Specifically",ORG
+10.txt,the Cargo Apron,ORG
+10.txt,23,CARDINAL
+10.txt,Staff,PRODUCT
+10.txt,18 October 2001,DATE
+10.txt,24,CARDINAL
+10.txt,ITF,ORG
+10.txt,27 June 2001,DATE
+10.txt,17 October 2001,DATE
+10.txt,25,CARDINAL
+10.txt,Septe,ORG
+10.txt,11.4,CARDINAL
+10.txt,26,CARDINAL
+10.txt,Divisi,PERSON
+10.txt,27,CARDINAL
+10.txt,Divis,PERSON
+10.txt,25 August 2002,DATE
+10.txt,VI,WORK_OF_ART
+10.txt,29,CARDINAL
+10.txt,30,CARDINAL
+10.txt,doc,ORG
+10.txt,31,CARDINAL
+10.txt,32,CARDINAL
+10.txt,li,PERSON
+10.txt,33,CARDINAL
+10.txt,Three,CARDINAL
+10.txt,34,CARDINAL
+10.txt,the Office of the Legal Adviser,ORG
+10.txt,the Cargo Apron,PRODUCT
+10.txt,36,CARDINAL
+10.txt,37,CARDINAL
+10.txt,the UNMIK Public Procurement Regula,ORG
+10.txt,38,CARDINAL
+10.txt,39,CARDINAL
+10.txt,DPKO,ORG
+10.txt,MONUC,PERSON
+10.txt,2/04,CARDINAL
+105.txt,"Carbon Emissions
+WikiLeaks",ORG
+105.txt,"July 31, 2015",DATE
+105.txt,a Secret US National Security Agency,ORG
+105.txt,NSA,ORG
+105.txt,"the Japanese Ministry of Economy, Trade and Industry",ORG
+105.txt,the Ministry of Foreign Affairs,ORG
+105.txt,Japanese,NORP
+105.txt,Shinzo Abe,PERSON
+105.txt,Washington DC,GPE
+105.txt,George W Bush,PERSON
+105.txt,Abe,PERSON
+105.txt,the United States,GPE
+105.txt,Bush,PERSON
+105.txt,the National Security Agency,ORG
+105.txt,National Security Agency,ORG
+105.txt,Top Secret,PERSON
+105.txt,NOFORN,ORG
+105.txt,United States,GPE
+105.txt,USA,GPE
+105.txt,Japan,GPE
+105.txt,Economy Trade and Industry,ORG
+105.txt,METI,GPE
+105.txt,Ministry of Foreign Affairs,ORG
+105.txt,MFA,ORG
+105.txt,Washington,GPE
+105.txt,Restraint,PERSON
+105.txt,Reducing Carbon Emissions,ORG
+105.txt,Half,CARDINAL
+105.txt,2050,DATE
+105.txt,Organisation:National Security Agency,ORG
+105.txt,Pages:1Japanese,NORP
+105.txt,Carbon Emissions,PERSON
+105.txt,26,CARDINAL
+105.txt,27 April,DATE
+105.txt,U.S.,GPE
+105.txt,three,CARDINAL
+105.txt,the Ministry,ORG
+105.txt,United States,GPE
+105.txt,Z­3,PERSON
+105.txt,181733Z,DATE
+106.txt,Japan,GPE
+106.txt,Doubles Down,PERSON
+106.txt,"Carbon Emissions
+WikiLeaks",PERSON
+106.txt,"July 31, 2015",DATE
+106.txt,US National Security Agency,ORG
+106.txt,NSA,ORG
+106.txt,2008,DATE
+106.txt,Japanese,NORP
+106.txt,the International Energy Agency,ORG
+106.txt,IEA,ORG
+106.txt,the European Union,ORG
+106.txt,European,NORP
+106.txt,National Security Agency,ORG
+106.txt,Top Secret,PERSON
+106.txt,NOFORN,ORG
+106.txt,United States,GPE
+106.txt,USA,GPE
+106.txt,"European
+Union",ORG
+106.txt,EU,ORG
+106.txt,Ministry of Economy Trade and Industry,ORG
+106.txt,METI,GPE
+106.txt,"International
+Energy Agency",ORG
+106.txt,Masakazu Toyoda,PERSON
+106.txt,Restraint,PERSON
+106.txt,Tokyo,GPE
+106.txt,Climate Change Officials,ORG
+106.txt,European Union,ORG
+106.txt,Birol,ORG
+106.txt,Masakazu Toyoda,PERSON
+106.txt,three,CARDINAL
+106.txt,first,ORDINAL
+106.txt,China,GPE
+106.txt,India,GPE
+106.txt,U.S.,GPE
+106.txt,second,ORDINAL
+106.txt,third,ORDINAL
+106.txt,Toyoda,PERSON
+106.txt,One,CARDINAL
+106.txt,Europeans,NORP
+106.txt,Z­3/OO/4448­08,ORG
+106.txt,041359Z,DATE
+107.txt,US,GPE
+107.txt,Japan,GPE
+107.txt,Confidential G-8 Proposals,ORG
+107.txt,"July 31, 2015",DATE
+107.txt,US National Security Agency,ORG
+107.txt,NSA,ORG
+107.txt,Japanese,NORP
+107.txt,2008 G-8 Summit,WORK_OF_ART
+107.txt,Lake Toya,LOC
+107.txt,G-8,PERSON
+107.txt,the United States',GPE
+107.txt,Five Eyes,WORK_OF_ART
+107.txt,Australia,GPE
+107.txt,Canada,GPE
+107.txt,Great Britain,GPE
+107.txt,"New 
+Zealand",GPE
+107.txt,National Security Agency,ORG
+107.txt,Top Secret,PERSON
+107.txt,NOFORN,ORG
+107.txt,United States,GPE
+107.txt,USA,GPE
+107.txt,Ministry of Economy Trade and Industry,ORG
+107.txt,METI,GPE
+107.txt,"Ministry of Foreign
+Affairs",ORG
+107.txt,MFA,ORG
+107.txt,Ministry of Finance,ORG
+107.txt,Ministry of Environment,ORG
+107.txt,Nobutaka Machimura,PERSON
+107.txt,Restraint,PERSON
+107.txt,SECRET//COMINT//REL TO USA,ORG
+107.txt,AUS,GPE
+107.txt,NZL,ORG
+107.txt,Pages:1Japanese,NORP
+107.txt,AUS,ORG
+107.txt,Cabinet,ORG
+107.txt,February,DATE
+107.txt,Lake Toya,FAC
+107.txt,July,DATE
+107.txt,"Unconventional 
+ 
+International",ORG
+107.txt,3,CARDINAL
+107.txt,252149Z,DATE
+108.txt,Japan,GPE
+108.txt,"Cherry Feud
+WikiLeaks",PERSON
+108.txt,"July 31, 2015",DATE
+108.txt,a Secret US National Security Agency,ORG
+108.txt,NSA,ORG
+108.txt,2009,DATE
+108.txt,"the Japanese Ministry of Agriculture, Forestry and Fisheries",ORG
+108.txt,National Security Agency,ORG
+108.txt,US,GPE
+108.txt,Washington,GPE
+108.txt,Japanese,NORP
+108.txt,Top Secret,PERSON
+108.txt,NOFORN,ORG
+108.txt,United States,GPE
+108.txt,USA,GPE
+108.txt,"European
+Union",ORG
+108.txt,EU,ORG
+108.txt,Ministry of Agriculture Forestry and Fisheries,ORG
+108.txt,MAFF,PERSON
+108.txt,Department of Agriculture,ORG
+108.txt,U.S.,GPE
+108.txt,Cherry,PERSON
+108.txt,Pages:1Japanese,NORP
+108.txt,the ministry's,ORG
+108.txt,Tokyo,GPE
+108.txt,this month,DATE
+108.txt,Pacific,LOC
+108.txt,One,CARDINAL
+108.txt,Z­3/OO/515570­09,ORG
+108.txt,221708Z,DATE
+11.txt,UNITED NATIONS,ORG
+11.txt,Kosovo,GPE
+11.txt,"Investigation Task Force 
+ 
+ 
+Allegations",ORG
+11.txt,Pristina Airport,FAC
+11.txt,"I. INTRODUCTION 
+ 
+",ORG
+11.txt,1,CARDINAL
+11.txt,28,CARDINAL
+11.txt,February 2003,DATE
+11.txt,Pristina International Airport,FAC
+11.txt,"the Chartered 
+Accountants",ORG
+11.txt,"Pristina 
+",FAC
+11.txt,International Airport,FAC
+11.txt,2,CARDINAL
+11.txt,three,CARDINAL
+11.txt,• Employees,ORG
+11.txt,Pri,PERSON
+11.txt,1999/24,CARDINAL
+11.txt,12 December 1999,DATE
+11.txt,22 March 1989,DATE
+11.txt,UN,ORG
+11.txt,110.1,CARDINAL
+11.txt,the Charter of the United Nations,LAW
+11.txt,the Staff Regulations,WORK_OF_ART
+11.txt,10.2,CARDINAL
+11.txt,3,CARDINAL
+11.txt,the Investigation Task Force,ORG
+11.txt,Pillar,ORG
+11.txt,4,CARDINAL
+11.txt,BACKGROUND,ORG
+11.txt,5,CARDINAL
+11.txt,Yugoslavian,NORP
+11.txt,2001,DATE
+11.txt,2003,DATE
+11.txt,"the 
+Public Enterprise Airport Pristina",ORG
+11.txt,Kosovo Force,ORG
+11.txt,United Nations Sec,ORG
+11.txt,Council,ORG
+11.txt,1244,CARDINAL
+11.txt,10 June 1999,DATE
+11.txt,UNMIK Regulation No 1/,ORG
+11.txt,1999,DATE
+11.txt,25 July 1999,DATE
+11.txt,UNMIK,ORG
+11.txt,Ko,PERSON
+11.txt,6,CARDINAL
+11.txt,the end of June 2002,DATE
+11.txt,the Civil Administration,ORG
+11.txt,Official 1 and Official 2,LAW
+11.txt,Pillar II,PRODUCT
+11.txt,the Department of Transport,ORG
+11.txt,"the Transport 
+Sector of the UNMIK Directorate of Infrastructure A",ORG
+11.txt,DOTI,ORG
+11.txt,31 July 2000,DATE
+11.txt,30 September 2001,DATE
+11.txt,United Nations,ORG
+11.txt,Consultant,PRODUCT
+11.txt,Consulting Firm,ORG
+11.txt,7,CARDINAL
+11.txt,1 July 2002,DATE
+11.txt,Pillar II,EVENT
+11.txt,the Kosovo Trust Agency,ORG
+11.txt,Divisional,ORG
+11.txt,the Airport Sector,FAC
+11.txt,the Air Traffic Control Services,ORG
+11.txt,8,CARDINAL
+11.txt,1 April 2004,DATE
+11.txt,Pristina International Airport,EVENT
+11.txt,KFOR,ORG
+11.txt,9,CARDINAL
+11.txt,10,CARDINAL
+11.txt,December 2001,DATE
+11.txt,11,CARDINAL
+11.txt,21,CARDINAL
+11.txt,Pristina,GPE
+11.txt,The year 2001,DATE
+11.txt,12,CARDINAL
+11.txt,passeng,PERSON
+11.txt,13,CARDINAL
+11.txt,14,CARDINAL
+11.txt,ITF,ORG
+11.txt,1 January 2002,DATE
+11.txt,Handling Fees,ORG
+11.txt,15,CARDINAL
+11.txt,"DM 14,357,949",ORG
+11.txt,"7,341,163",MONEY
+11.txt,"7,376,182",MONEY
+11.txt,Chartered Account,ORG
+11.txt,16,DATE
+11.txt,17,CARDINAL
+11.txt,• Airline,ORG
+11.txt,DM 2190,DATE
+11.txt,DM 2888,DATE
+11.txt,18,CARDINAL
+11.txt,Airl,PRODUCT
+11.txt,20,CARDINAL
+11.txt,ed with de-,PERSON
+11.txt,one,CARDINAL
+11.txt,25 DM,MONEY
+11.txt,February 2001,DATE
+11.txt,31 December 2001,DATE
+11.txt,"the month of January 
+2001",DATE
+11.txt,22,CARDINAL
+11.txt,"375,472",CARDINAL
+11.txt,"18,996",CARDINAL
+11.txt,25,CARDINAL
+11.txt,Euro,PERSON
+11.txt,"4,799,395",MONEY
+11.txt,"4,919,190",MONEY
+11.txt,the whole year,DATE
+11.txt,the month of Jan uary 2001,DATE
+11.txt,23,CARDINAL
+11.txt,24,CARDINAL
+11.txt,IATA,ORG
+11.txt,"Airline 3, Airline 4, Airl ine 5 and Airline",ORG
+11.txt,Pristina Ai,FAC
+11.txt,26,CARDINAL
+11.txt,27,CARDINAL
+11.txt,Airlines,ORG
+110.txt,TS//SI//NF)EU,ORG
+110.txt,TherewasaconvictioninbothBrusselsandTokyo,GPE
+110.txt,"JapaneseMinisterofAgriculture,Forestry",ORG
+110.txt,Fischer-Boelindicated,ORG
+110.txt,"Klaus-Dieter
+Borchardt",ORG
+110.txt,"Unconventional
+Japaneseleadership
+Z-3/OO/33343-06,291712Z",ORG
+111.txt,European,NORP
+111.txt,22,CARDINAL
+111.txt,October,DATE
+111.txt,German,NORP
+111.txt,Angela Merkel,PERSON
+111.txt,French,NORP
+111.txt,Nicolas Sarkozy,PERSON
+111.txt,Italian,NORP
+111.txt,Silvio Berlusconi,PERSON
+111.txt,Valentino Valentini,PERSON
+111.txt,Rome,GPE
+111.txt,Sarkozy,PERSON
+111.txt,Italy,GPE
+111.txt,Berlusconi,PERSON
+111.txt,the 24th,DATE
+111.txt,Valentini,GPE
+111.txt,EU Council,ORG
+111.txt,Herman Van Rompuy,PERSON
+111.txt,EU,ORG
+111.txt,Rompuy,ORG
+111.txt,Spain,GPE
+111.txt,Z-3/OO/550156-11,ORG
+111.txt,251344Z,DATE
+112.txt,FVEY,ORG
+112.txt,includingItaly,GPE
+112.txt,Netanyahusaid,ORG
+112.txt,istokeepthePalestinians,NORP
+112.txt,SCS,ORG
+112.txt,"3/79/37-10,161635Z;3",PRODUCT
+113.txt,hasgivennoticethatitintendstostriveforalong-termcommitmenton,PERSON
+113.txt,India,GPE
+113.txt,Brazil,GPE
+113.txt,Australia,GPE
+113.txt,Indonesia,GPE
+113.txt,SouthKorea,ORG
+113.txt,SouthAfrica,ORG
+113.txt,andMexico,GPE
+113.txt,Japan.)MasaharuKono,PRODUCT
+113.txt,hisGermancounterpart,ORG
+113.txt,BerndPfaffenback,ORG
+113.txt,on17June,DATE
+113.txt,TheGermanalsonotedthat,ORG
+113.txt,"Japanesediplomatic
+Z-3",ORG
+114.txt,inanexchangeon10DecemberwithGerman,GPE
+114.txt,Hebelievesthatthemid-DecemberEUSummitinBrusselswillimpactontheUNConference,ORG
+114.txt,positivesignalsandcontinuedleadershipfromtheEU,ORG
+114.txt,"itwouldbedifficultfortheUNtomakea
+commitmentinPoznan.BanalsomaintainedthatsincethenewU.S.administrationwillhavea",PERSON
+114.txt,althoughshe,GPE
+13.txt,1,CARDINAL
+13.txt,Kosovo,GPE
+13.txt,"Intérimaire des Nations    
+       Unies",ORG
+13.txt,"INVESTIGATION TASK FORCE 
+ 
+Allegations of Bribes/Kickbacks for Employment",ORG
+13.txt,Pristina Airport,FAC
+13.txt,377/04,CARDINAL
+13.txt,I - Allegations,ORG
+13.txt,Kosovo Police Service,ORG
+13.txt,"Pristina Airport 
+Border Police",FAC
+13.txt,Non Staff,ORG
+13.txt,2,CARDINAL
+13.txt,the Department of Just,ORG
+13.txt,24 September 2004,DATE
+13.txt,two,CARDINAL
+13.txt,ITF,ORG
+13.txt,III - Investigative Details,ORG
+13.txt,3,CARDINAL
+13.txt,2l5/04,CARDINAL
+13.txt,215-04,DATE
+13.txt,4,CARDINAL
+13.txt,25-26 July 2004,DATE
+13.txt,Official 1 (,LAW
+13.txt,Pristi na Airport,FAC
+13.txt,Official 1  2,LAW
+13.txt,6,CARDINAL
+13.txt,"7,000.00",MONEY
+13.txt,Offici,GPE
+13.txt,7,CARDINAL
+13.txt,30,CARDINAL
+13.txt,31 July 2004,DATE
+13.txt,Official 1’s,LAW
+13.txt,Hajvali,PERSON
+13.txt,8,CARDINAL
+13.txt,Official 1,LAW
+13.txt,9,CARDINAL
+13.txt,"5.000,00",MONEY
+13.txt,10,CARDINAL
+13.txt,three,CARDINAL
+13.txt,“Airport St aff,FAC
+13.txt,"Pristina 
+Airport",FAC
+13.txt,11,CARDINAL
+13.txt,two days later,DATE
+13.txt,an additional €,MONEY
+13.txt,Official 2’s,LAW
+13.txt,approximately € 180,MONEY
+13.txt,night,TIME
+13.txt,Restaurant 2,ORG
+13.txt,Non-Staff,ORG
+13.txt,225,MONEY
+13.txt,190,MONEY
+13.txt,Pristina Airp,FAC
+13.txt,one,CARDINAL
+13.txt,English,LANGUAGE
+13.txt,Official 5,LAW
+13.txt,Kosovar,ORG
+13.txt,Airport,ORG
+13.txt,12,CARDINAL
+13.txt,6 Septembe r 2004,DATE
+13.txt,KPS,GPE
+13.txt,mem ber 4,PERSON
+13.txt,3 13,DATE
+13.txt,5,DATE
+13.txt,KPS Officer,ORG
+13.txt,"3.000,00",CARDINAL
+13.txt,the Department of Justice,ORG
+13.txt,15,CARDINAL
+13.txt,Financial Investigation Unit,ORG
+13.txt,Pillar,ORG
+13.txt,Air,ORG
+13.txt,"the 
+Department of Justice",ORG
+13.txt,UNMIK Pil,ORG
+13.txt,"Department of 
+Justice",ORG
+14.txt,UNITED NATIONS,ORG
+14.txt,Kosovo,GPE
+14.txt,Intérimaire des Nations,ORG
+14.txt,"INVESTIGATION TASK FORCE 
+ 
+Investigation into Allegations of Bribery",ORG
+14.txt,Favou,ORG
+14.txt,Procurement of Uniforms,WORK_OF_ART
+14.txt,Pristina Airport,FAC
+14.txt,I. Background,PERSON
+14.txt,1,CARDINAL
+14.txt,Kosovo Trust Agency,ORG
+14.txt,Internal Audit Unit,ORG
+14.txt,IAU,ORG
+14.txt,4,CARDINAL
+14.txt,October 2004,DATE
+14.txt,"Pristina 
+Airport",FAC
+14.txt,summer and winter,DATE
+14.txt,summer,DATE
+14.txt,Pristina Airport Reference No,FAC
+14.txt,2,CARDINAL
+14.txt,28,CARDINAL
+14.txt,Vendor,GPE
+14.txt,one,CARDINAL
+14.txt,Vendor 2,PERSON
+14.txt,"the Bid Evaluation 
+Committee",ORG
+14.txt,a mem ber,QUANTITY
+14.txt,the Finance Department,ORG
+14.txt,favou,ORG
+14.txt,3,CARDINAL
+14.txt,Procurem,PERSON
+14.txt,Officer 1,LAW
+14.txt,ITF,ORG
+14.txt,the Finance Office,ORG
+14.txt,"2 
+ 
+Provisional Criminal Code of",ORG
+14.txt,Article 343 “ Accepting Bribes,LAW
+14.txt,"Article 344 “Giving 
+Bribes” 
+ 
+Finance Administration",LAW
+14.txt,Revi,PERSON
+14.txt,15 December 1999,DATE
+14.txt,"Full and Fair 
+Competition",WORK_OF_ART
+14.txt,Section 23.9 “Examination and Evaluat,LAW
+14.txt,"Tenders” 
+ 
+Allegation 3 : that",ORG
+14.txt,"the Bid 
+Evaluation Committee",FAC
+14.txt,"Tenders” 
+ 
+Allegation 4 :",ORG
+14.txt,"Full and Fair 
+Competition” 
+ 
+Allegation 5 :",WORK_OF_ART
+14.txt,Procurement Offi,ORG
+14.txt,Article 161 “ Threat,LAW
+14.txt,6,CARDINAL
+14.txt,Vendor 1,PERSON
+14.txt,a Bid Opening Commit,ORG
+14.txt,10-06-04,DATE
+14.txt,three,CARDINAL
+14.txt,7,CARDINAL
+14.txt,a Bid Evaluation Committee,ORG
+14.txt,18-06-0 4,DATE
+14.txt,23,CARDINAL
+14.txt,"106,059",MONEY
+14.txt,two,CARDINAL
+14.txt,Vendor,ORG
+14.txt,Pristina,GPE
+14.txt,9,CARDINAL
+14.txt,Bid Opening Committee,ORG
+14.txt,10,CARDINAL
+14.txt,Finance,ORG
+14.txt,Committee,ORG
+14.txt,the day,DATE
+14.txt,first,ORDINAL
+14.txt,second,ORDINAL
+14.txt,12,CARDINAL
+14.txt,Pristina Airport Official,FAC
+14.txt,the Bid Evaluat ion Committee,ORG
+14.txt,Accord,PRODUCT
+14.txt,15,CARDINAL
+14.txt,13,CARDINAL
+14.txt,5,CARDINAL
+14.txt,Committ,PERSON
+14.txt,Vendor 2’s,PERSON
+14.txt,Vendor 1,LAW
+14.txt,Pristina Airport Official’s,FAC
+14.txt,14,CARDINAL
+14.txt,the Bid Evaluation Committee,ORG
+14.txt,the Bid Opening Committee (Procureme nt Officer 1 and,ORG
+14.txt,the Bid Opening Co,ORG
+14.txt,the Bid Opening Committee,ORG
+14.txt,Vendor 1’s,PERSON
+14.txt,four,CARDINAL
+14.txt,the Bid Evaluation C,WORK_OF_ART
+14.txt,Bid Eva luation Committee,ORG
+14.txt,the Ministry of Finance,ORG
+14.txt,Transportation,ORG
+14.txt,16,CARDINAL
+14.txt,4or,ORDINAL
+14.txt,17,CARDINAL
+14.txt,18,CARDINAL
+14.txt,two years,DATE
+14.txt,the un iforms,ORG
+14.txt,the end of August (2004,DATE
+14.txt,19,CARDINAL
+14.txt,30-06-04,DATE
+14.txt,un,ORG
+14.txt,20,CARDINAL
+14.txt,KTA,ORG
+14.txt,07-07-04,DATE
+14.txt,Pri,PERSON
+14.txt,Airport Official,PERSON
+14.txt,"Pristina Airport 
+Official",FAC
+14.txt,21,CARDINAL
+14.txt,Pristina Airport Officia,FAC
+14.txt,Vendor 1’s,LAW
+14.txt,"1 
+ 
+22",DATE
+14.txt,Procurement,PRODUCT
+14.txt,KTA Internal Audit,ORG
+14.txt,The Civil Engineer,ORG
+14.txt,The Civil Engineer,WORK_OF_ART
+14.txt,Procureme,PRODUCT
+14.txt,24,CARDINAL
+14.txt,don e.,PERSON
+14.txt,Ven,GPE
+14.txt,26,CARDINAL
+14.txt,the B id Evaluation Committee,ORG
+14.txt,Simila,PERSON
+14.txt,Airpo rt Official,PERSON
+14.txt,"the Bid 
+Evaluation Committee",ORG
+14.txt,29,CARDINAL
+14.txt,V. Recommendations,PERSON
+14.txt,30,CARDINAL
+14.txt,UNMIK Pillar IV,ORG
+14.txt,Interna l Audit Unit,ORG
+14.txt,UNMIK,ORG
+14.txt,"the 
+Department of Justice",ORG
+14.txt,the Financial Investigati on Unit,ORG
+15.txt,UNITED NATIONS,ORG
+15.txt,Kosovo,GPE
+15.txt,"Intérimaire des Nations 
+Unies",ORG
+15.txt,14KJanuaryK2005,CARDINAL
+15.txt,"K 
+ K
+REFERENCE",ORG
+15.txt,KSørenKJessenAPetersenK,PERSON
+15.txt,"KwasKprovidedKwithKaKcopyKofKaKletterKdatedK28K
+MayK2004,KfromKtheKCargoKManagerKofKanKAirlineKtoKa KStaffKMemberKofKPublicKEnterpriseK",PERSON
+15.txt,KInKtheKletter,PERSON
+15.txt,"KtheKCargoKManagerK referredKtoKseveralKproblemsKrelativeKtoKanK
+",PERSON
+15.txt,"ntKofKPristinaKAirportKforKtheKhandlingKofK
+theKoutgoingKmailKofKaKMemberKState’sKKFOR.KAtKtheK time",PERSON
+15.txt,KPristinaKAirportKstaffKcouldKnotK,ORG
+15.txt,Kand,ORG
+15.txt,Ktherefore,PERSON
+15.txt,"KPristinaKAirportKcollectsKmailA
+handlingKrevenuesKonKbehalfKofKtheKAirlineKandKdepo",PERSON
+15.txt,"K
+K
+3.K TheKissuesKidentifiedKinKtheKletterKbyKtheKAirli",ORG
+15.txt,0.50,MONEY
+15.txt,KITFK,ORG
+15.txt,"KthatK
+PristinaKAirportKhadKretroactivelyKreducedKitsKhand lingKchargesKforKoutgoingKmailKtoK€0.12/kgK
+andKwasKnoKlongerKchargingKVAT.KPristinaKAirportKst affKconfirmedKthisKinformationKandKadvisedK",PERSON
+15.txt,assertionsKwereKconfirmedKinKcopiesKofKcorrectedKin,PERSON
+15.txt,KThis Kterminology,PERSON
+15.txt,KInvestigation Task Force  2,ORG
+15.txt,"KTheKancillaryKissuesKofKtheK
+disputedKmailKhandlingKrateKandKtheKapplicationKofK",PERSON
+15.txt,"K
+K
+7.K ITF",ORG
+15.txt,KbyKthisKmemorandum,PERSON
+15.txt,KadvisesKyouKthatKeviden,PERSON
+15.txt,KthatKnoKf,PERSON
+15.txt,"KWolfgangKNikolaus,",ORG
+15.txt,KITFKKosovo,GPE
+15.txt,4K604K3896KorKMr,CARDINAL
+15.txt,KID/OIOSK,ORG
+15.txt,Vienna,GPE
+15.txt,KatK+44K1K26060K5406.K,GPE
+15.txt,"K
+K
+cc:K Mr.",ORG
+15.txt,KJamesKWasserstrom,PERSON
+15.txt,"KOPOEK
+K",ORG
+15.txt,KMarkKGough,PERSON
+15.txt,"KID/OIOSK
+ ",ORG
+16.txt,ST,GPE
+16.txt,18,CARDINAL
+16.txt,September 1994,DATE
+16.txt,February 2005,DATE
+16.txt,STRICTLY,ORG
+16.txt,1,CARDINAL
+16.txt,DIGITAL,ORG
+16.txt,The Investigations Division of the Office of Int ernal Oversight Services,ORG
+16.txt,April 2004,DATE
+16.txt,UNMIK’s Directorate of Rural Affairs,ORG
+16.txt,DRA,ORG
+16.txt,Kosovo,GPE
+16.txt,one,CARDINAL
+16.txt,2,CARDINAL
+16.txt,Pillar II,EVENT
+16.txt,Internal Oversight Unit,ORG
+16.txt,PRIO Unit’s,ORG
+16.txt,UN,ORG
+16.txt,3,CARDINAL
+16.txt,The Directorate of Rural Affairs,ORG
+16.txt,UNMIK Civil Administration,ORG
+16.txt,October 2001,DATE
+16.txt,Department of Agriculture,ORG
+16.txt,Veterinary Services &,ORG
+16.txt,Border Control,PERSON
+16.txt,Pu blic Forests,PERSON
+16.txt,Security Council Resolution 1244,ORG
+16.txt,United Nations,ORG
+16.txt,the UN Rules and Regulations,ORG
+16.txt,II,CARDINAL
+16.txt,4,CARDINAL
+16.txt,al l,ORG
+16.txt,5,CARDINAL
+16.txt,the European Agency,ORG
+16.txt,EAR,ORG
+16.txt,Strengthening of Publi c Veterinary Services,WORK_OF_ART
+16.txt,SPUVESEK,GPE
+16.txt,Identification & Registration,ORG
+16.txt,6,CARDINAL
+16.txt,late 2002,DATE
+16.txt,November 2003,DATE
+16.txt,"170,000",MONEY
+16.txt,February 2004,DATE
+16.txt,Central Procurement Entity,ORG
+16.txt,2 7,CARDINAL
+16.txt,second,ORDINAL
+16.txt,"135,000",MONEY
+16.txt,19 May 2004,DATE
+16.txt,eight,CARDINAL
+16.txt,8,CARDINAL
+16.txt,PRIO,ORG
+16.txt,five,CARDINAL
+16.txt,PDA,ORG
+16.txt,USD $323,MONEY
+16.txt,USD $818.30,MONEY
+16.txt,9,CARDINAL
+16.txt,two,CARDINAL
+16.txt,firstly,ORDINAL
+16.txt,Vendor 1,PERSON
+16.txt,Secondly,ORDINAL
+16.txt,Vendor 2,PERSON
+16.txt,Vendor 3,PERSON
+16.txt,"more than €17,000",MONEY
+16.txt,Vendor 3’s,PERSON
+16.txt,"yearly €16,500",MONEY
+16.txt,"more than €15,000",MONEY
+16.txt,10,CARDINAL
+16.txt,Ven,PERSON
+16.txt,Vendor 4,PERSON
+16.txt,six,CARDINAL
+16.txt,11,CARDINAL
+16.txt,Section VII of the Bidding Do,LAW
+16.txt,Obligatory Requirements,WORK_OF_ART
+16.txt,five working days,DATE
+16.txt,a week,DATE
+16.txt,12,CARDINAL
+16.txt,13,CARDINAL
+16.txt,Gotive H41 IB,ORG
+16.txt,Gotive H41,WORK_OF_ART
+16.txt,Vendor 5,ORG
+16.txt,the “Gotive H41,ORG
+16.txt,first,ORDINAL
+16.txt,KVS,ORG
+16.txt,14,DATE
+16.txt,Section VI “Technical Spec,ORG
+16.txt,Bidding,PERSON
+16.txt,Section VI,ORG
+16.txt,three,CARDINAL
+16.txt,15,CARDINAL
+16.txt,19 May,DATE
+16.txt,EIA,ORG
+16.txt,PD264-XB,PRODUCT
+16.txt,16,CARDINAL
+16.txt,Two,CARDINAL
+16.txt,Vendor 5,FAC
+16.txt,VAT,ORG
+16.txt,Vendor 5,PERSON
+16.txt,five days,DATE
+16.txt,approximately 70,CARDINAL
+16.txt,17,CARDINAL
+16.txt,Vendor,ORG
+16.txt,18,DATE
+16.txt,Section VII,LAW
+16.txt,the five days,DATE
+16.txt,19,CARDINAL
+16.txt,ITB,ORG
+16.txt,20,CARDINAL
+16.txt,UN Financial Rules,ORG
+16.txt,"UNMIK’s Finance 
+Administrative",ORG
+16.txt,KCB,ORG
+16.txt,21,CARDINAL
+16.txt,Recommendation 1 :,LAW
+16.txt,UNMIK,ORG
+2.txt,STRICTLY,PRODUCT
+2.txt,"UNITED NATIONS  
+ 
+ 
+ 
+ 
+ 
+ 
+Investigation Task Force",ORG
+2.txt,1,CARDINAL
+2.txt,12,CARDINAL
+2.txt,UNITED NATIONS,ORG
+2.txt,Kosovo,GPE
+2.txt,"Intérimaire des Nations 
+Unies",ORG
+2.txt,"Kosovo  
+ 
+ Investigation Task Force",ORG
+2.txt,December 2004,DATE
+2.txt,The Investigation Task Force,ORG
+2.txt,withdra,PERSON
+2.txt,Air Traffic Control Services,ORG
+2.txt,Pri,PERSON
+2.txt,International Airport,FAC
+2.txt,2003,DATE
+2.txt,"the Chartered 
+Accountants",ORG
+2.txt,the Prishtina Airpor,ORG
+2.txt,Kosovo Trust Agency,ORG
+2.txt,UNMIK Pillar IV,ORG
+2.txt,"the European 
+Union",ORG
+2.txt,UNMIK,ORG
+2.txt,the Provisional Institutions,ORG
+2.txt,Self-Government,ORG
+2.txt,PISG,ORG
+2.txt,the Constitutional Framework for Provisional Self-G,ORG
+2.txt,the Investigation Task Force UNMIK/ED/2003/16,ORG
+2.txt,21,CARDINAL
+2.txt,October 2003,DATE
+2.txt,2,CARDINAL
+2.txt,United Nations Security Co,ORG
+2.txt,1999,DATE
+2.txt,10 June 1999,DATE
+2.txt,United Nations,ORG
+2.txt,1999/ 1,CARDINAL
+2.txt,25 July 1999,DATE
+2.txt,Authority,ORG
+2.txt,22 March 1989,DATE
+2.txt,3,CARDINAL
+2.txt,KTA,ORG
+2.txt,UNMIK Regulation,ORG
+2.txt,2001/27,CARDINAL
+2.txt,8 October,DATE
+2.txt,11.3,CARDINAL
+2.txt,11.4,CARDINAL
+2.txt,BACKGROUND,ORG
+2.txt,4,CARDINAL
+2.txt,10.000,MONEY
+2.txt,"Between July 
+2002",DATE
+2.txt,November 2003,DATE
+2.txt,642.000,MONEY
+2.txt,"February 
+2003",DATE
+2.txt,5,CARDINAL
+2.txt,01 July 2002,DATE
+2.txt,"Prishtina 
+Airport",FAC
+2.txt,De,ORG
+2.txt,day,DATE
+2.txt,the ATCS Finance Office,ORG
+2.txt,Finance,ORG
+2.txt,Officer 1,LAW
+2.txt,ATC S,ORG
+2.txt,6,CARDINAL
+2.txt,ITF,ORG
+2.txt,two,CARDINAL
+2.txt,2002,DATE
+2.txt,ATCS,ORG
+2.txt,ATCS bank,ORG
+2.txt,mid-2002,DATE
+2.txt,Division,ORG
+2.txt,Invest,ORG
+2.txt,Official 1,LAW
+2.txt,Prishtina Airport,FAC
+2.txt,ATCS Finance Office,ORG
+2.txt,Italy,GPE
+2.txt,"the United 
+Kingdom",GPE
+2.txt,8,CARDINAL
+2.txt,the period September 2000 to December 2003,DATE
+2.txt,UNMIK Aviation Transport,ORG
+2.txt,Airport Prishtina,GPE
+2.txt,9,CARDINAL
+2.txt,Divisi,PERSON
+2.txt,the ATCS Finance,ORG
+2.txt,Finance Offi,ORG
+2.txt,10,CARDINAL
+2.txt,Pillar 4 – KTA,LAW
+2.txt,1 July 2002,DATE
+2.txt,46/2002,CARDINAL
+2.txt,49/2002,CARDINAL
+2.txt,55/2002,CARDINAL
+2.txt,5 9/2002,CARDINAL
+2.txt,01 April 2002,DATE
+2.txt,"46,",DATE
+2.txt,49,DATE
+2.txt,55,DATE
+2.txt,59,CARDINAL
+2.txt,13,CARDINAL
+2.txt,relat ed,PERSON
+2.txt,UNMIK Pillar 2,ORG
+2.txt,01,CARDINAL
+2.txt,05/2002,CARDINAL
+2.txt,06/2002,CARDINAL
+2.txt,07/2002,CARDINAL
+2.txt,bee n,ORG
+2.txt,several hundred,CARDINAL
+2.txt,Finance Office,ORG
+2.txt,14,DATE
+2.txt,F inance Officer 2,PRODUCT
+2.txt,less than €500,MONEY
+2.txt,Euro,PERSON
+2.txt,over €500,MONEY
+2.txt,15,CARDINAL
+2.txt,Nokia 8850,ORG
+2.txt,the ATC S Official and Official,ORG
+2.txt,"1.176,00",MONEY
+2.txt,VALA,ORG
+2.txt,20,CARDINAL
+2.txt,2 3.52) + (,DATE
+2.txt,58.8,CARDINAL
+2.txt,"960,00",MONEY
+2.txt,16,CARDINAL
+2.txt,Official 4,LAW
+2.txt,the Pristina Airport,FAC
+2.txt,59/2 002,CARDINAL
+2.txt,four,CARDINAL
+2.txt,25 May 2002,DATE
+2.txt,21 May 2002,DATE
+2.txt,22,CARDINAL
+2.txt,May 2002,DATE
+2.txt,al l,ORG
+2.txt,17,CARDINAL
+2.txt,06/2002,ORG
+2.txt,18,CARDINAL
+2.txt,provid ed,PERSON
+2.txt,19,CARDINAL
+2.txt,nineteen,CARDINAL
+2.txt,seven,CARDINAL
+2.txt,six,CARDINAL
+2.txt,7,CARDINAL
+2.txt,21,DATE
+2.txt,Prishtina Air,ORG
+2.txt,"May 
+2002",DATE
+2.txt,UK,GPE
+2.txt,Shinf ield Park,GPE
+2.txt,London,GPE
+2.txt,Prishtina,GPE
+2.txt,Official 3,LAW
+2.txt,1158,MONEY
+2.txt,22,DATE
+2.txt,30 June 2002,DATE
+2.txt,TCS,ORG
+2.txt,23,CARDINAL
+2.txt,24,DATE
+2.txt,includin g,PERSON
+2.txt,23.52,CARDINAL
+2.txt,Head of Department,ORG
+2.txt,hundreds,CARDINAL
+2.txt,25,CARDINAL
+2.txt,26,CARDINAL
+2.txt,27,CARDINAL
+2.txt,2001/02,CARDINAL
+2.txt,29,CARDINAL
+2.txt,the Prishtina Airport,FAC
+2.txt,30,CARDINAL
+2.txt,February 2004,DATE
+2.txt,the ATCS Management,ORG
+2.txt,hose,PERSON
+2.txt,"the ATCS 
+Finance Office",ORG
+2.txt,31,CARDINAL
+2.txt,Pris,PERSON
+2.txt,Airport,PERSON
+2.txt,32,CARDINAL
+2.txt,w ho,PERSON
+2.txt,Canada,GPE
+2.txt,United Kingdom,GPE
+2.txt,Employees,ORG
+2.txt,33,DATE
+2.txt,0n 01 July 2002,DATE
+2.txt,UNMIK Pillar,ORG
+2.txt,nine,CARDINAL
+2.txt,49/2002/55/2002,CARDINAL
+2.txt,59/2002,CARDINAL
+2.txt,06/2002,GPE
+2.txt,64435,MONEY
+2.txt,the ATCS Financ e Office,ORG
+2.txt,34,DATE
+2.txt,one,CARDINAL
+2.txt,9,MONEY
+2.txt,Official 3 and Official 1,LAW
+2.txt,35,DATE
+2.txt,June 2002,DATE
+2.txt,6975,MONEY
+2.txt,Two,CARDINAL
+2.txt,Department 1,ORG
+2.txt,5425,MONEY
+2.txt,1550,MONEY
+2.txt,36,DATE
+2.txt,det,DATE
+2.txt,37,DATE
+2.txt,TF,ORG
+2.txt,several hundreds,CARDINAL
+2.txt,91,MONEY
+2.txt,early 2 004,DATE
+2.txt,over €100,MONEY
+2.txt,38,CARDINAL
+2.txt,Official 4’s,LAW
+2.txt,Customs,ORG
+2.txt,KTA,FAC
+2.txt,39,DATE
+2.txt,the Airport Steering Com,FAC
+2.txt,16 July 2004,DATE
+2.txt,9.3,CARDINAL
+2.txt,11,CARDINAL
+2.txt,41,CARDINAL
+2.txt,Recommendation 1 :,LAW
+2.txt,issu ed,PERSON
+2.txt,05,CARDINAL
+2.txt,Recommendation 6,LAW
+2.txt,06,CARDINAL
+2.txt,Ai,PERSON
+2.txt,the period 01 July 2002,DATE
+2.txt,07,DATE
+2.txt,The Office for Coordination of Oversight of Public,ORG
+21.txt,UNITED NATIONS,ORG
+21.txt,NATIONS,ORG
+21.txt,UN,ORG
+21.txt,18,CARDINAL
+21.txt,ST/SGB/273,EVENT
+21.txt,September 1994,DATE
+21.txt,STRICTLY,ORG
+21.txt,23 May 2005,DATE
+21.txt,I.  INTRODUCTION,ORG
+21.txt,1,CARDINAL
+21.txt,"the Investigations 
+Division of the Office of Internal Oversight Servic",ORG
+21.txt,between October 2003,DATE
+21.txt,March 2005,DATE
+21.txt,2,CARDINAL
+21.txt,The United Nations Office,ORG
+21.txt,Nairobi,GPE
+21.txt,"the United 
+Nations Development Programme",ORG
+21.txt,UNDP,ORG
+21.txt,Bratislava,GPE
+21.txt,"10,079",MONEY
+21.txt,UNDP Bratislava,PERSON
+21.txt,3,CARDINAL
+21.txt,4,CARDINAL
+21.txt,5,CARDINAL
+21.txt,United Nations,ORG
+21.txt,101.2(g,CARDINAL
+21.txt,7,CARDINAL
+21.txt,8,CARDINAL
+21.txt,third,ORDINAL
+21.txt,9,CARDINAL
+21.txt,10,CARDINAL
+21.txt,Fraud,GPE
+21.txt,1961,DATE
+21.txt,Article 250,LAW
+21.txt,Slovakian Criminal Code,WORK_OF_ART
+21.txt,BACKGROUND,ORG
+21.txt,11,CARDINAL
+21.txt,UNHQ,ORG
+21.txt,UNON,ORG
+21.txt,Inter Office Vouchers,ORG
+21.txt,IOV,ORG
+21.txt,monthly,DATE
+21.txt,the month,DATE
+21.txt,UNDP HQ New York,ORG
+21.txt,036,CARDINAL
+21.txt,UNDP Bratislava,FAC
+21.txt,about 25,CARDINAL
+21.txt,a month,DATE
+21.txt,12,CARDINAL
+21.txt,October 2003,DATE
+21.txt,UNDP Bratislava,ORG
+21.txt,August 2002,DATE
+21.txt,two,CARDINAL
+21.txt,Consultan,PERSON
+21.txt,"5,814",MONEY
+21.txt,"4,265",MONEY
+21.txt,Johannesburg,GPE
+21.txt,Monrovia,GPE
+21.txt,September 2002,DATE
+21.txt,13,CARDINAL
+21.txt,"25 
+June 2002",DATE
+21.txt,Consulta,ORG
+21.txt,14,CARDINAL
+21.txt,UNEP,ORG
+21.txt,2002,DATE
+21.txt,15,CARDINAL
+21.txt,The Finance Department,ORG
+21.txt,Supervisor,PERSON
+21.txt,Financ,ORG
+21.txt,16,CARDINAL
+21.txt,Finance,ORG
+21.txt,The Consultant,WORK_OF_ART
+21.txt,one,CARDINAL
+21.txt,ed,PERSON
+21.txt,Slovakia,ORG
+21.txt,The Consulta nt”,WORK_OF_ART
+21.txt,Howev,PERSON
+21.txt,The Consult,WORK_OF_ART
+21.txt,17,CARDINAL
+21.txt,Slovakian,NORP
+21.txt,19,CARDINAL
+21.txt,20,CARDINAL
+21.txt,OIOS,ORG
+21.txt,"the end of 
+month",DATE
+21.txt,Photocopying Assi,PERSON
+21.txt,21,CARDINAL
+21.txt,UNEP Narobi,ORG
+21.txt,UNDP Brati,ORG
+21.txt,• UNDP Bratislava,ORG
+21.txt,U NON,ORG
+21.txt,more than a year,DATE
+21.txt,• UNEP Narobi,ORG
+21.txt,One,CARDINAL
+21.txt,Consultant,PRODUCT
+21.txt,22,CARDINAL
+21.txt,Consul,NORP
+21.txt,Two,CARDINAL
+21.txt,23,CARDINAL
+21.txt,ID/OIOS,ORG
+21.txt,The Consultant’s,WORK_OF_ART
+21.txt,Slovakia,GPE
+21.txt,24,CARDINAL
+21.txt,25,CARDINAL
+21.txt,Repor,ORG
+21.txt,UNDP Br atislava,ORG
+21.txt,26,CARDINAL
+21.txt,ID/OIOS Investigators,ORG
+21.txt,27,CARDINAL
+21.txt,28,CARDINAL
+21.txt,Recommendation 1:  It,LAW
+21.txt,chec k,PERSON
+21.txt,Agenc,ORG
+21.txt,Atlas,PERSON
+21.txt,Recommendation 5,LAW
+21.txt,the Slovakian Police,ORG
+24.txt,UNITED NATIONS                                            NATIONS,ORG
+24.txt,ST,GPE
+24.txt,18,CARDINAL
+24.txt,September 1994,DATE
+24.txt,"December 2004  
+ 
+ ",DATE
+24.txt,STRICTLY,ORG
+24.txt,"THE ORGANIZATION  
+ 
+ 
+ID  CASE",ORG
+24.txt,0570/03,CARDINAL
+24.txt,I.      ,PERSON
+24.txt,"3  
+ 
+ 
+II",MONEY
+24.txt,3,CARDINAL
+24.txt,BACKGROUND INFORMATION    ,ORG
+24.txt,Hiwot Abebe,PERSON
+24.txt,26 January 2003,DATE
+24.txt,4,CARDINAL
+24.txt,Email,PERSON
+24.txt,Ambassad,PERSON
+24.txt,Negroponte and US Government Officials    ,ORG
+24.txt,"4 
+ C. Interview",PERCENT
+24.txt,5,CARDINAL
+24.txt,D.,NORP
+24.txt,Mzumara,PERSON
+24.txt,OIC,ORG
+24.txt,SRO,ORG
+24.txt,Lusaka,ORG
+24.txt,E. Interview,PERSON
+24.txt,Dickson Mzumara,PERSON
+24.txt,"6 
+ ",CARDINAL
+24.txt,6,CARDINAL
+24.txt,VIII,ORG
+24.txt,9,CARDINAL
+24.txt,"3  
+I.   INTRODUCTION 
+ 
+1",PRODUCT
+24.txt,"The Investigations Division of the Office of Intern al 
+Oversight Services",ORG
+24.txt,OIOS,ORG
+24.txt,Organization,ORG
+24.txt,Africa,LOC
+24.txt,ECA,ORG
+24.txt,One,CARDINAL
+24.txt,2,CARDINAL
+24.txt,UN Rules and Regulations,ORG
+24.txt,John Negropont,PERSON
+24.txt,US,GPE
+24.txt,UN,ORG
+24.txt,United States of America,GPE
+24.txt,John Kerry,PERSON
+24.txt,Se,PERSON
+24.txt,Dodd,PERSON
+24.txt,Senate,ORG
+24.txt,the Staff Regulations,WORK_OF_ART
+24.txt,METHODOLOGY,ORG
+24.txt,al,PERSON
+24.txt,BACKGROUND INFORMATION,ORG
+24.txt,P5,NORP
+24.txt,the end of November 2003,DATE
+24.txt,over 25 years,DATE
+24.txt,the United States of America,GPE
+24.txt,United States,ORG
+24.txt,perpetrat ed,PERSON
+24.txt,Crimes of Rape and Maladministr ation,WORK_OF_ART
+24.txt,Ethiopian Foreign Ministry,ORG
+24.txt,the UN System,ORG
+24.txt,7,CARDINAL
+24.txt,Abebe,PERSON
+24.txt,the American Government,ORG
+24.txt,ten,CARDINAL
+24.txt,American Government,ORG
+24.txt,8,CARDINAL
+24.txt,Organizatio,ORG
+24.txt,"Negroponte  
+",PERSON
+24.txt,US Government,ORG
+24.txt,28 January 2003,DATE
+24.txt,John Negroponte,PERSON
+24.txt,Hiwot,PERSON
+24.txt,"John 
+Kerry",PERSON
+24.txt,the United States Senate,ORG
+24.txt,"the same 
+day",DATE
+24.txt,White House,ORG
+24.txt,mem ber,PERSON
+24.txt,Bush,PERSON
+24.txt,Cheney,PERSON
+24.txt,10,CARDINAL
+24.txt,Negroponte,PERSON
+24.txt,Negro,PERSON
+24.txt,11,CARDINAL
+24.txt,UN System,ORG
+24.txt,ag,ORG
+24.txt,12,CARDINAL
+24.txt,EC,ORG
+24.txt,13,CARDINAL
+24.txt,"s. 
+ 
+",PERSON
+24.txt,14,CARDINAL
+24.txt,"18 
+March 2003",DATE
+24.txt,Executive,ORG
+24.txt,Executive,NORP
+24.txt,15,DATE
+24.txt,29 January 2003,DATE
+24.txt,Dickson Mzumara,ORG
+24.txt,Lusaka,GPE
+24.txt,Zambia,GPE
+24.txt,16,CARDINAL
+24.txt,the same day,DATE
+24.txt,M,PERSON
+24.txt,Cond,NORP
+24.txt,the J AB,ORG
+24.txt,Nairobi,GPE
+24.txt,"White 
+House",ORG
+24.txt,USA,GPE
+24.txt,Secretariat,ORG
+24.txt,Boss,PERSON
+24.txt,17,CARDINAL
+24.txt,January 2003,DATE
+24.txt,November 2003,DATE
+24.txt,UN Regulations,ORG
+24.txt,one,CARDINAL
+24.txt,7 19,DATE
+24.txt,the Nazareth Restaurant,FAC
+24.txt,2001,DATE
+24.txt,two,CARDINAL
+24.txt,Olokodana,GPE
+24.txt,Vintzis,PERSON
+24.txt,Stokykov,GPE
+24.txt,Facilities Management Section,ORG
+24.txt,20,CARDINAL
+24.txt,Olokodana,PERSON
+24.txt,Howev,PERSON
+24.txt,Stoykov,PERSON
+24.txt,21,DATE
+24.txt,22,CARDINAL
+24.txt,23,CARDINAL
+24.txt,al systems,PERSON
+24.txt,OHRMS,ORG
+24.txt,some two years ago,DATE
+24.txt,United Nations,ORG
+24.txt,24,CARDINAL
+24.txt,Stoy,PERSON
+24.txt,25,CARDINAL
+24.txt,Bongoy – Mawalla,PERSON
+24.txt,July 2003,DATE
+24.txt,26,CARDINAL
+24.txt,Ali Todaro,PERSON
+24.txt,Specia,PERSON
+24.txt,EVIDENCE,ORG
+24.txt,Gov,PERSON
+24.txt,28,CARDINAL
+24.txt,contra,NORP
+24.txt,the UN Secretariat,LOC
+24.txt,Human Rights Organizations,ORG
+24.txt,29,CARDINAL
+24.txt,the OIOS Investigators,ORG
+24.txt,30,CARDINAL
+24.txt,"RECOMMENDATIONS  
+ 
+Recommendation 1  
+ 
+",LAW
+24.txt,Personnel Status File,ORG
+24.txt,Office of Legal Affairs,ORG
+24.txt,OLA,ORG
+26.txt,ST,GPE
+26.txt,18,CARDINAL
+26.txt,September 1994,DATE
+26.txt,20 April 2005,DATE
+26.txt,STRICTLY,ORG
+26.txt,2,CARDINAL
+26.txt,AFRICA,LOC
+26.txt,ECA,ORG
+26.txt,"3 
+ 
+II",MONEY
+26.txt,………………………………………………,PRODUCT
+26.txt,BACKGROUND,ORG
+26.txt,…………………………………………..  ,PRODUCT
+26.txt,"9 
+ 
+VII",DATE
+26.txt,11,CARDINAL
+26.txt,3,CARDINAL
+26.txt,1,CARDINAL
+26.txt,"The Investigations Division, Office of Internal Ove rsight Services",ORG
+26.txt,an Economic Commission of  Africa,ORG
+26.txt,"12,000",MONEY
+26.txt,five,CARDINAL
+26.txt,Seychelles,GPE
+26.txt,2001 some two years,DATE
+26.txt,"APPLICABLE  LAWS 
+ 
+2",ORG
+26.txt,ge,ORG
+26.txt,third,ORDINAL
+26.txt,Financial Rule 104.9,ORG
+26.txt,ST/SGB/2003/7,ORG
+26.txt,monthly,DATE
+26.txt,U,ORG
+26.txt,4,CARDINAL
+26.txt,Financial Rule 104.10,ORG
+26.txt,METHODOLOGY,ORG
+26.txt,5,CARDINAL
+26.txt,DSA,ORG
+26.txt,6,CARDINAL
+26.txt,Eastern,ORG
+26.txt,Southern Africa Sub Regional Meeting,ORG
+26.txt,"15 to 18 February, 1999",DATE
+26.txt,the Berjaja Mahe Beach,FAC
+26.txt,Victoria,GPE
+26.txt,"the 
+African Centre for Women",ORG
+26.txt,the African Cen,ORG
+26.txt,Gender Development,ORG
+26.txt,over 100,CARDINAL
+26.txt,46,CARDINAL
+26.txt,8,CARDINAL
+26.txt,Division,ORG
+26.txt,the Integrated Management Informat ion System,ORG
+26.txt,IMIS,ORG
+26.txt,UNDP,ORG
+26.txt,the Finance Division,ORG
+26.txt,9,CARDINAL
+26.txt,50 per cent,MONEY
+26.txt,IOV,ORG
+26.txt,Finance,ORG
+26.txt,10,CARDINAL
+26.txt,19 January 2000,DATE
+26.txt,Official 3,LAW
+26.txt,"5 US$49,000",MONEY
+26.txt,"17 February 
+2000",DATE
+26.txt,1999,DATE
+26.txt,Official 4,LAW
+26.txt,17,CARDINAL
+26.txt,February 2 000,DATE
+26.txt,three,CARDINAL
+26.txt,"3,011",MONEY
+26.txt,Partici,ORG
+26.txt,Participant 2,ORG
+26.txt,Participant 3,LAW
+26.txt,12,CARDINAL
+26.txt,"40,000",MONEY
+26.txt,"35,000",MONEY
+26.txt,half,CARDINAL
+26.txt,"5,000",MONEY
+26.txt,"9,000",MONEY
+26.txt,13,CARDINAL
+26.txt,"49,000",MONEY
+26.txt,Barclays Bank PLC Independenc,ORG
+26.txt,"49,300",MONEY
+26.txt,300,MONEY
+26.txt,8 March 2000,DATE
+26.txt,Official 7,LAW
+26.txt,Mauritius,ORG
+26.txt,ACGD,ORG
+26.txt,"44,000",MONEY
+26.txt,14,CARDINAL
+26.txt,2000,DATE
+26.txt,Official 2,LAW
+26.txt,Official 4’s,LAW
+26.txt,17 February 2000,DATE
+26.txt,Seychelles,NORP
+26.txt,Port Louis,GPE
+26.txt,the remaining,PERCENT
+26.txt,chao s,PERSON
+26.txt,Barclays,ORG
+26.txt,US,GPE
+26.txt,15,CARDINAL
+26.txt,"US$5,000 and US$ 3,500",MONEY
+26.txt,"22,000",MONEY
+26.txt,late 18 February 1999,DATE
+26.txt,"3,327",MONEY
+26.txt,"3,300",MONEY
+26.txt,19 February 1999,DATE
+26.txt,"12,173",MONEY
+26.txt,"10,120.00",MONEY
+26.txt,"2,053.00",MONEY
+26.txt,16,CARDINAL
+26.txt,27 June 2000,DATE
+26.txt,"March 3, 2000",DATE
+26.txt,"US$22,000 and US$3,327",MONEY
+26.txt,"US$10,120 and US$2",MONEY
+26.txt,053,CARDINAL
+26.txt,ID/OIO S,ORG
+26.txt,Barclays in Seychelles,ORG
+26.txt,17 February 1999,DATE
+26.txt,first,ORDINAL
+26.txt,18 February 1999,DATE
+26.txt,The ACGD Offi,ORG
+26.txt,19,CARDINAL
+26.txt,20,CARDINAL
+26.txt,Participant 1’s,WORK_OF_ART
+26.txt,21,CARDINAL
+26.txt,four to five,CARDINAL
+26.txt,7,CARDINAL
+26.txt,22,CARDINAL
+26.txt,ID/OIOS Investigators,ORG
+26.txt,Participant 1,ORG
+26.txt,23,CARDINAL
+26.txt,a few days,DATE
+26.txt,24,CARDINAL
+26.txt,ed PT.8’s,PERSON
+26.txt,Participant 1,LAW
+26.txt,"1,000",MONEY
+26.txt,"1,068",MONEY
+26.txt,943,MONEY
+26.txt,"19 March 
+1999",DATE
+26.txt,25,CARDINAL
+26.txt,one,CARDINAL
+26.txt,Bank,ORG
+26.txt,26,CARDINAL
+26.txt,Particip,NORP
+26.txt,8 27,DATE
+26.txt,second,ORDINAL
+26.txt,Participant 3,PRODUCT
+26.txt,28,CARDINAL
+26.txt,Participant 2,LAW
+26.txt,Liaison,PERSON
+26.txt,29,CARDINAL
+26.txt,Register,ORG
+26.txt,Participant,ORG
+26.txt,30,CARDINAL
+26.txt,"A pril 28, 2003",DATE
+26.txt,ID Investigato,ORG
+26.txt,"28,627",MONEY
+26.txt,18 February 2000,DATE
+26.txt,31,CARDINAL
+26.txt,June 1999,DATE
+26.txt,Disburs,NORP
+26.txt,32,DATE
+26.txt,33,CARDINAL
+26.txt,Offici al 4,PERSON
+26.txt,24 March 2000,DATE
+26.txt,Official 5,LAW
+26.txt,Direc,ORG
+26.txt,PPFD,ORG
+26.txt,34,DATE
+26.txt,Officia,PERSON
+26.txt,35,DATE
+26.txt,the ACGD Office,ORG
+26.txt,Offi,ORG
+26.txt,36,DATE
+26.txt,13 April 2000,DATE
+26.txt,Offici,GPE
+26.txt,explana tions,PERSON
+26.txt,37,DATE
+26.txt,18 February 2004,DATE
+26.txt,14,DATE
+26.txt,"only US$3,011",MONEY
+26.txt,Participant 3,ORG
+26.txt,Participant 1,PRODUCT
+26.txt,38,CARDINAL
+26.txt,Barclay  Bank,ORG
+26.txt,First,ORDINAL
+26.txt,"the 
+Bank",ORG
+26.txt,Financial Rule,ORG
+26.txt,104.9,CARDINAL
+26.txt,39,CARDINAL
+26.txt,"38,627",MONEY
+26.txt,paragrap h 15.a,ORG
+26.txt,"April 28, 2003",DATE
+26.txt,22,MONEY
+26.txt,1 04.10,CARDINAL
+26.txt,40,CARDINAL
+26.txt,27,CARDINAL
+26.txt,United Nations,ORG
+26.txt,CONCLUSIONS,ORG
+26.txt,41,CARDINAL
+26.txt,only two,CARDINAL
+26.txt,42,DATE
+26.txt,"RECOMMENDATIONS 
+ 
+Recommendation 1  
+ 
+",LAW
+26.txt,104,CARDINAL
+27.txt,United Nations,ORG
+27.txt,Klaus Toepfer,PERSON
+27.txt,22 April 2005,DATE
+27.txt,United Nations Environment Programme,ORG
+27.txt,05,CARDINAL
+27.txt,Barbara Dixon,PERSON
+27.txt,"Office of Internal Oversight Services 
+SUBJECT Allegations",ORG
+27.txt,the Post-Conflict Assessment Unit,ORG
+27.txt,the United Nations Environmental Programme,ORG
+27.txt,UNEP,ORG
+27.txt,1,CARDINAL
+27.txt,The Investigations Division of the Office of Internal Oversight Services,ORG
+27.txt,the Balkans Task Force,ORG
+27.txt,BTF,ORG
+27.txt,the Post-Conflict Assessment Unit (PCAU,ORG
+27.txt,"the United Nations Environment 
+Programme",ORG
+27.txt,two,CARDINAL
+27.txt,UNEP Staff,ORG
+27.txt,UNEPIPCAU Consultant,ORG
+27.txt,UNEP/PCAU Consultant,ORG
+27.txt,PCAU,ORG
+27.txt,2,CARDINAL
+27.txt,fifty percent,PERCENT
+27.txt,3,CARDINAL
+27.txt,Allegation 2,ORG
+27.txt,4,CARDINAL
+27.txt,May 2000,DATE
+27.txt,about a year,DATE
+27.txt,5,CARDINAL
+27.txt,Organization,ORG
+27.txt,ST/Al/l999/7 II 2,ORG
+27.txt,6,CARDINAL
+27.txt,Financial Regulation,ORG
+27.txt,the United Nations,ORG
+27.txt,7,CARDINAL
+27.txt,UNOPS,ORG
+27.txt,United,ORG
+27.txt,8,CARDINAL
+27.txt,Francis Montil,PERSON
+27.txt,431,CARDINAL
+27.txt,9,CARDINAL
+27.txt,22 May 2005,DATE
+31.txt,UNITED NATIONS,ORG
+31.txt,Kosovo,GPE
+31.txt,"Investigation Task Force 
+ 
+ 
+Allegations",ORG
+31.txt,Pristina Airport,FAC
+31.txt,"I. INTRODUCTION 
+ 
+",ORG
+31.txt,1,CARDINAL
+31.txt,28,CARDINAL
+31.txt,February 2003,DATE
+31.txt,Pristina International Airport,FAC
+31.txt,"the Chartered 
+Accountants",ORG
+31.txt,"Pristina 
+",FAC
+31.txt,International Airport,FAC
+31.txt,2,CARDINAL
+31.txt,three,CARDINAL
+31.txt,• Employees,ORG
+31.txt,Pri,PERSON
+31.txt,1999/24,CARDINAL
+31.txt,12 December 1999,DATE
+31.txt,22 March 1989,DATE
+31.txt,UN,ORG
+31.txt,110.1,CARDINAL
+31.txt,the Charter of the United Nations,LAW
+31.txt,the Staff Regulations,WORK_OF_ART
+31.txt,10.2,CARDINAL
+31.txt,3,CARDINAL
+31.txt,the Investigation Task Force,ORG
+31.txt,Pillar,ORG
+31.txt,4,CARDINAL
+31.txt,BACKGROUND,ORG
+31.txt,5,CARDINAL
+31.txt,Yugoslavian,NORP
+31.txt,2001,DATE
+31.txt,2003,DATE
+31.txt,"the 
+Public Enterprise Airport Pristina",ORG
+31.txt,Kosovo Force,ORG
+31.txt,United Nations Sec,ORG
+31.txt,Council,ORG
+31.txt,1244,CARDINAL
+31.txt,10 June 1999,DATE
+31.txt,UNMIK Regulation No 1/,ORG
+31.txt,1999,DATE
+31.txt,25 July 1999,DATE
+31.txt,UNMIK,ORG
+31.txt,Ko,PERSON
+31.txt,6,CARDINAL
+31.txt,the end of June 2002,DATE
+31.txt,the Civil Administration,ORG
+31.txt,Official 1 and Official 2,LAW
+31.txt,Pillar II,PRODUCT
+31.txt,the Department of Transport,ORG
+31.txt,"the Transport 
+Sector of the UNMIK Directorate of Infrastructure A",ORG
+31.txt,DOTI,ORG
+31.txt,31 July 2000,DATE
+31.txt,30 September 2001,DATE
+31.txt,United Nations,ORG
+31.txt,Consultant,PRODUCT
+31.txt,Consulting Firm,ORG
+31.txt,7,CARDINAL
+31.txt,1 July 2002,DATE
+31.txt,Pillar II,EVENT
+31.txt,the Kosovo Trust Agency,ORG
+31.txt,Divisional,ORG
+31.txt,the Airport Sector,FAC
+31.txt,the Air Traffic Control Services,ORG
+31.txt,8,CARDINAL
+31.txt,1 April 2004,DATE
+31.txt,Pristina International Airport,EVENT
+31.txt,KFOR,ORG
+31.txt,9,CARDINAL
+31.txt,10,CARDINAL
+31.txt,December 2001,DATE
+31.txt,11,CARDINAL
+31.txt,21,CARDINAL
+31.txt,Pristina,GPE
+31.txt,The year 2001,DATE
+31.txt,12,CARDINAL
+31.txt,passeng,PERSON
+31.txt,13,CARDINAL
+31.txt,14,CARDINAL
+31.txt,ITF,ORG
+31.txt,1 January 2002,DATE
+31.txt,Handling Fees,ORG
+31.txt,15,CARDINAL
+31.txt,"DM 14,357,949",ORG
+31.txt,"7,341,163",MONEY
+31.txt,"7,376,182",MONEY
+31.txt,Chartered Account,ORG
+31.txt,16,DATE
+31.txt,17,CARDINAL
+31.txt,• Airline,ORG
+31.txt,DM 2190,DATE
+31.txt,DM 2888,DATE
+31.txt,18,CARDINAL
+31.txt,Airl,PRODUCT
+31.txt,20,CARDINAL
+31.txt,ed with de-,PERSON
+31.txt,one,CARDINAL
+31.txt,25 DM,MONEY
+31.txt,February 2001,DATE
+31.txt,31 December 2001,DATE
+31.txt,"the month of January 
+2001",DATE
+31.txt,22,CARDINAL
+31.txt,"375,472",CARDINAL
+31.txt,"18,996",CARDINAL
+31.txt,25,CARDINAL
+31.txt,Euro,PERSON
+31.txt,"4,799,395",MONEY
+31.txt,"4,919,190",MONEY
+31.txt,the whole year,DATE
+31.txt,the month of Jan uary 2001,DATE
+31.txt,23,CARDINAL
+31.txt,24,CARDINAL
+31.txt,IATA,ORG
+31.txt,"Airline 3, Airline 4, Airl ine 5 and Airline",ORG
+31.txt,Pristina Ai,FAC
+31.txt,26,CARDINAL
+31.txt,27,CARDINAL
+31.txt,Airlines,ORG
+35.txt,United Nations,ORG
+35.txt,28 July 2004,DATE
+35.txt,# 02 16/04,MONEY
+35.txt,Charles Brayshaw,PERSON
+35.txt,John Todd,PERSON
+35.txt,1,CARDINAL
+35.txt,April 2004,DATE
+35.txt,the Investigation Task Force,ORG
+35.txt,UNMUK,ORG
+35.txt,the Pristina Airport,FAC
+35.txt,2,CARDINAL
+35.txt,"the Icelandic Civil 
+Aviation Administration",LAW
+35.txt,UNMIK,ORG
+35.txt,1 April 2004,DATE
+35.txt,Iceland,GPE
+35.txt,WPVI,PERSON
+35.txt,Schedule VI,ORG
+35.txt,YCAA,ORG
+35.txt,Pristina Airport,FAC
+35.txt,ICAA,ORG
+35.txt,3,CARDINAL
+35.txt,4,CARDINAL
+35.txt,Airport,GPE
+35.txt,5,CARDINAL
+35.txt,ITF,ORG
+35.txt,Airport,ORG
+35.txt,Internal Audit Department,ORG
+35.txt,6,CARDINAL
+35.txt,7,CARDINAL
+35.txt,8,CARDINAL
+35.txt,Mark Gough,PERSON
+35.txt,Peacekeeping Investigations Unit,ORG
+35.txt,Vienna,GPE
+35.txt,Jean-Marie Guehenno,PERSON
+35.txt,USG,ORG
+35.txt,"DPKO 
+Ipav",ORG
+36.txt,1,CARDINAL
+36.txt,2,CARDINAL
+36.txt,Kosovo,GPE
+36.txt,Intérimaire des Nations,ORG
+36.txt,"UNMIK 
+ 
+Investigation Task Force 
+ 
+ 
+ 
+Date",ORG
+36.txt,"December 3 rd , 2004",DATE
+36.txt,Søren Jessen-Petersen,PERSON
+36.txt,"UNMIK 
+ 
+",ORG
+36.txt,Wolfgang Nikolaus,PERSON
+36.txt,Investigation Task Force,ORG
+36.txt,"UNMIK 
+ 
+Subject",ORG
+36.txt,The Investigation Task Force,ORG
+36.txt,Pristina Airport,FAC
+36.txt,London,GPE
+36.txt,"Insurance 
+Company 1",ORG
+36.txt,2003,DATE
+36.txt,UNMI K Pillar II,ORG
+36.txt,"the Kosovo 
+Trust Agency",ORG
+36.txt,ITF,ORG
+36.txt,2002,DATE
+36.txt,Kosovo Consolidated Funds,ORG
+36.txt,"more than $125,000 USD",MONEY
+36.txt,October 2003,DATE
+36.txt,October 2004,DATE
+36.txt,Insurance Company 1,ORG
+36.txt,Pristina International Airport,FAC
+36.txt,a further year,DATE
+36.txt,the Department of Justice,ORG
+36.txt,3,CARDINAL
+36.txt,1 April 2004,DATE
+36.txt,Pristina Page,FAC
+36.txt,Insurance Company 2,ORG
+36.txt,UNMIK,ORG
+36.txt,Company/Insuranc e Company 1,ORG
+36.txt,2 October 2004,DATE
+36.txt,"the 
+Insurance Company 2",ORG
+36.txt,5,CARDINAL
+36.txt,the Insurance Company 1 Contract Policy,ORG
+36.txt,9,CARDINAL
+36.txt,July 2002,DATE
+36.txt,4,CARDINAL
+36.txt,the General Conditions,ORG
+36.txt,Insured,ORG
+36.txt,30 days,DATE
+36.txt,two,CARDINAL
+36.txt,the period 1 April to 1 October 2004,DATE
+36.txt,6,CARDINAL
+36.txt,three,CARDINAL
+36.txt,administrati,GPE
+36.txt,the  Department of Justice,ORG
+36.txt,ade,PERSON
+36.txt,Department,ORG
+36.txt,Justice,ORG
+36.txt,3896,DATE
+36.txt,Pristin,GPE
+36.txt,Mark Gough,PERSON
+36.txt,Vienna,GPE
+36.txt,26060,DATE
+36.txt,Copy,PERSON
+36.txt,James Wasserstrom,PERSON
+36.txt,OPOE,ORG
+36.txt,Paul-Lachal Roberts,PERSON
+36.txt,OLAF,ORG
+38.txt,UNITED NATIONS,ORG
+38.txt,Kosovo,GPE
+38.txt,Intérimaire des Nations,ORG
+38.txt,"INVESTIGATION TASK FORCE 
+ 
+Investigation into Allegations of Bribery",ORG
+38.txt,Favou,ORG
+38.txt,Procurement of Uniforms,WORK_OF_ART
+38.txt,Pristina Airport,FAC
+38.txt,I. Background,PERSON
+38.txt,1,CARDINAL
+38.txt,Kosovo Trust Agency,ORG
+38.txt,Internal Audit Unit,ORG
+38.txt,IAU,ORG
+38.txt,4,CARDINAL
+38.txt,October 2004,DATE
+38.txt,"Pristina 
+Airport",FAC
+38.txt,summer and winter,DATE
+38.txt,summer,DATE
+38.txt,Pristina Airport Reference No,FAC
+38.txt,2,CARDINAL
+38.txt,28,CARDINAL
+38.txt,Vendor,GPE
+38.txt,one,CARDINAL
+38.txt,Vendor 2,PERSON
+38.txt,"the Bid Evaluation 
+Committee",ORG
+38.txt,a mem ber,QUANTITY
+38.txt,the Finance Department,ORG
+38.txt,favou,ORG
+38.txt,3,CARDINAL
+38.txt,Procurem,PERSON
+38.txt,Officer 1,LAW
+38.txt,ITF,ORG
+38.txt,the Finance Office,ORG
+38.txt,"2 
+ 
+Provisional Criminal Code of",ORG
+38.txt,Article 343 “ Accepting Bribes,LAW
+38.txt,"Article 344 “Giving 
+Bribes” 
+ 
+Finance Administration",LAW
+38.txt,Revi,PERSON
+38.txt,15 December 1999,DATE
+38.txt,"Full and Fair 
+Competition",WORK_OF_ART
+38.txt,Section 23.9 “Examination and Evaluat,LAW
+38.txt,"Tenders” 
+ 
+Allegation 3 : that",ORG
+38.txt,"the Bid 
+Evaluation Committee",FAC
+38.txt,"Tenders” 
+ 
+Allegation 4 :",ORG
+38.txt,"Full and Fair 
+Competition” 
+ 
+Allegation 5 :",WORK_OF_ART
+38.txt,Procurement Offi,ORG
+38.txt,Article 161 “ Threat,LAW
+38.txt,6,CARDINAL
+38.txt,Vendor 1,PERSON
+38.txt,a Bid Opening Commit,ORG
+38.txt,10-06-04,DATE
+38.txt,three,CARDINAL
+38.txt,7,CARDINAL
+38.txt,a Bid Evaluation Committee,ORG
+38.txt,18-06-0 4,DATE
+38.txt,23,CARDINAL
+38.txt,"106,059",MONEY
+38.txt,two,CARDINAL
+38.txt,Vendor,ORG
+38.txt,Pristina,GPE
+38.txt,9,CARDINAL
+38.txt,Bid Opening Committee,ORG
+38.txt,10,CARDINAL
+38.txt,Finance,ORG
+38.txt,Committee,ORG
+38.txt,the day,DATE
+38.txt,first,ORDINAL
+38.txt,second,ORDINAL
+38.txt,12,CARDINAL
+38.txt,Pristina Airport Official,FAC
+38.txt,the Bid Evaluat ion Committee,ORG
+38.txt,Accord,PRODUCT
+38.txt,15,CARDINAL
+38.txt,13,CARDINAL
+38.txt,5,CARDINAL
+38.txt,Committ,PERSON
+38.txt,Vendor 2’s,PERSON
+38.txt,Vendor 1,LAW
+38.txt,Pristina Airport Official’s,FAC
+38.txt,14,CARDINAL
+38.txt,the Bid Evaluation Committee,ORG
+38.txt,the Bid Opening Committee (Procureme nt Officer 1 and,ORG
+38.txt,the Bid Opening Co,ORG
+38.txt,the Bid Opening Committee,ORG
+38.txt,Vendor 1’s,PERSON
+38.txt,four,CARDINAL
+38.txt,the Bid Evaluation C,WORK_OF_ART
+38.txt,Bid Eva luation Committee,ORG
+38.txt,the Ministry of Finance,ORG
+38.txt,Transportation,ORG
+38.txt,16,CARDINAL
+38.txt,4or,ORDINAL
+38.txt,17,CARDINAL
+38.txt,18,CARDINAL
+38.txt,two years,DATE
+38.txt,the un iforms,ORG
+38.txt,the end of August (2004,DATE
+38.txt,19,CARDINAL
+38.txt,30-06-04,DATE
+38.txt,un,ORG
+38.txt,20,CARDINAL
+38.txt,KTA,ORG
+38.txt,07-07-04,DATE
+38.txt,Pri,PERSON
+38.txt,Airport Official,PERSON
+38.txt,"Pristina Airport 
+Official",FAC
+38.txt,21,CARDINAL
+38.txt,Pristina Airport Officia,FAC
+38.txt,Vendor 1’s,LAW
+38.txt,"1 
+ 
+22",DATE
+38.txt,Procurement,PRODUCT
+38.txt,KTA Internal Audit,ORG
+38.txt,The Civil Engineer,ORG
+38.txt,The Civil Engineer,WORK_OF_ART
+38.txt,Procureme,PRODUCT
+38.txt,24,CARDINAL
+38.txt,don e.,PERSON
+38.txt,Ven,GPE
+38.txt,26,CARDINAL
+38.txt,the B id Evaluation Committee,ORG
+38.txt,Simila,PERSON
+38.txt,Airpo rt Official,PERSON
+38.txt,"the Bid 
+Evaluation Committee",ORG
+38.txt,29,CARDINAL
+38.txt,V. Recommendations,PERSON
+38.txt,30,CARDINAL
+38.txt,UNMIK Pillar IV,ORG
+38.txt,Interna l Audit Unit,ORG
+38.txt,UNMIK,ORG
+38.txt,"the 
+Department of Justice",ORG
+38.txt,the Financial Investigati on Unit,ORG
+39.txt,UNITED NATIONS,ORG
+39.txt,Kosovo,GPE
+39.txt,"Investigation Task Force 
+ 
+ 
+ 
+Investigation",ORG
+39.txt,two,CARDINAL
+39.txt,Pristina Airport,FAC
+39.txt,"I. INTRODUCTION 
+ 
+",ORG
+39.txt,1,CARDINAL
+39.txt,28,CARDINAL
+39.txt,February 2003,DATE
+39.txt,Pristina International Airport,FAC
+39.txt,"the Chartered 
+Accountants",ORG
+39.txt,"Pristina 
+",FAC
+39.txt,International Airport,FAC
+39.txt,2,CARDINAL
+39.txt,first,ORDINAL
+39.txt,one,CARDINAL
+39.txt,1999/24,CARDINAL
+39.txt,12 December 1999,DATE
+39.txt,22 March 1989,DATE
+39.txt,UN,ORG
+39.txt,1999/2,CARDINAL
+39.txt,Kosovo Consolidated Budget Funds,ORG
+39.txt,Article 4 1,LAW
+39.txt,Article 4.1.1  – “All Suppliers and Contractors,LAW
+39.txt,Tender,NORP
+39.txt,Article 4.3.3 .,LAW
+39.txt,Tender Documents,ORG
+39.txt,Article 15 1,LAW
+39.txt,Works,PERSON
+39.txt,Article 15.4,LAW
+39.txt,nam e,PERSON
+39.txt,110.1,CARDINAL
+39.txt,the Charter of the United Nations,LAW
+39.txt,the Staff Regulations,WORK_OF_ART
+39.txt,10.2,CARDINAL
+39.txt,I. METHODOLOGY,ORG
+39.txt,3,CARDINAL
+39.txt,the Investigation Task Force,ORG
+39.txt,Pillar,ORG
+39.txt,II,CARDINAL
+39.txt,"BACKGROUND INFORMATION 
+ 
+4",ORG
+39.txt,Yugoslavian,NORP
+39.txt,2001,DATE
+39.txt,2003,DATE
+39.txt,"the 
+Public Enterprise Airport Pristina",ORG
+39.txt,Kosovo Force,ORG
+39.txt,United Nations Sec,ORG
+39.txt,Council,ORG
+39.txt,1244,CARDINAL
+39.txt,10 June 1999,DATE
+39.txt,UNMIK Regulation No 1/,ORG
+39.txt,1999,DATE
+39.txt,25 July 1999,DATE
+39.txt,UNMIK,ORG
+39.txt,Ko,PERSON
+39.txt,5,CARDINAL
+39.txt,the end of June 2002,DATE
+39.txt,the Civil Administration,ORG
+39.txt,Official 1 and Official 2,LAW
+39.txt,Pillar II,PRODUCT
+39.txt,the Department of Transport,ORG
+39.txt,"the Transport 
+Sector of the UNMIK Directorate of Infrastructure A",ORG
+39.txt,DOTI,ORG
+39.txt,an  3,CARDINAL
+39.txt,31 July 2000,DATE
+39.txt,30 September 2001,DATE
+39.txt,United Nations,ORG
+39.txt,Airport Engineer 1,ORG
+39.txt,Consultant,PRODUCT
+39.txt,Consulting Firm,ORG
+39.txt,6,CARDINAL
+39.txt,1 July 2002,DATE
+39.txt,Pillar II,EVENT
+39.txt,the Kosovo Trust Agency,ORG
+39.txt,Divisional,ORG
+39.txt,the Airport Sector,FAC
+39.txt,the Air Traffic Control Services,ORG
+39.txt,7,CARDINAL
+39.txt,1 April 2004,DATE
+39.txt,Pristina International Airport,EVENT
+39.txt,KFOR,ORG
+39.txt,8,CARDINAL
+39.txt,9,CARDINAL
+39.txt,"180,816.00",MONEY
+39.txt,irregularl,PERSON
+39.txt,10,CARDINAL
+39.txt,Procure,ORG
+39.txt,"18 April 
+2003",DATE
+39.txt,Pristina Air,ORG
+39.txt,18 April 2003,DATE
+39.txt,6 June 2003,DATE
+39.txt,11,CARDINAL
+39.txt,ITF,ORG
+39.txt,12,CARDINAL
+39.txt,the Eval uation Committee,ORG
+39.txt,at least two,CARDINAL
+39.txt,4,CARDINAL
+39.txt,13,CARDINAL
+39.txt,the Pristina Airport,FAC
+39.txt,14,CARDINAL
+39.txt,First,ORDINAL
+39.txt,15,CARDINAL
+39.txt,Engineer,ORG
+39.txt,"the Evaluation 
+Committee",ORG
+39.txt,the Evaluation Committee,ORG
+39.txt,Vendor 1,PRODUCT
+39.txt,Membe,PERSON
+39.txt,16,CARDINAL
+39.txt,Article 15,LAW
+39.txt,2/1999,DATE
+39.txt,Articles 15.1,PERSON
+39.txt,15.4,CARDINAL
+39.txt,Article 15.1,LAW
+39.txt,"Second tender 
+ 
+17",DATE
+39.txt,30 June 2003,DATE
+39.txt,second,ORDINAL
+39.txt,the Evaluatio n Committee,ORG
+39.txt,PEAP,ORG
+39.txt,9 July 2003,DATE
+39.txt,evaluati on committee,ORG
+39.txt,19,CARDINAL
+39.txt,Vendor 2,PERSON
+39.txt,Airport,ORG
+39.txt,20,CARDINAL
+39.txt,21,CARDINAL
+39.txt,Vendor 2’s,PERSON
+39.txt,Vendor 1,PERSON
+39.txt,22,DATE
+39.txt,1966,DATE
+39.txt,2002,DATE
+39.txt,23,CARDINAL
+39.txt,25,CARDINAL
+39.txt,Vendor,ORG
+39.txt,26,CARDINAL
+39.txt,27,CARDINAL
+39.txt,the D/SRSG Pillar IV,ORG
+4.txt,UNITED NATIONS,ORG
+4.txt,Kosovo,GPE
+4.txt,"Investigation Task Force 
+ 
+ 
+Irregularities",ORG
+4.txt,Winter,DATE
+4.txt,"Summer 
+Uniforms at",WORK_OF_ART
+4.txt,Pristina Airport,FAC
+4.txt,0275/04,CARDINAL
+4.txt,1,CARDINAL
+4.txt,28,CARDINAL
+4.txt,February 2003,DATE
+4.txt,Pristina International Airport,FAC
+4.txt,"the Chartered 
+Accountants",ORG
+4.txt,"Pristina 
+",FAC
+4.txt,International Airport,FAC
+4.txt,2,CARDINAL
+4.txt,seven,CARDINAL
+4.txt,the winter,DATE
+4.txt,"10 
+January 2003",DATE
+4.txt,summer,DATE
+4.txt,3,MONEY
+4.txt,two,CARDINAL
+4.txt,Vendor 1,PERSON
+4.txt,792,MONEY
+4.txt,"1,188",MONEY
+4.txt,justi fication,ORG
+4.txt,1999/24,CARDINAL
+4.txt,12 December 1999,DATE
+4.txt,22 March 1989,DATE
+4.txt,UN,ORG
+4.txt,1999/2,CARDINAL
+4.txt,Kosovo Consolidated Budget Funds,ORG
+4.txt,Article 4 1,LAW
+4.txt,Article 4.1.1  – “All Suppliers and Contractors,LAW
+4.txt,Tender,NORP
+4.txt,Article 4.3.3 .,LAW
+4.txt,UNMIK Kosovo Interim Administration’s,ORG
+4.txt,Tender Documents,ORG
+4.txt,Article 6.1.2,LAW
+4.txt,Competitive Shopping,ORG
+4.txt,Euro,PERSON
+4.txt,Article 6.1.3,LAW
+4.txt,Competitive Tendering,WORK_OF_ART
+4.txt,"DM 50,000",ORG
+4.txt,Article 24,LAW
+4.txt,Direct Single Source Procurement,ORG
+4.txt,Ancillary Physical Services,ORG
+4.txt,24.1,CARDINAL
+4.txt,24.2,CARDINAL
+4.txt,appr,NORP
+4.txt,24.2.1,CARDINAL
+4.txt,"the Goods, Works or Services",ORG
+4.txt,only one,CARDINAL
+4.txt,110.1,CARDINAL
+4.txt,the Charter of the United Nations,LAW
+4.txt,the Staff Regulations,WORK_OF_ART
+4.txt,10.2,CARDINAL
+4.txt,the Investigation Task Force,ORG
+4.txt,Pillar,ORG
+4.txt,"BACKGROUND INFORMATION 
+ 
+3",ORG
+4.txt,Yugoslavian,NORP
+4.txt,2001,DATE
+4.txt,2003,DATE
+4.txt,"the 
+Public Enterprise Airport Pristina",ORG
+4.txt,Kosovo Force,ORG
+4.txt,United Nations Sec,ORG
+4.txt,Council,ORG
+4.txt,1244,CARDINAL
+4.txt,10 June 1999,DATE
+4.txt,UNMIK Regulation No 1/,ORG
+4.txt,1999,DATE
+4.txt,25 July 1999,DATE
+4.txt,UNMIK,ORG
+4.txt,Ko,PERSON
+4.txt,4,CARDINAL
+4.txt,the end of June 2002,DATE
+4.txt,the Civil Administration,ORG
+4.txt,3,CARDINAL
+4.txt,Official 1 and Official 2 Department,LAW
+4.txt,DOTI,ORG
+4.txt,the UNMIK Directorate of In frastructure Affairs,ORG
+4.txt,Official 1,LAW
+4.txt,Official 2,LAW
+4.txt,31 July 20 00,DATE
+4.txt,"30 
+September 2001",DATE
+4.txt,one,CARDINAL
+4.txt,Army,ORG
+4.txt,Consulting Company,ORG
+4.txt,5,CARDINAL
+4.txt,1 July 2002,DATE
+4.txt,Pillar II,EVENT
+4.txt,the Kosovo Trust Agency,ORG
+4.txt,Divisional,ORG
+4.txt,Official 3,LAW
+4.txt,6,CARDINAL
+4.txt,1 April 2004,DATE
+4.txt,Pristina International Airport,EVENT
+4.txt,KFOR,ORG
+4.txt,7,CARDINAL
+4.txt,8,CARDINAL
+4.txt,winter,DATE
+4.txt,"24,997",MONEY
+4.txt,third,ORDINAL
+4.txt,9,CARDINAL
+4.txt,6 December 2002,DATE
+4.txt,27,CARDINAL
+4.txt,November 2002,DATE
+4.txt,"157,060",MONEY
+4.txt,"80,198",MONEY
+4.txt,Vendor 2,PERSON
+4.txt,"86,850",MONEY
+4.txt,ed,PERSON
+4.txt,four,CARDINAL
+4.txt,27 November 2002,DATE
+4.txt,Peja,LOC
+4.txt,4 12,DATE
+4.txt,13,CARDINAL
+4.txt,14,DATE
+4.txt,English,LANGUAGE
+4.txt,15,CARDINAL
+4.txt,ITF,ORG
+4.txt,16,CARDINAL
+4.txt,"the Procurement 
+Officer",ORG
+4.txt,17,CARDINAL
+4.txt,the winter season,DATE
+4.txt,capital,GPE
+4.txt,10 January 2003,DATE
+4.txt,18,CARDINAL
+4.txt,10 January  2003,DATE
+4.txt,December 2002,DATE
+4.txt,19,CARDINAL
+4.txt,the Divisional Mana,ORG
+4.txt,20,CARDINAL
+4.txt,"6 December 
+2004",DATE
+4.txt,14 January 2003,DATE
+4.txt,21,DATE
+4.txt,22,CARDINAL
+4.txt,23,CARDINAL
+4.txt,Offi,ORG
+4.txt,13 January 2003,DATE
+4.txt,13  January 2003,DATE
+4.txt,24,CARDINAL
+4.txt,3 April 2003,DATE
+4.txt,"the summer 
+season",DATE
+4.txt,11 April 2003,DATE
+4.txt,25,CARDINAL
+4.txt,12 April 2003,DATE
+4.txt,18 April 2003,DATE
+4.txt,26,CARDINAL
+4.txt,second,ORDINAL
+4.txt,"9,541.00",PRODUCT
+4.txt,"approximately €25,000",MONEY
+4.txt,some five months earlier,DATE
+4.txt,Vendor 2’s,PERSON
+4.txt,Vendor 1’s,PERSON
+4.txt,29,CARDINAL
+4.txt,the summer,DATE
+4.txt,Vendor 1’s,PRODUCT
+4.txt,30,CARDINAL
+4.txt,Vendor 3,PERSON
+4.txt,31,CARDINAL
+4.txt,2,MONEY
+4.txt,32,CARDINAL
+4.txt,33,CARDINAL
+4.txt,34,DATE
+4.txt,35,CARDINAL
+4.txt,36,CARDINAL
+4.txt,37,DATE
+4.txt,38,CARDINAL
+4.txt,Two,CARDINAL
+4.txt,4 July 2003,DATE
+4.txt,August,DATE
+4.txt,200 3,CARDINAL
+4.txt,99,CARDINAL
+4.txt,66,CARDINAL
+4.txt,1188,MONEY
+4.txt,39,DATE
+4.txt,PEA,ORG
+4.txt,tempora,PERSON
+4.txt,three months,DATE
+4.txt,Security Off,ORG
+4.txt,1 July 2003,DATE
+4.txt,1 August 2003,DATE
+4.txt,40,CARDINAL
+4.txt,on e month,DATE
+4.txt,41,DATE
+4.txt,only three months,DATE
+4.txt,42,CARDINAL
+4.txt,70,CARDINAL
+4.txt,the summer of 2003,DATE
+4.txt,approximately 30,CARDINAL
+4.txt,44,CARDINAL
+4.txt,45,CARDINAL
+4.txt,"Pristina 
+Airport",FAC
+4.txt,April 2003,DATE
+4.txt,46,DATE
+4.txt,8 47,DATE
+4.txt,48,CARDINAL
+4.txt,Security,NORP
+4.txt,one month,DATE
+4.txt,VI,WORK_OF_ART
+4.txt,49,DATE
+4.txt,Vendor 3’s,PERSON
+4.txt,50,DATE
+4.txt,"the winter 
+season",DATE
+4.txt,51,CARDINAL
+4.txt,"6 
+December 2002",DATE
+4.txt,contra,NORP
+4.txt,52,DATE
+4.txt,"25,000",MONEY
+4.txt,9 55,DATE
+4.txt,"Article 
+24",LAW
+4.txt,UNMIK Finance Administrative Instruction,ORG
+4.txt,56,CARDINAL
+4.txt,UNMIK Pillar IV,ORG
+4.txt,57,CARDINAL
+43.txt,UNITED NATIONS,ORG
+43.txt,Kosovo,GPE
+43.txt,"Investigation Task Force 
+ 
+ 
+Irregularities",ORG
+43.txt,"the  
+Cargo Apron",PRODUCT
+43.txt,Pristina Airport,FAC
+43.txt,"I. INTRODUCTION 
+ 
+",ORG
+43.txt,1,CARDINAL
+43.txt,28,CARDINAL
+43.txt,February 2003,DATE
+43.txt,Pristina International Airport,FAC
+43.txt,"the Chartered 
+Accountants",ORG
+43.txt,"Pristina 
+",FAC
+43.txt,International Airport,FAC
+43.txt,2,CARDINAL
+43.txt,four,CARDINAL
+43.txt,UNMIK Finance Regulation,ORG
+43.txt,1999/2,CARDINAL
+43.txt,three,CARDINAL
+43.txt,al,PERSON
+43.txt,"the UNMIK 
+Office of the Legal Adviser",ORG
+43.txt,Vendor,PRODUCT
+43.txt,1999/24,CARDINAL
+43.txt,12 December 1999,DATE
+43.txt,22 March 1989,DATE
+43.txt,UN,ORG
+43.txt,Kosovo Consolidated Budget Funds,ORG
+43.txt,Article 4 1,LAW
+43.txt,Article 4.1.1  – “All Suppliers and Contractors,LAW
+43.txt,Tender,NORP
+43.txt,Article 4.3.3 .,LAW
+43.txt,the UNMIK Kosovo Interim Administration’s,ORG
+43.txt,Tender Documents,ORG
+43.txt,Article 23.3,LAW
+43.txt,Article 23.3.4,LAW
+43.txt,110.1,CARDINAL
+43.txt,the Charter of the United Nations,LAW
+43.txt,the Staff Regulations,WORK_OF_ART
+43.txt,10.2,CARDINAL
+43.txt,3,CARDINAL
+43.txt,the Investigation Task Force,ORG
+43.txt,Pillar,ORG
+43.txt,"BACKGROUND INFORMATION 
+ 
+4",ORG
+43.txt,Yugoslavian,NORP
+43.txt,2001,DATE
+43.txt,2003,DATE
+43.txt,"the 
+Public Enterprise Airport Pristina",ORG
+43.txt,Kosovo Force,ORG
+43.txt,United Nations Sec,ORG
+43.txt,Council,ORG
+43.txt,1244,CARDINAL
+43.txt,10 June 1999,DATE
+43.txt,UNMIK Regulation No 1/,ORG
+43.txt,1999,DATE
+43.txt,25 July 1999,DATE
+43.txt,UNMIK,ORG
+43.txt,Ko,PERSON
+43.txt,5,CARDINAL
+43.txt,the end of June 2002,DATE
+43.txt,the Civil Administration,ORG
+43.txt,Official 1 and Official 2,LAW
+43.txt,Pillar II,PRODUCT
+43.txt,DOTI,ORG
+43.txt,Transport and Infrastructure,ORG
+43.txt,"the Transport 
+Sector of the UNMIK Directorate of Infrastructure A",ORG
+43.txt,31 July 2000,DATE
+43.txt,30 September 2001,DATE
+43.txt,United Nations,ORG
+43.txt,Airport Engineer 1,ORG
+43.txt,Consulting Company,ORG
+43.txt,6,CARDINAL
+43.txt,1 July 2002,DATE
+43.txt,Pillar II,EVENT
+43.txt,the Kosovo Trust Agency,ORG
+43.txt,Divisional,ORG
+43.txt,Air Traffic Control Services,ORG
+43.txt,7,CARDINAL
+43.txt,1 April 2004,DATE
+43.txt,Pristina International Airport,EVENT
+43.txt,KFOR,ORG
+43.txt,8,CARDINAL
+43.txt,9,CARDINAL
+43.txt,"774,318.63",MONEY
+43.txt,Article 23.4,LAW
+43.txt,Public Procurement,ORG
+43.txt,10,CARDINAL
+43.txt,the Project Engineer,ORG
+43.txt,the Evaluat ion Company,ORG
+43.txt,31 January 2001,DATE
+43.txt,the  Evaluation Company,ORG
+43.txt,5 April 2001,DATE
+43.txt,five,CARDINAL
+43.txt,Four,CARDINAL
+43.txt,September 2001,DATE
+43.txt,12,CARDINAL
+43.txt,May 2001,DATE
+43.txt,the Cargo Apron Extension,ORG
+43.txt,the Evaluation Company,ORG
+43.txt,17,CARDINAL
+43.txt,18,CARDINAL
+43.txt,4,CARDINAL
+43.txt,13,CARDINAL
+43.txt,Official 2,LAW
+43.txt,"18 May 
+2001",DATE
+43.txt,28 May 2001,DATE
+43.txt,Vendor,ORG
+43.txt,18 May 2001,DATE
+43.txt,2b,CARDINAL
+43.txt,Cargo Apron,NORP
+43.txt,14,DATE
+43.txt,"2 August 
+2001",DATE
+43.txt,15,CARDINAL
+43.txt,two,CARDINAL
+43.txt,16,CARDINAL
+43.txt,UNMIK Fi,ORG
+43.txt,"Consolidated Budget 
+Funds",ORG
+43.txt,Cargo Apron,LOC
+43.txt,"the Evaluation 
+Company",ORG
+43.txt,ed,PERSON
+43.txt,Procur,NORP
+43.txt,CPE,ORG
+43.txt,19,CARDINAL
+43.txt,the Procurement Official,ORG
+43.txt,"5 
+20",CARDINAL
+43.txt,21,DATE
+43.txt,2 August 2001,DATE
+43.txt,22,CARDINAL
+43.txt,24 September  2001,DATE
+43.txt,"the 
+Office of the Legal Adviser",ORG
+43.txt,"Allegation 4 
+ 
+(Specifically",ORG
+43.txt,the Cargo Apron,ORG
+43.txt,23,CARDINAL
+43.txt,Staff,PRODUCT
+43.txt,18 October 2001,DATE
+43.txt,24,CARDINAL
+43.txt,ITF,ORG
+43.txt,27 June 2001,DATE
+43.txt,17 October 2001,DATE
+43.txt,25,CARDINAL
+43.txt,Septe,ORG
+43.txt,11.4,CARDINAL
+43.txt,26,CARDINAL
+43.txt,Divisi,PERSON
+43.txt,27,CARDINAL
+43.txt,Divis,PERSON
+43.txt,25 August 2002,DATE
+43.txt,VI,WORK_OF_ART
+43.txt,29,CARDINAL
+43.txt,30,CARDINAL
+43.txt,doc,ORG
+43.txt,31,CARDINAL
+43.txt,32,CARDINAL
+43.txt,li,PERSON
+43.txt,33,CARDINAL
+43.txt,Three,CARDINAL
+43.txt,34,CARDINAL
+43.txt,the Office of the Legal Adviser,ORG
+43.txt,the Cargo Apron,PRODUCT
+43.txt,36,CARDINAL
+43.txt,37,CARDINAL
+43.txt,the UNMIK Public Procurement Regula,ORG
+43.txt,38,CARDINAL
+43.txt,39,CARDINAL
+43.txt,DPKO,ORG
+43.txt,MONUC,PERSON
+43.txt,2/04,CARDINAL
+44.txt,U N I T E D    N A T I O N,ORG
+44.txt,Kosovo,GPE
+44.txt,Intérimaire des Nations,ORG
+44.txt,Unies,ORG
+44.txt,22 November 2004,DATE
+44.txt,0278/04,CARDINAL
+44.txt,Pristina Airport - Alleged,FAC
+44.txt,non-Airport,FAC
+44.txt,the Flat Information Display System,ORG
+44.txt,Single,LOC
+44.txt,Vendor 1,PERSON
+44.txt,FIDS,ORG
+44.txt,Vendor 2,PERSON
+44.txt,17 October 2002,DATE
+44.txt,2,CARDINAL
+44.txt,the Passenger Terminal Building,ORG
+44.txt,the Airport Management,FAC
+44.txt,1,CARDINAL
+44.txt,The Capital Expenditure Approval,ORG
+44.txt,13 December 2002,DATE
+44.txt,March 2004,DATE
+44.txt,2 Representative,PERSON
+44.txt,two,CARDINAL
+44.txt,One,CARDINAL
+44.txt,Airport,GPE
+44.txt,31 August 2004,DATE
+44.txt,"14 September 
+2004",DATE
+44.txt,the Airport,FAC
+44.txt,the Expansion of the Terminal Building,ORG
+44.txt,9 September 2004,EVENT
+44.txt,PE AP,ORG
+44.txt,one,CARDINAL
+44.txt,11 October 2004,DATE
+44.txt,the Airport Management,ORG
+44.txt,30 August 2004,DATE
+44.txt,Airport,EVENT
+44.txt,Airport,FAC
+44.txt,Representa,GPE
+44.txt,"Vendor 2 
+Representative",PERSON
+44.txt,ITF,ORG
+44.txt,the Procure ment Regulation,ORG
+44.txt,UNMIK,ORG
+44.txt,Recommendation 1:  PEAP Official,LAW
+45.txt,1,CARDINAL
+45.txt,Kosovo,GPE
+45.txt,"Intérimaire des Nations    
+       Unies",ORG
+45.txt,"UNMIK 
+Investigation Task Force  
+ 
+                                       
+Case",ORG
+45.txt,287/04,CARDINAL
+45.txt,"October 26, 2004",DATE
+45.txt,Pristina Airport,FAC
+45.txt,29,CARDINAL
+45.txt,May 2003,DATE
+45.txt,Divisional,ORG
+45.txt,Kosovo Trust Age,ORG
+45.txt,Pillar,ORG
+45.txt,"KT A. 
+ 
+Background Information 
+ 
+",ORG
+45.txt,7 March 2003,DATE
+45.txt,4 April 2003,DATE
+45.txt,10 April 2003,DATE
+45.txt,Vendor,ORG
+45.txt,29 May  2003,DATE
+45.txt,KTA,ORG
+45.txt,The Capital Expenditure Approval,ORG
+45.txt,19 June 200 3,DATE
+45.txt,"20 
+June 2003",DATE
+45.txt,23 June 2004,DATE
+45.txt,the Capital Expenditure,ORG
+45.txt,KTA,PRODUCT
+45.txt,2,CARDINAL
+45.txt,the X-Ray Contract,ORG
+45.txt,Capital Expenditure,ORG
+45.txt,the Letter of Not,ORG
+45.txt,"10 April 
+2003",DATE
+45.txt,29 May 2003,DATE
+45.txt,the Capita l Expenditure,ORG
+45.txt,20 June 2003,DATE
+45.txt,the Letter of Notification,ORG
+45.txt,the Capital Expenditure Approval,ORG
+45.txt,"the Finance 
+Administration Instruction 1999/2",ORG
+45.txt,UNMIK,ORG
+45.txt,"Assembly of Kosovo – Law on Public 
+Financial Management and Accountability 2003/2",ORG
+45.txt,Assembly of Kosovo,ORG
+45.txt,June 2004,DATE
+45.txt,October 2004,DATE
+45.txt,UNMIK Regulations,ORG
+45.txt,Contr,ORG
+45.txt,Letter of Notification,WORK_OF_ART
+45.txt,Capital Expenditure Approval,ORG
+45.txt,Official 1,PRODUCT
+45.txt,23 June 2003,DATE
+45.txt,three days,DATE
+45.txt,ITF,ORG
+45.txt,the Pristina Airport,FAC
+45.txt,Recommendation 1:,LAW
+45.txt,Recommendation 3:,LAW
+45.txt,Cap,PERSON
+45.txt,Expenditures,PERSON
+47.txt,262/04 1,DATE
+47.txt,Kosovo,GPE
+47.txt,August 2004,DATE
+47.txt,1,CARDINAL
+47.txt,July 2004,DATE
+47.txt,the Investigation Task Force,ORG
+47.txt,Pristina Airport,FAC
+47.txt,ITF,ORG
+47.txt,"BACKGROUND INFORMATION 
+ 
+2",ORG
+47.txt,Europe,LOC
+47.txt,Thursday,DATE
+47.txt,Kosovar,ORG
+47.txt,European,NORP
+47.txt,the Immigration Department,ORG
+47.txt,25,CARDINAL
+47.txt,Securicor,LOC
+47.txt,Pristina,GPE
+47.txt,3,CARDINAL
+47.txt,Airli,FAC
+47.txt,UNMIK CIVPOL,ORG
+47.txt,CIVPOL,NORP
+47.txt,UK,GPE
+47.txt,approva l,PERSON
+47.txt,"the U.K. 
+Immigration Department",ORG
+47.txt,4,CARDINAL
+47.txt,Airlin,PERSON
+47.txt,"the period January to June 
+2004",DATE
+47.txt,la nding,GPE
+47.txt,al Airport,FAC
+47.txt,262/04 2 5,DATE
+47.txt,Official 1,LAW
+47.txt,Offi,ORG
+47.txt,2,CARDINAL
+47.txt,"the Aircraft ""Load Sheets",ORG
+47.txt,May and June 2004,DATE
+47.txt,MTOW,ORG
+47.txt,6,CARDINAL
+47.txt,Handling Services Department,ORG
+47.txt,Airline Off,ORG
+47.txt,7,CARDINAL
+47.txt,22 July 200 4,DATE
+47.txt,Airline,ORG
+47.txt,Immigration Department,ORG
+47.txt,8,CARDINAL
+47.txt,Immigration,ORG
+47.txt,9,CARDINAL
+47.txt,10,CARDINAL
+47.txt,"the Airline ""Load Sheets",ORG
+47.txt,11,CARDINAL
+47.txt,the Airpor t Handling Services Department,ORG
+47.txt,p,ORG
+47.txt,"Price List for Basic Airport 
+Services",WORK_OF_ART
+47.txt,1 January 2002,DATE
+47.txt,12,CARDINAL
+47.txt,"the ""Load Sheets",ORG
+47.txt,1074,CARDINAL
+47.txt,676.44,MONEY
+47.txt,50%,PERCENT
+47.txt,Han,NORP
+47.txt,Kosovars,DATE
+47.txt,the Airport General Services,ORG
+47.txt,ITF Report,PERSON
+47.txt,262/04 3 13,DATE
+47.txt,the Passeng er Handling Services,ORG
+47.txt,15,MONEY
+47.txt,U.K. Immigration,ORG
+47.txt,14,DATE
+47.txt,the Pristina Airport,FAC
+47.txt,Management Letter,ORG
+47.txt,May 2004,DATE
+47.txt,2003,DATE
+47.txt,53,DATE
+47.txt,"the Airport, Ent ity",FAC
+47.txt,54,CARDINAL
+47.txt,Airport,GPE
+47.txt,15,CARDINAL
+47.txt,CONCLUSIONS,ORG
+47.txt,16,CARDINAL
+47.txt,17,CARDINAL
+47.txt,Airport Pristina,ORG
+47.txt,262/04 4 18,DATE
+47.txt,the Prist ina Airport,ORG
+47.txt,the Passenger Handling Services Department,ORG
+47.txt,19,CARDINAL
+47.txt,20,CARDINAL
+47.txt,Price List for Basic Airpo rt Services,WORK_OF_ART
+47.txt,21,CARDINAL
+47.txt,22,CARDINAL
+47.txt,The Official of the Airport General Services,WORK_OF_ART
+47.txt,23,CARDINAL
+47.txt,Airport Pristina Management Group,ORG
+47.txt,the Office for Coordination of Oversight of Publicly -Owned Enterprises,ORG
+47.txt,IV04/262/03,ORG
+49.txt,UNITED NATIONS,ORG
+49.txt,Kosovo,GPE
+49.txt,"Investigation Task Force 
+ 
+Allegation of Possible Bribery",ORG
+49.txt,Pristina Airport,FAC
+49.txt,0218/04,CARDINAL
+49.txt,1,CARDINAL
+49.txt,29 April 2004,DATE
+49.txt,Divisional,ORG
+49.txt,UNMIK Pil lar IV,ORG
+49.txt,"October 
+2002",DATE
+49.txt,5200,MONEY
+49.txt,"4 October 
+2002",DATE
+49.txt,approximately 8,CARDINAL
+49.txt,"Pristina 
+",FAC
+49.txt,International Airport,FAC
+49.txt,2,CARDINAL
+49.txt,Article 344 of the Provisional Criminal Code of Kos,LAW
+49.txt,3,CARDINAL
+49.txt,the Investigation Task Force,ORG
+49.txt,4,CARDINAL
+49.txt,ITF,ORG
+49.txt,5,CARDINAL
+49.txt,"BACKGROUND INFORMATION 
+ 
+",ORG
+49.txt,6,CARDINAL
+49.txt,October 2002,DATE
+49.txt,7,CARDINAL
+49.txt,11 October 2002,DATE
+49.txt,Fush,GPE
+49.txt,2 8,DATE
+49.txt,Divis,PERSON
+49.txt,8 October 2002,DATE
+49.txt,Euro,ORG
+49.txt,"5,200",MONEY
+49.txt,PEAP,ORG
+49.txt,9,CARDINAL
+49.txt,September 2002,DATE
+49.txt,the beginning of Oct ober 2002,DATE
+49.txt,PEA,ORG
+49.txt,the previous Friday,DATE
+49.txt,10,CARDINAL
+49.txt,KTA Procure,ORG
+49.txt,Specialist,ORG
+49.txt,11,CARDINAL
+49.txt,The following morning,TIME
+49.txt,12,CARDINAL
+49.txt,UNMIK,ORG
+49.txt,13,CARDINAL
+49.txt,Pristin a Airport,FAC
+49.txt,PEAP Offi,ORG
+49.txt,one day,DATE
+49.txt,14,CARDINAL
+49.txt,5000,MONEY
+49.txt,15,CARDINAL
+49.txt,"Airport 
+Engineer",ORG
+49.txt,2 6 September 2002,DATE
+49.txt,ITF Case No,WORK_OF_ART
+49.txt,0274/ 04,DATE
+49.txt,16,CARDINAL
+49.txt,three,CARDINAL
+49.txt,two,CARDINAL
+49.txt,18,CARDINAL
+49.txt,ed,PERSON
+49.txt,UNMIK Police Officer,ORG
+49.txt,19,CARDINAL
+49.txt,raq,GPE
+49.txt,between June 2001,DATE
+49.txt,November 200 2,DATE
+49.txt,the Border Police Investigations Unit,ORG
+49.txt,20,CARDINAL
+49.txt,the Border Boundary P,ORG
+49.txt,21,CARDINAL
+49.txt,27 September 2004,DATE
+49.txt,UNMIK Police,ORG
+49.txt,un,ORG
+49.txt,22,CARDINAL
+49.txt,Regio,GPE
+49.txt,23,CARDINAL
+49.txt,the Regional Crime Squad,ORG
+49.txt,24,CARDINAL
+49.txt,2004,DATE
+49.txt,al,PERSON
+49.txt,25,CARDINAL
+49.txt,26,CARDINAL
+49.txt,28,CARDINAL
+49.txt,ed bribery case,PERSON
+49.txt,29,CARDINAL
+49.txt,30,CARDINAL
+49.txt,two years ago,DATE
+49.txt,31,CARDINAL
+5.txt,UNITED NATIONS,ORG
+5.txt,Kosovo,GPE
+5.txt,Investigation Task Force,ORG
+5.txt,Air Traffic Control Services,ORG
+5.txt,Pr istina Airport,FAC
+5.txt,the Rescue Fire Fighting Service,ORG
+5.txt,1,CARDINAL
+5.txt,28,CARDINAL
+5.txt,February 2003,DATE
+5.txt,Pristina International Airport,FAC
+5.txt,"the Chartered 
+Accountants",ORG
+5.txt,"Pristina 
+",FAC
+5.txt,International Airport,FAC
+5.txt,2,CARDINAL
+5.txt,four,CARDINAL
+5.txt,Extra,NORP
+5.txt,"25,935.74",MONEY
+5.txt,KTA,PERSON
+5.txt,"the Annex 
+Agreement",ORG
+5.txt,"25,000",MONEY
+5.txt,"1,390",MONEY
+5.txt,Annex,ORG
+5.txt,1999/24,CARDINAL
+5.txt,12 December 1999,DATE
+5.txt,22 March 1989,DATE
+5.txt,UN,ORG
+5.txt,1999/2,CARDINAL
+5.txt,Kosovo Consolidated Budget Funds,ORG
+5.txt,Article 6.3 1,LAW
+5.txt,"DM 50,000",ORG
+5.txt,Euro,PERSON
+5.txt,Direct-Single Source,ORG
+5.txt,Single,LOC
+5.txt,Article 8.2  –“Procuring,LAW
+5.txt,Pub lic Procurement,ORG
+5.txt,PPRB,ORG
+5.txt,6.3,CARDINAL
+5.txt,Article 24,LAW
+5.txt,Direct Single Source Procurement,ORG
+5.txt,Ancillary Physical Services,ORG
+5.txt,24.1,CARDINAL
+5.txt,24.2,CARDINAL
+5.txt,appr,NORP
+5.txt,24.2.1,CARDINAL
+5.txt,"the Goods, Works or Services",ORG
+5.txt,only one,CARDINAL
+5.txt,3,CARDINAL
+5.txt,the Investigation Task Force,ORG
+5.txt,Pristina Airport,FAC
+5.txt,Pillar,ORG
+5.txt,"BACKGROUND INFORMATION 
+ 
+4",ORG
+5.txt,Yugoslavian,NORP
+5.txt,2001,DATE
+5.txt,2003,DATE
+5.txt,"the 
+Public Enterprise Airport Pristina",ORG
+5.txt,Kosovo Force,ORG
+5.txt,United Nations Sec,ORG
+5.txt,Council,ORG
+5.txt,1244,CARDINAL
+5.txt,10 June 1999,DATE
+5.txt,UNMIK Regulation No 1/,ORG
+5.txt,1999,DATE
+5.txt,25 July 1999,DATE
+5.txt,UNMIK,ORG
+5.txt,Ko,PERSON
+5.txt,5,CARDINAL
+5.txt,the end of June 2002,DATE
+5.txt,the Civil Administration,ORG
+5.txt,Official 1 and Official 2,LAW
+5.txt,Pillar II,PRODUCT
+5.txt,the Department of Transport,ORG
+5.txt,"the Transport 
+Sector of the UNMIK Directorate of Infrastructure A",ORG
+5.txt,DOTI,ORG
+5.txt,31 July 2000,DATE
+5.txt,30 September 2001,DATE
+5.txt,Airport En,ORG
+5.txt,Consultant,PRODUCT
+5.txt,"the Consulting Firm 
+  3 6",ORG
+5.txt,1 July 2002,DATE
+5.txt,Pillar II,EVENT
+5.txt,the Kosovo Trust Agency,ORG
+5.txt,Divisional,ORG
+5.txt,the Airport Sector,FAC
+5.txt,the Air Traffic Control Services,ORG
+5.txt,Official 1,LAW
+5.txt,7,CARDINAL
+5.txt,1 April 2004,DATE
+5.txt,Pristina International Airport,EVENT
+5.txt,KFOR,ORG
+5.txt,8,CARDINAL
+5.txt,9,CARDINAL
+5.txt,Contract Ref ATCS/PA/COC W,FAC
+5.txt,Annex Agreement Ref,PERSON
+5.txt,the Rescue Fire Fighting Ser,ORG
+5.txt,"263,093",MONEY
+5.txt,the Annex Agreement,LAW
+5.txt,33,MONEY
+5.txt,927,CARDINAL
+5.txt,€25 935.74,MONEY
+5.txt,10,CARDINAL
+5.txt,30,CARDINAL
+5.txt,September 2002,DATE
+5.txt,Pristina,GPE
+5.txt,the ATCS Procurem,ORG
+5.txt,1 October 2002,DATE
+5.txt,Vendor,PRODUCT
+5.txt,three,CARDINAL
+5.txt,30 September 2002,DATE
+5.txt,11 October 2002,DATE
+5.txt,12,CARDINAL
+5.txt,25,MONEY
+5.txt,935.74,CARDINAL
+5.txt,ITF,ORG
+5.txt,Div,ORG
+5.txt,14,CARDINAL
+5.txt,ATCS,ORG
+5.txt,4,CARDINAL
+5.txt,15,CARDINAL
+5.txt,6 October 2004,DATE
+5.txt,16,CARDINAL
+5.txt,the ATCS Employee,ORG
+5.txt,"€263,093 to €260,726.81",MONEY
+5.txt,17,CARDINAL
+5.txt,2366.19,MONEY
+5.txt,"265,034.62",MONEY
+5.txt,41.62,MONEY
+5.txt,18,CARDINAL
+5.txt,"23,994.08",MONEY
+5.txt,"289,028.74",MONEY
+5.txt,"25,935.57",MONEY
+5.txt,19,CARDINAL
+5.txt,20 October 2004,DATE
+5.txt,Annex,PRODUCT
+5.txt,000,CARDINAL
+5.txt,Article 6.3,LAW
+5.txt,Annex Agreement,WORK_OF_ART
+5.txt,21,CARDINAL
+5.txt,January 2003,DATE
+5.txt,attaching minutes,TIME
+5.txt,7  January 2003,DATE
+5.txt,Iceland,GPE
+5.txt,Italy,GPE
+5.txt,"Lead 
+Nation",WORK_OF_ART
+5.txt,March 2003,DATE
+5.txt,22,DATE
+5.txt,"33,927",MONEY
+5.txt,7 February 2003,DATE
+5.txt,Divisional Ma,ORG
+5.txt,"7 February 
+2003",DATE
+5.txt,23,CARDINAL
+5.txt,24,DATE
+5.txt,25,CARDINAL
+5.txt,27 September 2004,DATE
+5.txt,relat ed,PERSON
+5.txt,un,ORG
+5.txt,27 Septembe,PERCENT
+5.txt,2004,DATE
+5.txt,the Annex Agreement,WORK_OF_ART
+5.txt,26,CARDINAL
+5.txt,4 March,DATE
+5.txt,20 03,DATE
+5.txt,"€2 5,000",MONEY
+5.txt,VI,ORG
+5.txt,CONCLUSIONS,ORG
+5.txt,27,CARDINAL
+5.txt,Article 8.2,LAW
+5.txt,Kosovo Consolidated Budget  Funds,ORG
+5.txt,"U NMIK Finance Administrative 
+Instruction 1999/2",ORG
+5.txt,Public Procurement,ORG
+5.txt,"Consolidated Budget 
+Funds",ORG
+5.txt,6,CARDINAL
+5.txt,UNMIK Fi,ORG
+5.txt,"Consolidated Budget 
+Fund",ORG
+5.txt,Consolidated Budget Funds,ORG
+5.txt,31,DATE
+5.txt,32,CARDINAL
+5.txt,UNMIK Pillar IV,ORG
+5.txt,IV04/277/02,ORG
+51.txt,UNITED NATIONS,ORG
+51.txt,"United Nations Interim 
+Administration Mission",ORG
+51.txt,Kosovo,GPE
+51.txt,Intérimaire des Nations,ORG
+51.txt,"INVESTIGATION TASK FORCE 
+ 
+Allegation",ORG
+51.txt,Pristina Airport,FAC
+51.txt,0192/04,CARDINAL
+51.txt,1,CARDINAL
+51.txt,The Investigation Task Force,ORG
+51.txt,the Cargo Department,ORG
+51.txt,"8,000.00",MONEY
+51.txt,Official 1,LAW
+51.txt,Pri,PERSON
+51.txt,2,CARDINAL
+51.txt,ITF,ORG
+51.txt,"the Department of 
+Justice",ORG
+51.txt,Pillar,ORG
+51.txt,July 22,DATE
+51.txt,2004,DATE
+51.txt,3,CARDINAL
+51.txt,the Company Represent,ORG
+51.txt,4,CARDINAL
+51.txt,Partner 3,LAW
+51.txt,VAT,ORG
+51.txt,5,CARDINAL
+51.txt,"Airport 
+Pristina",FAC
+51.txt,POE,ORG
+51.txt,Airport Pristina,ORG
+51.txt,All Cargo Department,ORG
+51.txt,6,CARDINAL
+51.txt,daily,DATE
+51.txt,"Airport 
+Pristina",EVENT
+51.txt,the Board of Airport Pristina,ORG
+51.txt,Official 2’s,LAW
+51.txt,monie,PERSON
+51.txt,8,CARDINAL
+51.txt,the Cargo Handling Office,ORG
+51.txt,Official 1’s,LAW
+51.txt,instru,ORG
+51.txt,9,CARDINAL
+51.txt,Airline 1,PRODUCT
+51.txt,26 December  2003,DATE
+51.txt,four,CARDINAL
+51.txt,27,CARDINAL
+51.txt,976 k g.,QUANTITY
+51.txt,Beirut,GPE
+51.txt,10,CARDINAL
+51.txt,Partn,PERSON
+51.txt,the Air Waybill,LAW
+51.txt,11,CARDINAL
+51.txt,Company,ORG
+51.txt,"March/April 
+2004",DATE
+51.txt,12,CARDINAL
+51.txt,15,CARDINAL
+51.txt,March 2004,DATE
+51.txt,"11,581.00",MONEY
+51.txt,Customs Duties,ORG
+51.txt,13,CARDINAL
+51.txt,Co,ORG
+51.txt,"32,800.00",MONEY
+51.txt,26,CARDINAL
+51.txt,December 2003,DATE
+51.txt,14,CARDINAL
+51.txt,"54,000.00",MONEY
+51.txt,"8,000.0",MONEY
+51.txt,Airport,GPE
+51.txt,16,CARDINAL
+51.txt,8.000.00,MONEY
+51.txt,Partner 1,LAW
+51.txt,Airport Storage,FAC
+51.txt,17,CARDINAL
+51.txt,The Airport X-Ray Operator,FAC
+51.txt,two,CARDINAL
+51.txt,18,CARDINAL
+51.txt,the Cargo Department Finance Office,ORG
+51.txt,"8,000",MONEY
+51.txt,2003,DATE
+51.txt,19,CARDINAL
+51.txt,Finance,ORG
+51.txt,"approximately €32,000.00",MONEY
+51.txt,23 rd  ,QUANTITY
+51.txt,20,CARDINAL
+51.txt,Official 2,LAW
+51.txt,Customs Service,ORG
+51.txt,6 July 2004,DATE
+51.txt,Pristina Airport Customs Offices,FAC
+51.txt,Pristina Cu,FAC
+51.txt,26 December 2003,DATE
+51.txt,15 March 2004,DATE
+51.txt,Customs,ORG
+51.txt,Custo ms Duties,ORG
+51.txt,21,DATE
+51.txt,July 12 th  2004,DATE
+51.txt,Partner 4,PERSON
+51.txt,first,ORDINAL
+51.txt,"32,000.00",MONEY
+51.txt,Airline 2 Pristina Office,ORG
+51.txt,9 July 2004,DATE
+51.txt,Partner 4’s,PERSON
+51.txt,Partner 4,LAW
+51.txt,Airline 2,ORG
+51.txt,Monday,DATE
+51.txt,Department,ORG
+51.txt,Justice,ORG
+51.txt,22,CARDINAL
+51.txt,Depar,ORG
+51.txt,26 July 2004,DATE
+51.txt,Official 1 and Official 2,LAW
+51.txt,ge,ORG
+51.txt,14 th  March 2004,DATE
+51.txt,16 th  March 2004,DATE
+51.txt,Airport Pr,FAC
+51.txt,Fraud,GPE
+51.txt,Article 215,LAW
+51.txt,Ko,PERSON
+51.txt,Criminal Code,WORK_OF_ART
+51.txt,KCC,ORG
+51.txt,"ten years 
+ 
+",DATE
+51.txt,Article 341,LAW
+51.txt,"Provisional Kosovo 
+Criminal Code",FAC
+51.txt,PCCK,ORG
+51.txt,Complicity,GPE
+51.txt,Article 22 of Criminal Code of,LAW
+51.txt,SFRY,ORG
+51.txt,Article 23,LAW
+51.txt,"8,000.00 Euros",PERSON
+51.txt,"32,800.0 0",DATE
+51.txt,Euros,PERSON
+51.txt,Cargo,NORP
+51.txt,24.12.03,CARDINAL
+51.txt,15.3.2004,CARDINAL
+51.txt,Article 219,LAW
+51.txt,1 and 3,CARDINAL
+51.txt,"one to ten years 
+ 
+",DATE
+51.txt,Misappropriation in Office,ORG
+51.txt,Article 340,LAW
+51.txt,Article 22 of Criminal Code of SFRY  ,LAW
+51.txt,Abusing Official Position of Authority,WORK_OF_ART
+51.txt,Article 339 para,LAW
+51.txt,one,CARDINAL
+51.txt,eight years,DATE
+51.txt,Abuse of Office,ORG
+51.txt,Article 210,LAW
+51.txt,Co-Perpetration,ORG
+51.txt,V. CONCLUSION,PERSON
+51.txt,23,CARDINAL
+51.txt,Judicial Authorities,ORG
+51.txt,24,CARDINAL
+51.txt,Recommendation 1 : The ITF,LAW
+51.txt,UNMIK Pillar,ORG
+51.txt,the Department of Justice,ORG
+51.txt,UNMIK Pillar IV,ORG
+51.txt,appr,NORP
+52.txt,1,CARDINAL
+52.txt,"United Nations Interim 
+Administration Mission",ORG
+52.txt,Kosovo,GPE
+52.txt,Intérimaire des Nations,ORG
+52.txt,"Investigation Task Force 
+ 
+Alleged Irregularities",ORG
+52.txt,UNMIK Bank Acc,ORG
+52.txt,1110019243020132-1,DATE
+52.txt,0221/04,CARDINAL
+52.txt,"I.  INTRODUCTION 
+ 
+",ORG
+52.txt,The Investigation Task Force,ORG
+52.txt,UNMIK Bank Account,ORG
+52.txt,Bank,ORG
+52.txt,2003,DATE
+52.txt,2,CARDINAL
+52.txt,Pristina Airport,FAC
+52.txt,"the Kosovo Trust 
+Agency",ORG
+52.txt,UNMIK Pillar IV,ORG
+52.txt,"the European 
+Union",ORG
+52.txt,UNMIK,ORG
+52.txt,PISG,ORG
+52.txt,Constitutio,PERSON
+52.txt,Provisional Self-Government,ORG
+52.txt,the Executive Decision,ORG
+52.txt,21 October 2003,DATE
+52.txt,United Nations Security Co,ORG
+52.txt,1244,CARDINAL
+52.txt,1999,DATE
+52.txt,10 June 1999,DATE
+52.txt,"United Nation s Interim 
+Administration Mission",ORG
+52.txt,1999/ 1,CARDINAL
+52.txt,"25 July 
+1999",DATE
+52.txt,the Authority of the Interim Administration,ORG
+52.txt,22 March 1989,DATE
+52.txt,4,CARDINAL
+52.txt,"the Provisional 
+Criminal Code of",ORG
+52.txt,Article 339 (Abusing Official Position,LAW
+52.txt,Article 340 (Misappropriation in Office,LAW
+52.txt,Article 341,LAW
+52.txt,BACKGROUND INFORMATION,ORG
+52.txt,5,CARDINAL
+52.txt,The DCDM Audit Report,ORG
+52.txt,Comp any Account,WORK_OF_ART
+52.txt,6,CARDINAL
+52.txt,13,CARDINAL
+52.txt,20  July 2001,DATE
+52.txt,Relating to the Supply of Aviation Fuel,WORK_OF_ART
+52.txt,Prist ina Airport,FAC
+52.txt,"03 March 
+2004",DATE
+52.txt,Contract,PERSON
+52.txt,Compan,GPE
+52.txt,7,CARDINAL
+52.txt,Company,ORG
+52.txt,UNMIK Bank Subject,ORG
+52.txt,Pristina,GPE
+52.txt,8,CARDINAL
+52.txt,11,CARDINAL
+52.txt,ober 2001,DATE
+52.txt,first,ORDINAL
+52.txt,Internationa l Money Transfer,ORG
+52.txt,"45,105.23",MONEY
+52.txt,17 April 2002,DATE
+52.txt,24 January 2005,DATE
+52.txt,"8,578.42",MONEY
+52.txt,04 March 2005,DATE
+52.txt,"537,536.90",MONEY
+52.txt,9,CARDINAL
+52.txt,"14 July 
+2004",DATE
+52.txt,Supervisor,GPE
+52.txt,3,CARDINAL
+52.txt,noti,PERSON
+52.txt,Account,ORG
+52.txt,UNMIK Ba nk Account,ORG
+52.txt,10,CARDINAL
+52.txt,"UNMIK 
+Bank Account",ORG
+52.txt,the Chartered Accountants - “,ORG
+52.txt,Investigat,ORG
+52.txt,"3 -3  
+12",CARDINAL
+52.txt,UNMIK Bank  Account,ORG
+52.txt,Air BP,ORG
+52.txt,"the Pristina Airpo rt General Services 
+Department",ORG
+52.txt,the Pristina Airport,FAC
+52.txt,ITF,ORG
+52.txt,the Chartered Accountants,ORG
+52.txt,Audit Report,PRODUCT
+52.txt,UNMIK Bank Subject Account,ORG
+52.txt,Sub,ORG
+52.txt,the Air BP,ORG
+52.txt,14,DATE
+52.txt,UNMIK Bank Accounts,ORG
+52.txt,15,CARDINAL
+52.txt,"RECOMMENDATIONS  
+ 
+Recommendation 01",LAW
+52.txt,UNMIK Pillar,ORG
+52.txt,"the Subject UNMIK Bank 
+Account",ORG
+60.txt,ST,GPE
+60.txt,18,CARDINAL
+60.txt,7,CARDINAL
+60.txt,September 1994,DATE
+60.txt,"U N I T E D   N A T I O N S 
+ 
+ 
+ 
+Office of Internal Oversight Services 
+Investigations Division",ORG
+60.txt,0093/04,CARDINAL
+60.txt,September 2005,DATE
+60.txt,STRICTLY,ORG
+60.txt,1,CARDINAL
+60.txt,The Investigations Division of the Office of Int ernal Oversight Services,ORG
+60.txt,the United Nations Mission,ORG
+60.txt,Liberia,GPE
+60.txt,dealin gs,PERSON
+60.txt,UNMIL,PERSON
+60.txt,2,CARDINAL
+60.txt,Se,PERSON
+63.txt,ST,GPE
+63.txt,18,CARDINAL
+63.txt,7,CARDINAL
+63.txt,September 1994,DATE
+63.txt,"U N I T E D   N A T I O N S 
+ 
+ 
+ 
+Office of Internal Oversight Services 
+Investigations Division",ORG
+63.txt,0425/04,CARDINAL
+63.txt,"07 February 2006  
+ 
+ 
+ ",DATE
+63.txt,STRICTLY,ORG
+63.txt,"I. INTRODUCTION 
+ 
+",ORG
+63.txt,1,CARDINAL
+63.txt,the United Nation s Mission,ORG
+63.txt,Liberia,GPE
+63.txt,the Investigations Division,ORG
+63.txt,the  Office of Internal Oversight Services,ORG
+63.txt,Officer 1,LAW
+63.txt,the UNMIL Fuel Cell,LAW
+63.txt,"500,000",MONEY
+63.txt,the month of February 2004,DATE
+63.txt,2,CARDINAL
+63.txt,Internal Audit Division 1,ORG
+63.txt,IAD1/OIOS,ORG
+63.txt,August 2003 to 31 March 2004,DATE
+63.txt,"290,066 gallons",QUANTITY
+63.txt,"455,404",MONEY
+63.txt,UNMIL,PERSON
+63.txt,II,CARDINAL
+63.txt,"BACKGROUND INFORMATION 
+ 
+3",ORG
+63.txt,19 September 2003,DATE
+63.txt,Sec,ORG
+63.txt,Council,ORG
+63.txt,1509,DATE
+63.txt,UNMIL Fuel Cell,WORK_OF_ART
+63.txt,20,CARDINAL
+63.txt,four,CARDINAL
+63.txt,United Nations,ORG
+63.txt,30 June 2004,DATE
+63.txt,"8 July 
+2004",DATE
+63.txt,4,CARDINAL
+63.txt,January,DATE
+63.txt,February 2004,DATE
+63.txt,Fuel M,WORK_OF_ART
+63.txt,UNMIL,ORG
+63.txt,IAD1/OIO S.,ORG
+63.txt,"APPLICABLE LEGAL NORMS 
+ 
+Staff Regulation",ORG
+63.txt,Organization,ORG
+63.txt,ed Nations,PERSON
+63.txt,"the 
+Organization",ORG
+63.txt,"the Organization”  
+ 
+ 
+IV",ORG
+63.txt,5,CARDINAL
+63.txt,6,CARDINAL
+63.txt,IAD1,GPE
+63.txt,2003 to 31 March 2004,DATE
+63.txt,"290,066 
+gallons",QUANTITY
+63.txt,UNMIL’s Spec ial Investigation Unit,ORG
+63.txt,SIU,ORG
+63.txt,third,ORDINAL
+63.txt,one,CARDINAL
+63.txt,"290,066-gallon",QUANTITY
+63.txt,3,CARDINAL
+63.txt,IAD,ORG
+63.txt,17,CARDINAL
+63.txt,IAD-1/OIOS,ORG
+63.txt,"SIU Investigation SIU/MON/0090/04  
+ 
+",ORG
+63.txt,13 March 2004,DATE
+63.txt,Monrovia,GPE
+63.txt,transportin,NORP
+63.txt,2003,DATE
+63.txt,9,CARDINAL
+63.txt,10,CARDINAL
+63.txt,11,CARDINAL
+63.txt,Offic,PERSON
+63.txt,Officer 1’s,LAW
+63.txt,12,CARDINAL
+63.txt,the United Nations,ORG
+63.txt,OIOS,ORG
+63.txt,14,CARDINAL
+63.txt,ID/OIOS Case 0430/04,ORG
+63.txt,15,CARDINAL
+63.txt,VIII,ORG
+63.txt,16,CARDINAL
+63.txt,DPKO,ORG
+69.txt,ST,GPE
+69.txt,18,CARDINAL
+69.txt,September 1994,DATE
+69.txt,March 2005,DATE
+69.txt,STRICTLY,ORG
+69.txt,1,CARDINAL
+69.txt,13 February 2005,DATE
+69.txt,the Investigations Division,ORG
+69.txt,"the Office of Internal 
+Oversight Services",ORG
+69.txt,UNON,ORG
+69.txt,United Nati ons Office,ORG
+69.txt,"the United 
+Nations Co-operative",ORG
+69.txt,Savings,ORG
+69.txt,Credit Society Lim,ORG
+69.txt,UN,ORG
+69.txt,2,CARDINAL
+69.txt,su,PERSON
+69.txt,Nairobi,GPE
+69.txt,"United Nations Child ren’s Fund/Somalia Support 
+Centre",ORG
+69.txt,Somalia,GPE
+69.txt,UNON Management,ORG
+69.txt,Nairobi-,ORG
+69.txt,United Nations Agencies,ORG
+69.txt,3,CARDINAL
+69.txt,two,CARDINAL
+69.txt,Investig,GPE
+69.txt,UNON Managers,ORG
+69.txt,14,CARDINAL
+69.txt,1 8,DATE
+69.txt,February 2005,DATE
+69.txt,ID/OIOS Investigation,ORG
+69.txt,"BACKGROUND INFORMATION 
+ 
+A. UN-SACCO 
+ 
+5",ORG
+69.txt,1975,DATE
+69.txt,ed Nations,PERSON
+69.txt,Kenya,GPE
+69.txt,US,GPE
+69.txt,$ 13.5 million,MONEY
+69.txt,"about 2,500",CARDINAL
+69.txt,Management Committee,ORG
+69.txt,annual,DATE
+69.txt,"General 
+Meeting",EVENT
+69.txt,three-year,DATE
+69.txt,"the United 
+Nations",ORG
+69.txt,Application for Membership,WORK_OF_ART
+69.txt,Kshs,PERSON
+69.txt,500,CARDINAL
+69.txt,about US $,MONEY
+69.txt,7,MONEY
+69.txt,six months,DATE
+69.txt,three,CARDINAL
+69.txt,the United Nations,ORG
+69.txt,2 7,CARDINAL
+69.txt,Loan Application & Loan Agreement Form,ORG
+69.txt,Facility Application & Agreement Form,ORG
+69.txt,"National 
+Identification Card",ORG
+69.txt,8,CARDINAL
+69.txt,six,CARDINAL
+69.txt,10,CARDINAL
+69.txt,UN-S,ORG
+69.txt,"Credit 
+Committee",ORG
+69.txt,11,CARDINAL
+69.txt,10 February 2005,DATE
+69.txt,UNICEF/Somalia,ORG
+69.txt,January 2004,DATE
+69.txt,about one-third,CARDINAL
+69.txt,12,CARDINAL
+69.txt,31,CARDINAL
+69.txt,December 2006,DATE
+69.txt,1 January 2004,DATE
+69.txt,December 2004,DATE
+69.txt,13,CARDINAL
+69.txt,UNIC EF/Somalia Management,ORG
+69.txt,UNICEF/Soma,ORG
+69.txt,20,CARDINAL
+69.txt,UNICEF Somalia,ORG
+69.txt,11 February 2005,DATE
+69.txt,ten,CARDINAL
+69.txt,Attachment 5,DATE
+69.txt,UNICEF,ORG
+69.txt,3 15,DATE
+69.txt,ID/OIOS,ORG
+69.txt,UNICEF Management ag,ORG
+69.txt,UNICEF Management,ORG
+69.txt,16,DATE
+69.txt,one,CARDINAL
+69.txt,17,CARDINAL
+69.txt,se al,PERSON
+69.txt,U NON,ORG
+69.txt,D. Interviews,PERSON
+69.txt,19,CARDINAL
+69.txt,un,ORG
+69.txt,United Nations,ORG
+69.txt,about one thousand,CARDINAL
+69.txt,Files,PERSON
+69.txt,4,CARDINAL
+69.txt,correspo,NORP
+69.txt,the Official Status Files,ORG
+69.txt,22,CARDINAL
+69.txt,January 2005,DATE
+69.txt,two years,DATE
+69.txt,23,CARDINAL
+69.txt,Organization,ORG
+69.txt,24,CARDINAL
+69.txt,"the United Nations 
+Administrative Tribunal",ORG
+69.txt,UNAT,ORG
+69.txt,562,CARDINAL
+69.txt,2 July  1993,DATE
+69.txt,25,CARDINAL
+69.txt,26,CARDINAL
+69.txt,possib le,PERSON
+69.txt,5 27,DATE
+69.txt,UNON,GPE
+69.txt,29,CARDINAL
+69.txt,two year,DATE
+69.txt,Recommendation 1 :,LAW
+69.txt,Recommendation 2,LAW
+69.txt,UN-SACCO Management,ORG
+69.txt,IV05/050/03,ORG
+69.txt,UNO N Personnel,ORG
+73.txt,ST,GPE
+73.txt,18,CARDINAL
+73.txt,September 1994,DATE
+73.txt,27 April 2005,DATE
+73.txt,STRICTLY CONFIDENTIAL    Investigation,ORG
+73.txt,New York,GPE
+73.txt,0575/03,CARDINAL
+73.txt,1,CARDINAL
+73.txt,October 2003,DATE
+73.txt,the Investigations Division of Office of Internal Oversight Services,ORG
+73.txt,May 2003,DATE
+73.txt,the Information Technology Service,ORG
+73.txt,the United Nat ions Office,ORG
+73.txt,Nairobi,GPE
+73.txt,294.70,MONEY
+73.txt,the United Nations Politic al Office,ORG
+73.txt,Ge,PERSON
+73.txt,1.2,CARDINAL
+73.txt,United Nations,ORG
+73.txt,Regulations and Rules,WORK_OF_ART
+73.txt,the Financial Regulations and Rules,LAW
+73.txt,5.12,CARDINAL
+73.txt,Fairness,NORP
+73.txt,the United Nations,ORG
+73.txt,3,CARDINAL
+73.txt,UNON,ORG
+73.txt,UNDP,ORG
+73.txt,"BACKGROUND INFORMATION 
+ 
+4",ORG
+73.txt,the Department of P olitical Affairs,ORG
+73.txt,DPA,ORG
+73.txt,Gigiri,GPE
+73.txt,Kenya,GPE
+73.txt,5,CARDINAL
+73.txt,15 May 2003,DATE
+73.txt,"Kshs 2 2,250",LAW
+73.txt,Howeve,GPE
+73.txt,27 August 200 3,DATE
+73.txt,7 October 2003,DATE
+73.txt,6,CARDINAL
+73.txt,7,CARDINAL
+73.txt,"11,560",MONEY
+73.txt,8,CARDINAL
+73.txt,9,CARDINAL
+73.txt,"22,250",CARDINAL
+73.txt,11,CARDINAL
+73.txt,12,CARDINAL
+73.txt,13,CARDINAL
+73.txt,The Financial Regulations,LAW
+73.txt,the United Nations ST/SGB/2003/7,ORG
+73.txt,Regul,PERSON
+73.txt,"RECOMMENDATIONS 
+ 
+Based",ORG
+73.txt,Gen,PERSON
+8.txt,UNITED NATIONS,ORG
+8.txt,Kosovo,GPE
+8.txt,"Investigation Task Force 
+ 
+ 
+ 
+Investigation",ORG
+8.txt,two,CARDINAL
+8.txt,Pristina Airport,FAC
+8.txt,"I. INTRODUCTION 
+ 
+",ORG
+8.txt,1,CARDINAL
+8.txt,28,CARDINAL
+8.txt,February 2003,DATE
+8.txt,Pristina International Airport,FAC
+8.txt,"the Chartered 
+Accountants",ORG
+8.txt,"Pristina 
+",FAC
+8.txt,International Airport,FAC
+8.txt,2,CARDINAL
+8.txt,first,ORDINAL
+8.txt,one,CARDINAL
+8.txt,1999/24,CARDINAL
+8.txt,12 December 1999,DATE
+8.txt,22 March 1989,DATE
+8.txt,UN,ORG
+8.txt,1999/2,CARDINAL
+8.txt,Kosovo Consolidated Budget Funds,ORG
+8.txt,Article 4 1,LAW
+8.txt,Article 4.1.1  – “All Suppliers and Contractors,LAW
+8.txt,Tender,NORP
+8.txt,Article 4.3.3 .,LAW
+8.txt,Tender Documents,ORG
+8.txt,Article 15 1,LAW
+8.txt,Works,PERSON
+8.txt,Article 15.4,LAW
+8.txt,nam e,PERSON
+8.txt,110.1,CARDINAL
+8.txt,the Charter of the United Nations,LAW
+8.txt,the Staff Regulations,WORK_OF_ART
+8.txt,10.2,CARDINAL
+8.txt,I. METHODOLOGY,ORG
+8.txt,3,CARDINAL
+8.txt,the Investigation Task Force,ORG
+8.txt,Pillar,ORG
+8.txt,II,CARDINAL
+8.txt,"BACKGROUND INFORMATION 
+ 
+4",ORG
+8.txt,Yugoslavian,NORP
+8.txt,2001,DATE
+8.txt,2003,DATE
+8.txt,"the 
+Public Enterprise Airport Pristina",ORG
+8.txt,Kosovo Force,ORG
+8.txt,United Nations Sec,ORG
+8.txt,Council,ORG
+8.txt,1244,CARDINAL
+8.txt,10 June 1999,DATE
+8.txt,UNMIK Regulation No 1/,ORG
+8.txt,1999,DATE
+8.txt,25 July 1999,DATE
+8.txt,UNMIK,ORG
+8.txt,Ko,PERSON
+8.txt,5,CARDINAL
+8.txt,the end of June 2002,DATE
+8.txt,the Civil Administration,ORG
+8.txt,Official 1 and Official 2,LAW
+8.txt,Pillar II,PRODUCT
+8.txt,the Department of Transport,ORG
+8.txt,"the Transport 
+Sector of the UNMIK Directorate of Infrastructure A",ORG
+8.txt,DOTI,ORG
+8.txt,an  3,CARDINAL
+8.txt,31 July 2000,DATE
+8.txt,30 September 2001,DATE
+8.txt,United Nations,ORG
+8.txt,Airport Engineer 1,ORG
+8.txt,Consultant,PRODUCT
+8.txt,Consulting Firm,ORG
+8.txt,6,CARDINAL
+8.txt,1 July 2002,DATE
+8.txt,Pillar II,EVENT
+8.txt,the Kosovo Trust Agency,ORG
+8.txt,Divisional,ORG
+8.txt,the Airport Sector,FAC
+8.txt,the Air Traffic Control Services,ORG
+8.txt,7,CARDINAL
+8.txt,1 April 2004,DATE
+8.txt,Pristina International Airport,EVENT
+8.txt,KFOR,ORG
+8.txt,8,CARDINAL
+8.txt,9,CARDINAL
+8.txt,"180,816.00",MONEY
+8.txt,irregularl,PERSON
+8.txt,10,CARDINAL
+8.txt,Procure,ORG
+8.txt,"18 April 
+2003",DATE
+8.txt,Pristina Air,ORG
+8.txt,18 April 2003,DATE
+8.txt,6 June 2003,DATE
+8.txt,11,CARDINAL
+8.txt,ITF,ORG
+8.txt,12,CARDINAL
+8.txt,the Eval uation Committee,ORG
+8.txt,at least two,CARDINAL
+8.txt,4,CARDINAL
+8.txt,13,CARDINAL
+8.txt,the Pristina Airport,FAC
+8.txt,14,CARDINAL
+8.txt,First,ORDINAL
+8.txt,15,CARDINAL
+8.txt,Engineer,ORG
+8.txt,"the Evaluation 
+Committee",ORG
+8.txt,the Evaluation Committee,ORG
+8.txt,Vendor 1,PRODUCT
+8.txt,Membe,PERSON
+8.txt,16,CARDINAL
+8.txt,Article 15,LAW
+8.txt,2/1999,DATE
+8.txt,Articles 15.1,PERSON
+8.txt,15.4,CARDINAL
+8.txt,Article 15.1,LAW
+8.txt,"Second tender 
+ 
+17",DATE
+8.txt,30 June 2003,DATE
+8.txt,second,ORDINAL
+8.txt,the Evaluatio n Committee,ORG
+8.txt,PEAP,ORG
+8.txt,9 July 2003,DATE
+8.txt,evaluati on committee,ORG
+8.txt,19,CARDINAL
+8.txt,Vendor 2,PERSON
+8.txt,Airport,ORG
+8.txt,20,CARDINAL
+8.txt,21,CARDINAL
+8.txt,Vendor 2’s,PERSON
+8.txt,Vendor 1,PERSON
+8.txt,22,DATE
+8.txt,1966,DATE
+8.txt,2002,DATE
+8.txt,23,CARDINAL
+8.txt,25,CARDINAL
+8.txt,Vendor,ORG
+8.txt,26,CARDINAL
+8.txt,27,CARDINAL
+8.txt,the D/SRSG Pillar IV,ORG
+82.txt,"United Nations
+ Nations",ORG
+82.txt,ST/SGB/273,EVENT
+82.txt,18,CARDINAL
+82.txt,September 1994,DATE
+82.txt,STRICTLY,ORG
+82.txt,19 July,DATE
+82.txt,2006OIOS,CARDINAL
+82.txt,ma,PERSON
+82.txt,1,CARDINAL
+82.txt,26 January 2006,DATE
+82.txt,2,CARDINAL
+82.txt,Walter Cabrera,PERSON
+82.txt,"Headquarters 
+Procurement Section",ORG
+82.txt,the Procurement Task Force,ORG
+82.txt,United Nations,ORG
+82.txt,"January 12, 2006",DATE
+82.txt,"the Office of Internal Oversight 
+Services",ORG
+82.txt,the Task Force,ORG
+82.txt,the Independent Inquiry Committee,ORG
+82.txt,the Oil for Food Programme,ORG
+82.txt,UN,ORG
+82.txt,Alexander Yakovlev,PERSON
+82.txt,OIOS,ORG
+82.txt,Unde,ORG
+82.txt,the United Nations,ORG
+82.txt,The Task Force’s,ORG
+82.txt,Organization,ORG
+82.txt,more than 200,CARDINAL
+82.txt,UN Missions,ORG
+82.txt,the Task Force,PRODUCT
+82.txt,The Task Force w ill,ORG
+82.txt,Task Force,PRODUCT
+82.txt,eight,CARDINAL
+82.txt,January 2006,DATE
+82.txt,Cabrera,PERSON
+82.txt,2Force,CARDINAL
+82.txt,LLC,ORG
+82.txt,Secondly,ORDINAL
+82.txt,"Telecommunications 
+Consultants of India (TCIL",ORG
+82.txt,The Task Force,ORG
+82.txt,"United 
+Nations",ORG
+82.txt,Sta,PERSON
+82.txt,The Ta sk Force,ORG
+82.txt,"PROCUREMENT TASK FORCE  
+REPORT",ORG
+82.txt,3the procurement department,ORG
+82.txt,Thunderbird,PRODUCT
+82.txt,TCIL,ORG
+82.txt,DPKO,ORG
+82.txt,Thunderb,GPE
+82.txt,DISCUSSION,PERSON
+82.txt,"May, 2002",DATE
+82.txt,Nishan Kohli,PERSON
+82.txt,Managing Partner,ORG
+82.txt,"July, 2002",DATE
+82.txt,PD,GPE
+82.txt,Thunderbird,GPE
+82.txt,the Procurement Department,ORG
+82.txt,Sanjaya,PERSON
+82.txt,Field Procurement,ORG
+82.txt,Headquarters Committee on Contracts (H CC,ORG
+82.txt,"late 
+",DATE
+82.txt,"December, 2002",DATE
+82.txt,4However,CARDINAL
+82.txt,Bahel,PERSON
+82.txt,HCC,ORG
+82.txt,4,CARDINAL
+82.txt,September 2002,DATE
+82.txt,the minutes,TIME
+82.txt,first,ORDINAL
+82.txt,IECS,ORG
+82.txt,"an additional two 
+months",CARDINAL
+82.txt,an additional four weeks,DATE
+82.txt,Thunderbird,PERSON
+82.txt,over eight weeks,DATE
+82.txt,one,CARDINAL
+82.txt,the Task Force’s,ORG
+82.txt,5the Task Force,ORG
+82.txt,Ba hel,PERSON
+82.txt,New York,GPE
+82.txt,annual,DATE
+82.txt,Jane Redfern,PERSON
+82.txt,Walter Cab,PERSON
+82.txt,Mr. Ba hel,PERSON
+82.txt,Kohli,PERSON
+82.txt,LOI,ORG
+82.txt,H CC minutes,ORG
+82.txt,"the Task 
+Force",ORG
+82.txt,"The Task 
+Force",ORG
+82.txt,Cabrer,PERSON
+82.txt,6against,CARDINAL
+82.txt,Organizati,GPE
+82.txt,Fu,PERSON
+82.txt,months,DATE
+82.txt,Cabrera,ORG
+82.txt,Telecommunication Consultants,ORG
+82.txt,7,CARDINAL
+82.txt,five,CARDINAL
+82.txt,Table 11,LAW
+82.txt,"19, 2006",DATE
+82.txt,123,CARDINAL
+82.txt,12 5,DATE
+82.txt,Compaq,ORG
+82.txt,First,ORDINAL
+82.txt,the Task For,PRODUCT
+82.txt,el ectronic,ORG
+82.txt,"February, 2002",DATE
+82.txt,DPKO Communica,ORG
+82.txt,"Technology Services 
+Division",ORG
+82.txt,r.,NORP
+82.txt,February 25,DATE
+82.txt,2002,DATE
+82.txt,"April 15, 2002",DATE
+82.txt,36,CARDINAL
+82.txt,nine,CARDINAL
+82.txt,IBM,ORG
+82.txt,Dell,ORG
+82.txt,the Information Technology Services Division,ORG
+82.txt,8process,CARDINAL
+82.txt,Toshiba,ORG
+82.txt,Sony,ORG
+82.txt,Fujitsu,ORG
+82.txt,NEC,ORG
+82.txt,CITS,ORG
+82.txt,three,CARDINAL
+82.txt,"April 24, 2002",DATE
+82.txt,"May 15, 2002",DATE
+82.txt,"La Cresta 
+Communications",ORG
+82.txt,Pentium III Toshiba,ORG
+82.txt,Dell,PERSON
+82.txt,Manchester Technologies,ORG
+82.txt,Fu,NORP
+82.txt,"May 30, 2002",DATE
+82.txt,La Cresta,PERSON
+82.txt,La Cresta’s,ORG
+82.txt,Pentium III,LOC
+82.txt,La Cresta’s,PERSON
+82.txt,9considerable,CARDINAL
+82.txt,three week,DATE
+82.txt,LaCresta,ORG
+82.txt,"the 
+Procurement Department",ORG
+82.txt,ITB,ORG
+82.txt,10The,CARDINAL
+82.txt,Sanjaya Bahel,PERSON
+82.txt,early July,DATE
+82.txt,Pentium,ORG
+82.txt,Ten,CARDINAL
+82.txt,two,CARDINAL
+82.txt,Danoffice,ORG
+82.txt,La Cresta,FAC
+82.txt,"July 18, 2002",DATE
+82.txt,Sanjaya Bahe l,PERSON
+82.txt,"5,340,000",MONEY
+82.txt,the basi s,ORG
+82.txt,Committee,ORG
+82.txt,second,ORDINAL
+82.txt,LaCresta,PERSON
+82.txt,11lowest,CARDINAL
+82.txt,Ca,PERSON
+89.txt,US,GPE
+89.txt,WikiLeaks,PRODUCT
+89.txt,"June 23, 2015",DATE
+89.txt,Top Secret US National Security Agency,ORG
+89.txt,French,NORP
+89.txt,"March 24, 2010",DATE
+89.txt,Washington,GPE
+89.txt,D.C.,GPE
+89.txt,Pierre Vimont,PERSON
+89.txt,Nicolas Sarkozy,PERSON
+89.txt,Jean-David Levitte,PERSON
+89.txt,Sarkozy,PERSON
+89.txt,Barack Obama,PERSON
+89.txt,France,GPE
+89.txt,Afghanistan,GPE
+89.txt,European Aeronautic Defence,ORG
+89.txt,EADS,ORG
+89.txt,Pernod Ricard,PERSON
+89.txt,National Security Agency,ORG
+89.txt,NSA,ORG
+89.txt,Top Secret,PERSON
+89.txt,ORCON,GPE
+89.txt,NOFORN,ORG
+89.txt,SIGINT,ORG
+89.txt,United States,GPE
+89.txt,USA,GPE
+89.txt,"Pernod
+Ricard",PERSON
+89.txt,Middle East Peace Process,LOC
+89.txt,Iran,GPE
+89.txt,Pakistan,GPE
+89.txt,Yemen,GPE
+89.txt,Somalia,GPE
+89.txt,Sahel,PERSON
+89.txt,Russia,GPE
+89.txt,China,GPE
+89.txt,Turkey,GPE
+89.txt,U.S.,GPE
+89.txt,Next Week,DATE
+89.txt,Organization:National Security Agency,ORG
+89.txt,two,CARDINAL
+89.txt,31 March,DATE
+89.txt,last week,DATE
+89.txt,Pierre Vimont,PERSON
+89.txt,Jean­David Levitte,PERSON
+89.txt,Vimont,PERSON
+89.txt,Levitte,PERSON
+89.txt,European,NORP
+89.txt,Space Corporation,ORG
+89.txt,Pernod,PERSON
+89.txt,second,ORDINAL
+89.txt,Patrick Ricard,PERSON
+89.txt,one,CARDINAL
+89.txt,House,ORG
+89.txt,Z­3,PERSON
+89.txt,231635Z,DATE
+9.txt,UNITED NATIONS,ORG
+9.txt,Kosovo,GPE
+9.txt,"Investigation Task Force 
+ 
+ 
+Irregularities",ORG
+9.txt,one month,DATE
+9.txt,two,CARDINAL
+9.txt,seven,CARDINAL
+9.txt,Pristina Airport,FAC
+9.txt,0281/04,CARDINAL
+9.txt,"I. INTRODUCTION 
+ 
+",ORG
+9.txt,1,CARDINAL
+9.txt,28,CARDINAL
+9.txt,February 2003,DATE
+9.txt,Pristina International Airport,FAC
+9.txt,"the Chartered 
+Accountants",ORG
+9.txt,"Pristina 
+",FAC
+9.txt,International Airport,FAC
+9.txt,2,CARDINAL
+9.txt,one,CARDINAL
+9.txt,II,CARDINAL
+9.txt,3,CARDINAL
+9.txt,the Investigation Task Force,ORG
+9.txt,Pillar,ORG
+9.txt,"BACKGROUND INFORMATION 
+ 
+4",ORG
+9.txt,Yugoslavian,NORP
+9.txt,2001,DATE
+9.txt,2003,DATE
+9.txt,"the 
+Public Enterprise Airport Pristina",ORG
+9.txt,Kosovo Force,ORG
+9.txt,United Nations Sec,ORG
+9.txt,Council,ORG
+9.txt,1244,CARDINAL
+9.txt,10 June 1999,DATE
+9.txt,UNMIK Regulation No 1/,ORG
+9.txt,1999,DATE
+9.txt,25 July 1999,DATE
+9.txt,UNMIK,ORG
+9.txt,Ko,PERSON
+9.txt,5,CARDINAL
+9.txt,1 July 2002,DATE
+9.txt,Pillar II,EVENT
+9.txt,the Kosovo Trust Agency,ORG
+9.txt,the Airport Sector,FAC
+9.txt,"2 
+ 
+",DATE
+9.txt,6,CARDINAL
+9.txt,1 April 2004,DATE
+9.txt,Pristina International Airport,EVENT
+9.txt,KFOR,ORG
+9.txt,7,CARDINAL
+9.txt,8,CARDINAL
+9.txt,Contract,ORG
+9.txt,"24,762",MONEY
+9.txt,"4,100",MONEY
+9.txt,9,CARDINAL
+9.txt,10,CARDINAL
+9.txt,29,CARDINAL
+9.txt,August 2002,DATE
+9.txt,29 August 200 2,DATE
+9.txt,29 August 2002,DATE
+9.txt,12,CARDINAL
+9.txt,4 September 2002,DATE
+9.txt,"Air 
+Movements",ORG
+9.txt,3 September 2002,DATE
+9.txt,13,CARDINAL
+9.txt,justi fication memorandum,ORG
+9.txt,ITF,ORG
+9.txt,14,DATE
+9.txt,15,CARDINAL
+9.txt,"3 
+ 
+16",DATE
+9.txt,17,CARDINAL
+91.txt,French,NORP
+91.txt,U.S.,GPE
+91.txt,UN Oil-for-food,ORG
+91.txt,Iraq,GPE
+91.txt,"June 29, 2015",DATE
+91.txt,Washington,GPE
+91.txt,Jean-David Levitte,PERSON
+91.txt,Iraq Survey Group,ORG
+91.txt,Levitte,PERSON
+91.txt,the U.S. Congress,ORG
+91.txt,National Security Agency,ORG
+91.txt,NSA,ORG
+91.txt,Top Secret,PERSON
+91.txt,United States,GPE
+91.txt,USA,GPE
+91.txt,France,GPE
+91.txt,UN,ORG
+91.txt,Oil For Food,ORG
+91.txt,"Saddam Hussein
+Restraint",PERSON
+91.txt,SECRET//COMINT//REL TO USA,ORG
+91.txt,AUS,GPE
+91.txt,NZL,ORG
+91.txt,Release List,ORG
+91.txt,"OFF
+Date:2004
+Organization:National Security Agency",ORG
+91.txt,AUS,ORG
+91.txt,today,DATE
+91.txt,Iraqi,NORP
+91.txt,Congress,ORG
+91.txt,3,CARDINAL
+91.txt,071948Z,DATE
