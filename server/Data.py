@@ -15,11 +15,53 @@ import seaborn as sns
 
 
 # Setup MongoDB client
-def get_mongo_client():
-    client = pymongo.MongoClient("mongodb://localhost:27017/")  # Replace with your MongoDB URI
-    db = client["your_database"]  # Replace with your database name
-    collection = db["your_collection"]  # Replace with your collection name
-    return collection
+def get_mongo_client(uri="mongodb://localhost:27017/", db_name="your_database"):
+    """ Returns MongoDB collections for Entities, Files, and Entity Summaries. """
+    client = pymongo.MongoClient(uri)
+    db = client[db_name]
+    # Create three collections: one for Entities, one for Files, one for Entity Summaries
+    entities_collection = db["Entities"]
+    files_collection = db["Files"]
+    entity_summary_collection = db["EntitySummary"]
+
+    return entities_collection, files_collection, entity_summary_collection
+
+# Insert entity data into the Entities database
+def insert_entities_into_db(entity_data, entities_collection):
+    """ Insert extracted entity data into the MongoDB Entities collection. """
+    if entity_data:
+        try:
+            entities_collection.insert_many(entity_data)
+            print("Entity data inserted into Entities database.")
+        except pymongo.errors.PyMongoError as e:
+            print(f"MongoDB Error while inserting entities: {e}")
+    else:
+        print("No entity data to insert.")
+
+# Insert PDF data into the Files database
+def insert_pdf_data_into_db(pdf_data, files_collection):
+    """ Insert PDF data (file name and extracted text) into the MongoDB Files collection. """
+    if pdf_data:
+        try:
+            files_collection.insert_many(pdf_data)
+            print("PDF data inserted into Files database.")
+        except pymongo.errors.PyMongoError as e:
+            print(f"MongoDB Error while inserting PDF data: {e}")
+    else:
+        print("No PDF data to insert.")
+
+# Insert entity summary into the Entity Summary database
+def insert_entity_summary(entity_summary, entity_summary_collection):
+    """ Insert entity summary data into the MongoDB Entity Summary collection. """
+    if entity_summary:
+        try:
+            entity_summary_collection.insert_one(entity_summary)
+            print("Entity summary inserted into Entity Summary database.")
+        except pymongo.errors.PyMongoError as e:
+            print(f"MongoDB Error while inserting entity summary: {e}")
+    else:
+        print("No entity summary data to insert.")
+
 
 # Function to fetch data from an API
 def fetch_data_from_api(api_url):
@@ -190,7 +232,7 @@ def visualize_entity_data(df):
 
     # Check the frequency distribution of the labels
     print(df['Label'].value_counts())
-    
+
 # Main function 
 def main():
     # Step 1: Fetch data from API and upload to MongoDB
