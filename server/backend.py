@@ -32,7 +32,9 @@ nlp = spacy.load("en_core_web_sm")
 UPLOAD_FOLDER = "./uploads"
 OUTPUT_FOLDER = "./output"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER
 
 
 # API Endpoint: Upload PDF
