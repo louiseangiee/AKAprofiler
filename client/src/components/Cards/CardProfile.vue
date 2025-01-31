@@ -8,7 +8,7 @@
     </div>
   </div>
     <div class="px-6">
-      <div class="flex flex-wrap justify-center">
+      <!-- <div class="flex flex-wrap justify-center">
         <div class="w-full px-4 text-center mt-5">
           <div class="flex justify-center py-4 lg:pt-4 pt-8">
             <div class="mr-4 p-3 text-center">
@@ -37,7 +37,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="text-center mt-12 mb-12">
         <h3
           class="text-xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2"
@@ -50,13 +50,19 @@
           <i class="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
           Los Angeles, California
         </div>
-        <div class="mb-2 text-blueGray-600 mt-10">
-          <i class="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>
-          Solution Manager - Creative Tim Officer
-        </div>
         <div class="mb-2 text-blueGray-600">
           <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i>
-          University of Computer Science
+          Insert Organization Name Here
+        </div>
+        <div class="mt-10 pt-10 border-blueGray-200 text-center">
+            <div class="flex justify-center w-full">
+              <button
+                class="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none ease-linear transition-all duration-150"
+                type="button"
+              >
+              View Correlation Graph
+              </button>
+          </div>
         </div>
       </div>
     </div>
