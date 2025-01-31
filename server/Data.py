@@ -14,18 +14,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-# Setup MongoDB client
-def get_mongo_client(uri="mongodb://localhost:27017/", db_name="your_database"):
-    """ Returns MongoDB collections for Entities, Files, and Entity Summaries. """
-    client = pymongo.MongoClient(uri)
-    db = client[db_name]
-    # Create three collections: one for Entities, one for Files, one for Entity Summaries
-    entities_collection = db["Entities"]
-    files_collection = db["Files"]
-    entity_summary_collection = db["EntitySummary"]
-
-    return entities_collection, files_collection, entity_summary_collection
-
 # Insert entity data into the Entities database
 def insert_entities_into_db(entity_data, entities_collection):
     """ Insert extracted entity data into the MongoDB Entities collection. """
