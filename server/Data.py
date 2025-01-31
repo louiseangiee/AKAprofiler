@@ -130,7 +130,7 @@ def extract_entities_from_text(folder_path):
         if filename.endswith(".txt"):
             file_path = os.path.join(folder_path, filename)
             # Read the content of the file
-            with open(file_path, "r") as file:
+            with open(file_path, "r", encoding="utf-8") as file:
                 text = file.read()
             # Process the text with spaCy NLP model
             doc = nlp(text)
@@ -154,7 +154,7 @@ def clean_entity_data(df):
     df['Label'] = df['Label'].str.upper()
     df = df.drop_duplicates()
     # Save to CSV
-    df.to_csv("/Users/jenniferkels/Desktop/extracted_entities_cleaned_v2.csv", index=False)
+    df.to_csv("./extracted_entities_cleaned_v2.csv", index=False)
     # Print out the first few rows of the cleaned DataFrame to confirm the cleaning
     print("Cleaned Extracted Entities:")
     print(df.head())
@@ -221,26 +221,26 @@ def visualize_entity_data(df):
     # Check the frequency distribution of the labels
     print(df['Label'].value_counts())
 
-# Main function 
-def main():
-    # Step 1: Fetch data from API and upload to MongoDB
-    api_url = "http://example.com/api/data"  # Replace with your API endpoint
-    data = fetch_data_from_api(api_url)
-    collection = get_mongo_client()
-    upload_to_mongo(data, collection)
+# # Main function 
+# def main():
+#     # Step 1: Fetch data from API and upload to MongoDB
+#     api_url = "http://example.com/api/data"  # Replace with your API endpoint
+#     data = fetch_data_from_api(api_url)
+#     collection = get_mongo_client()
+#     upload_to_mongo(data, collection)
 
-    # Step 2: Extract text from PDFs
-    input_directory = "/path/to/your/pdfs"  # Update with your folder path
-    output_directory = "/path/to/save/texts"  # Folder to save extracted texts
-    extract_text_from_directory(input_directory, output_directory)
+#     # Step 2: Extract text from PDFs
+#     input_directory = "/path/to/your/pdfs"  # Update with your folder path
+#     output_directory = "/path/to/save/texts"  # Folder to save extracted texts
+#     extract_text_from_directory(input_directory, output_directory)
 
-    # Step 3: Extract entities from the extracted text files
-    folder_path = output_directory  # Folder containing extracted text files
-    df = extract_entities_from_text(folder_path)
+#     # Step 3: Extract entities from the extracted text files
+#     folder_path = output_directory  # Folder containing extracted text files
+#     df = extract_entities_from_text(folder_path)
 
-    # Step 4: Save the extracted and cleaned data to CSV
-    df.to_csv("/path/to/save/extracted_entities.csv", index=False)
-    print("Extracted and cleaned entity data saved.")
+#     # Step 4: Save the extracted and cleaned data to CSV
+#     df.to_csv("/path/to/save/extracted_entities.csv", index=False)
+#     print("Extracted and cleaned entity data saved.")
 
 
 if __name__ == "__main__":

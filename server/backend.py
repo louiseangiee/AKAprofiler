@@ -72,11 +72,6 @@ def upload_file():
             [{"_id": str(uuid.uuid4()), "file_id": file_id, **entity} for entity in entities]
         )
     
-    # Update file status to 'processed'
-    files_collection.update_one(
-        {"_id": file_id},
-        {"$set": {"status": "processed", "processed_pages": 10}}  # Placeholder: Update with actual processed pages
-    )
     
     return jsonify({
         "message": "File uploaded and processed successfully",
