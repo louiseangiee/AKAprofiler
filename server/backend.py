@@ -22,6 +22,13 @@ app = Flask(__name__)
 MONGO_URI = os.getenv("MONGO_URI")
 client = MongoClient(MONGO_URI, server_api=ServerApi('1'))
 
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
+
+
 db = client["pdf_processor"]
 files_collection = db["files"]
 entities_collection = db["entities"]
