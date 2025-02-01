@@ -1,104 +1,15 @@
-File Name,Entity1,Entity2
-1.txt,vendor 1,pristina
-1.txt,vendor 1,vendor   2
-1.txt,vendor 1,vendor 2
-1.txt,vendor 1,vendor
-1.txt,vendor 1,vendor 4
-1.txt,vendor 1,vendor 3
-1.txt,pristina,vendor   2
-1.txt,pristina,vendor 2
-1.txt,pristina,vendor
-1.txt,pristina,vendor 4
-1.txt,pristina,vendor 3
-1.txt,vendor   2,vendor 2
-1.txt,vendor   2,vendor
-1.txt,vendor   2,vendor 4
-1.txt,vendor   2,vendor 3
-1.txt,vendor 2,vendor
-1.txt,vendor 2,vendor 4
-1.txt,vendor 2,vendor 3
-1.txt,vendor,vendor 4
-1.txt,vendor,vendor 3
-1.txt,vendor 4,vendor 3
-10.txt,cargo apron,al
-10.txt,cargo apron,tions   
-10.txt,cargo apron,stipulates
-10.txt,cargo apron,ko
-10.txt,cargo apron,ed
-10.txt,cargo apron,assistance
-10.txt,cargo apron,21
-10.txt,cargo apron,divisi
-10.txt,cargo apron,vendors
-10.txt,cargo apron,divis
-10.txt,cargo apron,li
-10.txt,al,tions   
-10.txt,al,stipulates
-10.txt,al,ko
-10.txt,al,ed
-10.txt,al,assistance
-10.txt,al,21
-10.txt,al,divisi
-10.txt,al,vendors
-10.txt,al,divis
-10.txt,al,li
-10.txt,tions   ,stipulates
-10.txt,tions   ,ko
-10.txt,tions   ,ed
-10.txt,tions   ,assistance
-10.txt,tions   ,21
-10.txt,tions   ,divisi
-10.txt,tions   ,vendors
-10.txt,tions   ,divis
-10.txt,tions   ,li
-10.txt,stipulates,ko
-10.txt,stipulates,ed
-10.txt,stipulates,assistance
-10.txt,stipulates,21
-10.txt,stipulates,divisi
-10.txt,stipulates,vendors
-10.txt,stipulates,divis
-10.txt,stipulates,li
-10.txt,ko,ed
-10.txt,ko,assistance
-10.txt,ko,21
-10.txt,ko,divisi
-10.txt,ko,vendors
-10.txt,ko,divis
-10.txt,ko,li
-10.txt,ed,assistance
-10.txt,ed,21
-10.txt,ed,divisi
-10.txt,ed,vendors
-10.txt,ed,divis
-10.txt,ed,li
-10.txt,assistance,21
-10.txt,assistance,divisi
-10.txt,assistance,vendors
-10.txt,assistance,divis
-10.txt,assistance,li
-10.txt,21,divisi
-10.txt,21,vendors
-10.txt,21,divis
-10.txt,21,li
-10.txt,divisi,vendors
-10.txt,divisi,divis
-10.txt,divisi,li
-10.txt,vendors,divis
-10.txt,vendors,li
-10.txt,divis,li
-105.txt,shinzo abe,george w bush abes
+File Name,Entity1,Entity2, 
+105.txt,shinzo abe,george w bush abes, 
 105.txt,shinzo abe,bush
-105.txt,shinzo abe,description   keywords
 105.txt,shinzo abe,washington
 105.txt,shinzo abe,emissions abe
 105.txt,shinzo abe,ssinf
-105.txt,shinzo abe,economy    trade
+105.txt,shinzo abe,economy    
 105.txt,shinzo abe,accordingly
 105.txt,shinzo abe,meanwhile
 105.txt,shinzo abe,abe
 105.txt,shinzo abe,summit
 105.txt,george w bush abes,bush
-105.txt,george w bush abes,description   keywords
 105.txt,george w bush abes,washington
 105.txt,george w bush abes,emissions abe
 105.txt,george w bush abes,ssinf
@@ -116,73 +27,6 @@ File Name,Entity1,Entity2
 105.txt,bush,meanwhile
 105.txt,bush,abe
 105.txt,bush,summit
-105.txt,description   keywords,washington
-105.txt,description   keywords,emissions abe
-105.txt,description   keywords,ssinf
-105.txt,description   keywords,economy    trade
-105.txt,description   keywords,accordingly
-105.txt,description   keywords,meanwhile
-105.txt,description   keywords,abe
-105.txt,description   keywords,summit
-105.txt,washington,emissions abe
-105.txt,washington,ssinf
-105.txt,washington,economy    trade
-105.txt,washington,accordingly
-105.txt,washington,meanwhile
-105.txt,washington,abe
-105.txt,washington,summit
-105.txt,emissions abe,ssinf
-105.txt,emissions abe,economy    trade
-105.txt,emissions abe,accordingly
-105.txt,emissions abe,meanwhile
-105.txt,emissions abe,abe
-105.txt,emissions abe,summit
-105.txt,ssinf,economy    trade
-105.txt,ssinf,accordingly
-105.txt,ssinf,meanwhile
-105.txt,ssinf,abe
-105.txt,ssinf,summit
-105.txt,economy    trade,accordingly
-105.txt,economy    trade,meanwhile
-105.txt,economy    trade,abe
-105.txt,economy    trade,summit
-105.txt,accordingly,meanwhile
-105.txt,accordingly,abe
-105.txt,accordingly,summit
-105.txt,meanwhile,abe
-105.txt,meanwhile,summit
-105.txt,abe,summit
-106.txt,doubles down,description   keywords
-106.txt,doubles down,emissions   environment
-106.txt,doubles down,tssinf   tssinf
-106.txt,doubles down,fatih
-106.txt,doubles down,birol
-106.txt,doubles down,economy
-106.txt,doubles down,trade
-106.txt,doubles down,estimation
-106.txt,doubles down,aluminum   cement
-106.txt,description   keywords,emissions   environment
-106.txt,description   keywords,tssinf   tssinf
-106.txt,description   keywords,fatih
-106.txt,description   keywords,birol
-106.txt,description   keywords,economy
-106.txt,description   keywords,trade
-106.txt,description   keywords,estimation
-106.txt,description   keywords,aluminum   cement
-106.txt,emissions   environment,tssinf   tssinf
-106.txt,emissions   environment,fatih
-106.txt,emissions   environment,birol
-106.txt,emissions   environment,economy
-106.txt,emissions   environment,trade
-106.txt,emissions   environment,estimation
-106.txt,emissions   environment,aluminum   cement
-106.txt,tssinf   tssinf,fatih
-106.txt,tssinf   tssinf,birol
-106.txt,tssinf   tssinf,economy
-106.txt,tssinf   tssinf,trade
-106.txt,tssinf   tssinf,estimation
-106.txt,tssinf   tssinf,aluminum   cement
-106.txt,fatih,birol
 106.txt,fatih,economy
 106.txt,fatih,trade
 106.txt,fatih,estimation
@@ -191,76 +35,6 @@ File Name,Entity1,Entity2
 106.txt,birol,trade
 106.txt,birol,estimation
 106.txt,birol,aluminum   cement
-106.txt,economy,trade
-106.txt,economy,estimation
-106.txt,economy,aluminum   cement
-106.txt,trade,estimation
-106.txt,trade,aluminum   cement
-106.txt,estimation,aluminum   cement
-107.txt,g8,description   keywords
-107.txt,g8,affairs    ministry
-107.txt,g8,finance
-107.txt,description   keywords,affairs    ministry
-107.txt,description   keywords,finance
-107.txt,affairs    ministry,finance
-108.txt,cherry feud   wikileaks,cherry   imports   date2009   organisation
-108.txt,cherry feud   wikileaks,agriculture    forestry
-108.txt,cherry   imports   date2009   organisation,agriculture    forestry
-11.txt,i introduction,pri
-11.txt,i introduction,integrity     staff rule 1101 misconduct
-11.txt,i introduction,ko
-11.txt,i introduction,samples
-11.txt,i introduction,therefore
-11.txt,i introduction,passeng er
-11.txt,i introduction,handling fees
-11.txt,i introduction,ed with de 
-11.txt,i introduction,euro
-11.txt,i introduction,airport
-11.txt,pri,integrity     staff rule 1101 misconduct
-11.txt,pri,ko
-11.txt,pri,samples
-11.txt,pri,therefore
-11.txt,pri,passeng er
-11.txt,pri,handling fees
-11.txt,pri,ed with de 
-11.txt,pri,euro
-11.txt,pri,airport
-11.txt,integrity     staff rule 1101 misconduct,ko
-11.txt,integrity     staff rule 1101 misconduct,samples
-11.txt,integrity     staff rule 1101 misconduct,therefore
-11.txt,integrity     staff rule 1101 misconduct,passeng er
-11.txt,integrity     staff rule 1101 misconduct,handling fees
-11.txt,integrity     staff rule 1101 misconduct,ed with de 
-11.txt,integrity     staff rule 1101 misconduct,euro
-11.txt,integrity     staff rule 1101 misconduct,airport
-11.txt,ko,samples
-11.txt,ko,therefore
-11.txt,ko,passeng er
-11.txt,ko,handling fees
-11.txt,ko,ed with de 
-11.txt,ko,euro
-11.txt,ko,airport
-11.txt,samples,therefore
-11.txt,samples,passeng er
-11.txt,samples,handling fees
-11.txt,samples,ed with de 
-11.txt,samples,euro
-11.txt,samples,airport
-11.txt,therefore,passeng er
-11.txt,therefore,handling fees
-11.txt,therefore,ed with de 
-11.txt,therefore,euro
-11.txt,therefore,airport
-11.txt,passeng er,handling fees
-11.txt,passeng er,ed with de 
-11.txt,passeng er,euro
-11.txt,passeng er,airport
-11.txt,handling fees,ed with de 
-11.txt,handling fees,euro
-11.txt,handling fees,airport
-11.txt,ed with de ,euro
-11.txt,ed with de ,airport
-11.txt,euro,airport
 111.txt,angela merkel,nicolas sarkozy
 111.txt,angela merkel,silvio berlusconi
 111.txt,angela merkel,valentino valentini
@@ -289,133 +63,6 @@ File Name,Entity1,Entity2
 111.txt,berlusconi,herman van rompuy
 111.txt,berlusconi,emulate   unconventional   italian
 111.txt,herman van rompuy,emulate   unconventional   italian
-113.txt,hasgivennoticethatitintendstostriveforalong  termcommitmenton   climatechangewithspecificfigures,leadersfrom16countries   includingthemembersoftheg8pluschina
-113.txt,hasgivennoticethatitintendstostriveforalong  termcommitmenton   climatechangewithspecificfigures,japansg8sherpa
-113.txt,hasgivennoticethatitintendstostriveforalong  termcommitmenton   climatechangewithspecificfigures,becausetheydo
-113.txt,leadersfrom16countries   includingthemembersoftheg8pluschina,japansg8sherpa
-113.txt,leadersfrom16countries   includingthemembersoftheg8pluschina,becausetheydo
-113.txt,japansg8sherpa,becausetheydo
-114.txt,nf   tssi  goc,itwouldbedifficultfortheuntomakea   commitmentinpoznan
-13.txt,others,offici al 1
-13.txt,others,secretary
-13.txt,others,route   9
-13.txt,others,2s secretary
-13.txt,others,mem ber 4
-13.txt,others,time
-13.txt,others,itf therefore
-13.txt,offici al 1,secretary
-13.txt,offici al 1,route   9
-13.txt,offici al 1,2s secretary
-13.txt,offici al 1,mem ber 4
-13.txt,offici al 1,time
-13.txt,offici al 1,itf therefore
-13.txt,secretary,route   9
-13.txt,secretary,2s secretary
-13.txt,secretary,mem ber 4
-13.txt,secretary,time
-13.txt,secretary,itf therefore
-13.txt,route   9,2s secretary
-13.txt,route   9,mem ber 4
-13.txt,route   9,time
-13.txt,route   9,itf therefore
-13.txt,2s secretary,mem ber 4
-13.txt,2s secretary,time
-13.txt,2s secretary,itf therefore
-13.txt,mem ber 4,time
-13.txt,mem ber 4,itf therefore
-13.txt,time,itf therefore
-14.txt,i background,vendor 2
-14.txt,i background,procurem
-14.txt,i background,vendor   2
-14.txt,i background,evaluat
-14.txt,i background,vendor 1 manager
-14.txt,i background,the bid evaluat
-14.txt,i background,committ
-14.txt,i background,pri
-14.txt,i background,was
-14.txt,i background,don e youll
-14.txt,i background,moreover
-14.txt,i background,simila
-14.txt,i background,airpo
-14.txt,vendor 2,procurem
-14.txt,vendor 2,vendor   2
-14.txt,vendor 2,evaluat
-14.txt,vendor 2,vendor 1 manager
-14.txt,vendor 2,the bid evaluat
-14.txt,vendor 2,committ
-14.txt,vendor 2,pri
-14.txt,vendor 2,was
-14.txt,vendor 2,don e youll
-14.txt,vendor 2,moreover
-14.txt,vendor 2,simila
-14.txt,vendor 2,airpo
-14.txt,procurem,vendor   2
-14.txt,procurem,evaluat
-14.txt,procurem,vendor 1 manager
-14.txt,procurem,the bid evaluat
-14.txt,procurem,committ
-14.txt,procurem,pri
-14.txt,procurem,was
-14.txt,procurem,don e youll
-14.txt,procurem,moreover
-14.txt,procurem,simila
-14.txt,procurem,airpo
-14.txt,vendor   2,evaluat
-14.txt,vendor   2,vendor 1 manager
-14.txt,vendor   2,the bid evaluat
-14.txt,vendor   2,committ
-14.txt,vendor   2,pri
-14.txt,vendor   2,was
-14.txt,vendor   2,don e youll
-14.txt,vendor   2,moreover
-14.txt,vendor   2,simila
-14.txt,vendor   2,airpo
-14.txt,evaluat,vendor 1 manager
-14.txt,evaluat,the bid evaluat
-14.txt,evaluat,committ
-14.txt,evaluat,pri
-14.txt,evaluat,was
-14.txt,evaluat,don e youll
-14.txt,evaluat,moreover
-14.txt,evaluat,simila
-14.txt,evaluat,airpo
-14.txt,vendor 1 manager,the bid evaluat
-14.txt,vendor 1 manager,committ
-14.txt,vendor 1 manager,pri
-14.txt,vendor 1 manager,was
-14.txt,vendor 1 manager,don e youll
-14.txt,vendor 1 manager,moreover
-14.txt,vendor 1 manager,simila
-14.txt,vendor 1 manager,airpo
-14.txt,the bid evaluat,committ
-14.txt,the bid evaluat,pri
-14.txt,the bid evaluat,was
-14.txt,the bid evaluat,don e youll
-14.txt,the bid evaluat,moreover
-14.txt,the bid evaluat,simila
-14.txt,the bid evaluat,airpo
-14.txt,committ,pri
-14.txt,committ,was
-14.txt,committ,don e youll
-14.txt,committ,moreover
-14.txt,committ,simila
-14.txt,committ,airpo
-14.txt,pri,was
-14.txt,pri,don e youll
-14.txt,pri,moreover
-14.txt,pri,simila
-14.txt,pri,airpo
-14.txt,was,don e youll
-14.txt,was,moreover
-14.txt,was,simila
-14.txt,was,airpo
-14.txt,don e youll,moreover
-14.txt,don e youll,simila
-14.txt,don e youll,airpo
-14.txt,moreover,simila
-14.txt,moreover,airpo
-14.txt,simila,airpo
-15.txt,søren,from
 15.txt,søren,wolfgang nikolaus   team
 15.txt,søren,states
 15.txt,søren,background
@@ -445,20 +92,6 @@ File Name,Entity1,Entity2
 15.txt,wolfgang nikolaus   team,mark gough
 15.txt,wolfgang nikolaus   team,james wasserstrom
 15.txt,wolfgang nikolaus   team,paulalachal roberts
-15.txt,states,background
-15.txt,states,kagent
-15.txt,states,ktransactions
-15.txt,states,kterminology
-15.txt,states,wolfgang nikolaus
-15.txt,states,mark gough
-15.txt,states,james wasserstrom
-15.txt,states,paulalachal roberts
-15.txt,background,kagent
-15.txt,background,ktransactions
-15.txt,background,kterminology
-15.txt,background,wolfgang nikolaus
-15.txt,background,mark gough
-15.txt,background,james wasserstrom
 15.txt,background,paulalachal roberts
 15.txt,kagent,ktransactions
 15.txt,kagent,kterminology
@@ -466,7 +99,6 @@ File Name,Entity1,Entity2
 15.txt,kagent,mark gough
 15.txt,kagent,james wasserstrom
 15.txt,kagent,paulalachal roberts
-15.txt,ktransactions,kterminology
 15.txt,ktransactions,wolfgang nikolaus
 15.txt,ktransactions,mark gough
 15.txt,ktransactions,james wasserstrom
@@ -481,97 +113,9 @@ File Name,Entity1,Entity2
 15.txt,mark gough,james wasserstrom
 15.txt,mark gough,paulalachal roberts
 15.txt,james wasserstrom,paulalachal roberts
-16.txt,i      bac ground,documents
-16.txt,i      bac ground,secondly
-16.txt,i      bac ground,notification
-16.txt,i      bac ground,vendor 4
-16.txt,i      bac ground,vendor 1
-16.txt,i      bac ground,vendor 5
-16.txt,i      bac ground,members dra
-16.txt,documents,secondly
-16.txt,documents,notification
-16.txt,documents,vendor 4
-16.txt,documents,vendor 1
-16.txt,documents,vendor 5
-16.txt,documents,members dra
-16.txt,secondly,notification
-16.txt,secondly,vendor 4
-16.txt,secondly,vendor 1
-16.txt,secondly,vendor 5
-16.txt,secondly,members dra
-16.txt,notification,vendor 4
-16.txt,notification,vendor 1
-16.txt,notification,vendor 5
-16.txt,notification,members dra
 16.txt,vendor 4,vendor 1
 16.txt,vendor 4,vendor 5
-16.txt,vendor 4,members dra
 16.txt,vendor 1,vendor 5
-16.txt,vendor 1,members dra
-16.txt,vendor 5,members dra
-2.txt,withdra,officers
-2.txt,withdra, examined
-2.txt,withdra,divisi
-2.txt,withdra,fina
-2.txt,withdra,relat ed
-2.txt,withdra,euro
-2.txt,withdra,airport
-2.txt,withdra,includin g
-2.txt,withdra,hose
-2.txt,withdra,pris
-2.txt,withdra,9 9
-2.txt,withdra,issu ed
-2.txt,withdra,ai
-2.txt,officers, examined
-2.txt,officers,divisi
-2.txt,officers,fina
-2.txt,officers,relat ed
-2.txt,officers,euro
-2.txt,officers,airport
-2.txt,officers,includin g
-2.txt,officers,hose
-2.txt,officers,pris
-2.txt,officers,9 9
-2.txt,officers,issu ed
-2.txt,officers,ai
-2.txt, examined,divisi
-2.txt, examined,fina
-2.txt, examined,relat ed
-2.txt, examined,euro
-2.txt, examined,airport
-2.txt, examined,includin g
-2.txt, examined,hose
-2.txt, examined,pris
-2.txt, examined,9 9
-2.txt, examined,issu ed
-2.txt, examined,ai
-2.txt,divisi,fina
-2.txt,divisi,relat ed
-2.txt,divisi,euro
-2.txt,divisi,airport
-2.txt,divisi,includin g
-2.txt,divisi,hose
-2.txt,divisi,pris
-2.txt,divisi,9 9
-2.txt,divisi,issu ed
-2.txt,divisi,ai
-2.txt,fina,relat ed
-2.txt,fina,euro
-2.txt,fina,airport
-2.txt,fina,includin g
-2.txt,fina,hose
-2.txt,fina,pris
-2.txt,fina,9 9
-2.txt,fina,issu ed
-2.txt,fina,ai
-2.txt,relat ed,euro
-2.txt,relat ed,airport
-2.txt,relat ed,includin g
-2.txt,relat ed,hose
-2.txt,relat ed,pris
-2.txt,relat ed,9 9
-2.txt,relat ed,issu ed
-2.txt,relat ed,ai
 2.txt,euro,airport
 2.txt,euro,includin g
 2.txt,euro,hose
@@ -1131,27 +675,6 @@ File Name,Entity1,Entity2
 24.txt,john   kerry,negroponte pr
 24.txt,john   kerry,cheney senators
 24.txt,john   kerry,boss
-24.txt,mem ber,bush
-24.txt,mem ber,cheney
-24.txt,mem ber,negro
-24.txt,mem ber,investigators
-24.txt,mem ber,members
-24.txt,mem ber,mzumara oic
-24.txt,mem ber,m
-24.txt,mem ber,to
-24.txt,mem ber,dickson mzumara
-24.txt,mem ber,oluwatete   olokodana
-24.txt,mem ber,vintzis
-24.txt,mem ber,olokodana
-24.txt,mem ber,stoykov
-24.txt,mem ber,al systems
-24.txt,mem ber,stoy
-24.txt,mem ber,bongoy
-24.txt,mem ber,ali todaro
-24.txt,mem ber,general
-24.txt,mem ber,negroponte pr
-24.txt,mem ber,cheney senators
-24.txt,mem ber,boss
 24.txt,bush,cheney
 24.txt,bush,negro
 24.txt,bush,investigators
@@ -1343,7 +866,6 @@ File Name,Entity1,Entity2
 24.txt,al systems,boss
 24.txt,stoy,bongoy
 24.txt,stoy,ali todaro
-24.txt,stoy,general
 24.txt,stoy,negroponte pr
 24.txt,stoy,cheney senators
 24.txt,stoy,boss
@@ -1370,34 +892,12 @@ File Name,Entity1,Entity2
 26.txt,weaknesses,however
 26.txt,weaknesses,liaison
 26.txt,weaknesses,offici al 4
-26.txt,officia,undp
-26.txt,officia,chao s
-26.txt,officia,us205300
-26.txt,officia,participant
-26.txt,officia,however
-26.txt,officia,liaison
-26.txt,officia,offici al 4
 26.txt,undp,chao s
 26.txt,undp,us205300
 26.txt,undp,participant
 26.txt,undp,however
 26.txt,undp,liaison
 26.txt,undp,offici al 4
-26.txt,chao s,us205300
-26.txt,chao s,participant
-26.txt,chao s,however
-26.txt,chao s,liaison
-26.txt,chao s,offici al 4
-26.txt,us205300,participant
-26.txt,us205300,however
-26.txt,us205300,liaison
-26.txt,us205300,offici al 4
-26.txt,participant,however
-26.txt,participant,liaison
-26.txt,participant,offici al 4
-26.txt,however,liaison
-26.txt,however,offici al 4
-26.txt,liaison,offici al 4
 27.txt,klaus toepfer,barbara dixon
 27.txt,klaus toepfer,together
 27.txt,klaus toepfer,members
@@ -1420,67 +920,9 @@ File Name,Entity1,Entity2
 27.txt,members,member
 27.txt,members,money
 27.txt,members,francis montil
-27.txt,well,member
-27.txt,well,money
-27.txt,well,francis montil
 27.txt,member,money
 27.txt,member,francis montil
 27.txt,money,francis montil
-31.txt,i introduction,pri
-31.txt,i introduction,integrity     staff rule 1101 misconduct
-31.txt,i introduction,ko
-31.txt,i introduction,samples
-31.txt,i introduction,therefore
-31.txt,i introduction,passeng er
-31.txt,i introduction,handling fees
-31.txt,i introduction,ed with de 
-31.txt,i introduction,euro
-31.txt,i introduction,airport
-31.txt,pri,integrity     staff rule 1101 misconduct
-31.txt,pri,ko
-31.txt,pri,samples
-31.txt,pri,therefore
-31.txt,pri,passeng er
-31.txt,pri,handling fees
-31.txt,pri,ed with de 
-31.txt,pri,euro
-31.txt,pri,airport
-31.txt,integrity     staff rule 1101 misconduct,ko
-31.txt,integrity     staff rule 1101 misconduct,samples
-31.txt,integrity     staff rule 1101 misconduct,therefore
-31.txt,integrity     staff rule 1101 misconduct,passeng er
-31.txt,integrity     staff rule 1101 misconduct,handling fees
-31.txt,integrity     staff rule 1101 misconduct,ed with de 
-31.txt,integrity     staff rule 1101 misconduct,euro
-31.txt,integrity     staff rule 1101 misconduct,airport
-31.txt,ko,samples
-31.txt,ko,therefore
-31.txt,ko,passeng er
-31.txt,ko,handling fees
-31.txt,ko,ed with de 
-31.txt,ko,euro
-31.txt,ko,airport
-31.txt,samples,therefore
-31.txt,samples,passeng er
-31.txt,samples,handling fees
-31.txt,samples,ed with de 
-31.txt,samples,euro
-31.txt,samples,airport
-31.txt,therefore,passeng er
-31.txt,therefore,handling fees
-31.txt,therefore,ed with de 
-31.txt,therefore,euro
-31.txt,therefore,airport
-31.txt,passeng er,handling fees
-31.txt,passeng er,ed with de 
-31.txt,passeng er,euro
-31.txt,passeng er,airport
-31.txt,handling fees,ed with de 
-31.txt,handling fees,euro
-31.txt,handling fees,airport
-31.txt,ed with de ,euro
-31.txt,ed with de ,airport
-31.txt,euro,airport
 35.txt,charles brayshaw   a,john todd
 35.txt,charles brayshaw   a,wpvi
 35.txt,charles brayshaw   a,mark gough
@@ -1506,12 +948,6 @@ File Name,Entity1,Entity2
 36.txt,wolfgang nikolaus   team,james wasserstrom
 36.txt,wolfgang nikolaus   team,paul  lachal
 36.txt,wolfgang nikolaus   team,mark gough
-36.txt,company,conditions
-36.txt,company,ade
-36.txt,company,mark gough   id
-36.txt,company,james wasserstrom
-36.txt,company,paul  lachal
-36.txt,company,mark gough
 36.txt,conditions,ade
 36.txt,conditions,mark gough   id
 36.txt,conditions,james wasserstrom
@@ -1527,61 +963,6 @@ File Name,Entity1,Entity2
 36.txt,james wasserstrom,paul  lachal
 36.txt,james wasserstrom,mark gough
 36.txt,paul  lachal,mark gough
-38.txt,i background,vendor 2
-38.txt,i background,procurem
-38.txt,i background,vendor   2
-38.txt,i background,evaluat
-38.txt,i background,vendor 1 manager
-38.txt,i background,the bid evaluat
-38.txt,i background,committ
-38.txt,i background,pri
-38.txt,i background,was
-38.txt,i background,don e youll
-38.txt,i background,moreover
-38.txt,i background,simila
-38.txt,i background,airpo
-38.txt,vendor 2,procurem
-38.txt,vendor 2,vendor   2
-38.txt,vendor 2,evaluat
-38.txt,vendor 2,vendor 1 manager
-38.txt,vendor 2,the bid evaluat
-38.txt,vendor 2,committ
-38.txt,vendor 2,pri
-38.txt,vendor 2,was
-38.txt,vendor 2,don e youll
-38.txt,vendor 2,moreover
-38.txt,vendor 2,simila
-38.txt,vendor 2,airpo
-38.txt,procurem,vendor   2
-38.txt,procurem,evaluat
-38.txt,procurem,vendor 1 manager
-38.txt,procurem,the bid evaluat
-38.txt,procurem,committ
-38.txt,procurem,pri
-38.txt,procurem,was
-38.txt,procurem,don e youll
-38.txt,procurem,moreover
-38.txt,procurem,simila
-38.txt,procurem,airpo
-38.txt,vendor   2,evaluat
-38.txt,vendor   2,vendor 1 manager
-38.txt,vendor   2,the bid evaluat
-38.txt,vendor   2,committ
-38.txt,vendor   2,pri
-38.txt,vendor   2,was
-38.txt,vendor   2,don e youll
-38.txt,vendor   2,moreover
-38.txt,vendor   2,simila
-38.txt,vendor   2,airpo
-38.txt,evaluat,vendor 1 manager
-38.txt,evaluat,the bid evaluat
-38.txt,evaluat,committ
-38.txt,evaluat,pri
-38.txt,evaluat,was
-38.txt,evaluat,don e youll
-38.txt,evaluat,moreover
-38.txt,evaluat,simila
-38.txt,evaluat,airpo
 38.txt,vendor 1 manager,the bid evaluat
 38.txt,vendor 1 manager,committ
 38.txt,vendor 1 manager,pri
@@ -1590,86 +971,6 @@ File Name,Entity1,Entity2
 38.txt,vendor 1 manager,moreover
 38.txt,vendor 1 manager,simila
 38.txt,vendor 1 manager,airpo
-38.txt,the bid evaluat,committ
-38.txt,the bid evaluat,pri
-38.txt,the bid evaluat,was
-38.txt,the bid evaluat,don e youll
-38.txt,the bid evaluat,moreover
-38.txt,the bid evaluat,simila
-38.txt,the bid evaluat,airpo
-38.txt,committ,pri
-38.txt,committ,was
-38.txt,committ,don e youll
-38.txt,committ,moreover
-38.txt,committ,simila
-38.txt,committ,airpo
-38.txt,pri,was
-38.txt,pri,don e youll
-38.txt,pri,moreover
-38.txt,pri,simila
-38.txt,pri,airpo
-38.txt,was,don e youll
-38.txt,was,moreover
-38.txt,was,simila
-38.txt,was,airpo
-38.txt,don e youll,moreover
-38.txt,don e youll,simila
-38.txt,don e youll,airpo
-38.txt,moreover,simila
-38.txt,moreover,airpo
-38.txt,simila,airpo
-39.txt,i introduction,nam e
-39.txt,i introduction,equivalent
-39.txt,i introduction,i methodology
-39.txt,i introduction,ko
-39.txt,i introduction,irregularl
-39.txt,i introduction,divisional manager
-39.txt,i introduction,articles 151
-39.txt,i introduction,vendor 2
-39.txt,i introduction,vendor 1
-39.txt,i introduction,mu lti  national
-39.txt,nam e,equivalent
-39.txt,nam e,i methodology
-39.txt,nam e,ko
-39.txt,nam e,irregularl
-39.txt,nam e,divisional manager
-39.txt,nam e,articles 151
-39.txt,nam e,vendor 2
-39.txt,nam e,vendor 1
-39.txt,nam e,mu lti  national
-39.txt,equivalent,i methodology
-39.txt,equivalent,ko
-39.txt,equivalent,irregularl
-39.txt,equivalent,divisional manager
-39.txt,equivalent,articles 151
-39.txt,equivalent,vendor 2
-39.txt,equivalent,vendor 1
-39.txt,equivalent,mu lti  national
-39.txt,i methodology,ko
-39.txt,i methodology,irregularl
-39.txt,i methodology,divisional manager
-39.txt,i methodology,articles 151
-39.txt,i methodology,vendor 2
-39.txt,i methodology,vendor 1
-39.txt,i methodology,mu lti  national
-39.txt,ko,irregularl
-39.txt,ko,divisional manager
-39.txt,ko,articles 151
-39.txt,ko,vendor 2
-39.txt,ko,vendor 1
-39.txt,ko,mu lti  national
-39.txt,irregularl,divisional manager
-39.txt,irregularl,articles 151
-39.txt,irregularl,vendor 2
-39.txt,irregularl,vendor 1
-39.txt,irregularl,mu lti  national
-39.txt,divisional manager,articles 151
-39.txt,divisional manager,vendor 2
-39.txt,divisional manager,vendor 1
-39.txt,divisional manager,mu lti  national
-39.txt,articles 151,vendor 2
-39.txt,articles 151,vendor 1
-39.txt,articles 151,mu lti  national
 39.txt,vendor 2,vendor 1
 39.txt,vendor 2,mu lti  national
 39.txt,vendor 1,mu lti  national
@@ -1739,61 +1040,6 @@ File Name,Entity1,Entity2
 43.txt,cargo apron,vendors
 43.txt,cargo apron,divis
 43.txt,cargo apron,li
-43.txt,al,tions   
-43.txt,al,stipulates
-43.txt,al,ko
-43.txt,al,ed
-43.txt,al,assistance
-43.txt,al,21
-43.txt,al,divisi
-43.txt,al,vendors
-43.txt,al,divis
-43.txt,al,li
-43.txt,tions   ,stipulates
-43.txt,tions   ,ko
-43.txt,tions   ,ed
-43.txt,tions   ,assistance
-43.txt,tions   ,21
-43.txt,tions   ,divisi
-43.txt,tions   ,vendors
-43.txt,tions   ,divis
-43.txt,tions   ,li
-43.txt,stipulates,ko
-43.txt,stipulates,ed
-43.txt,stipulates,assistance
-43.txt,stipulates,21
-43.txt,stipulates,divisi
-43.txt,stipulates,vendors
-43.txt,stipulates,divis
-43.txt,stipulates,li
-43.txt,ko,ed
-43.txt,ko,assistance
-43.txt,ko,21
-43.txt,ko,divisi
-43.txt,ko,vendors
-43.txt,ko,divis
-43.txt,ko,li
-43.txt,ed,assistance
-43.txt,ed,21
-43.txt,ed,divisi
-43.txt,ed,vendors
-43.txt,ed,divis
-43.txt,ed,li
-43.txt,assistance,21
-43.txt,assistance,divisi
-43.txt,assistance,vendors
-43.txt,assistance,divis
-43.txt,assistance,li
-43.txt,21,divisi
-43.txt,21,vendors
-43.txt,21,divis
-43.txt,21,li
-43.txt,divisi,vendors
-43.txt,divisi,divis
-43.txt,divisi,li
-43.txt,vendors,divis
-43.txt,vendors,li
-43.txt,divis,li
 44.txt,2 representative,vendor 2
 44.txt,2 representative,vendor 1
 44.txt,2 representative,vendor   1
@@ -1803,341 +1049,6 @@ File Name,Entity1,Entity2
 44.txt,vendor 2,vendor 2   representative
 44.txt,vendor 1,vendor   1
 44.txt,vendor 1,vendor 2   representative
-44.txt,vendor   1,vendor 2   representative
-45.txt,kt a     background,vendor
-45.txt,kt a     background,cap
-45.txt,vendor,cap
-47.txt,administration mission,pristina
-47.txt,administration mission,approva l
-47.txt,administration mission,airlin
-47.txt,administration mission,euros
-47.txt,administration mission,67644 was
-47.txt,administration mission,services pristina airport
-47.txt,administration mission,passengers
-47.txt,administration mission,rs
-47.txt,pristina,approva l
-47.txt,pristina,airlin
-47.txt,pristina,euros
-47.txt,pristina,67644 was
-47.txt,pristina,services pristina airport
-47.txt,pristina,passengers
-47.txt,pristina,rs
-47.txt,approva l,airlin
-47.txt,approva l,euros
-47.txt,approva l,67644 was
-47.txt,approva l,services pristina airport
-47.txt,approva l,passengers
-47.txt,approva l,rs
-47.txt,airlin,euros
-47.txt,airlin,67644 was
-47.txt,airlin,services pristina airport
-47.txt,airlin,passengers
-47.txt,airlin,rs
-47.txt,euros,67644 was
-47.txt,euros,services pristina airport
-47.txt,euros,passengers
-47.txt,euros,rs
-47.txt,67644 was,services pristina airport
-47.txt,67644 was,passengers
-47.txt,67644 was,rs
-47.txt,services pristina airport,passengers
-47.txt,services pristina airport,rs
-47.txt,passengers,rs
-49.txt,kosovo,divis
-49.txt,kosovo,ed
-49.txt,kosovo,rs
-49.txt,kosovo,ed bribery
-49.txt,divis,ed
-49.txt,divis,rs
-49.txt,divis,ed bribery
-49.txt,ed,rs
-49.txt,ed,ed bribery
-49.txt,rs,ed bribery
-5.txt,i introduction,kta
-5.txt,i introduction,stipulates
-5.txt,i introduction,instructions
-5.txt,i introduction,ko
-5.txt,i introduction,civilian jurisdiction
-5.txt,i introduction,annex agreement ref   acts
-5.txt,i introduction,documentation
-5.txt,i introduction,however
-5.txt,i introduction,relat ed
-5.txt,kta,stipulates
-5.txt,kta,instructions
-5.txt,kta,ko
-5.txt,kta,civilian jurisdiction
-5.txt,kta,annex agreement ref   acts
-5.txt,kta,documentation
-5.txt,kta,however
-5.txt,kta,relat ed
-5.txt,stipulates,instructions
-5.txt,stipulates,ko
-5.txt,stipulates,civilian jurisdiction
-5.txt,stipulates,annex agreement ref   acts
-5.txt,stipulates,documentation
-5.txt,stipulates,however
-5.txt,stipulates,relat ed
-5.txt,instructions,ko
-5.txt,instructions,civilian jurisdiction
-5.txt,instructions,annex agreement ref   acts
-5.txt,instructions,documentation
-5.txt,instructions,however
-5.txt,instructions,relat ed
-5.txt,ko,civilian jurisdiction
-5.txt,ko,annex agreement ref   acts
-5.txt,ko,documentation
-5.txt,ko,however
-5.txt,ko,relat ed
-5.txt,civilian jurisdiction,annex agreement ref   acts
-5.txt,civilian jurisdiction,documentation
-5.txt,civilian jurisdiction,however
-5.txt,civilian jurisdiction,relat ed
-5.txt,annex agreement ref   acts,documentation
-5.txt,annex agreement ref   acts,however
-5.txt,annex agreement ref   acts,relat ed
-5.txt,documentation,however
-5.txt,documentation,relat ed
-5.txt,however,relat ed
-51.txt,pri,airport
-51.txt,pri,vat
-51.txt,pri,rules regulations
-51.txt,pri,instructions
-51.txt,pri,monie
-51.txt,pri,partn
-51.txt,pri,partner 2
-51.txt,pri,agent
-51.txt,pri,company
-51.txt,pri,gate
-51.txt,pri,partner 4
-51.txt,pri,ko
-51.txt,pri,complicity
-51.txt,pri,800000 euros
-51.txt,pri,euros
-51.txt,pri,faili ng
-51.txt,pri,therefore
-51.txt,airport,vat
-51.txt,airport,rules regulations
-51.txt,airport,instructions
-51.txt,airport,monie
-51.txt,airport,partn
-51.txt,airport,partner 2
-51.txt,airport,agent
-51.txt,airport,company
-51.txt,airport,gate
-51.txt,airport,partner 4
-51.txt,airport,ko
-51.txt,airport,complicity
-51.txt,airport,800000 euros
-51.txt,airport,euros
-51.txt,airport,faili ng
-51.txt,airport,therefore
-51.txt,vat,rules regulations
-51.txt,vat,instructions
-51.txt,vat,monie
-51.txt,vat,partn
-51.txt,vat,partner 2
-51.txt,vat,agent
-51.txt,vat,company
-51.txt,vat,gate
-51.txt,vat,partner 4
-51.txt,vat,ko
-51.txt,vat,complicity
-51.txt,vat,800000 euros
-51.txt,vat,euros
-51.txt,vat,faili ng
-51.txt,vat,therefore
-51.txt,rules regulations,instructions
-51.txt,rules regulations,monie
-51.txt,rules regulations,partn
-51.txt,rules regulations,partner 2
-51.txt,rules regulations,agent
-51.txt,rules regulations,company
-51.txt,rules regulations,gate
-51.txt,rules regulations,partner 4
-51.txt,rules regulations,ko
-51.txt,rules regulations,complicity
-51.txt,rules regulations,800000 euros
-51.txt,rules regulations,euros
-51.txt,rules regulations,faili ng
-51.txt,rules regulations,therefore
-51.txt,instructions,monie
-51.txt,instructions,partn
-51.txt,instructions,partner 2
-51.txt,instructions,agent
-51.txt,instructions,company
-51.txt,instructions,gate
-51.txt,instructions,partner 4
-51.txt,instructions,ko
-51.txt,instructions,complicity
-51.txt,instructions,800000 euros
-51.txt,instructions,euros
-51.txt,instructions,faili ng
-51.txt,instructions,therefore
-51.txt,monie,partn
-51.txt,monie,partner 2
-51.txt,monie,agent
-51.txt,monie,company
-51.txt,monie,gate
-51.txt,monie,partner 4
-51.txt,monie,ko
-51.txt,monie,complicity
-51.txt,monie,800000 euros
-51.txt,monie,euros
-51.txt,monie,faili ng
-51.txt,monie,therefore
-51.txt,partn,partner 2
-51.txt,partn,agent
-51.txt,partn,company
-51.txt,partn,gate
-51.txt,partn,partner 4
-51.txt,partn,ko
-51.txt,partn,complicity
-51.txt,partn,800000 euros
-51.txt,partn,euros
-51.txt,partn,faili ng
-51.txt,partn,therefore
-51.txt,partner 2,agent
-51.txt,partner 2,company
-51.txt,partner 2,gate
-51.txt,partner 2,partner 4
-51.txt,partner 2,ko
-51.txt,partner 2,complicity
-51.txt,partner 2,800000 euros
-51.txt,partner 2,euros
-51.txt,partner 2,faili ng
-51.txt,partner 2,therefore
-51.txt,agent,company
-51.txt,agent,gate
-51.txt,agent,partner 4
-51.txt,agent,ko
-51.txt,agent,complicity
-51.txt,agent,800000 euros
-51.txt,agent,euros
-51.txt,agent,faili ng
-51.txt,agent,therefore
-51.txt,company,gate
-51.txt,company,partner 4
-51.txt,company,ko
-51.txt,company,complicity
-51.txt,company,800000 euros
-51.txt,company,euros
-51.txt,company,faili ng
-51.txt,company,therefore
-51.txt,gate,partner 4
-51.txt,gate,ko
-51.txt,gate,complicity
-51.txt,gate,800000 euros
-51.txt,gate,euros
-51.txt,gate,faili ng
-51.txt,gate,therefore
-51.txt,partner 4,ko
-51.txt,partner 4,complicity
-51.txt,partner 4,800000 euros
-51.txt,partner 4,euros
-51.txt,partner 4,faili ng
-51.txt,partner 4,therefore
-51.txt,ko,complicity
-51.txt,ko,800000 euros
-51.txt,ko,euros
-51.txt,ko,faili ng
-51.txt,ko,therefore
-51.txt,complicity,800000 euros
-51.txt,complicity,euros
-51.txt,complicity,faili ng
-51.txt,complicity,therefore
-51.txt,800000 euros,euros
-51.txt,800000 euros,faili ng
-51.txt,800000 euros,therefore
-51.txt,euros,faili ng
-51.txt,euros,therefore
-51.txt,faili ng,therefore
-52.txt,constitutio,account
-52.txt,constitutio,noti
-52.txt,constitutio,unmi ba nk account
-52.txt,account,noti
-52.txt,account,unmi ba nk account
-52.txt,noti,unmi ba nk account
-60.txt,dealin gs,unmil
-60.txt,dealin gs,se
-60.txt,unmil,se
-63.txt,time,unmil
-63.txt,time,ed nations
-63.txt,time,offic
-63.txt,unmil,ed nations
-63.txt,unmil,offic
-63.txt,ed nations,offic
-69.txt,su,nairobi
-69.txt,su,ed nations
-69.txt,su,c interviews
-69.txt,su,possib le
-69.txt,su,moreover
-69.txt,su,members
-69.txt,nairobi,ed nations
-69.txt,nairobi,c interviews
-69.txt,nairobi,possib le
-69.txt,nairobi,moreover
-69.txt,nairobi,members
-69.txt,ed nations,c interviews
-69.txt,ed nations,possib le
-69.txt,ed nations,moreover
-69.txt,ed nations,members
-69.txt,c interviews,possib le
-69.txt,c interviews,moreover
-69.txt,c interviews,members
-69.txt,possib le,moreover
-69.txt,possib le,members
-69.txt,moreover,members
-73.txt,ge,complete
-73.txt,ge,regulations
-73.txt,ge,gen
-73.txt,complete,regulations
-73.txt,complete,gen
-73.txt,regulations,gen
-8.txt,i introduction,nam e
-8.txt,i introduction,equivalent
-8.txt,i introduction,i methodology
-8.txt,i introduction,ko
-8.txt,i introduction,irregularl
-8.txt,i introduction,divisional manager
-8.txt,i introduction,articles 151
-8.txt,i introduction,vendor 2
-8.txt,i introduction,vendor 1
-8.txt,i introduction,mu lti  national
-8.txt,nam e,equivalent
-8.txt,nam e,i methodology
-8.txt,nam e,ko
-8.txt,nam e,irregularl
-8.txt,nam e,divisional manager
-8.txt,nam e,articles 151
-8.txt,nam e,vendor 2
-8.txt,nam e,vendor 1
-8.txt,nam e,mu lti  national
-8.txt,equivalent,i methodology
-8.txt,equivalent,ko
-8.txt,equivalent,irregularl
-8.txt,equivalent,divisional manager
-8.txt,equivalent,articles 151
-8.txt,equivalent,vendor 2
-8.txt,equivalent,vendor 1
-8.txt,equivalent,mu lti  national
-8.txt,i methodology,ko
-8.txt,i methodology,irregularl
-8.txt,i methodology,divisional manager
-8.txt,i methodology,articles 151
-8.txt,i methodology,vendor 2
-8.txt,i methodology,vendor 1
-8.txt,i methodology,mu lti  national
-8.txt,ko,irregularl
-8.txt,ko,divisional manager
-8.txt,ko,articles 151
-8.txt,ko,vendor 2
-8.txt,ko,vendor 1
-8.txt,ko,mu lti  national
-8.txt,irregularl,divisional manager
-8.txt,irregularl,articles 151
-8.txt,irregularl,vendor 2
-8.txt,irregularl,vendor 1
-8.txt,irregularl,mu lti  national
 8.txt,divisional manager,articles 151
 8.txt,divisional manager,vendor 2
 8.txt,divisional manager,vendor 1
@@ -2184,37 +1095,9 @@ File Name,Entity1,Entity2
 82.txt,walter cabrera,ca
 82.txt,ma,alexander yakovlev
 82.txt,ma,cabrera
-82.txt,ma,sta
-82.txt,ma,government
-82.txt,ma,cabreras
-82.txt,ma,sanjaya   bahel
-82.txt,ma,bahel
-82.txt,ma,time
-82.txt,ma,bahels
-82.txt,ma,complete
-82.txt,ma,ba
 82.txt,ma,jane redfern
 82.txt,ma,walter cab
 82.txt,ma,nishan kohli
-82.txt,ma,kohli
-82.txt,ma,ma terially
-82.txt,ma,kohlis
-82.txt,ma,further
-82.txt,ma,cabrer
-82.txt,ma,hence
-82.txt,ma,fu
-82.txt,ma,therefore
-82.txt,ma,again
-82.txt,ma,toshiba
-82.txt,ma,model
-82.txt,ma,la cresta
-82.txt,ma,nevertheless
-82.txt,ma,however   la cresta
-82.txt,ma,la
-82.txt,ma,email
-82.txt,ma,lacresta
-82.txt,ma,danoffice
-82.txt,ma,ca
 82.txt,alexander yakovlev,cabrera
 82.txt,alexander yakovlev,sta
 82.txt,alexander yakovlev,government
@@ -2277,37 +1160,6 @@ File Name,Entity1,Entity2
 82.txt,cabrera,email
 82.txt,cabrera,lacresta
 82.txt,cabrera,danoffice
-82.txt,cabrera,ca
-82.txt,sta,government
-82.txt,sta,cabreras
-82.txt,sta,sanjaya   bahel
-82.txt,sta,bahel
-82.txt,sta,time
-82.txt,sta,bahels
-82.txt,sta,complete
-82.txt,sta,ba
-82.txt,sta,jane redfern
-82.txt,sta,walter cab
-82.txt,sta,nishan kohli
-82.txt,sta,kohli
-82.txt,sta,ma terially
-82.txt,sta,kohlis
-82.txt,sta,further
-82.txt,sta,cabrer
-82.txt,sta,hence
-82.txt,sta,fu
-82.txt,sta,therefore
-82.txt,sta,again
-82.txt,sta,toshiba
-82.txt,sta,model
-82.txt,sta,la cresta
-82.txt,sta,nevertheless
-82.txt,sta,however   la cresta
-82.txt,sta,la
-82.txt,sta,email
-82.txt,sta,lacresta
-82.txt,sta,danoffice
-82.txt,sta,ca
 82.txt,government,cabreras
 82.txt,government,sanjaya   bahel
 82.txt,government,bahel
@@ -2417,32 +1269,7 @@ File Name,Entity1,Entity2
 82.txt,bahel,email
 82.txt,bahel,lacresta
 82.txt,bahel,danoffice
-82.txt,bahel,ca
-82.txt,time,bahels
-82.txt,time,complete
-82.txt,time,ba
-82.txt,time,jane redfern
-82.txt,time,walter cab
-82.txt,time,nishan kohli
-82.txt,time,kohli
-82.txt,time,ma terially
-82.txt,time,kohlis
-82.txt,time,further
-82.txt,time,cabrer
-82.txt,time,hence
-82.txt,time,fu
-82.txt,time,therefore
-82.txt,time,again
-82.txt,time,toshiba
-82.txt,time,model
-82.txt,time,la cresta
-82.txt,time,nevertheless
-82.txt,time,however   la cresta
-82.txt,time,la
-82.txt,time,email
-82.txt,time,lacresta
-82.txt,time,danoffice
-82.txt,time,ca
+82.txt,bahel,cabrera
 82.txt,bahels,complete
 82.txt,bahels,ba
 82.txt,bahels,jane redfern
@@ -2466,52 +1293,6 @@ File Name,Entity1,Entity2
 82.txt,bahels,email
 82.txt,bahels,lacresta
 82.txt,bahels,danoffice
-82.txt,bahels,ca
-82.txt,complete,ba
-82.txt,complete,jane redfern
-82.txt,complete,walter cab
-82.txt,complete,nishan kohli
-82.txt,complete,kohli
-82.txt,complete,ma terially
-82.txt,complete,kohlis
-82.txt,complete,further
-82.txt,complete,cabrer
-82.txt,complete,hence
-82.txt,complete,fu
-82.txt,complete,therefore
-82.txt,complete,again
-82.txt,complete,toshiba
-82.txt,complete,model
-82.txt,complete,la cresta
-82.txt,complete,nevertheless
-82.txt,complete,however   la cresta
-82.txt,complete,la
-82.txt,complete,email
-82.txt,complete,lacresta
-82.txt,complete,danoffice
-82.txt,complete,ca
-82.txt,ba,jane redfern
-82.txt,ba,walter cab
-82.txt,ba,nishan kohli
-82.txt,ba,kohli
-82.txt,ba,ma terially
-82.txt,ba,kohlis
-82.txt,ba,further
-82.txt,ba,cabrer
-82.txt,ba,hence
-82.txt,ba,fu
-82.txt,ba,therefore
-82.txt,ba,again
-82.txt,ba,toshiba
-82.txt,ba,model
-82.txt,ba,la cresta
-82.txt,ba,nevertheless
-82.txt,ba,however   la cresta
-82.txt,ba,la
-82.txt,ba,email
-82.txt,ba,lacresta
-82.txt,ba,danoffice
-82.txt,ba,ca
 82.txt,jane redfern,walter cab
 82.txt,jane redfern,nishan kohli
 82.txt,jane redfern,kohli
@@ -2590,23 +1371,6 @@ File Name,Entity1,Entity2
 82.txt,kohli,lacresta
 82.txt,kohli,danoffice
 82.txt,kohli,ca
-82.txt,ma terially,kohlis
-82.txt,ma terially,further
-82.txt,ma terially,cabrer
-82.txt,ma terially,hence
-82.txt,ma terially,fu
-82.txt,ma terially,therefore
-82.txt,ma terially,again
-82.txt,ma terially,toshiba
-82.txt,ma terially,model
-82.txt,ma terially,la cresta
-82.txt,ma terially,nevertheless
-82.txt,ma terially,however   la cresta
-82.txt,ma terially,la
-82.txt,ma terially,email
-82.txt,ma terially,lacresta
-82.txt,ma terially,danoffice
-82.txt,ma terially,ca
 82.txt,kohlis,further
 82.txt,kohlis,cabrer
 82.txt,kohlis,hence
@@ -2664,85 +1428,12 @@ File Name,Entity1,Entity2
 82.txt,hence,email
 82.txt,hence,lacresta
 82.txt,hence,danoffice
-82.txt,hence,ca
-82.txt,fu,therefore
-82.txt,fu,again
-82.txt,fu,toshiba
-82.txt,fu,model
-82.txt,fu,la cresta
-82.txt,fu,nevertheless
-82.txt,fu,however   la cresta
-82.txt,fu,la
-82.txt,fu,email
-82.txt,fu,lacresta
-82.txt,fu,danoffice
-82.txt,fu,ca
-82.txt,therefore,again
-82.txt,therefore,toshiba
-82.txt,therefore,model
-82.txt,therefore,la cresta
-82.txt,therefore,nevertheless
-82.txt,therefore,however   la cresta
-82.txt,therefore,la
-82.txt,therefore,email
-82.txt,therefore,lacresta
-82.txt,therefore,danoffice
-82.txt,therefore,ca
-82.txt,again,toshiba
-82.txt,again,model
-82.txt,again,la cresta
-82.txt,again,nevertheless
-82.txt,again,however   la cresta
-82.txt,again,la
-82.txt,again,email
-82.txt,again,lacresta
-82.txt,again,danoffice
-82.txt,again,ca
-82.txt,toshiba,model
-82.txt,toshiba,la cresta
-82.txt,toshiba,nevertheless
-82.txt,toshiba,however   la cresta
-82.txt,toshiba,la
-82.txt,toshiba,email
-82.txt,toshiba,lacresta
-82.txt,toshiba,danoffice
-82.txt,toshiba,ca
-82.txt,model,la cresta
-82.txt,model,nevertheless
-82.txt,model,however   la cresta
-82.txt,model,la
-82.txt,model,email
-82.txt,model,lacresta
-82.txt,model,danoffice
-82.txt,model,ca
 82.txt,la cresta,nevertheless
 82.txt,la cresta,however   la cresta
 82.txt,la cresta,la
 82.txt,la cresta,email
 82.txt,la cresta,lacresta
 82.txt,la cresta,danoffice
-82.txt,la cresta,ca
-82.txt,nevertheless,however   la cresta
-82.txt,nevertheless,la
-82.txt,nevertheless,email
-82.txt,nevertheless,lacresta
-82.txt,nevertheless,danoffice
-82.txt,nevertheless,ca
-82.txt,however   la cresta,la
-82.txt,however   la cresta,email
-82.txt,however   la cresta,lacresta
-82.txt,however   la cresta,danoffice
-82.txt,however   la cresta,ca
-82.txt,la,email
-82.txt,la,lacresta
-82.txt,la,danoffice
-82.txt,la,ca
-82.txt,email,lacresta
-82.txt,email,danoffice
-82.txt,email,ca
-82.txt,lacresta,danoffice
-82.txt,lacresta,ca
-82.txt,danoffice,ca
 89.txt,pierre vimont,nicolas
 89.txt,pierre vimont,jean  david levitte
 89.txt,pierre vimont,sarkozy
@@ -2887,6 +1578,4 @@ File Name,Entity1,Entity2
 91.txt,levitte,description   keywords
 91.txt,levitte,off saddam hussein   restraint
 91.txt,levitte,jean   david
-91.txt,description   keywords,off saddam hussein   restraint
-91.txt,description   keywords,jean   david
 91.txt,off saddam hussein   restraint,jean   david
