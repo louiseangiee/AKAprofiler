@@ -18,7 +18,6 @@ import Auth from "@/layouts/Auth.vue";
 // views for Admin layout
 
 import Dashboard from "@/views/admin/Dashboard.vue";
-import Settings from "@/views/admin/Settings.vue";
 import Tables from "@/views/admin/Tables.vue";
 import Maps from "@/views/admin/Maps.vue";
 import Search from "@/views/admin/Search.vue";
@@ -49,10 +48,6 @@ const routes = [
       {
         path: "/search",
         component: Search,
-      },
-      {
-        path: "/settings",
-        component: Settings,
       },
       {
         path: "/tables",

@@ -13,65 +13,12 @@
           Connections to Crime
         </h6>
         <div>
-          <!-- <table class="border-collapse border border-blueGray-400 table-auto">
-            <thead>
-              <tr>
-                <th>Crime</th>
-                <th>Location</th>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Details</th>
-            </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Robbery</td>
-                <td>Los Angeles, California</td>
-                <td>12/12/2021</td>
-                <td>12:00 PM</td>
-                <td>Robbery at a convenience store</td>
-              </tr>
-              <tr>
-                <td>Assault</td>
-                <td>Los Angeles, California</td>
-                <td>12/12/2021</td>
-                <td>12:00 PM</td>
-                <td>Assault at a bar</td>
-              </tr>
-              <tr>
-                <td>Robbery</td>
-                <td>Los Angeles, California</td>
-                <td>12/12/2021</td>
-                <td>12:00 PM</td>
-                <td>Robbery at a convenience store</td>
-              </tr>
-            </tbody>
-            
-          </table> -->
-          <li>
-            <ul>
-              <li>Robbery</li>
-              <li>Los Angeles, California</li>
-              <li>12/12/2021, 12:00 PM</li>
-              <li>Robbery at a convenience store</li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>Assault</li>
-              <li>Los Angeles, California</li>
-              <li>12/12/2021, 12:00 PM</li>
-              <li>Assault at a bar</li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>Robbery</li>
-              <li>Los Angeles, California</li>
-              <li>12/12/2021, 12:00 PM</li>
-              <li>Robbery at a convenience store</li>
-            </ul>
-          </li>
+          <ul>
+            <li v-for="crime in person.crimes" :key="crime.type">
+              <b>{{ crime.type }}</b> - {{ crime.date }} at {{ crime.location }}
+            </li>
+          </ul>
+        
         </div>
 
         <hr class="mt-6 border-b-1 border-blueGray-300" />
@@ -129,3 +76,9 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: ["person"],
+};
+</script>

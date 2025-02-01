@@ -42,17 +42,17 @@
         <h3
           class="text-xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2"
         >
-          Jenna Stones
+          {{ person ? person.name : '' }}
         </h3>
         <div
           class="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase"
         >
           <i class="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
-          Los Angeles, California
+          {{ person ? person.location : "" }}
         </div>
         <div class="mb-2 text-blueGray-600">
           <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i>
-          Insert Organization Name Here
+          {{ person ? person.organization : "" }}
         </div>
         <div class="mt-10 pt-10 border-blueGray-200 text-center">
             <div class="flex justify-center w-full">
@@ -69,13 +69,8 @@
   </div>
 </template>
 <script>
-import team2 from "@/assets/img/team-2-800x800.jpg";
 
 export default {
-  data() {
-    return {
-      team2,
-    };
-  },
+  props: ["person"],
 };
 </script>
