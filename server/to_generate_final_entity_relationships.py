@@ -1,13 +1,14 @@
-from __future__ import annotations
-import spacy
+
+# pip install torch transformers pandas scikit-learn
 import pandas as pd
-from transformers import BertTokenizer, BertForSequenceClassification, AdamW
 from transformers import BertTokenizer, BertForSequenceClassification, AdamW
 import torch
 from torch.utils.data import Dataset, DataLoader
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 
+# Load pre-trained BERT tokenizer and model
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
 
 # Load your CSV data (make sure your file has 'Entity1', 'Entity2', and 'Relation' columns)
@@ -27,14 +28,37 @@ if 'Relation' not in data.columns:
 def create_sentence(row):
     return f"[CLS] [E1] {row['Entity1']} [/E1] is the {row['Relation']} of [E2] {row['Entity2']} [/E2]. [SEP]"
 
-# Define rel extraction model
+# Apply the function to each row
+data['Sentence'] = data.apply(create_sentence, axis=1)
 
-rel_ext = spacy.load('en_core_web_sm', disable=['ner', 'lemmatizer', 'attribute_rules', 'tagger'])
-rel_ext.add_pipe("rebel", config={
-    'device':DEVICE, # Number of the GPU, -1 if want to use CPU
-    'model_name':'Babelscape/rebel-large'} # Model used, will default to 'Babelscape/rebel-large' if not given
-    )
-# Define rel extraction model
+
+
+# Define the custom dataset class
+class RelationDataset(Dataset):
+    def __init__(self, dataframe, tokenizer):
+        self.dataframe = dataframe
+        self.tokenizer = tokenizer
+        self.sentences = dataframe['Sentence'].tolist()
+        self.labels = dataframe['Relation'].map({'No Relation': 0, 'Founder_of': 1, 'CEO_of': 2}).tolist()  # Modify as needed for your relations
+        
+    def __len__(self):
+        return len(self.sentences)
+    
+    def __getitem__(self, idx):
+        sentence = self.sentences[idx]
+        label = self.labels[idx]
+        
+        # Tokenize the sentence
+        encoding = self.tokenizer(sentence, truncation=True, padding='max_length', max_length=128, return_tensors='pt')
+        
+        return {
+            'input_ids': encoding['input_ids'].squeeze(),
+            'attention_mask': encoding['attention_mask'].squeeze(),
+            'labels': torch.tensor(label, dtype=torch.long)
+        }
+
+# Split the data into training and validation sets
+train_data, val_data = train_test_split(data, test_size=0.2)
 
 # Create datasets and dataloaders
 train_dataset = RelationDataset(train_data, tokenizer)
