@@ -2,8 +2,10 @@
 # pip install PyPDF2
 # pip install pytesseract
 # pip install pdfminer.six
+from collections import defaultdict
 import os
 import requests
+import fitz
 import spacy
 import pandas as pd
 import pymongo
@@ -78,24 +80,34 @@ def extract_text_from_pdf(pdf_path):
 
 # Function to extract text from all PDFs in a directory
 def extract_text_from_directory(directory_path, output_folder):
-    if not os.path.exists(output_folder):  # Create output folder if it doesn't exist
+    if not os.path.exists(output_folder):  
         os.makedirs(output_folder)
-    
-    pdf_files = [f for f in os.listdir(directory_path) if f.endswith(".pdf")]
-    if not pdf_files:
-        print("No PDF files found in the directory.")
-        return
 
-    for pdf_file in pdf_files:
-        pdf_path = os.path.join(directory_path, pdf_file)
-        print(f"Processing: {pdf_file}")
-        
-        # Extract text and save it to a .txt file
-        text = extract_text_from_pdf(pdf_path)
-        output_file = os.path.join(output_folder, f"{os.path.splitext(pdf_file)[0]}.txt")
-        with open(output_file, "w", encoding="utf-8") as f:
-            f.write(text)
-        print(f"Saved extracted text to: {output_file}")
+    pdf_text_data = {}  # Stores extracted text per file
+
+    for pdf_file in os.listdir(directory_path):
+        if pdf_file.endswith(".pdf"):
+            pdf_path = os.path.join(directory_path, pdf_file)
+            print(f"Processing: {pdf_file}")
+
+            # Open PDF and extract text per page
+            doc = fitz.open(pdf_path)
+            text_per_page = {}
+
+            for page_num in range(len(doc)):
+                text = doc[page_num].get_text()
+                text_per_page[page_num + 1] = text  # Store text by page number
+
+            pdf_text_data[pdf_file] = text_per_page
+
+            # Save full extracted text to a .txt file
+            full_text = "\n".join(text_per_page.values())
+            output_file = os.path.join(output_folder, f"{os.path.splitext(pdf_file)[0]}.txt")
+            with open(output_file, "w", encoding="utf-8") as f:
+                f.write(full_text)
+            print(f"Saved extracted text to: {output_file}")
+
+    return pdf_text_data  # Returns extracted text by file & page
 
 
 
@@ -109,34 +121,57 @@ def load_spacy_model():
     return nlp
 
 # Entity Extraction
-def extract_entities_from_text(folder_path):
-    # Load spaCy model
+# Entity Extraction
+def extract_entities_from_text(output_folder):
     nlp = spacy.load("en_core_web_sm")
     infixes = list(nlp.Defaults.infixes)
     infixes.append(r'k')
     infix_re = compile_infix_regex(infixes)
     nlp.tokenizer = Tokenizer(nlp.vocab, infix_finditer=infix_re.finditer)
 
-    # List to store extracted entities
     entity_data = []
 
-    # Loop through all files in the folder
-    for filename in os.listdir(folder_path):
+    # Process each text file in the output folder
+    for filename in os.listdir(output_folder):
         if filename.endswith(".txt"):
-            file_path = os.path.join(folder_path, filename)
-            # Read the content of the file
-            with open(file_path, "r") as file:
+            file_path = os.path.join(output_folder, filename)
+
+            # Read file content
+            with open(file_path, "r", encoding="utf-8") as file:
                 text = file.read()
-            # Process the text with spaCy NLP model
+
             doc = nlp(text)
-            # Clean up the text after tokenization to remove the 'K' tokens
             cleaned_text = ' '.join([token.text for token in doc if token.text != 'K'])
-            # Process the cleaned text again with spaCy
             doc_cleaned = nlp(cleaned_text)
-            # Extract and store entities for the current file
-            for ent in doc_cleaned.ents:
-                entity_data.append({"file_name": filename, "entity": ent.text, "label": ent.label_})
+
+            # Count entity occurrences
+            entity_count = defaultdict(lambda: {"count": 0, "pages": set()})
+
+            # Simulate page numbers by splitting text into chunks
+            page_size = 1000  # Approximate characters per page
+            pages = [cleaned_text[i:i+page_size] for i in range(0, len(cleaned_text), page_size)]
+
+            for page_num, page_text in enumerate(pages, start=1):
+                doc_page = nlp(page_text)
+                for ent in doc_page.ents:
+                    clean_entity = ent.text.strip().replace("\n", " ")  # Clean entity text
+                    entity_count[clean_entity]["count"] += 1
+                    entity_count[clean_entity]["pages"].add(page_num)
+
+            # Store entity data
+            for entity_text, data in entity_count.items():
+                entity_data.append({
+                    "file_name": filename,
+                    "entity": entity_text,
+                    "label": nlp(entity_text).ents[0].label_ if nlp(entity_text).ents else "UNKNOWN",
+                    "frequency": data["count"],
+                    "pagesFound": sorted(data["pages"])
+                })
+
     return entity_data
+
+
+#find the frequency of each entity in the pdf file that they are located in
 
 # Clean and preprocess entity data
 def clean_entity_data(df):
