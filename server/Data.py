@@ -97,12 +97,7 @@ def extract_text_from_directory(directory_path, output_folder):
             f.write(text)
         print(f"Saved extracted text to: {output_file}")
 
-# # Specify the directory containing the PDFs and where to save the output
-# input_directory = "/Users/jenniferkels/Desktop/pdfs"  # Folder with PDF files
-# output_directory = "/Users/jenniferkels/Desktop/extracted_texts"  # Folder to save text files
 
-# # Extract text from all PDFs in the directory
-# extract_text_from_directory(input_directory, output_directory)
 
 # Load spaCy NLP model with custom tokenizer
 def load_spacy_model():
@@ -130,7 +125,7 @@ def extract_entities_from_text(folder_path):
         if filename.endswith(".txt"):
             file_path = os.path.join(folder_path, filename)
             # Read the content of the file
-            with open(file_path, "r", encoding="utf-8") as file:
+            with open(file_path, "r") as file:
                 text = file.read()
             # Process the text with spaCy NLP model
             doc = nlp(text)
@@ -140,9 +135,8 @@ def extract_entities_from_text(folder_path):
             doc_cleaned = nlp(cleaned_text)
             # Extract and store entities for the current file
             for ent in doc_cleaned.ents:
-                entity_data.append([filename, ent.text, ent.label_])
-    df = pd.DataFrame(entity_data, columns=["File Name", "Entity", "Label"])
-    return df
+                entity_data.append({"file_name": filename, "entity": ent.text, "label": ent.label_})
+    return entity_data
 
 # Clean and preprocess entity data
 def clean_entity_data(df):
@@ -220,28 +214,3 @@ def visualize_entity_data(df):
 
     # Check the frequency distribution of the labels
     print(df['Label'].value_counts())
-
-# # Main function 
-# def main():
-#     # Step 1: Fetch data from API and upload to MongoDB
-#     api_url = "http://example.com/api/data"  # Replace with your API endpoint
-#     data = fetch_data_from_api(api_url)
-#     collection = get_mongo_client()
-#     upload_to_mongo(data, collection)
-
-#     # Step 2: Extract text from PDFs
-#     input_directory = "/path/to/your/pdfs"  # Update with your folder path
-#     output_directory = "/path/to/save/texts"  # Folder to save extracted texts
-#     extract_text_from_directory(input_directory, output_directory)
-
-#     # Step 3: Extract entities from the extracted text files
-#     folder_path = output_directory  # Folder containing extracted text files
-#     df = extract_entities_from_text(folder_path)
-
-#     # Step 4: Save the extracted and cleaned data to CSV
-#     df.to_csv("/path/to/save/extracted_entities.csv", index=False)
-#     print("Extracted and cleaned entity data saved.")
-
-
-if __name__ == "__main__":
-    main()

@@ -29,9 +29,10 @@ except Exception as e:
     print(e)
 
 
-db = client["pdf_processor"]
-files_collection = db["files"]
-entities_collection = db["entities"]
+db = client["aka_datathon"]
+files_collection = db["PDFFiles_table"]
+entities_collection = db["Entities_table"]
+entities_summary_collection = db["Entity_summaries"]
 
 # NLP Model
 nlp = spacy.load("en_core_web_sm")
@@ -58,34 +59,27 @@ def upload_file():
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     file.save(file_path)
 
-    # Extract text from PDF
-    extract_text_from_directory(UPLOAD_FOLDER, OUTPUT_FOLDER)
-    
-    # Extract entities
-    entities = extract_entities_from_text(OUTPUT_FOLDER)
-    
+    # Extract text from PDF to get the number of pages
+    doc = fitz.open(file_path)
+    num_pages = doc.page_count
+
     # Save file info in MongoDB
     file_id = str(uuid.uuid4())
     file_entry = {
         "_id": file_id,
         "filename": filename,
+        "filepath": file_path,
         "upload_time": datetime.now(),
-        "status": "processing",
-        "error_message": None
+        "pages": num_pages  # Placeholder for number of pages
     }
     files_collection.insert_one(file_entry)
-    
-    # Save extracted entities in MongoDB
-    if entities:
-        entities_collection.insert_many(
-            [{"_id": str(uuid.uuid4()), "file_id": file_id, **entity} for entity in entities]
-        )
-    
-    
+
     return jsonify({
-        "message": "File uploaded and processed successfully",
+        "message": "File uploaded successfully",
         "file_id": file_id,
-        "entities": entities
+        "filename": filename,
+        "pages": num_pages,
+
     })
 
 @app.route("/process_all_files", methods=["POST"])
