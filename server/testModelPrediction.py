@@ -4,7 +4,7 @@ import torch
 
 # Function to find the latest checkpoint directory
 def get_latest_checkpoint(checkpoint_dir):
-    # List all directories (checkpoints) in the checkpoint folder
+    """Finds the latest checkpoint in the given directory."""
     checkpoints = [d for d in os.listdir(checkpoint_dir) if os.path.isdir(os.path.join(checkpoint_dir, d))]
     if not checkpoints:
         raise ValueError("No checkpoints found in the directory.")
@@ -25,9 +25,8 @@ tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
-# Define a function for prediction
-def predict_relationship(entity1, entity2, model, tokenizer):
-    """Predict the relationship between two entities."""
+def predict_relationship_from_entities(entity1: str, entity2: str) -> str:
+    """Predicts the relationship between two entities using a fine-tuned BERT model."""
     # Format the input text
     input_text = f"{entity1} [SEP] {entity2}"
     
@@ -48,12 +47,3 @@ def predict_relationship(entity1, entity2, model, tokenizer):
     relationship = "RELATED" if predicted_label == 1 else "UNKNOWN"
     
     return relationship
-
-# Example test subject: two entities to check for a relationship
-entity1 = "shinzo abe"
-entity2 = "washington"
-
-# Predict the relationship
-predicted_relationship = predict_relationship(entity1, entity2, model, tokenizer)
-
-print(f"Predicted relationship between {entity1} and {entity2}: {predicted_relationship}")

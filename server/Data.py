@@ -8,75 +8,16 @@ import requests
 import fitz
 import spacy
 import pandas as pd
+from itertools import combinations
 import pymongo
 from PyPDF2 import PdfReader
 from spacy.tokenizer import Tokenizer
 from spacy.util import compile_infix_regex
 import matplotlib.pyplot as plt
 import seaborn as sns
+from testModelPrediction import predict_relationship_from_entities
 
 
-# Insert entity data into the Entities database
-def insert_entities_into_db(entity_data, entities_collection):
-    """ Insert extracted entity data into the MongoDB Entities collection. """
-    if entity_data:
-        try:
-            entities_collection.insert_many(entity_data)
-            print("Entity data inserted into Entities database.")
-        except pymongo.errors.PyMongoError as e:
-            print(f"MongoDB Error while inserting entities: {e}")
-    else:
-        print("No entity data to insert.")
-
-# Insert PDF data into the Files database
-def insert_pdf_data_into_db(pdf_data, files_collection):
-    """ Insert PDF data (file name and extracted text) into the MongoDB Files collection. """
-    if pdf_data:
-        try:
-            files_collection.insert_many(pdf_data)
-            print("PDF data inserted into Files database.")
-        except pymongo.errors.PyMongoError as e:
-            print(f"MongoDB Error while inserting PDF data: {e}")
-    else:
-        print("No PDF data to insert.")
-
-# Insert entity summary into the Entity Summary database
-def insert_entity_summary(entity_summary, entity_summary_collection):
-    """ Insert entity summary data into the MongoDB Entity Summary collection. """
-    if entity_summary:
-        try:
-            entity_summary_collection.insert_one(entity_summary)
-            print("Entity summary inserted into Entity Summary database.")
-        except pymongo.errors.PyMongoError as e:
-            print(f"MongoDB Error while inserting entity summary: {e}")
-    else:
-        print("No entity summary data to insert.")
-
-
-# Function to fetch data from an API
-def fetch_data_from_api(api_url):
-    response = requests.get(api_url)
-    if response.status_code == 200:
-        return response.json()  # Assuming the response is JSON
-    else:
-        print(f"Failed to retrieve data. Status code: {response.status_code}")
-        return None
-
-# Function to upload data to MongoDB
-def upload_to_mongo(data, collection):
-    if data:
-        collection.insert_many(data)
-        print("Data uploaded to MongoDB.")
-    else:
-        print("No data to upload.")
-
-# Function to extract text from a single PDF file
-def extract_text_from_pdf(pdf_path):
-    reader = PdfReader(pdf_path)
-    text = ""
-    for page in reader.pages:
-        text += page.extract_text()
-    return text
 
 # Function to extract text from all PDFs in a directory
 def extract_text_from_directory(directory_path, output_folder):
@@ -120,8 +61,13 @@ def load_spacy_model():
     nlp.tokenizer = Tokenizer(nlp.vocab, infix_finditer=infix_re.finditer)
     return nlp
 
-# Entity Extraction
 def extract_entities_from_text(output_folder):
+    # Check if output folder exists
+    if not os.path.exists(output_folder) or not os.path.isdir(output_folder):
+        print(f"Invalid folder path: {output_folder}")
+        return []  # Return an empty list if the folder is invalid
+
+    # Load SpaCy model and configure tokenizer
     nlp = spacy.load("en_core_web_sm")
     infixes = list(nlp.Defaults.infixes)
     infixes.append(r'k')
@@ -153,7 +99,6 @@ def extract_entities_from_text(output_folder):
             for page_num, page_text in enumerate(pages, start=1):
                 doc_page = nlp(page_text)
                 for ent in doc_page.ents:
-
                     clean_entity = ent.text.strip().replace("\n", " ")  # Clean entity text
                     entity_count[clean_entity]["count"] += 1
                     entity_count[clean_entity]["pages"].add(page_num)
@@ -165,28 +110,72 @@ def extract_entities_from_text(output_folder):
                     "entity": entity_text,
                     "label": nlp(entity_text).ents[0].label_ if nlp(entity_text).ents else "UNKNOWN",
                     "frequency": data["count"],
-                    "pagesFound": sorted(data["pages"])
+                    "pagesFound": sorted(data["pages"]),
+                    "relationships": []  # Placeholder for relationships
                 })
 
+    if not entity_data:
+        print("No entities were extracted.")
+        return []  # Return an empty list if no entities were found
+
+    # Convert entity data to DataFrame
+    df = pd.DataFrame(entity_data)
+
+    # Clean and preprocess the extracted entity data
+    df = df[df['entity'].str.strip() != '']
+    df['entity'] = df['entity'].str.replace(r'\n', ' ', regex=True).str.strip()
+    df['entity'] = df['entity'].apply(lambda x: ''.join(e for e in x if e.isalnum() or e.isspace()))
+    df['entity'] = df['entity'].str.lower()
+    df['label'] = df['label'].str.upper()
+
+    # Remove duplicates (this should now work without any list issues)
+    df = df.drop_duplicates(subset=['file_name', 'entity', 'label'])
+
+    # Process and filter people entities
+    grouped = df.groupby('file_name')
+    entity_pairs = []
+
+    # Generate entity pairs for each file
+    for file_name, group in grouped:
+        person_entities = group[group['label'] == 'PERSON']
+        
+        # Create all unique combinations of entity pairs where one is 'PERSON'
+        for entity1, entity2 in combinations(person_entities['entity'], 2):
+            entity_pairs.append({'file_name': file_name, 'entity1': entity1, 'entity2': entity2})
+
+    # Convert the list to a DataFrame
+    pairs_df = pd.DataFrame(entity_pairs)
+
+    # Save the entity pairs to a new CSV file
+    pairs_df.to_csv('entity_pairs.csv', index=False)
+    print("Entity pairs generated and saved to entity_pairs.csv!")
+
+    # Determine relationships and update entity data
+    # Separate the relationships to prevent issues with unhashable types
+    relationships = []
+
+    for index, row in pairs_df.iterrows():
+        relationship = predict_relationship_from_entities(row['entity1'], row['entity2'])
+        relationships.append({
+            "file_name": row['file_name'],
+            "entity1": row['entity1'],
+            "entity2": row['entity2'],
+            "relationship": relationship
+        })
+
+    # Now update the entity data with relationships
+    for entity in entity_data:
+        for rel in relationships:
+            if entity['file_name'] == rel['file_name'] and entity['entity'] in [rel['entity1'], rel['entity2']]:
+                entity['relationships'].append({
+                    "entity1": rel['entity1'],
+                    "entity2": rel['entity2'],
+                    "relationship": rel['relationship']
+                })
+
+    # Return the entity data
     return entity_data
 
-#find the frequency of each entity in the pdf file that they are located in
-
-# Clean and preprocess entity data
-def clean_entity_data(df):
-    """ Clean and preprocess the extracted entity data. """
-    df = df[df['Entity'].str.strip() != '']
-    df['Entity'] = df['Entity'].str.replace(r'\n', ' ', regex=True).str.strip()
-    df['Entity'] = df['Entity'].apply(lambda x: ''.join(e for e in x if e.isalnum() or e.isspace()))
-    df['Entity'] = df['Entity'].str.lower()
-    df['Label'] = df['Label'].str.upper()
-    df = df.drop_duplicates()
-    # Save to CSV
-    df.to_csv("./extracted_entities_cleaned_v2.csv", index=False)
-    # Print out the first few rows of the cleaned DataFrame to confirm the cleaning
-    print("Cleaned Extracted Entities:")
-    print(df.head())
-    return df
 
 
 # Visualize and analyze the entity data

@@ -120,11 +120,11 @@ def upload_file():
             "label": entity["label"],
             "frequency": entity["frequency"],  # Number of times the entity is mentioned
             "pagesFoundIn": entity["pagesFound"],  # Pages where the entity is mentioned
-            "relationships": "123"  # Placeholder for relationships
+            "relationships": entity["relationships"]  # Placeholder for relationships
         }
         entities_collection.insert_one(entity_entry)
 
-    cleanup_folders([OUTPUT_FOLDER])
+    
 
     return jsonify({
         "message": "Files uploaded successfully",
