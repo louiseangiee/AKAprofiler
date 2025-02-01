@@ -12,12 +12,14 @@ import seaborn as sns
 from datetime import datetime
 from Data import extract_text_from_directory, extract_entities_from_text
 import shutil
+from flask_cors import CORS
 
 
 # Load environment variables
 load_dotenv()
 
 app = Flask(__name__)
+CORS(app)  # <--- This allows cross-origin requests for all routes
 
 # MongoDB Setup
 MONGO_URI = os.getenv("MONGO_URI")
