@@ -4,7 +4,7 @@ from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 from dotenv import load_dotenv
 import os
-import fitz  # PyMuPDF
+import fitz  
 import spacy
 import uuid
 import matplotlib.pyplot as plt
@@ -37,8 +37,8 @@ entities_summary_collection = db["Entity_summaries"]
 # NLP Model
 nlp = spacy.load("en_core_web_sm")
 
-UPLOAD_FOLDER = "./uploads"
-OUTPUT_FOLDER = "./output"
+UPLOAD_FOLDER = "./LocalDB/uploads"
+OUTPUT_FOLDER = "./LocalDB/output"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -46,8 +46,9 @@ app.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER
 
 
 # API Endpoint: Upload PDF
-@app.route("/uploadPDF", methods=["POST"])
+@app.route("/upload", methods=["POST"])
 def upload_file():
+    
     if "file" not in request.files:
         return jsonify({"error": "No file provided"}), 400
     
@@ -70,9 +71,30 @@ def upload_file():
         "filename": filename,
         "filepath": file_path,
         "upload_time": datetime.now(),
-        "pages": num_pages  # Placeholder for number of pages
+        "pages": num_pages  
     }
     files_collection.insert_one(file_entry)
+    
+    # Extract entities from uploaded files
+    extract_text_from_directory(app.config['UPLOAD_FOLDER'], OUTPUT_FOLDER)
+    
+    # Extract entities
+    entities = extract_entities_from_text(OUTPUT_FOLDER)
+    print(entities)
+    
+    # Save extracted entities in MongoDB
+    # for entity in entities:
+    #     entity_entry = {
+    #         "_id": str(uuid.uuid4()),
+    #         "file_id": file_id,
+    #         "file_name": entity["file_name"],
+    #         "entity": entity["entity"],
+    #         "label": entity["label"],
+    #         "frequency": entity["frequency"],  # Number of times the entity is mentioned
+    #         "pages": entity["pages"]  # Pages where the entity is mentioned
+    #     }
+    #     entities_collection.insert_one(entity_entry)
+    
 
     return jsonify({
         "message": "File uploaded successfully",
