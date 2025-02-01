@@ -12,9 +12,11 @@ entity_pairs = []
 
 # Generate entity pairs for each file
 for file_name, group in grouped:
-    entities = group['Entity'].tolist()
-    # Create all unique combinations of entity pairs
-    for entity1, entity2 in combinations(entities, 2):
+    # Filter out entities with the label 'PERSON'
+    person_entities = group[group['Label'] == 'PERSON']
+    
+    # Create all unique combinations of entity pairs where one is 'PERSON'
+    for entity1, entity2 in combinations(person_entities['Entity'], 2):
         entity_pairs.append({'File Name': file_name, 'Entity1': entity1, 'Entity2': entity2})
 
 # Convert the list to a DataFrame
