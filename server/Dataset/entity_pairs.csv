@@ -1,0 +1,2892 @@
+File Name,Entity1,Entity2
+1.txt,vendor 1,pristina
+1.txt,vendor 1,vendor   2
+1.txt,vendor 1,vendor 2
+1.txt,vendor 1,vendor
+1.txt,vendor 1,vendor 4
+1.txt,vendor 1,vendor 3
+1.txt,pristina,vendor   2
+1.txt,pristina,vendor 2
+1.txt,pristina,vendor
+1.txt,pristina,vendor 4
+1.txt,pristina,vendor 3
+1.txt,vendor   2,vendor 2
+1.txt,vendor   2,vendor
+1.txt,vendor   2,vendor 4
+1.txt,vendor   2,vendor 3
+1.txt,vendor 2,vendor
+1.txt,vendor 2,vendor 4
+1.txt,vendor 2,vendor 3
+1.txt,vendor,vendor 4
+1.txt,vendor,vendor 3
+1.txt,vendor 4,vendor 3
+10.txt,cargo apron,al
+10.txt,cargo apron,tions   
+10.txt,cargo apron,stipulates
+10.txt,cargo apron,ko
+10.txt,cargo apron,ed
+10.txt,cargo apron,assistance
+10.txt,cargo apron,21
+10.txt,cargo apron,divisi
+10.txt,cargo apron,vendors
+10.txt,cargo apron,divis
+10.txt,cargo apron,li
+10.txt,al,tions   
+10.txt,al,stipulates
+10.txt,al,ko
+10.txt,al,ed
+10.txt,al,assistance
+10.txt,al,21
+10.txt,al,divisi
+10.txt,al,vendors
+10.txt,al,divis
+10.txt,al,li
+10.txt,tions   ,stipulates
+10.txt,tions   ,ko
+10.txt,tions   ,ed
+10.txt,tions   ,assistance
+10.txt,tions   ,21
+10.txt,tions   ,divisi
+10.txt,tions   ,vendors
+10.txt,tions   ,divis
+10.txt,tions   ,li
+10.txt,stipulates,ko
+10.txt,stipulates,ed
+10.txt,stipulates,assistance
+10.txt,stipulates,21
+10.txt,stipulates,divisi
+10.txt,stipulates,vendors
+10.txt,stipulates,divis
+10.txt,stipulates,li
+10.txt,ko,ed
+10.txt,ko,assistance
+10.txt,ko,21
+10.txt,ko,divisi
+10.txt,ko,vendors
+10.txt,ko,divis
+10.txt,ko,li
+10.txt,ed,assistance
+10.txt,ed,21
+10.txt,ed,divisi
+10.txt,ed,vendors
+10.txt,ed,divis
+10.txt,ed,li
+10.txt,assistance,21
+10.txt,assistance,divisi
+10.txt,assistance,vendors
+10.txt,assistance,divis
+10.txt,assistance,li
+10.txt,21,divisi
+10.txt,21,vendors
+10.txt,21,divis
+10.txt,21,li
+10.txt,divisi,vendors
+10.txt,divisi,divis
+10.txt,divisi,li
+10.txt,vendors,divis
+10.txt,vendors,li
+10.txt,divis,li
+105.txt,shinzo abe,george w bush abes
+105.txt,shinzo abe,bush
+105.txt,shinzo abe,description   keywords
+105.txt,shinzo abe,washington
+105.txt,shinzo abe,emissions abe
+105.txt,shinzo abe,ssinf
+105.txt,shinzo abe,economy    trade
+105.txt,shinzo abe,accordingly
+105.txt,shinzo abe,meanwhile
+105.txt,shinzo abe,abe
+105.txt,shinzo abe,summit
+105.txt,george w bush abes,bush
+105.txt,george w bush abes,description   keywords
+105.txt,george w bush abes,washington
+105.txt,george w bush abes,emissions abe
+105.txt,george w bush abes,ssinf
+105.txt,george w bush abes,economy    trade
+105.txt,george w bush abes,accordingly
+105.txt,george w bush abes,meanwhile
+105.txt,george w bush abes,abe
+105.txt,george w bush abes,summit
+105.txt,bush,description   keywords
+105.txt,bush,washington
+105.txt,bush,emissions abe
+105.txt,bush,ssinf
+105.txt,bush,economy    trade
+105.txt,bush,accordingly
+105.txt,bush,meanwhile
+105.txt,bush,abe
+105.txt,bush,summit
+105.txt,description   keywords,washington
+105.txt,description   keywords,emissions abe
+105.txt,description   keywords,ssinf
+105.txt,description   keywords,economy    trade
+105.txt,description   keywords,accordingly
+105.txt,description   keywords,meanwhile
+105.txt,description   keywords,abe
+105.txt,description   keywords,summit
+105.txt,washington,emissions abe
+105.txt,washington,ssinf
+105.txt,washington,economy    trade
+105.txt,washington,accordingly
+105.txt,washington,meanwhile
+105.txt,washington,abe
+105.txt,washington,summit
+105.txt,emissions abe,ssinf
+105.txt,emissions abe,economy    trade
+105.txt,emissions abe,accordingly
+105.txt,emissions abe,meanwhile
+105.txt,emissions abe,abe
+105.txt,emissions abe,summit
+105.txt,ssinf,economy    trade
+105.txt,ssinf,accordingly
+105.txt,ssinf,meanwhile
+105.txt,ssinf,abe
+105.txt,ssinf,summit
+105.txt,economy    trade,accordingly
+105.txt,economy    trade,meanwhile
+105.txt,economy    trade,abe
+105.txt,economy    trade,summit
+105.txt,accordingly,meanwhile
+105.txt,accordingly,abe
+105.txt,accordingly,summit
+105.txt,meanwhile,abe
+105.txt,meanwhile,summit
+105.txt,abe,summit
+106.txt,doubles down,description   keywords
+106.txt,doubles down,emissions   environment
+106.txt,doubles down,tssinf   tssinf
+106.txt,doubles down,fatih
+106.txt,doubles down,birol
+106.txt,doubles down,economy
+106.txt,doubles down,trade
+106.txt,doubles down,estimation
+106.txt,doubles down,aluminum   cement
+106.txt,description   keywords,emissions   environment
+106.txt,description   keywords,tssinf   tssinf
+106.txt,description   keywords,fatih
+106.txt,description   keywords,birol
+106.txt,description   keywords,economy
+106.txt,description   keywords,trade
+106.txt,description   keywords,estimation
+106.txt,description   keywords,aluminum   cement
+106.txt,emissions   environment,tssinf   tssinf
+106.txt,emissions   environment,fatih
+106.txt,emissions   environment,birol
+106.txt,emissions   environment,economy
+106.txt,emissions   environment,trade
+106.txt,emissions   environment,estimation
+106.txt,emissions   environment,aluminum   cement
+106.txt,tssinf   tssinf,fatih
+106.txt,tssinf   tssinf,birol
+106.txt,tssinf   tssinf,economy
+106.txt,tssinf   tssinf,trade
+106.txt,tssinf   tssinf,estimation
+106.txt,tssinf   tssinf,aluminum   cement
+106.txt,fatih,birol
+106.txt,fatih,economy
+106.txt,fatih,trade
+106.txt,fatih,estimation
+106.txt,fatih,aluminum   cement
+106.txt,birol,economy
+106.txt,birol,trade
+106.txt,birol,estimation
+106.txt,birol,aluminum   cement
+106.txt,economy,trade
+106.txt,economy,estimation
+106.txt,economy,aluminum   cement
+106.txt,trade,estimation
+106.txt,trade,aluminum   cement
+106.txt,estimation,aluminum   cement
+107.txt,g8,description   keywords
+107.txt,g8,affairs    ministry
+107.txt,g8,finance
+107.txt,description   keywords,affairs    ministry
+107.txt,description   keywords,finance
+107.txt,affairs    ministry,finance
+108.txt,cherry feud   wikileaks,cherry   imports   date2009   organisation
+108.txt,cherry feud   wikileaks,agriculture    forestry
+108.txt,cherry   imports   date2009   organisation,agriculture    forestry
+11.txt,i introduction,pri
+11.txt,i introduction,integrity     staff rule 1101 misconduct
+11.txt,i introduction,ko
+11.txt,i introduction,samples
+11.txt,i introduction,therefore
+11.txt,i introduction,passeng er
+11.txt,i introduction,handling fees
+11.txt,i introduction,ed with de 
+11.txt,i introduction,euro
+11.txt,i introduction,airport
+11.txt,pri,integrity     staff rule 1101 misconduct
+11.txt,pri,ko
+11.txt,pri,samples
+11.txt,pri,therefore
+11.txt,pri,passeng er
+11.txt,pri,handling fees
+11.txt,pri,ed with de 
+11.txt,pri,euro
+11.txt,pri,airport
+11.txt,integrity     staff rule 1101 misconduct,ko
+11.txt,integrity     staff rule 1101 misconduct,samples
+11.txt,integrity     staff rule 1101 misconduct,therefore
+11.txt,integrity     staff rule 1101 misconduct,passeng er
+11.txt,integrity     staff rule 1101 misconduct,handling fees
+11.txt,integrity     staff rule 1101 misconduct,ed with de 
+11.txt,integrity     staff rule 1101 misconduct,euro
+11.txt,integrity     staff rule 1101 misconduct,airport
+11.txt,ko,samples
+11.txt,ko,therefore
+11.txt,ko,passeng er
+11.txt,ko,handling fees
+11.txt,ko,ed with de 
+11.txt,ko,euro
+11.txt,ko,airport
+11.txt,samples,therefore
+11.txt,samples,passeng er
+11.txt,samples,handling fees
+11.txt,samples,ed with de 
+11.txt,samples,euro
+11.txt,samples,airport
+11.txt,therefore,passeng er
+11.txt,therefore,handling fees
+11.txt,therefore,ed with de 
+11.txt,therefore,euro
+11.txt,therefore,airport
+11.txt,passeng er,handling fees
+11.txt,passeng er,ed with de 
+11.txt,passeng er,euro
+11.txt,passeng er,airport
+11.txt,handling fees,ed with de 
+11.txt,handling fees,euro
+11.txt,handling fees,airport
+11.txt,ed with de ,euro
+11.txt,ed with de ,airport
+11.txt,euro,airport
+111.txt,angela merkel,nicolas sarkozy
+111.txt,angela merkel,silvio berlusconi
+111.txt,angela merkel,valentino valentini
+111.txt,angela merkel,sarkozy
+111.txt,angela merkel,berlusconi
+111.txt,angela merkel,herman van rompuy
+111.txt,angela merkel,emulate   unconventional   italian
+111.txt,nicolas sarkozy,silvio berlusconi
+111.txt,nicolas sarkozy,valentino valentini
+111.txt,nicolas sarkozy,sarkozy
+111.txt,nicolas sarkozy,berlusconi
+111.txt,nicolas sarkozy,herman van rompuy
+111.txt,nicolas sarkozy,emulate   unconventional   italian
+111.txt,silvio berlusconi,valentino valentini
+111.txt,silvio berlusconi,sarkozy
+111.txt,silvio berlusconi,berlusconi
+111.txt,silvio berlusconi,herman van rompuy
+111.txt,silvio berlusconi,emulate   unconventional   italian
+111.txt,valentino valentini,sarkozy
+111.txt,valentino valentini,berlusconi
+111.txt,valentino valentini,herman van rompuy
+111.txt,valentino valentini,emulate   unconventional   italian
+111.txt,sarkozy,berlusconi
+111.txt,sarkozy,herman van rompuy
+111.txt,sarkozy,emulate   unconventional   italian
+111.txt,berlusconi,herman van rompuy
+111.txt,berlusconi,emulate   unconventional   italian
+111.txt,herman van rompuy,emulate   unconventional   italian
+113.txt,hasgivennoticethatitintendstostriveforalong  termcommitmenton   climatechangewithspecificfigures,leadersfrom16countries   includingthemembersoftheg8pluschina
+113.txt,hasgivennoticethatitintendstostriveforalong  termcommitmenton   climatechangewithspecificfigures,japansg8sherpa
+113.txt,hasgivennoticethatitintendstostriveforalong  termcommitmenton   climatechangewithspecificfigures,becausetheydo
+113.txt,leadersfrom16countries   includingthemembersoftheg8pluschina,japansg8sherpa
+113.txt,leadersfrom16countries   includingthemembersoftheg8pluschina,becausetheydo
+113.txt,japansg8sherpa,becausetheydo
+114.txt,nf   tssi  goc,itwouldbedifficultfortheuntomakea   commitmentinpoznan
+13.txt,others,offici al 1
+13.txt,others,secretary
+13.txt,others,route   9
+13.txt,others,2s secretary
+13.txt,others,mem ber 4
+13.txt,others,time
+13.txt,others,itf therefore
+13.txt,offici al 1,secretary
+13.txt,offici al 1,route   9
+13.txt,offici al 1,2s secretary
+13.txt,offici al 1,mem ber 4
+13.txt,offici al 1,time
+13.txt,offici al 1,itf therefore
+13.txt,secretary,route   9
+13.txt,secretary,2s secretary
+13.txt,secretary,mem ber 4
+13.txt,secretary,time
+13.txt,secretary,itf therefore
+13.txt,route   9,2s secretary
+13.txt,route   9,mem ber 4
+13.txt,route   9,time
+13.txt,route   9,itf therefore
+13.txt,2s secretary,mem ber 4
+13.txt,2s secretary,time
+13.txt,2s secretary,itf therefore
+13.txt,mem ber 4,time
+13.txt,mem ber 4,itf therefore
+13.txt,time,itf therefore
+14.txt,i background,vendor 2
+14.txt,i background,procurem
+14.txt,i background,vendor   2
+14.txt,i background,evaluat
+14.txt,i background,vendor 1 manager
+14.txt,i background,the bid evaluat
+14.txt,i background,committ
+14.txt,i background,pri
+14.txt,i background,was
+14.txt,i background,don e youll
+14.txt,i background,moreover
+14.txt,i background,simila
+14.txt,i background,airpo
+14.txt,vendor 2,procurem
+14.txt,vendor 2,vendor   2
+14.txt,vendor 2,evaluat
+14.txt,vendor 2,vendor 1 manager
+14.txt,vendor 2,the bid evaluat
+14.txt,vendor 2,committ
+14.txt,vendor 2,pri
+14.txt,vendor 2,was
+14.txt,vendor 2,don e youll
+14.txt,vendor 2,moreover
+14.txt,vendor 2,simila
+14.txt,vendor 2,airpo
+14.txt,procurem,vendor   2
+14.txt,procurem,evaluat
+14.txt,procurem,vendor 1 manager
+14.txt,procurem,the bid evaluat
+14.txt,procurem,committ
+14.txt,procurem,pri
+14.txt,procurem,was
+14.txt,procurem,don e youll
+14.txt,procurem,moreover
+14.txt,procurem,simila
+14.txt,procurem,airpo
+14.txt,vendor   2,evaluat
+14.txt,vendor   2,vendor 1 manager
+14.txt,vendor   2,the bid evaluat
+14.txt,vendor   2,committ
+14.txt,vendor   2,pri
+14.txt,vendor   2,was
+14.txt,vendor   2,don e youll
+14.txt,vendor   2,moreover
+14.txt,vendor   2,simila
+14.txt,vendor   2,airpo
+14.txt,evaluat,vendor 1 manager
+14.txt,evaluat,the bid evaluat
+14.txt,evaluat,committ
+14.txt,evaluat,pri
+14.txt,evaluat,was
+14.txt,evaluat,don e youll
+14.txt,evaluat,moreover
+14.txt,evaluat,simila
+14.txt,evaluat,airpo
+14.txt,vendor 1 manager,the bid evaluat
+14.txt,vendor 1 manager,committ
+14.txt,vendor 1 manager,pri
+14.txt,vendor 1 manager,was
+14.txt,vendor 1 manager,don e youll
+14.txt,vendor 1 manager,moreover
+14.txt,vendor 1 manager,simila
+14.txt,vendor 1 manager,airpo
+14.txt,the bid evaluat,committ
+14.txt,the bid evaluat,pri
+14.txt,the bid evaluat,was
+14.txt,the bid evaluat,don e youll
+14.txt,the bid evaluat,moreover
+14.txt,the bid evaluat,simila
+14.txt,the bid evaluat,airpo
+14.txt,committ,pri
+14.txt,committ,was
+14.txt,committ,don e youll
+14.txt,committ,moreover
+14.txt,committ,simila
+14.txt,committ,airpo
+14.txt,pri,was
+14.txt,pri,don e youll
+14.txt,pri,moreover
+14.txt,pri,simila
+14.txt,pri,airpo
+14.txt,was,don e youll
+14.txt,was,moreover
+14.txt,was,simila
+14.txt,was,airpo
+14.txt,don e youll,moreover
+14.txt,don e youll,simila
+14.txt,don e youll,airpo
+14.txt,moreover,simila
+14.txt,moreover,airpo
+14.txt,simila,airpo
+15.txt,søren,from
+15.txt,søren,wolfgang nikolaus   team
+15.txt,søren,states
+15.txt,søren,background
+15.txt,søren,kagent
+15.txt,søren,ktransactions
+15.txt,søren,kterminology
+15.txt,søren,wolfgang nikolaus
+15.txt,søren,mark gough
+15.txt,søren,james wasserstrom
+15.txt,søren,paulalachal roberts
+15.txt,from,wolfgang nikolaus   team
+15.txt,from,states
+15.txt,from,background
+15.txt,from,kagent
+15.txt,from,ktransactions
+15.txt,from,kterminology
+15.txt,from,wolfgang nikolaus
+15.txt,from,mark gough
+15.txt,from,james wasserstrom
+15.txt,from,paulalachal roberts
+15.txt,wolfgang nikolaus   team,states
+15.txt,wolfgang nikolaus   team,background
+15.txt,wolfgang nikolaus   team,kagent
+15.txt,wolfgang nikolaus   team,ktransactions
+15.txt,wolfgang nikolaus   team,kterminology
+15.txt,wolfgang nikolaus   team,wolfgang nikolaus
+15.txt,wolfgang nikolaus   team,mark gough
+15.txt,wolfgang nikolaus   team,james wasserstrom
+15.txt,wolfgang nikolaus   team,paulalachal roberts
+15.txt,states,background
+15.txt,states,kagent
+15.txt,states,ktransactions
+15.txt,states,kterminology
+15.txt,states,wolfgang nikolaus
+15.txt,states,mark gough
+15.txt,states,james wasserstrom
+15.txt,states,paulalachal roberts
+15.txt,background,kagent
+15.txt,background,ktransactions
+15.txt,background,kterminology
+15.txt,background,wolfgang nikolaus
+15.txt,background,mark gough
+15.txt,background,james wasserstrom
+15.txt,background,paulalachal roberts
+15.txt,kagent,ktransactions
+15.txt,kagent,kterminology
+15.txt,kagent,wolfgang nikolaus
+15.txt,kagent,mark gough
+15.txt,kagent,james wasserstrom
+15.txt,kagent,paulalachal roberts
+15.txt,ktransactions,kterminology
+15.txt,ktransactions,wolfgang nikolaus
+15.txt,ktransactions,mark gough
+15.txt,ktransactions,james wasserstrom
+15.txt,ktransactions,paulalachal roberts
+15.txt,kterminology,wolfgang nikolaus
+15.txt,kterminology,mark gough
+15.txt,kterminology,james wasserstrom
+15.txt,kterminology,paulalachal roberts
+15.txt,wolfgang nikolaus,mark gough
+15.txt,wolfgang nikolaus,james wasserstrom
+15.txt,wolfgang nikolaus,paulalachal roberts
+15.txt,mark gough,james wasserstrom
+15.txt,mark gough,paulalachal roberts
+15.txt,james wasserstrom,paulalachal roberts
+16.txt,i      bac ground,documents
+16.txt,i      bac ground,secondly
+16.txt,i      bac ground,notification
+16.txt,i      bac ground,vendor 4
+16.txt,i      bac ground,vendor 1
+16.txt,i      bac ground,vendor 5
+16.txt,i      bac ground,members dra
+16.txt,documents,secondly
+16.txt,documents,notification
+16.txt,documents,vendor 4
+16.txt,documents,vendor 1
+16.txt,documents,vendor 5
+16.txt,documents,members dra
+16.txt,secondly,notification
+16.txt,secondly,vendor 4
+16.txt,secondly,vendor 1
+16.txt,secondly,vendor 5
+16.txt,secondly,members dra
+16.txt,notification,vendor 4
+16.txt,notification,vendor 1
+16.txt,notification,vendor 5
+16.txt,notification,members dra
+16.txt,vendor 4,vendor 1
+16.txt,vendor 4,vendor 5
+16.txt,vendor 4,members dra
+16.txt,vendor 1,vendor 5
+16.txt,vendor 1,members dra
+16.txt,vendor 5,members dra
+2.txt,withdra,officers
+2.txt,withdra, examined
+2.txt,withdra,divisi
+2.txt,withdra,fina
+2.txt,withdra,relat ed
+2.txt,withdra,euro
+2.txt,withdra,airport
+2.txt,withdra,includin g
+2.txt,withdra,hose
+2.txt,withdra,pris
+2.txt,withdra,9 9
+2.txt,withdra,issu ed
+2.txt,withdra,ai
+2.txt,officers, examined
+2.txt,officers,divisi
+2.txt,officers,fina
+2.txt,officers,relat ed
+2.txt,officers,euro
+2.txt,officers,airport
+2.txt,officers,includin g
+2.txt,officers,hose
+2.txt,officers,pris
+2.txt,officers,9 9
+2.txt,officers,issu ed
+2.txt,officers,ai
+2.txt, examined,divisi
+2.txt, examined,fina
+2.txt, examined,relat ed
+2.txt, examined,euro
+2.txt, examined,airport
+2.txt, examined,includin g
+2.txt, examined,hose
+2.txt, examined,pris
+2.txt, examined,9 9
+2.txt, examined,issu ed
+2.txt, examined,ai
+2.txt,divisi,fina
+2.txt,divisi,relat ed
+2.txt,divisi,euro
+2.txt,divisi,airport
+2.txt,divisi,includin g
+2.txt,divisi,hose
+2.txt,divisi,pris
+2.txt,divisi,9 9
+2.txt,divisi,issu ed
+2.txt,divisi,ai
+2.txt,fina,relat ed
+2.txt,fina,euro
+2.txt,fina,airport
+2.txt,fina,includin g
+2.txt,fina,hose
+2.txt,fina,pris
+2.txt,fina,9 9
+2.txt,fina,issu ed
+2.txt,fina,ai
+2.txt,relat ed,euro
+2.txt,relat ed,airport
+2.txt,relat ed,includin g
+2.txt,relat ed,hose
+2.txt,relat ed,pris
+2.txt,relat ed,9 9
+2.txt,relat ed,issu ed
+2.txt,relat ed,ai
+2.txt,euro,airport
+2.txt,euro,includin g
+2.txt,euro,hose
+2.txt,euro,pris
+2.txt,euro,9 9
+2.txt,euro,issu ed
+2.txt,euro,ai
+2.txt,airport,includin g
+2.txt,airport,hose
+2.txt,airport,pris
+2.txt,airport,9 9
+2.txt,airport,issu ed
+2.txt,airport,ai
+2.txt,includin g,hose
+2.txt,includin g,pris
+2.txt,includin g,9 9
+2.txt,includin g,issu ed
+2.txt,includin g,ai
+2.txt,hose,pris
+2.txt,hose,9 9
+2.txt,hose,issu ed
+2.txt,hose,ai
+2.txt,pris,9 9
+2.txt,pris,issu ed
+2.txt,pris,ai
+2.txt,9 9,issu ed
+2.txt,9 9,ai
+2.txt,issu ed,ai
+21.txt,undp bratislava,ed
+21.txt,undp bratislava,database
+21.txt,undp bratislava,ntity
+21.txt,undp bratislava,log    while
+21.txt,undp bratislava,rule 1012g
+21.txt,undp bratislava,chec k
+21.txt,ed,database
+21.txt,ed,ntity
+21.txt,ed,log    while
+21.txt,ed,rule 1012g
+21.txt,ed,chec k
+21.txt,database,ntity
+21.txt,database,log    while
+21.txt,database,rule 1012g
+21.txt,database,chec k
+21.txt,ntity,log    while
+21.txt,ntity,rule 1012g
+21.txt,ntity,chec k
+21.txt,log    while,rule 1012g
+21.txt,log    while,chec k
+21.txt,rule 1012g,chec k
+24.txt,email,ambassad
+24.txt,email,mzumara
+24.txt,email,dickson
+24.txt,email,excellency
+24.txt,email,john negropont
+24.txt,email,america
+24.txt,email,john kerry
+24.txt,email,se
+24.txt,email,dodd
+24.txt,email,senate
+24.txt,email,perpetrat ed
+24.txt,email,secretary eca
+24.txt,email,negroponte
+24.txt,email,john negroponte
+24.txt,email,america s
+24.txt,email,john   kerry
+24.txt,email,mem ber
+24.txt,email,bush
+24.txt,email,cheney
+24.txt,email,negro
+24.txt,email,investigators
+24.txt,email,members
+24.txt,email,mzumara oic
+24.txt,email,m
+24.txt,email,to
+24.txt,email,dickson mzumara
+24.txt,email,oluwatete   olokodana
+24.txt,email,vintzis
+24.txt,email,olokodana
+24.txt,email,stoykov
+24.txt,email,al systems
+24.txt,email,stoy
+24.txt,email,bongoy
+24.txt,email,ali todaro
+24.txt,email,general
+24.txt,email,negroponte pr
+24.txt,email,cheney senators
+24.txt,email,boss
+24.txt,ambassad,mzumara
+24.txt,ambassad,dickson
+24.txt,ambassad,excellency
+24.txt,ambassad,john negropont
+24.txt,ambassad,america
+24.txt,ambassad,john kerry
+24.txt,ambassad,se
+24.txt,ambassad,dodd
+24.txt,ambassad,senate
+24.txt,ambassad,perpetrat ed
+24.txt,ambassad,secretary eca
+24.txt,ambassad,negroponte
+24.txt,ambassad,john negroponte
+24.txt,ambassad,america s
+24.txt,ambassad,john   kerry
+24.txt,ambassad,mem ber
+24.txt,ambassad,bush
+24.txt,ambassad,cheney
+24.txt,ambassad,negro
+24.txt,ambassad,investigators
+24.txt,ambassad,members
+24.txt,ambassad,mzumara oic
+24.txt,ambassad,m
+24.txt,ambassad,to
+24.txt,ambassad,dickson mzumara
+24.txt,ambassad,oluwatete   olokodana
+24.txt,ambassad,vintzis
+24.txt,ambassad,olokodana
+24.txt,ambassad,stoykov
+24.txt,ambassad,al systems
+24.txt,ambassad,stoy
+24.txt,ambassad,bongoy
+24.txt,ambassad,ali todaro
+24.txt,ambassad,general
+24.txt,ambassad,negroponte pr
+24.txt,ambassad,cheney senators
+24.txt,ambassad,boss
+24.txt,mzumara,dickson
+24.txt,mzumara,excellency
+24.txt,mzumara,john negropont
+24.txt,mzumara,america
+24.txt,mzumara,john kerry
+24.txt,mzumara,se
+24.txt,mzumara,dodd
+24.txt,mzumara,senate
+24.txt,mzumara,perpetrat ed
+24.txt,mzumara,secretary eca
+24.txt,mzumara,negroponte
+24.txt,mzumara,john negroponte
+24.txt,mzumara,america s
+24.txt,mzumara,john   kerry
+24.txt,mzumara,mem ber
+24.txt,mzumara,bush
+24.txt,mzumara,cheney
+24.txt,mzumara,negro
+24.txt,mzumara,investigators
+24.txt,mzumara,members
+24.txt,mzumara,mzumara oic
+24.txt,mzumara,m
+24.txt,mzumara,to
+24.txt,mzumara,dickson mzumara
+24.txt,mzumara,oluwatete   olokodana
+24.txt,mzumara,vintzis
+24.txt,mzumara,olokodana
+24.txt,mzumara,stoykov
+24.txt,mzumara,al systems
+24.txt,mzumara,stoy
+24.txt,mzumara,bongoy
+24.txt,mzumara,ali todaro
+24.txt,mzumara,general
+24.txt,mzumara,negroponte pr
+24.txt,mzumara,cheney senators
+24.txt,mzumara,boss
+24.txt,dickson,excellency
+24.txt,dickson,john negropont
+24.txt,dickson,america
+24.txt,dickson,john kerry
+24.txt,dickson,se
+24.txt,dickson,dodd
+24.txt,dickson,senate
+24.txt,dickson,perpetrat ed
+24.txt,dickson,secretary eca
+24.txt,dickson,negroponte
+24.txt,dickson,john negroponte
+24.txt,dickson,america s
+24.txt,dickson,john   kerry
+24.txt,dickson,mem ber
+24.txt,dickson,bush
+24.txt,dickson,cheney
+24.txt,dickson,negro
+24.txt,dickson,investigators
+24.txt,dickson,members
+24.txt,dickson,mzumara oic
+24.txt,dickson,m
+24.txt,dickson,to
+24.txt,dickson,dickson mzumara
+24.txt,dickson,oluwatete   olokodana
+24.txt,dickson,vintzis
+24.txt,dickson,olokodana
+24.txt,dickson,stoykov
+24.txt,dickson,al systems
+24.txt,dickson,stoy
+24.txt,dickson,bongoy
+24.txt,dickson,ali todaro
+24.txt,dickson,general
+24.txt,dickson,negroponte pr
+24.txt,dickson,cheney senators
+24.txt,dickson,boss
+24.txt,excellency,john negropont
+24.txt,excellency,america
+24.txt,excellency,john kerry
+24.txt,excellency,se
+24.txt,excellency,dodd
+24.txt,excellency,senate
+24.txt,excellency,perpetrat ed
+24.txt,excellency,secretary eca
+24.txt,excellency,negroponte
+24.txt,excellency,john negroponte
+24.txt,excellency,america s
+24.txt,excellency,john   kerry
+24.txt,excellency,mem ber
+24.txt,excellency,bush
+24.txt,excellency,cheney
+24.txt,excellency,negro
+24.txt,excellency,investigators
+24.txt,excellency,members
+24.txt,excellency,mzumara oic
+24.txt,excellency,m
+24.txt,excellency,to
+24.txt,excellency,dickson mzumara
+24.txt,excellency,oluwatete   olokodana
+24.txt,excellency,vintzis
+24.txt,excellency,olokodana
+24.txt,excellency,stoykov
+24.txt,excellency,al systems
+24.txt,excellency,stoy
+24.txt,excellency,bongoy
+24.txt,excellency,ali todaro
+24.txt,excellency,general
+24.txt,excellency,negroponte pr
+24.txt,excellency,cheney senators
+24.txt,excellency,boss
+24.txt,john negropont,america
+24.txt,john negropont,john kerry
+24.txt,john negropont,se
+24.txt,john negropont,dodd
+24.txt,john negropont,senate
+24.txt,john negropont,perpetrat ed
+24.txt,john negropont,secretary eca
+24.txt,john negropont,negroponte
+24.txt,john negropont,john negroponte
+24.txt,john negropont,america s
+24.txt,john negropont,john   kerry
+24.txt,john negropont,mem ber
+24.txt,john negropont,bush
+24.txt,john negropont,cheney
+24.txt,john negropont,negro
+24.txt,john negropont,investigators
+24.txt,john negropont,members
+24.txt,john negropont,mzumara oic
+24.txt,john negropont,m
+24.txt,john negropont,to
+24.txt,john negropont,dickson mzumara
+24.txt,john negropont,oluwatete   olokodana
+24.txt,john negropont,vintzis
+24.txt,john negropont,olokodana
+24.txt,john negropont,stoykov
+24.txt,john negropont,al systems
+24.txt,john negropont,stoy
+24.txt,john negropont,bongoy
+24.txt,john negropont,ali todaro
+24.txt,john negropont,general
+24.txt,john negropont,negroponte pr
+24.txt,john negropont,cheney senators
+24.txt,john negropont,boss
+24.txt,america,john kerry
+24.txt,america,se
+24.txt,america,dodd
+24.txt,america,senate
+24.txt,america,perpetrat ed
+24.txt,america,secretary eca
+24.txt,america,negroponte
+24.txt,america,john negroponte
+24.txt,america,america s
+24.txt,america,john   kerry
+24.txt,america,mem ber
+24.txt,america,bush
+24.txt,america,cheney
+24.txt,america,negro
+24.txt,america,investigators
+24.txt,america,members
+24.txt,america,mzumara oic
+24.txt,america,m
+24.txt,america,to
+24.txt,america,dickson mzumara
+24.txt,america,oluwatete   olokodana
+24.txt,america,vintzis
+24.txt,america,olokodana
+24.txt,america,stoykov
+24.txt,america,al systems
+24.txt,america,stoy
+24.txt,america,bongoy
+24.txt,america,ali todaro
+24.txt,america,general
+24.txt,america,negroponte pr
+24.txt,america,cheney senators
+24.txt,america,boss
+24.txt,john kerry,se
+24.txt,john kerry,dodd
+24.txt,john kerry,senate
+24.txt,john kerry,perpetrat ed
+24.txt,john kerry,secretary eca
+24.txt,john kerry,negroponte
+24.txt,john kerry,john negroponte
+24.txt,john kerry,america s
+24.txt,john kerry,john   kerry
+24.txt,john kerry,mem ber
+24.txt,john kerry,bush
+24.txt,john kerry,cheney
+24.txt,john kerry,negro
+24.txt,john kerry,investigators
+24.txt,john kerry,members
+24.txt,john kerry,mzumara oic
+24.txt,john kerry,m
+24.txt,john kerry,to
+24.txt,john kerry,dickson mzumara
+24.txt,john kerry,oluwatete   olokodana
+24.txt,john kerry,vintzis
+24.txt,john kerry,olokodana
+24.txt,john kerry,stoykov
+24.txt,john kerry,al systems
+24.txt,john kerry,stoy
+24.txt,john kerry,bongoy
+24.txt,john kerry,ali todaro
+24.txt,john kerry,general
+24.txt,john kerry,negroponte pr
+24.txt,john kerry,cheney senators
+24.txt,john kerry,boss
+24.txt,se,dodd
+24.txt,se,senate
+24.txt,se,perpetrat ed
+24.txt,se,secretary eca
+24.txt,se,negroponte
+24.txt,se,john negroponte
+24.txt,se,america s
+24.txt,se,john   kerry
+24.txt,se,mem ber
+24.txt,se,bush
+24.txt,se,cheney
+24.txt,se,negro
+24.txt,se,investigators
+24.txt,se,members
+24.txt,se,mzumara oic
+24.txt,se,m
+24.txt,se,to
+24.txt,se,dickson mzumara
+24.txt,se,oluwatete   olokodana
+24.txt,se,vintzis
+24.txt,se,olokodana
+24.txt,se,stoykov
+24.txt,se,al systems
+24.txt,se,stoy
+24.txt,se,bongoy
+24.txt,se,ali todaro
+24.txt,se,general
+24.txt,se,negroponte pr
+24.txt,se,cheney senators
+24.txt,se,boss
+24.txt,dodd,senate
+24.txt,dodd,perpetrat ed
+24.txt,dodd,secretary eca
+24.txt,dodd,negroponte
+24.txt,dodd,john negroponte
+24.txt,dodd,america s
+24.txt,dodd,john   kerry
+24.txt,dodd,mem ber
+24.txt,dodd,bush
+24.txt,dodd,cheney
+24.txt,dodd,negro
+24.txt,dodd,investigators
+24.txt,dodd,members
+24.txt,dodd,mzumara oic
+24.txt,dodd,m
+24.txt,dodd,to
+24.txt,dodd,dickson mzumara
+24.txt,dodd,oluwatete   olokodana
+24.txt,dodd,vintzis
+24.txt,dodd,olokodana
+24.txt,dodd,stoykov
+24.txt,dodd,al systems
+24.txt,dodd,stoy
+24.txt,dodd,bongoy
+24.txt,dodd,ali todaro
+24.txt,dodd,general
+24.txt,dodd,negroponte pr
+24.txt,dodd,cheney senators
+24.txt,dodd,boss
+24.txt,senate,perpetrat ed
+24.txt,senate,secretary eca
+24.txt,senate,negroponte
+24.txt,senate,john negroponte
+24.txt,senate,america s
+24.txt,senate,john   kerry
+24.txt,senate,mem ber
+24.txt,senate,bush
+24.txt,senate,cheney
+24.txt,senate,negro
+24.txt,senate,investigators
+24.txt,senate,members
+24.txt,senate,mzumara oic
+24.txt,senate,m
+24.txt,senate,to
+24.txt,senate,dickson mzumara
+24.txt,senate,oluwatete   olokodana
+24.txt,senate,vintzis
+24.txt,senate,olokodana
+24.txt,senate,stoykov
+24.txt,senate,al systems
+24.txt,senate,stoy
+24.txt,senate,bongoy
+24.txt,senate,ali todaro
+24.txt,senate,general
+24.txt,senate,negroponte pr
+24.txt,senate,cheney senators
+24.txt,senate,boss
+24.txt,perpetrat ed,secretary eca
+24.txt,perpetrat ed,negroponte
+24.txt,perpetrat ed,john negroponte
+24.txt,perpetrat ed,america s
+24.txt,perpetrat ed,john   kerry
+24.txt,perpetrat ed,mem ber
+24.txt,perpetrat ed,bush
+24.txt,perpetrat ed,cheney
+24.txt,perpetrat ed,negro
+24.txt,perpetrat ed,investigators
+24.txt,perpetrat ed,members
+24.txt,perpetrat ed,mzumara oic
+24.txt,perpetrat ed,m
+24.txt,perpetrat ed,to
+24.txt,perpetrat ed,dickson mzumara
+24.txt,perpetrat ed,oluwatete   olokodana
+24.txt,perpetrat ed,vintzis
+24.txt,perpetrat ed,olokodana
+24.txt,perpetrat ed,stoykov
+24.txt,perpetrat ed,al systems
+24.txt,perpetrat ed,stoy
+24.txt,perpetrat ed,bongoy
+24.txt,perpetrat ed,ali todaro
+24.txt,perpetrat ed,general
+24.txt,perpetrat ed,negroponte pr
+24.txt,perpetrat ed,cheney senators
+24.txt,perpetrat ed,boss
+24.txt,secretary eca,negroponte
+24.txt,secretary eca,john negroponte
+24.txt,secretary eca,america s
+24.txt,secretary eca,john   kerry
+24.txt,secretary eca,mem ber
+24.txt,secretary eca,bush
+24.txt,secretary eca,cheney
+24.txt,secretary eca,negro
+24.txt,secretary eca,investigators
+24.txt,secretary eca,members
+24.txt,secretary eca,mzumara oic
+24.txt,secretary eca,m
+24.txt,secretary eca,to
+24.txt,secretary eca,dickson mzumara
+24.txt,secretary eca,oluwatete   olokodana
+24.txt,secretary eca,vintzis
+24.txt,secretary eca,olokodana
+24.txt,secretary eca,stoykov
+24.txt,secretary eca,al systems
+24.txt,secretary eca,stoy
+24.txt,secretary eca,bongoy
+24.txt,secretary eca,ali todaro
+24.txt,secretary eca,general
+24.txt,secretary eca,negroponte pr
+24.txt,secretary eca,cheney senators
+24.txt,secretary eca,boss
+24.txt,negroponte,john negroponte
+24.txt,negroponte,america s
+24.txt,negroponte,john   kerry
+24.txt,negroponte,mem ber
+24.txt,negroponte,bush
+24.txt,negroponte,cheney
+24.txt,negroponte,negro
+24.txt,negroponte,investigators
+24.txt,negroponte,members
+24.txt,negroponte,mzumara oic
+24.txt,negroponte,m
+24.txt,negroponte,to
+24.txt,negroponte,dickson mzumara
+24.txt,negroponte,oluwatete   olokodana
+24.txt,negroponte,vintzis
+24.txt,negroponte,olokodana
+24.txt,negroponte,stoykov
+24.txt,negroponte,al systems
+24.txt,negroponte,stoy
+24.txt,negroponte,bongoy
+24.txt,negroponte,ali todaro
+24.txt,negroponte,general
+24.txt,negroponte,negroponte pr
+24.txt,negroponte,cheney senators
+24.txt,negroponte,boss
+24.txt,john negroponte,america s
+24.txt,john negroponte,john   kerry
+24.txt,john negroponte,mem ber
+24.txt,john negroponte,bush
+24.txt,john negroponte,cheney
+24.txt,john negroponte,negro
+24.txt,john negroponte,investigators
+24.txt,john negroponte,members
+24.txt,john negroponte,mzumara oic
+24.txt,john negroponte,m
+24.txt,john negroponte,to
+24.txt,john negroponte,dickson mzumara
+24.txt,john negroponte,oluwatete   olokodana
+24.txt,john negroponte,vintzis
+24.txt,john negroponte,olokodana
+24.txt,john negroponte,stoykov
+24.txt,john negroponte,al systems
+24.txt,john negroponte,stoy
+24.txt,john negroponte,bongoy
+24.txt,john negroponte,ali todaro
+24.txt,john negroponte,general
+24.txt,john negroponte,negroponte pr
+24.txt,john negroponte,cheney senators
+24.txt,john negroponte,boss
+24.txt,america s,john   kerry
+24.txt,america s,mem ber
+24.txt,america s,bush
+24.txt,america s,cheney
+24.txt,america s,negro
+24.txt,america s,investigators
+24.txt,america s,members
+24.txt,america s,mzumara oic
+24.txt,america s,m
+24.txt,america s,to
+24.txt,america s,dickson mzumara
+24.txt,america s,oluwatete   olokodana
+24.txt,america s,vintzis
+24.txt,america s,olokodana
+24.txt,america s,stoykov
+24.txt,america s,al systems
+24.txt,america s,stoy
+24.txt,america s,bongoy
+24.txt,america s,ali todaro
+24.txt,america s,general
+24.txt,america s,negroponte pr
+24.txt,america s,cheney senators
+24.txt,america s,boss
+24.txt,john   kerry,mem ber
+24.txt,john   kerry,bush
+24.txt,john   kerry,cheney
+24.txt,john   kerry,negro
+24.txt,john   kerry,investigators
+24.txt,john   kerry,members
+24.txt,john   kerry,mzumara oic
+24.txt,john   kerry,m
+24.txt,john   kerry,to
+24.txt,john   kerry,dickson mzumara
+24.txt,john   kerry,oluwatete   olokodana
+24.txt,john   kerry,vintzis
+24.txt,john   kerry,olokodana
+24.txt,john   kerry,stoykov
+24.txt,john   kerry,al systems
+24.txt,john   kerry,stoy
+24.txt,john   kerry,bongoy
+24.txt,john   kerry,ali todaro
+24.txt,john   kerry,general
+24.txt,john   kerry,negroponte pr
+24.txt,john   kerry,cheney senators
+24.txt,john   kerry,boss
+24.txt,mem ber,bush
+24.txt,mem ber,cheney
+24.txt,mem ber,negro
+24.txt,mem ber,investigators
+24.txt,mem ber,members
+24.txt,mem ber,mzumara oic
+24.txt,mem ber,m
+24.txt,mem ber,to
+24.txt,mem ber,dickson mzumara
+24.txt,mem ber,oluwatete   olokodana
+24.txt,mem ber,vintzis
+24.txt,mem ber,olokodana
+24.txt,mem ber,stoykov
+24.txt,mem ber,al systems
+24.txt,mem ber,stoy
+24.txt,mem ber,bongoy
+24.txt,mem ber,ali todaro
+24.txt,mem ber,general
+24.txt,mem ber,negroponte pr
+24.txt,mem ber,cheney senators
+24.txt,mem ber,boss
+24.txt,bush,cheney
+24.txt,bush,negro
+24.txt,bush,investigators
+24.txt,bush,members
+24.txt,bush,mzumara oic
+24.txt,bush,m
+24.txt,bush,to
+24.txt,bush,dickson mzumara
+24.txt,bush,oluwatete   olokodana
+24.txt,bush,vintzis
+24.txt,bush,olokodana
+24.txt,bush,stoykov
+24.txt,bush,al systems
+24.txt,bush,stoy
+24.txt,bush,bongoy
+24.txt,bush,ali todaro
+24.txt,bush,general
+24.txt,bush,negroponte pr
+24.txt,bush,cheney senators
+24.txt,bush,boss
+24.txt,cheney,negro
+24.txt,cheney,investigators
+24.txt,cheney,members
+24.txt,cheney,mzumara oic
+24.txt,cheney,m
+24.txt,cheney,to
+24.txt,cheney,dickson mzumara
+24.txt,cheney,oluwatete   olokodana
+24.txt,cheney,vintzis
+24.txt,cheney,olokodana
+24.txt,cheney,stoykov
+24.txt,cheney,al systems
+24.txt,cheney,stoy
+24.txt,cheney,bongoy
+24.txt,cheney,ali todaro
+24.txt,cheney,general
+24.txt,cheney,negroponte pr
+24.txt,cheney,cheney senators
+24.txt,cheney,boss
+24.txt,negro,investigators
+24.txt,negro,members
+24.txt,negro,mzumara oic
+24.txt,negro,m
+24.txt,negro,to
+24.txt,negro,dickson mzumara
+24.txt,negro,oluwatete   olokodana
+24.txt,negro,vintzis
+24.txt,negro,olokodana
+24.txt,negro,stoykov
+24.txt,negro,al systems
+24.txt,negro,stoy
+24.txt,negro,bongoy
+24.txt,negro,ali todaro
+24.txt,negro,general
+24.txt,negro,negroponte pr
+24.txt,negro,cheney senators
+24.txt,negro,boss
+24.txt,investigators,members
+24.txt,investigators,mzumara oic
+24.txt,investigators,m
+24.txt,investigators,to
+24.txt,investigators,dickson mzumara
+24.txt,investigators,oluwatete   olokodana
+24.txt,investigators,vintzis
+24.txt,investigators,olokodana
+24.txt,investigators,stoykov
+24.txt,investigators,al systems
+24.txt,investigators,stoy
+24.txt,investigators,bongoy
+24.txt,investigators,ali todaro
+24.txt,investigators,general
+24.txt,investigators,negroponte pr
+24.txt,investigators,cheney senators
+24.txt,investigators,boss
+24.txt,members,mzumara oic
+24.txt,members,m
+24.txt,members,to
+24.txt,members,dickson mzumara
+24.txt,members,oluwatete   olokodana
+24.txt,members,vintzis
+24.txt,members,olokodana
+24.txt,members,stoykov
+24.txt,members,al systems
+24.txt,members,stoy
+24.txt,members,bongoy
+24.txt,members,ali todaro
+24.txt,members,general
+24.txt,members,negroponte pr
+24.txt,members,cheney senators
+24.txt,members,boss
+24.txt,mzumara oic,m
+24.txt,mzumara oic,to
+24.txt,mzumara oic,dickson mzumara
+24.txt,mzumara oic,oluwatete   olokodana
+24.txt,mzumara oic,vintzis
+24.txt,mzumara oic,olokodana
+24.txt,mzumara oic,stoykov
+24.txt,mzumara oic,al systems
+24.txt,mzumara oic,stoy
+24.txt,mzumara oic,bongoy
+24.txt,mzumara oic,ali todaro
+24.txt,mzumara oic,general
+24.txt,mzumara oic,negroponte pr
+24.txt,mzumara oic,cheney senators
+24.txt,mzumara oic,boss
+24.txt,m,to
+24.txt,m,dickson mzumara
+24.txt,m,oluwatete   olokodana
+24.txt,m,vintzis
+24.txt,m,olokodana
+24.txt,m,stoykov
+24.txt,m,al systems
+24.txt,m,stoy
+24.txt,m,bongoy
+24.txt,m,ali todaro
+24.txt,m,general
+24.txt,m,negroponte pr
+24.txt,m,cheney senators
+24.txt,m,boss
+24.txt,to,dickson mzumara
+24.txt,to,oluwatete   olokodana
+24.txt,to,vintzis
+24.txt,to,olokodana
+24.txt,to,stoykov
+24.txt,to,al systems
+24.txt,to,stoy
+24.txt,to,bongoy
+24.txt,to,ali todaro
+24.txt,to,general
+24.txt,to,negroponte pr
+24.txt,to,cheney senators
+24.txt,to,boss
+24.txt,dickson mzumara,oluwatete   olokodana
+24.txt,dickson mzumara,vintzis
+24.txt,dickson mzumara,olokodana
+24.txt,dickson mzumara,stoykov
+24.txt,dickson mzumara,al systems
+24.txt,dickson mzumara,stoy
+24.txt,dickson mzumara,bongoy
+24.txt,dickson mzumara,ali todaro
+24.txt,dickson mzumara,general
+24.txt,dickson mzumara,negroponte pr
+24.txt,dickson mzumara,cheney senators
+24.txt,dickson mzumara,boss
+24.txt,oluwatete   olokodana,vintzis
+24.txt,oluwatete   olokodana,olokodana
+24.txt,oluwatete   olokodana,stoykov
+24.txt,oluwatete   olokodana,al systems
+24.txt,oluwatete   olokodana,stoy
+24.txt,oluwatete   olokodana,bongoy
+24.txt,oluwatete   olokodana,ali todaro
+24.txt,oluwatete   olokodana,general
+24.txt,oluwatete   olokodana,negroponte pr
+24.txt,oluwatete   olokodana,cheney senators
+24.txt,oluwatete   olokodana,boss
+24.txt,vintzis,olokodana
+24.txt,vintzis,stoykov
+24.txt,vintzis,al systems
+24.txt,vintzis,stoy
+24.txt,vintzis,bongoy
+24.txt,vintzis,ali todaro
+24.txt,vintzis,general
+24.txt,vintzis,negroponte pr
+24.txt,vintzis,cheney senators
+24.txt,vintzis,boss
+24.txt,olokodana,stoykov
+24.txt,olokodana,al systems
+24.txt,olokodana,stoy
+24.txt,olokodana,bongoy
+24.txt,olokodana,ali todaro
+24.txt,olokodana,general
+24.txt,olokodana,negroponte pr
+24.txt,olokodana,cheney senators
+24.txt,olokodana,boss
+24.txt,stoykov,al systems
+24.txt,stoykov,stoy
+24.txt,stoykov,bongoy
+24.txt,stoykov,ali todaro
+24.txt,stoykov,general
+24.txt,stoykov,negroponte pr
+24.txt,stoykov,cheney senators
+24.txt,stoykov,boss
+24.txt,al systems,stoy
+24.txt,al systems,bongoy
+24.txt,al systems,ali todaro
+24.txt,al systems,general
+24.txt,al systems,negroponte pr
+24.txt,al systems,cheney senators
+24.txt,al systems,boss
+24.txt,stoy,bongoy
+24.txt,stoy,ali todaro
+24.txt,stoy,general
+24.txt,stoy,negroponte pr
+24.txt,stoy,cheney senators
+24.txt,stoy,boss
+24.txt,bongoy,ali todaro
+24.txt,bongoy,general
+24.txt,bongoy,negroponte pr
+24.txt,bongoy,cheney senators
+24.txt,bongoy,boss
+24.txt,ali todaro,general
+24.txt,ali todaro,negroponte pr
+24.txt,ali todaro,cheney senators
+24.txt,ali todaro,boss
+24.txt,general,negroponte pr
+24.txt,general,cheney senators
+24.txt,general,boss
+24.txt,negroponte pr,cheney senators
+24.txt,negroponte pr,boss
+24.txt,cheney senators,boss
+26.txt,weaknesses,officia
+26.txt,weaknesses,undp
+26.txt,weaknesses,chao s
+26.txt,weaknesses,us205300
+26.txt,weaknesses,participant
+26.txt,weaknesses,however
+26.txt,weaknesses,liaison
+26.txt,weaknesses,offici al 4
+26.txt,officia,undp
+26.txt,officia,chao s
+26.txt,officia,us205300
+26.txt,officia,participant
+26.txt,officia,however
+26.txt,officia,liaison
+26.txt,officia,offici al 4
+26.txt,undp,chao s
+26.txt,undp,us205300
+26.txt,undp,participant
+26.txt,undp,however
+26.txt,undp,liaison
+26.txt,undp,offici al 4
+26.txt,chao s,us205300
+26.txt,chao s,participant
+26.txt,chao s,however
+26.txt,chao s,liaison
+26.txt,chao s,offici al 4
+26.txt,us205300,participant
+26.txt,us205300,however
+26.txt,us205300,liaison
+26.txt,us205300,offici al 4
+26.txt,participant,however
+26.txt,participant,liaison
+26.txt,participant,offici al 4
+26.txt,however,liaison
+26.txt,however,offici al 4
+26.txt,liaison,offici al 4
+27.txt,klaus toepfer,barbara dixon
+27.txt,klaus toepfer,together
+27.txt,klaus toepfer,members
+27.txt,klaus toepfer,well
+27.txt,klaus toepfer,member
+27.txt,klaus toepfer,money
+27.txt,klaus toepfer,francis montil
+27.txt,barbara dixon,together
+27.txt,barbara dixon,members
+27.txt,barbara dixon,well
+27.txt,barbara dixon,member
+27.txt,barbara dixon,money
+27.txt,barbara dixon,francis montil
+27.txt,together,members
+27.txt,together,well
+27.txt,together,member
+27.txt,together,money
+27.txt,together,francis montil
+27.txt,members,well
+27.txt,members,member
+27.txt,members,money
+27.txt,members,francis montil
+27.txt,well,member
+27.txt,well,money
+27.txt,well,francis montil
+27.txt,member,money
+27.txt,member,francis montil
+27.txt,money,francis montil
+31.txt,i introduction,pri
+31.txt,i introduction,integrity     staff rule 1101 misconduct
+31.txt,i introduction,ko
+31.txt,i introduction,samples
+31.txt,i introduction,therefore
+31.txt,i introduction,passeng er
+31.txt,i introduction,handling fees
+31.txt,i introduction,ed with de 
+31.txt,i introduction,euro
+31.txt,i introduction,airport
+31.txt,pri,integrity     staff rule 1101 misconduct
+31.txt,pri,ko
+31.txt,pri,samples
+31.txt,pri,therefore
+31.txt,pri,passeng er
+31.txt,pri,handling fees
+31.txt,pri,ed with de 
+31.txt,pri,euro
+31.txt,pri,airport
+31.txt,integrity     staff rule 1101 misconduct,ko
+31.txt,integrity     staff rule 1101 misconduct,samples
+31.txt,integrity     staff rule 1101 misconduct,therefore
+31.txt,integrity     staff rule 1101 misconduct,passeng er
+31.txt,integrity     staff rule 1101 misconduct,handling fees
+31.txt,integrity     staff rule 1101 misconduct,ed with de 
+31.txt,integrity     staff rule 1101 misconduct,euro
+31.txt,integrity     staff rule 1101 misconduct,airport
+31.txt,ko,samples
+31.txt,ko,therefore
+31.txt,ko,passeng er
+31.txt,ko,handling fees
+31.txt,ko,ed with de 
+31.txt,ko,euro
+31.txt,ko,airport
+31.txt,samples,therefore
+31.txt,samples,passeng er
+31.txt,samples,handling fees
+31.txt,samples,ed with de 
+31.txt,samples,euro
+31.txt,samples,airport
+31.txt,therefore,passeng er
+31.txt,therefore,handling fees
+31.txt,therefore,ed with de 
+31.txt,therefore,euro
+31.txt,therefore,airport
+31.txt,passeng er,handling fees
+31.txt,passeng er,ed with de 
+31.txt,passeng er,euro
+31.txt,passeng er,airport
+31.txt,handling fees,ed with de 
+31.txt,handling fees,euro
+31.txt,handling fees,airport
+31.txt,ed with de ,euro
+31.txt,ed with de ,airport
+31.txt,euro,airport
+35.txt,charles brayshaw   a,john todd
+35.txt,charles brayshaw   a,wpvi
+35.txt,charles brayshaw   a,mark gough
+35.txt,charles brayshaw   a,jean  marie
+35.txt,john todd,wpvi
+35.txt,john todd,mark gough
+35.txt,john todd,jean  marie
+35.txt,wpvi,mark gough
+35.txt,wpvi,jean  marie
+35.txt,mark gough,jean  marie
+36.txt,søren jessen  petersen,wolfgang nikolaus   team
+36.txt,søren jessen  petersen,company
+36.txt,søren jessen  petersen,conditions
+36.txt,søren jessen  petersen,ade
+36.txt,søren jessen  petersen,mark gough   id
+36.txt,søren jessen  petersen,james wasserstrom
+36.txt,søren jessen  petersen,paul  lachal
+36.txt,søren jessen  petersen,mark gough
+36.txt,wolfgang nikolaus   team,company
+36.txt,wolfgang nikolaus   team,conditions
+36.txt,wolfgang nikolaus   team,ade
+36.txt,wolfgang nikolaus   team,mark gough   id
+36.txt,wolfgang nikolaus   team,james wasserstrom
+36.txt,wolfgang nikolaus   team,paul  lachal
+36.txt,wolfgang nikolaus   team,mark gough
+36.txt,company,conditions
+36.txt,company,ade
+36.txt,company,mark gough   id
+36.txt,company,james wasserstrom
+36.txt,company,paul  lachal
+36.txt,company,mark gough
+36.txt,conditions,ade
+36.txt,conditions,mark gough   id
+36.txt,conditions,james wasserstrom
+36.txt,conditions,paul  lachal
+36.txt,conditions,mark gough
+36.txt,ade,mark gough   id
+36.txt,ade,james wasserstrom
+36.txt,ade,paul  lachal
+36.txt,ade,mark gough
+36.txt,mark gough   id,james wasserstrom
+36.txt,mark gough   id,paul  lachal
+36.txt,mark gough   id,mark gough
+36.txt,james wasserstrom,paul  lachal
+36.txt,james wasserstrom,mark gough
+36.txt,paul  lachal,mark gough
+38.txt,i background,vendor 2
+38.txt,i background,procurem
+38.txt,i background,vendor   2
+38.txt,i background,evaluat
+38.txt,i background,vendor 1 manager
+38.txt,i background,the bid evaluat
+38.txt,i background,committ
+38.txt,i background,pri
+38.txt,i background,was
+38.txt,i background,don e youll
+38.txt,i background,moreover
+38.txt,i background,simila
+38.txt,i background,airpo
+38.txt,vendor 2,procurem
+38.txt,vendor 2,vendor   2
+38.txt,vendor 2,evaluat
+38.txt,vendor 2,vendor 1 manager
+38.txt,vendor 2,the bid evaluat
+38.txt,vendor 2,committ
+38.txt,vendor 2,pri
+38.txt,vendor 2,was
+38.txt,vendor 2,don e youll
+38.txt,vendor 2,moreover
+38.txt,vendor 2,simila
+38.txt,vendor 2,airpo
+38.txt,procurem,vendor   2
+38.txt,procurem,evaluat
+38.txt,procurem,vendor 1 manager
+38.txt,procurem,the bid evaluat
+38.txt,procurem,committ
+38.txt,procurem,pri
+38.txt,procurem,was
+38.txt,procurem,don e youll
+38.txt,procurem,moreover
+38.txt,procurem,simila
+38.txt,procurem,airpo
+38.txt,vendor   2,evaluat
+38.txt,vendor   2,vendor 1 manager
+38.txt,vendor   2,the bid evaluat
+38.txt,vendor   2,committ
+38.txt,vendor   2,pri
+38.txt,vendor   2,was
+38.txt,vendor   2,don e youll
+38.txt,vendor   2,moreover
+38.txt,vendor   2,simila
+38.txt,vendor   2,airpo
+38.txt,evaluat,vendor 1 manager
+38.txt,evaluat,the bid evaluat
+38.txt,evaluat,committ
+38.txt,evaluat,pri
+38.txt,evaluat,was
+38.txt,evaluat,don e youll
+38.txt,evaluat,moreover
+38.txt,evaluat,simila
+38.txt,evaluat,airpo
+38.txt,vendor 1 manager,the bid evaluat
+38.txt,vendor 1 manager,committ
+38.txt,vendor 1 manager,pri
+38.txt,vendor 1 manager,was
+38.txt,vendor 1 manager,don e youll
+38.txt,vendor 1 manager,moreover
+38.txt,vendor 1 manager,simila
+38.txt,vendor 1 manager,airpo
+38.txt,the bid evaluat,committ
+38.txt,the bid evaluat,pri
+38.txt,the bid evaluat,was
+38.txt,the bid evaluat,don e youll
+38.txt,the bid evaluat,moreover
+38.txt,the bid evaluat,simila
+38.txt,the bid evaluat,airpo
+38.txt,committ,pri
+38.txt,committ,was
+38.txt,committ,don e youll
+38.txt,committ,moreover
+38.txt,committ,simila
+38.txt,committ,airpo
+38.txt,pri,was
+38.txt,pri,don e youll
+38.txt,pri,moreover
+38.txt,pri,simila
+38.txt,pri,airpo
+38.txt,was,don e youll
+38.txt,was,moreover
+38.txt,was,simila
+38.txt,was,airpo
+38.txt,don e youll,moreover
+38.txt,don e youll,simila
+38.txt,don e youll,airpo
+38.txt,moreover,simila
+38.txt,moreover,airpo
+38.txt,simila,airpo
+39.txt,i introduction,nam e
+39.txt,i introduction,equivalent
+39.txt,i introduction,i methodology
+39.txt,i introduction,ko
+39.txt,i introduction,irregularl
+39.txt,i introduction,divisional manager
+39.txt,i introduction,articles 151
+39.txt,i introduction,vendor 2
+39.txt,i introduction,vendor 1
+39.txt,i introduction,mu lti  national
+39.txt,nam e,equivalent
+39.txt,nam e,i methodology
+39.txt,nam e,ko
+39.txt,nam e,irregularl
+39.txt,nam e,divisional manager
+39.txt,nam e,articles 151
+39.txt,nam e,vendor 2
+39.txt,nam e,vendor 1
+39.txt,nam e,mu lti  national
+39.txt,equivalent,i methodology
+39.txt,equivalent,ko
+39.txt,equivalent,irregularl
+39.txt,equivalent,divisional manager
+39.txt,equivalent,articles 151
+39.txt,equivalent,vendor 2
+39.txt,equivalent,vendor 1
+39.txt,equivalent,mu lti  national
+39.txt,i methodology,ko
+39.txt,i methodology,irregularl
+39.txt,i methodology,divisional manager
+39.txt,i methodology,articles 151
+39.txt,i methodology,vendor 2
+39.txt,i methodology,vendor 1
+39.txt,i methodology,mu lti  national
+39.txt,ko,irregularl
+39.txt,ko,divisional manager
+39.txt,ko,articles 151
+39.txt,ko,vendor 2
+39.txt,ko,vendor 1
+39.txt,ko,mu lti  national
+39.txt,irregularl,divisional manager
+39.txt,irregularl,articles 151
+39.txt,irregularl,vendor 2
+39.txt,irregularl,vendor 1
+39.txt,irregularl,mu lti  national
+39.txt,divisional manager,articles 151
+39.txt,divisional manager,vendor 2
+39.txt,divisional manager,vendor 1
+39.txt,divisional manager,mu lti  national
+39.txt,articles 151,vendor 2
+39.txt,articles 151,vendor 1
+39.txt,articles 151,mu lti  national
+39.txt,vendor 2,vendor 1
+39.txt,vendor 2,mu lti  national
+39.txt,vendor 1,mu lti  national
+4.txt,vendor 1,goods works
+4.txt,vendor 1,rule 1101 misconduct
+4.txt,vendor 1,ko
+4.txt,vendor 1,states army specifica
+4.txt,vendor 1,vendor   2
+4.txt,vendor 1,incomplete however
+4.txt,vendor 1,vendor 2
+4.txt,vendor 1,vendor 1s
+4.txt,vendor 1,airport
+4.txt,vendor 1,tempora
+4.txt,goods works,rule 1101 misconduct
+4.txt,goods works,ko
+4.txt,goods works,states army specifica
+4.txt,goods works,vendor   2
+4.txt,goods works,incomplete however
+4.txt,goods works,vendor 2
+4.txt,goods works,vendor 1s
+4.txt,goods works,airport
+4.txt,goods works,tempora
+4.txt,rule 1101 misconduct,ko
+4.txt,rule 1101 misconduct,states army specifica
+4.txt,rule 1101 misconduct,vendor   2
+4.txt,rule 1101 misconduct,incomplete however
+4.txt,rule 1101 misconduct,vendor 2
+4.txt,rule 1101 misconduct,vendor 1s
+4.txt,rule 1101 misconduct,airport
+4.txt,rule 1101 misconduct,tempora
+4.txt,ko,states army specifica
+4.txt,ko,vendor   2
+4.txt,ko,incomplete however
+4.txt,ko,vendor 2
+4.txt,ko,vendor 1s
+4.txt,ko,airport
+4.txt,ko,tempora
+4.txt,states army specifica,vendor   2
+4.txt,states army specifica,incomplete however
+4.txt,states army specifica,vendor 2
+4.txt,states army specifica,vendor 1s
+4.txt,states army specifica,airport
+4.txt,states army specifica,tempora
+4.txt,vendor   2,incomplete however
+4.txt,vendor   2,vendor 2
+4.txt,vendor   2,vendor 1s
+4.txt,vendor   2,airport
+4.txt,vendor   2,tempora
+4.txt,incomplete however,vendor 2
+4.txt,incomplete however,vendor 1s
+4.txt,incomplete however,airport
+4.txt,incomplete however,tempora
+4.txt,vendor 2,vendor 1s
+4.txt,vendor 2,airport
+4.txt,vendor 2,tempora
+4.txt,vendor 1s,airport
+4.txt,vendor 1s,tempora
+4.txt,airport,tempora
+43.txt,cargo apron,al
+43.txt,cargo apron,tions   
+43.txt,cargo apron,stipulates
+43.txt,cargo apron,ko
+43.txt,cargo apron,ed
+43.txt,cargo apron,assistance
+43.txt,cargo apron,21
+43.txt,cargo apron,divisi
+43.txt,cargo apron,vendors
+43.txt,cargo apron,divis
+43.txt,cargo apron,li
+43.txt,al,tions   
+43.txt,al,stipulates
+43.txt,al,ko
+43.txt,al,ed
+43.txt,al,assistance
+43.txt,al,21
+43.txt,al,divisi
+43.txt,al,vendors
+43.txt,al,divis
+43.txt,al,li
+43.txt,tions   ,stipulates
+43.txt,tions   ,ko
+43.txt,tions   ,ed
+43.txt,tions   ,assistance
+43.txt,tions   ,21
+43.txt,tions   ,divisi
+43.txt,tions   ,vendors
+43.txt,tions   ,divis
+43.txt,tions   ,li
+43.txt,stipulates,ko
+43.txt,stipulates,ed
+43.txt,stipulates,assistance
+43.txt,stipulates,21
+43.txt,stipulates,divisi
+43.txt,stipulates,vendors
+43.txt,stipulates,divis
+43.txt,stipulates,li
+43.txt,ko,ed
+43.txt,ko,assistance
+43.txt,ko,21
+43.txt,ko,divisi
+43.txt,ko,vendors
+43.txt,ko,divis
+43.txt,ko,li
+43.txt,ed,assistance
+43.txt,ed,21
+43.txt,ed,divisi
+43.txt,ed,vendors
+43.txt,ed,divis
+43.txt,ed,li
+43.txt,assistance,21
+43.txt,assistance,divisi
+43.txt,assistance,vendors
+43.txt,assistance,divis
+43.txt,assistance,li
+43.txt,21,divisi
+43.txt,21,vendors
+43.txt,21,divis
+43.txt,21,li
+43.txt,divisi,vendors
+43.txt,divisi,divis
+43.txt,divisi,li
+43.txt,vendors,divis
+43.txt,vendors,li
+43.txt,divis,li
+44.txt,2 representative,vendor 2
+44.txt,2 representative,vendor 1
+44.txt,2 representative,vendor   1
+44.txt,2 representative,vendor 2   representative
+44.txt,vendor 2,vendor 1
+44.txt,vendor 2,vendor   1
+44.txt,vendor 2,vendor 2   representative
+44.txt,vendor 1,vendor   1
+44.txt,vendor 1,vendor 2   representative
+44.txt,vendor   1,vendor 2   representative
+45.txt,kt a     background,vendor
+45.txt,kt a     background,cap
+45.txt,vendor,cap
+47.txt,administration mission,pristina
+47.txt,administration mission,approva l
+47.txt,administration mission,airlin
+47.txt,administration mission,euros
+47.txt,administration mission,67644 was
+47.txt,administration mission,services pristina airport
+47.txt,administration mission,passengers
+47.txt,administration mission,rs
+47.txt,pristina,approva l
+47.txt,pristina,airlin
+47.txt,pristina,euros
+47.txt,pristina,67644 was
+47.txt,pristina,services pristina airport
+47.txt,pristina,passengers
+47.txt,pristina,rs
+47.txt,approva l,airlin
+47.txt,approva l,euros
+47.txt,approva l,67644 was
+47.txt,approva l,services pristina airport
+47.txt,approva l,passengers
+47.txt,approva l,rs
+47.txt,airlin,euros
+47.txt,airlin,67644 was
+47.txt,airlin,services pristina airport
+47.txt,airlin,passengers
+47.txt,airlin,rs
+47.txt,euros,67644 was
+47.txt,euros,services pristina airport
+47.txt,euros,passengers
+47.txt,euros,rs
+47.txt,67644 was,services pristina airport
+47.txt,67644 was,passengers
+47.txt,67644 was,rs
+47.txt,services pristina airport,passengers
+47.txt,services pristina airport,rs
+47.txt,passengers,rs
+49.txt,kosovo,divis
+49.txt,kosovo,ed
+49.txt,kosovo,rs
+49.txt,kosovo,ed bribery
+49.txt,divis,ed
+49.txt,divis,rs
+49.txt,divis,ed bribery
+49.txt,ed,rs
+49.txt,ed,ed bribery
+49.txt,rs,ed bribery
+5.txt,i introduction,kta
+5.txt,i introduction,stipulates
+5.txt,i introduction,instructions
+5.txt,i introduction,ko
+5.txt,i introduction,civilian jurisdiction
+5.txt,i introduction,annex agreement ref   acts
+5.txt,i introduction,documentation
+5.txt,i introduction,however
+5.txt,i introduction,relat ed
+5.txt,kta,stipulates
+5.txt,kta,instructions
+5.txt,kta,ko
+5.txt,kta,civilian jurisdiction
+5.txt,kta,annex agreement ref   acts
+5.txt,kta,documentation
+5.txt,kta,however
+5.txt,kta,relat ed
+5.txt,stipulates,instructions
+5.txt,stipulates,ko
+5.txt,stipulates,civilian jurisdiction
+5.txt,stipulates,annex agreement ref   acts
+5.txt,stipulates,documentation
+5.txt,stipulates,however
+5.txt,stipulates,relat ed
+5.txt,instructions,ko
+5.txt,instructions,civilian jurisdiction
+5.txt,instructions,annex agreement ref   acts
+5.txt,instructions,documentation
+5.txt,instructions,however
+5.txt,instructions,relat ed
+5.txt,ko,civilian jurisdiction
+5.txt,ko,annex agreement ref   acts
+5.txt,ko,documentation
+5.txt,ko,however
+5.txt,ko,relat ed
+5.txt,civilian jurisdiction,annex agreement ref   acts
+5.txt,civilian jurisdiction,documentation
+5.txt,civilian jurisdiction,however
+5.txt,civilian jurisdiction,relat ed
+5.txt,annex agreement ref   acts,documentation
+5.txt,annex agreement ref   acts,however
+5.txt,annex agreement ref   acts,relat ed
+5.txt,documentation,however
+5.txt,documentation,relat ed
+5.txt,however,relat ed
+51.txt,pri,airport
+51.txt,pri,vat
+51.txt,pri,rules regulations
+51.txt,pri,instructions
+51.txt,pri,monie
+51.txt,pri,partn
+51.txt,pri,partner 2
+51.txt,pri,agent
+51.txt,pri,company
+51.txt,pri,gate
+51.txt,pri,partner 4
+51.txt,pri,ko
+51.txt,pri,complicity
+51.txt,pri,800000 euros
+51.txt,pri,euros
+51.txt,pri,faili ng
+51.txt,pri,therefore
+51.txt,airport,vat
+51.txt,airport,rules regulations
+51.txt,airport,instructions
+51.txt,airport,monie
+51.txt,airport,partn
+51.txt,airport,partner 2
+51.txt,airport,agent
+51.txt,airport,company
+51.txt,airport,gate
+51.txt,airport,partner 4
+51.txt,airport,ko
+51.txt,airport,complicity
+51.txt,airport,800000 euros
+51.txt,airport,euros
+51.txt,airport,faili ng
+51.txt,airport,therefore
+51.txt,vat,rules regulations
+51.txt,vat,instructions
+51.txt,vat,monie
+51.txt,vat,partn
+51.txt,vat,partner 2
+51.txt,vat,agent
+51.txt,vat,company
+51.txt,vat,gate
+51.txt,vat,partner 4
+51.txt,vat,ko
+51.txt,vat,complicity
+51.txt,vat,800000 euros
+51.txt,vat,euros
+51.txt,vat,faili ng
+51.txt,vat,therefore
+51.txt,rules regulations,instructions
+51.txt,rules regulations,monie
+51.txt,rules regulations,partn
+51.txt,rules regulations,partner 2
+51.txt,rules regulations,agent
+51.txt,rules regulations,company
+51.txt,rules regulations,gate
+51.txt,rules regulations,partner 4
+51.txt,rules regulations,ko
+51.txt,rules regulations,complicity
+51.txt,rules regulations,800000 euros
+51.txt,rules regulations,euros
+51.txt,rules regulations,faili ng
+51.txt,rules regulations,therefore
+51.txt,instructions,monie
+51.txt,instructions,partn
+51.txt,instructions,partner 2
+51.txt,instructions,agent
+51.txt,instructions,company
+51.txt,instructions,gate
+51.txt,instructions,partner 4
+51.txt,instructions,ko
+51.txt,instructions,complicity
+51.txt,instructions,800000 euros
+51.txt,instructions,euros
+51.txt,instructions,faili ng
+51.txt,instructions,therefore
+51.txt,monie,partn
+51.txt,monie,partner 2
+51.txt,monie,agent
+51.txt,monie,company
+51.txt,monie,gate
+51.txt,monie,partner 4
+51.txt,monie,ko
+51.txt,monie,complicity
+51.txt,monie,800000 euros
+51.txt,monie,euros
+51.txt,monie,faili ng
+51.txt,monie,therefore
+51.txt,partn,partner 2
+51.txt,partn,agent
+51.txt,partn,company
+51.txt,partn,gate
+51.txt,partn,partner 4
+51.txt,partn,ko
+51.txt,partn,complicity
+51.txt,partn,800000 euros
+51.txt,partn,euros
+51.txt,partn,faili ng
+51.txt,partn,therefore
+51.txt,partner 2,agent
+51.txt,partner 2,company
+51.txt,partner 2,gate
+51.txt,partner 2,partner 4
+51.txt,partner 2,ko
+51.txt,partner 2,complicity
+51.txt,partner 2,800000 euros
+51.txt,partner 2,euros
+51.txt,partner 2,faili ng
+51.txt,partner 2,therefore
+51.txt,agent,company
+51.txt,agent,gate
+51.txt,agent,partner 4
+51.txt,agent,ko
+51.txt,agent,complicity
+51.txt,agent,800000 euros
+51.txt,agent,euros
+51.txt,agent,faili ng
+51.txt,agent,therefore
+51.txt,company,gate
+51.txt,company,partner 4
+51.txt,company,ko
+51.txt,company,complicity
+51.txt,company,800000 euros
+51.txt,company,euros
+51.txt,company,faili ng
+51.txt,company,therefore
+51.txt,gate,partner 4
+51.txt,gate,ko
+51.txt,gate,complicity
+51.txt,gate,800000 euros
+51.txt,gate,euros
+51.txt,gate,faili ng
+51.txt,gate,therefore
+51.txt,partner 4,ko
+51.txt,partner 4,complicity
+51.txt,partner 4,800000 euros
+51.txt,partner 4,euros
+51.txt,partner 4,faili ng
+51.txt,partner 4,therefore
+51.txt,ko,complicity
+51.txt,ko,800000 euros
+51.txt,ko,euros
+51.txt,ko,faili ng
+51.txt,ko,therefore
+51.txt,complicity,800000 euros
+51.txt,complicity,euros
+51.txt,complicity,faili ng
+51.txt,complicity,therefore
+51.txt,800000 euros,euros
+51.txt,800000 euros,faili ng
+51.txt,800000 euros,therefore
+51.txt,euros,faili ng
+51.txt,euros,therefore
+51.txt,faili ng,therefore
+52.txt,constitutio,account
+52.txt,constitutio,noti
+52.txt,constitutio,unmi ba nk account
+52.txt,account,noti
+52.txt,account,unmi ba nk account
+52.txt,noti,unmi ba nk account
+60.txt,dealin gs,unmil
+60.txt,dealin gs,se
+60.txt,unmil,se
+63.txt,time,unmil
+63.txt,time,ed nations
+63.txt,time,offic
+63.txt,unmil,ed nations
+63.txt,unmil,offic
+63.txt,ed nations,offic
+69.txt,su,nairobi
+69.txt,su,ed nations
+69.txt,su,c interviews
+69.txt,su,possib le
+69.txt,su,moreover
+69.txt,su,members
+69.txt,nairobi,ed nations
+69.txt,nairobi,c interviews
+69.txt,nairobi,possib le
+69.txt,nairobi,moreover
+69.txt,nairobi,members
+69.txt,ed nations,c interviews
+69.txt,ed nations,possib le
+69.txt,ed nations,moreover
+69.txt,ed nations,members
+69.txt,c interviews,possib le
+69.txt,c interviews,moreover
+69.txt,c interviews,members
+69.txt,possib le,moreover
+69.txt,possib le,members
+69.txt,moreover,members
+73.txt,ge,complete
+73.txt,ge,regulations
+73.txt,ge,gen
+73.txt,complete,regulations
+73.txt,complete,gen
+73.txt,regulations,gen
+8.txt,i introduction,nam e
+8.txt,i introduction,equivalent
+8.txt,i introduction,i methodology
+8.txt,i introduction,ko
+8.txt,i introduction,irregularl
+8.txt,i introduction,divisional manager
+8.txt,i introduction,articles 151
+8.txt,i introduction,vendor 2
+8.txt,i introduction,vendor 1
+8.txt,i introduction,mu lti  national
+8.txt,nam e,equivalent
+8.txt,nam e,i methodology
+8.txt,nam e,ko
+8.txt,nam e,irregularl
+8.txt,nam e,divisional manager
+8.txt,nam e,articles 151
+8.txt,nam e,vendor 2
+8.txt,nam e,vendor 1
+8.txt,nam e,mu lti  national
+8.txt,equivalent,i methodology
+8.txt,equivalent,ko
+8.txt,equivalent,irregularl
+8.txt,equivalent,divisional manager
+8.txt,equivalent,articles 151
+8.txt,equivalent,vendor 2
+8.txt,equivalent,vendor 1
+8.txt,equivalent,mu lti  national
+8.txt,i methodology,ko
+8.txt,i methodology,irregularl
+8.txt,i methodology,divisional manager
+8.txt,i methodology,articles 151
+8.txt,i methodology,vendor 2
+8.txt,i methodology,vendor 1
+8.txt,i methodology,mu lti  national
+8.txt,ko,irregularl
+8.txt,ko,divisional manager
+8.txt,ko,articles 151
+8.txt,ko,vendor 2
+8.txt,ko,vendor 1
+8.txt,ko,mu lti  national
+8.txt,irregularl,divisional manager
+8.txt,irregularl,articles 151
+8.txt,irregularl,vendor 2
+8.txt,irregularl,vendor 1
+8.txt,irregularl,mu lti  national
+8.txt,divisional manager,articles 151
+8.txt,divisional manager,vendor 2
+8.txt,divisional manager,vendor 1
+8.txt,divisional manager,mu lti  national
+8.txt,articles 151,vendor 2
+8.txt,articles 151,vendor 1
+8.txt,articles 151,mu lti  national
+8.txt,vendor 2,vendor 1
+8.txt,vendor 2,mu lti  national
+8.txt,vendor 1,mu lti  national
+82.txt,walter cabrera,ma
+82.txt,walter cabrera,alexander yakovlev
+82.txt,walter cabrera,cabrera
+82.txt,walter cabrera,sta
+82.txt,walter cabrera,government
+82.txt,walter cabrera,cabreras
+82.txt,walter cabrera,sanjaya   bahel
+82.txt,walter cabrera,bahel
+82.txt,walter cabrera,time
+82.txt,walter cabrera,bahels
+82.txt,walter cabrera,complete
+82.txt,walter cabrera,ba
+82.txt,walter cabrera,jane redfern
+82.txt,walter cabrera,walter cab
+82.txt,walter cabrera,nishan kohli
+82.txt,walter cabrera,kohli
+82.txt,walter cabrera,ma terially
+82.txt,walter cabrera,kohlis
+82.txt,walter cabrera,further
+82.txt,walter cabrera,cabrer
+82.txt,walter cabrera,hence
+82.txt,walter cabrera,fu
+82.txt,walter cabrera,therefore
+82.txt,walter cabrera,again
+82.txt,walter cabrera,toshiba
+82.txt,walter cabrera,model
+82.txt,walter cabrera,la cresta
+82.txt,walter cabrera,nevertheless
+82.txt,walter cabrera,however   la cresta
+82.txt,walter cabrera,la
+82.txt,walter cabrera,email
+82.txt,walter cabrera,lacresta
+82.txt,walter cabrera,danoffice
+82.txt,walter cabrera,ca
+82.txt,ma,alexander yakovlev
+82.txt,ma,cabrera
+82.txt,ma,sta
+82.txt,ma,government
+82.txt,ma,cabreras
+82.txt,ma,sanjaya   bahel
+82.txt,ma,bahel
+82.txt,ma,time
+82.txt,ma,bahels
+82.txt,ma,complete
+82.txt,ma,ba
+82.txt,ma,jane redfern
+82.txt,ma,walter cab
+82.txt,ma,nishan kohli
+82.txt,ma,kohli
+82.txt,ma,ma terially
+82.txt,ma,kohlis
+82.txt,ma,further
+82.txt,ma,cabrer
+82.txt,ma,hence
+82.txt,ma,fu
+82.txt,ma,therefore
+82.txt,ma,again
+82.txt,ma,toshiba
+82.txt,ma,model
+82.txt,ma,la cresta
+82.txt,ma,nevertheless
+82.txt,ma,however   la cresta
+82.txt,ma,la
+82.txt,ma,email
+82.txt,ma,lacresta
+82.txt,ma,danoffice
+82.txt,ma,ca
+82.txt,alexander yakovlev,cabrera
+82.txt,alexander yakovlev,sta
+82.txt,alexander yakovlev,government
+82.txt,alexander yakovlev,cabreras
+82.txt,alexander yakovlev,sanjaya   bahel
+82.txt,alexander yakovlev,bahel
+82.txt,alexander yakovlev,time
+82.txt,alexander yakovlev,bahels
+82.txt,alexander yakovlev,complete
+82.txt,alexander yakovlev,ba
+82.txt,alexander yakovlev,jane redfern
+82.txt,alexander yakovlev,walter cab
+82.txt,alexander yakovlev,nishan kohli
+82.txt,alexander yakovlev,kohli
+82.txt,alexander yakovlev,ma terially
+82.txt,alexander yakovlev,kohlis
+82.txt,alexander yakovlev,further
+82.txt,alexander yakovlev,cabrer
+82.txt,alexander yakovlev,hence
+82.txt,alexander yakovlev,fu
+82.txt,alexander yakovlev,therefore
+82.txt,alexander yakovlev,again
+82.txt,alexander yakovlev,toshiba
+82.txt,alexander yakovlev,model
+82.txt,alexander yakovlev,la cresta
+82.txt,alexander yakovlev,nevertheless
+82.txt,alexander yakovlev,however   la cresta
+82.txt,alexander yakovlev,la
+82.txt,alexander yakovlev,email
+82.txt,alexander yakovlev,lacresta
+82.txt,alexander yakovlev,danoffice
+82.txt,alexander yakovlev,ca
+82.txt,cabrera,sta
+82.txt,cabrera,government
+82.txt,cabrera,cabreras
+82.txt,cabrera,sanjaya   bahel
+82.txt,cabrera,bahel
+82.txt,cabrera,time
+82.txt,cabrera,bahels
+82.txt,cabrera,complete
+82.txt,cabrera,ba
+82.txt,cabrera,jane redfern
+82.txt,cabrera,walter cab
+82.txt,cabrera,nishan kohli
+82.txt,cabrera,kohli
+82.txt,cabrera,ma terially
+82.txt,cabrera,kohlis
+82.txt,cabrera,further
+82.txt,cabrera,cabrer
+82.txt,cabrera,hence
+82.txt,cabrera,fu
+82.txt,cabrera,therefore
+82.txt,cabrera,again
+82.txt,cabrera,toshiba
+82.txt,cabrera,model
+82.txt,cabrera,la cresta
+82.txt,cabrera,nevertheless
+82.txt,cabrera,however   la cresta
+82.txt,cabrera,la
+82.txt,cabrera,email
+82.txt,cabrera,lacresta
+82.txt,cabrera,danoffice
+82.txt,cabrera,ca
+82.txt,sta,government
+82.txt,sta,cabreras
+82.txt,sta,sanjaya   bahel
+82.txt,sta,bahel
+82.txt,sta,time
+82.txt,sta,bahels
+82.txt,sta,complete
+82.txt,sta,ba
+82.txt,sta,jane redfern
+82.txt,sta,walter cab
+82.txt,sta,nishan kohli
+82.txt,sta,kohli
+82.txt,sta,ma terially
+82.txt,sta,kohlis
+82.txt,sta,further
+82.txt,sta,cabrer
+82.txt,sta,hence
+82.txt,sta,fu
+82.txt,sta,therefore
+82.txt,sta,again
+82.txt,sta,toshiba
+82.txt,sta,model
+82.txt,sta,la cresta
+82.txt,sta,nevertheless
+82.txt,sta,however   la cresta
+82.txt,sta,la
+82.txt,sta,email
+82.txt,sta,lacresta
+82.txt,sta,danoffice
+82.txt,sta,ca
+82.txt,government,cabreras
+82.txt,government,sanjaya   bahel
+82.txt,government,bahel
+82.txt,government,time
+82.txt,government,bahels
+82.txt,government,complete
+82.txt,government,ba
+82.txt,government,jane redfern
+82.txt,government,walter cab
+82.txt,government,nishan kohli
+82.txt,government,kohli
+82.txt,government,ma terially
+82.txt,government,kohlis
+82.txt,government,further
+82.txt,government,cabrer
+82.txt,government,hence
+82.txt,government,fu
+82.txt,government,therefore
+82.txt,government,again
+82.txt,government,toshiba
+82.txt,government,model
+82.txt,government,la cresta
+82.txt,government,nevertheless
+82.txt,government,however   la cresta
+82.txt,government,la
+82.txt,government,email
+82.txt,government,lacresta
+82.txt,government,danoffice
+82.txt,government,ca
+82.txt,cabreras,sanjaya   bahel
+82.txt,cabreras,bahel
+82.txt,cabreras,time
+82.txt,cabreras,bahels
+82.txt,cabreras,complete
+82.txt,cabreras,ba
+82.txt,cabreras,jane redfern
+82.txt,cabreras,walter cab
+82.txt,cabreras,nishan kohli
+82.txt,cabreras,kohli
+82.txt,cabreras,ma terially
+82.txt,cabreras,kohlis
+82.txt,cabreras,further
+82.txt,cabreras,cabrer
+82.txt,cabreras,hence
+82.txt,cabreras,fu
+82.txt,cabreras,therefore
+82.txt,cabreras,again
+82.txt,cabreras,toshiba
+82.txt,cabreras,model
+82.txt,cabreras,la cresta
+82.txt,cabreras,nevertheless
+82.txt,cabreras,however   la cresta
+82.txt,cabreras,la
+82.txt,cabreras,email
+82.txt,cabreras,lacresta
+82.txt,cabreras,danoffice
+82.txt,cabreras,ca
+82.txt,sanjaya   bahel,bahel
+82.txt,sanjaya   bahel,time
+82.txt,sanjaya   bahel,bahels
+82.txt,sanjaya   bahel,complete
+82.txt,sanjaya   bahel,ba
+82.txt,sanjaya   bahel,jane redfern
+82.txt,sanjaya   bahel,walter cab
+82.txt,sanjaya   bahel,nishan kohli
+82.txt,sanjaya   bahel,kohli
+82.txt,sanjaya   bahel,ma terially
+82.txt,sanjaya   bahel,kohlis
+82.txt,sanjaya   bahel,further
+82.txt,sanjaya   bahel,cabrer
+82.txt,sanjaya   bahel,hence
+82.txt,sanjaya   bahel,fu
+82.txt,sanjaya   bahel,therefore
+82.txt,sanjaya   bahel,again
+82.txt,sanjaya   bahel,toshiba
+82.txt,sanjaya   bahel,model
+82.txt,sanjaya   bahel,la cresta
+82.txt,sanjaya   bahel,nevertheless
+82.txt,sanjaya   bahel,however   la cresta
+82.txt,sanjaya   bahel,la
+82.txt,sanjaya   bahel,email
+82.txt,sanjaya   bahel,lacresta
+82.txt,sanjaya   bahel,danoffice
+82.txt,sanjaya   bahel,ca
+82.txt,bahel,time
+82.txt,bahel,bahels
+82.txt,bahel,complete
+82.txt,bahel,ba
+82.txt,bahel,jane redfern
+82.txt,bahel,walter cab
+82.txt,bahel,nishan kohli
+82.txt,bahel,kohli
+82.txt,bahel,ma terially
+82.txt,bahel,kohlis
+82.txt,bahel,further
+82.txt,bahel,cabrer
+82.txt,bahel,hence
+82.txt,bahel,fu
+82.txt,bahel,therefore
+82.txt,bahel,again
+82.txt,bahel,toshiba
+82.txt,bahel,model
+82.txt,bahel,la cresta
+82.txt,bahel,nevertheless
+82.txt,bahel,however   la cresta
+82.txt,bahel,la
+82.txt,bahel,email
+82.txt,bahel,lacresta
+82.txt,bahel,danoffice
+82.txt,bahel,ca
+82.txt,time,bahels
+82.txt,time,complete
+82.txt,time,ba
+82.txt,time,jane redfern
+82.txt,time,walter cab
+82.txt,time,nishan kohli
+82.txt,time,kohli
+82.txt,time,ma terially
+82.txt,time,kohlis
+82.txt,time,further
+82.txt,time,cabrer
+82.txt,time,hence
+82.txt,time,fu
+82.txt,time,therefore
+82.txt,time,again
+82.txt,time,toshiba
+82.txt,time,model
+82.txt,time,la cresta
+82.txt,time,nevertheless
+82.txt,time,however   la cresta
+82.txt,time,la
+82.txt,time,email
+82.txt,time,lacresta
+82.txt,time,danoffice
+82.txt,time,ca
+82.txt,bahels,complete
+82.txt,bahels,ba
+82.txt,bahels,jane redfern
+82.txt,bahels,walter cab
+82.txt,bahels,nishan kohli
+82.txt,bahels,kohli
+82.txt,bahels,ma terially
+82.txt,bahels,kohlis
+82.txt,bahels,further
+82.txt,bahels,cabrer
+82.txt,bahels,hence
+82.txt,bahels,fu
+82.txt,bahels,therefore
+82.txt,bahels,again
+82.txt,bahels,toshiba
+82.txt,bahels,model
+82.txt,bahels,la cresta
+82.txt,bahels,nevertheless
+82.txt,bahels,however   la cresta
+82.txt,bahels,la
+82.txt,bahels,email
+82.txt,bahels,lacresta
+82.txt,bahels,danoffice
+82.txt,bahels,ca
+82.txt,complete,ba
+82.txt,complete,jane redfern
+82.txt,complete,walter cab
+82.txt,complete,nishan kohli
+82.txt,complete,kohli
+82.txt,complete,ma terially
+82.txt,complete,kohlis
+82.txt,complete,further
+82.txt,complete,cabrer
+82.txt,complete,hence
+82.txt,complete,fu
+82.txt,complete,therefore
+82.txt,complete,again
+82.txt,complete,toshiba
+82.txt,complete,model
+82.txt,complete,la cresta
+82.txt,complete,nevertheless
+82.txt,complete,however   la cresta
+82.txt,complete,la
+82.txt,complete,email
+82.txt,complete,lacresta
+82.txt,complete,danoffice
+82.txt,complete,ca
+82.txt,ba,jane redfern
+82.txt,ba,walter cab
+82.txt,ba,nishan kohli
+82.txt,ba,kohli
+82.txt,ba,ma terially
+82.txt,ba,kohlis
+82.txt,ba,further
+82.txt,ba,cabrer
+82.txt,ba,hence
+82.txt,ba,fu
+82.txt,ba,therefore
+82.txt,ba,again
+82.txt,ba,toshiba
+82.txt,ba,model
+82.txt,ba,la cresta
+82.txt,ba,nevertheless
+82.txt,ba,however   la cresta
+82.txt,ba,la
+82.txt,ba,email
+82.txt,ba,lacresta
+82.txt,ba,danoffice
+82.txt,ba,ca
+82.txt,jane redfern,walter cab
+82.txt,jane redfern,nishan kohli
+82.txt,jane redfern,kohli
+82.txt,jane redfern,ma terially
+82.txt,jane redfern,kohlis
+82.txt,jane redfern,further
+82.txt,jane redfern,cabrer
+82.txt,jane redfern,hence
+82.txt,jane redfern,fu
+82.txt,jane redfern,therefore
+82.txt,jane redfern,again
+82.txt,jane redfern,toshiba
+82.txt,jane redfern,model
+82.txt,jane redfern,la cresta
+82.txt,jane redfern,nevertheless
+82.txt,jane redfern,however   la cresta
+82.txt,jane redfern,la
+82.txt,jane redfern,email
+82.txt,jane redfern,lacresta
+82.txt,jane redfern,danoffice
+82.txt,jane redfern,ca
+82.txt,walter cab,nishan kohli
+82.txt,walter cab,kohli
+82.txt,walter cab,ma terially
+82.txt,walter cab,kohlis
+82.txt,walter cab,further
+82.txt,walter cab,cabrer
+82.txt,walter cab,hence
+82.txt,walter cab,fu
+82.txt,walter cab,therefore
+82.txt,walter cab,again
+82.txt,walter cab,toshiba
+82.txt,walter cab,model
+82.txt,walter cab,la cresta
+82.txt,walter cab,nevertheless
+82.txt,walter cab,however   la cresta
+82.txt,walter cab,la
+82.txt,walter cab,email
+82.txt,walter cab,lacresta
+82.txt,walter cab,danoffice
+82.txt,walter cab,ca
+82.txt,nishan kohli,kohli
+82.txt,nishan kohli,ma terially
+82.txt,nishan kohli,kohlis
+82.txt,nishan kohli,further
+82.txt,nishan kohli,cabrer
+82.txt,nishan kohli,hence
+82.txt,nishan kohli,fu
+82.txt,nishan kohli,therefore
+82.txt,nishan kohli,again
+82.txt,nishan kohli,toshiba
+82.txt,nishan kohli,model
+82.txt,nishan kohli,la cresta
+82.txt,nishan kohli,nevertheless
+82.txt,nishan kohli,however   la cresta
+82.txt,nishan kohli,la
+82.txt,nishan kohli,email
+82.txt,nishan kohli,lacresta
+82.txt,nishan kohli,danoffice
+82.txt,nishan kohli,ca
+82.txt,kohli,ma terially
+82.txt,kohli,kohlis
+82.txt,kohli,further
+82.txt,kohli,cabrer
+82.txt,kohli,hence
+82.txt,kohli,fu
+82.txt,kohli,therefore
+82.txt,kohli,again
+82.txt,kohli,toshiba
+82.txt,kohli,model
+82.txt,kohli,la cresta
+82.txt,kohli,nevertheless
+82.txt,kohli,however   la cresta
+82.txt,kohli,la
+82.txt,kohli,email
+82.txt,kohli,lacresta
+82.txt,kohli,danoffice
+82.txt,kohli,ca
+82.txt,ma terially,kohlis
+82.txt,ma terially,further
+82.txt,ma terially,cabrer
+82.txt,ma terially,hence
+82.txt,ma terially,fu
+82.txt,ma terially,therefore
+82.txt,ma terially,again
+82.txt,ma terially,toshiba
+82.txt,ma terially,model
+82.txt,ma terially,la cresta
+82.txt,ma terially,nevertheless
+82.txt,ma terially,however   la cresta
+82.txt,ma terially,la
+82.txt,ma terially,email
+82.txt,ma terially,lacresta
+82.txt,ma terially,danoffice
+82.txt,ma terially,ca
+82.txt,kohlis,further
+82.txt,kohlis,cabrer
+82.txt,kohlis,hence
+82.txt,kohlis,fu
+82.txt,kohlis,therefore
+82.txt,kohlis,again
+82.txt,kohlis,toshiba
+82.txt,kohlis,model
+82.txt,kohlis,la cresta
+82.txt,kohlis,nevertheless
+82.txt,kohlis,however   la cresta
+82.txt,kohlis,la
+82.txt,kohlis,email
+82.txt,kohlis,lacresta
+82.txt,kohlis,danoffice
+82.txt,kohlis,ca
+82.txt,further,cabrer
+82.txt,further,hence
+82.txt,further,fu
+82.txt,further,therefore
+82.txt,further,again
+82.txt,further,toshiba
+82.txt,further,model
+82.txt,further,la cresta
+82.txt,further,nevertheless
+82.txt,further,however   la cresta
+82.txt,further,la
+82.txt,further,email
+82.txt,further,lacresta
+82.txt,further,danoffice
+82.txt,further,ca
+82.txt,cabrer,hence
+82.txt,cabrer,fu
+82.txt,cabrer,therefore
+82.txt,cabrer,again
+82.txt,cabrer,toshiba
+82.txt,cabrer,model
+82.txt,cabrer,la cresta
+82.txt,cabrer,nevertheless
+82.txt,cabrer,however   la cresta
+82.txt,cabrer,la
+82.txt,cabrer,email
+82.txt,cabrer,lacresta
+82.txt,cabrer,danoffice
+82.txt,cabrer,ca
+82.txt,hence,fu
+82.txt,hence,therefore
+82.txt,hence,again
+82.txt,hence,toshiba
+82.txt,hence,model
+82.txt,hence,la cresta
+82.txt,hence,nevertheless
+82.txt,hence,however   la cresta
+82.txt,hence,la
+82.txt,hence,email
+82.txt,hence,lacresta
+82.txt,hence,danoffice
+82.txt,hence,ca
+82.txt,fu,therefore
+82.txt,fu,again
+82.txt,fu,toshiba
+82.txt,fu,model
+82.txt,fu,la cresta
+82.txt,fu,nevertheless
+82.txt,fu,however   la cresta
+82.txt,fu,la
+82.txt,fu,email
+82.txt,fu,lacresta
+82.txt,fu,danoffice
+82.txt,fu,ca
+82.txt,therefore,again
+82.txt,therefore,toshiba
+82.txt,therefore,model
+82.txt,therefore,la cresta
+82.txt,therefore,nevertheless
+82.txt,therefore,however   la cresta
+82.txt,therefore,la
+82.txt,therefore,email
+82.txt,therefore,lacresta
+82.txt,therefore,danoffice
+82.txt,therefore,ca
+82.txt,again,toshiba
+82.txt,again,model
+82.txt,again,la cresta
+82.txt,again,nevertheless
+82.txt,again,however   la cresta
+82.txt,again,la
+82.txt,again,email
+82.txt,again,lacresta
+82.txt,again,danoffice
+82.txt,again,ca
+82.txt,toshiba,model
+82.txt,toshiba,la cresta
+82.txt,toshiba,nevertheless
+82.txt,toshiba,however   la cresta
+82.txt,toshiba,la
+82.txt,toshiba,email
+82.txt,toshiba,lacresta
+82.txt,toshiba,danoffice
+82.txt,toshiba,ca
+82.txt,model,la cresta
+82.txt,model,nevertheless
+82.txt,model,however   la cresta
+82.txt,model,la
+82.txt,model,email
+82.txt,model,lacresta
+82.txt,model,danoffice
+82.txt,model,ca
+82.txt,la cresta,nevertheless
+82.txt,la cresta,however   la cresta
+82.txt,la cresta,la
+82.txt,la cresta,email
+82.txt,la cresta,lacresta
+82.txt,la cresta,danoffice
+82.txt,la cresta,ca
+82.txt,nevertheless,however   la cresta
+82.txt,nevertheless,la
+82.txt,nevertheless,email
+82.txt,nevertheless,lacresta
+82.txt,nevertheless,danoffice
+82.txt,nevertheless,ca
+82.txt,however   la cresta,la
+82.txt,however   la cresta,email
+82.txt,however   la cresta,lacresta
+82.txt,however   la cresta,danoffice
+82.txt,however   la cresta,ca
+82.txt,la,email
+82.txt,la,lacresta
+82.txt,la,danoffice
+82.txt,la,ca
+82.txt,email,lacresta
+82.txt,email,danoffice
+82.txt,email,ca
+82.txt,lacresta,danoffice
+82.txt,lacresta,ca
+82.txt,danoffice,ca
+89.txt,pierre vimont,nicolas
+89.txt,pierre vimont,jean  david levitte
+89.txt,pierre vimont,sarkozy
+89.txt,pierre vimont,barack obama
+89.txt,pierre vimont,afghanistan
+89.txt,pierre vimont,pernod ricard description   keywords
+89.txt,pierre vimont,space corporation
+89.txt,pierre vimont,french us
+89.txt,pierre vimont,french
+89.txt,pierre vimont,march
+89.txt,pierre vimont,vimont
+89.txt,pierre vimont,jeandavid
+89.txt,pierre vimont,levitte
+89.txt,pierre vimont,afghanistan    levitte
+89.txt,pierre vimont,pernod
+89.txt,pierre vimont,process
+89.txt,nicolas,jean  david levitte
+89.txt,nicolas,sarkozy
+89.txt,nicolas,barack obama
+89.txt,nicolas,afghanistan
+89.txt,nicolas,pernod ricard description   keywords
+89.txt,nicolas,space corporation
+89.txt,nicolas,french us
+89.txt,nicolas,french
+89.txt,nicolas,march
+89.txt,nicolas,vimont
+89.txt,nicolas,jeandavid
+89.txt,nicolas,levitte
+89.txt,nicolas,afghanistan    levitte
+89.txt,nicolas,pernod
+89.txt,nicolas,process
+89.txt,jean  david levitte,sarkozy
+89.txt,jean  david levitte,barack obama
+89.txt,jean  david levitte,afghanistan
+89.txt,jean  david levitte,pernod ricard description   keywords
+89.txt,jean  david levitte,space corporation
+89.txt,jean  david levitte,french us
+89.txt,jean  david levitte,french
+89.txt,jean  david levitte,march
+89.txt,jean  david levitte,vimont
+89.txt,jean  david levitte,jeandavid
+89.txt,jean  david levitte,levitte
+89.txt,jean  david levitte,afghanistan    levitte
+89.txt,jean  david levitte,pernod
+89.txt,jean  david levitte,process
+89.txt,sarkozy,barack obama
+89.txt,sarkozy,afghanistan
+89.txt,sarkozy,pernod ricard description   keywords
+89.txt,sarkozy,space corporation
+89.txt,sarkozy,french us
+89.txt,sarkozy,french
+89.txt,sarkozy,march
+89.txt,sarkozy,vimont
+89.txt,sarkozy,jeandavid
+89.txt,sarkozy,levitte
+89.txt,sarkozy,afghanistan    levitte
+89.txt,sarkozy,pernod
+89.txt,sarkozy,process
+89.txt,barack obama,afghanistan
+89.txt,barack obama,pernod ricard description   keywords
+89.txt,barack obama,space corporation
+89.txt,barack obama,french us
+89.txt,barack obama,french
+89.txt,barack obama,march
+89.txt,barack obama,vimont
+89.txt,barack obama,jeandavid
+89.txt,barack obama,levitte
+89.txt,barack obama,afghanistan    levitte
+89.txt,barack obama,pernod
+89.txt,barack obama,process
+89.txt,afghanistan,pernod ricard description   keywords
+89.txt,afghanistan,space corporation
+89.txt,afghanistan,french us
+89.txt,afghanistan,french
+89.txt,afghanistan,march
+89.txt,afghanistan,vimont
+89.txt,afghanistan,jeandavid
+89.txt,afghanistan,levitte
+89.txt,afghanistan,afghanistan    levitte
+89.txt,afghanistan,pernod
+89.txt,afghanistan,process
+89.txt,pernod ricard description   keywords,space corporation
+89.txt,pernod ricard description   keywords,french us
+89.txt,pernod ricard description   keywords,french
+89.txt,pernod ricard description   keywords,march
+89.txt,pernod ricard description   keywords,vimont
+89.txt,pernod ricard description   keywords,jeandavid
+89.txt,pernod ricard description   keywords,levitte
+89.txt,pernod ricard description   keywords,afghanistan    levitte
+89.txt,pernod ricard description   keywords,pernod
+89.txt,pernod ricard description   keywords,process
+89.txt,space corporation,french us
+89.txt,space corporation,french
+89.txt,space corporation,march
+89.txt,space corporation,vimont
+89.txt,space corporation,jeandavid
+89.txt,space corporation,levitte
+89.txt,space corporation,afghanistan    levitte
+89.txt,space corporation,pernod
+89.txt,space corporation,process
+89.txt,french us,french
+89.txt,french us,march
+89.txt,french us,vimont
+89.txt,french us,jeandavid
+89.txt,french us,levitte
+89.txt,french us,afghanistan    levitte
+89.txt,french us,pernod
+89.txt,french us,process
+89.txt,french,march
+89.txt,french,vimont
+89.txt,french,jeandavid
+89.txt,french,levitte
+89.txt,french,afghanistan    levitte
+89.txt,french,pernod
+89.txt,french,process
+89.txt,march,vimont
+89.txt,march,jeandavid
+89.txt,march,levitte
+89.txt,march,afghanistan    levitte
+89.txt,march,pernod
+89.txt,march,process
+89.txt,vimont,jeandavid
+89.txt,vimont,levitte
+89.txt,vimont,afghanistan    levitte
+89.txt,vimont,pernod
+89.txt,vimont,process
+89.txt,jeandavid,levitte
+89.txt,jeandavid,afghanistan    levitte
+89.txt,jeandavid,pernod
+89.txt,jeandavid,process
+89.txt,levitte,afghanistan    levitte
+89.txt,levitte,pernod
+89.txt,levitte,process
+89.txt,afghanistan    levitte,pernod
+89.txt,afghanistan    levitte,process
+89.txt,pernod,process
+9.txt,i introduction,ko
+91.txt,jean  david levitte,levitte
+91.txt,jean  david levitte,description   keywords
+91.txt,jean  david levitte,off saddam hussein   restraint
+91.txt,jean  david levitte,jean   david
+91.txt,levitte,description   keywords
+91.txt,levitte,off saddam hussein   restraint
+91.txt,levitte,jean   david
+91.txt,description   keywords,off saddam hussein   restraint
+91.txt,description   keywords,jean   david
+91.txt,off saddam hussein   restraint,jean   david
