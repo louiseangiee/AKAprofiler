@@ -121,7 +121,6 @@ def load_spacy_model():
     return nlp
 
 # Entity Extraction
-# Entity Extraction
 def extract_entities_from_text(output_folder):
     nlp = spacy.load("en_core_web_sm")
     infixes = list(nlp.Defaults.infixes)
@@ -154,6 +153,7 @@ def extract_entities_from_text(output_folder):
             for page_num, page_text in enumerate(pages, start=1):
                 doc_page = nlp(page_text)
                 for ent in doc_page.ents:
+
                     clean_entity = ent.text.strip().replace("\n", " ")  # Clean entity text
                     entity_count[clean_entity]["count"] += 1
                     entity_count[clean_entity]["pages"].add(page_num)
@@ -169,7 +169,6 @@ def extract_entities_from_text(output_folder):
                 })
 
     return entity_data
-
 
 #find the frequency of each entity in the pdf file that they are located in
 
