@@ -166,6 +166,16 @@ def list_files():
     files = list(files_collection.find({}, {"_id": 0, "text": 0}))
     return jsonify({"files": files})
 
+# API Endpoint: Get file by File_name
+@app.route("/files/<file_name>", methods=["GET"])
+def get_file_by_file_name(file_name):
+    file = files_collection.find_one({"filename": file_name}, {"_id": 0, "text": 0})
+    if file:
+        return jsonify({"file": file})
+    else:
+        return jsonify({"error": "File not found"}), 404
+
+
 # API Endpoint: search for specific entities across all files
 @app.route("/api/entities/search", methods=["GET"])
 def search_entities():
