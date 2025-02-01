@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime
 from Data import extract_text_from_directory, extract_entities_from_text
+import shutil
 
 
 # Load environment variables
@@ -45,44 +46,71 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER
 
 
+def cleanup_folders(folders):
+    """Deletes all files in the specified folders"""
+    for folder in folders:
+        if os.path.exists(folder):
+            for file in os.listdir(folder):
+                file_path = os.path.join(folder, file)
+                try:
+                    if os.path.isfile(file_path) or os.path.islink(file_path):
+                        os.unlink(file_path)  # Delete file
+                    elif os.path.isdir(file_path):
+                        shutil.rmtree(file_path)  # Delete folder
+                except Exception as e:
+                    print(f"Failed to delete {file_path}: {e}")
+
+
+
 # API Endpoint: Upload PDF
 @app.route("/upload", methods=["POST"])
 def upload_file():
-    
     if "file" not in request.files:
-        return jsonify({"error": "No file provided"}), 400
-    
-    file = request.files["file"]
-    if file.filename == "":
-        return jsonify({"error": "No selected file"}), 400
-    
-    filename = secure_filename(file.filename)
-    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-    file.save(file_path)
+        return jsonify({"error": "No files provided"}), 400
 
-    # Extract text from PDF to get the number of pages
-    doc = fitz.open(file_path)
-    num_pages = doc.page_count
+    files = request.files.getlist("file")
+    if not files:
+        return jsonify({"error": "No selected files"}), 400
 
-    # Save file info in MongoDB
-    file_id = str(uuid.uuid4())
-    file_entry = {
-        "_id": file_id,
-        "filename": filename,
-        "filepath": file_path,
-        "upload_time": datetime.now(),
-        "pages": num_pages  
-    }
-    files_collection.insert_one(file_entry)
-    
+    uploaded_files_info = []
+
+    for file in files:
+        if file.filename == "":
+            continue
+
+        filename = secure_filename(file.filename)
+        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        file.save(file_path)
+
+        # Extract text from PDF to get the number of pages
+        doc = fitz.open(file_path)
+        num_pages = doc.page_count
+
+        # Save file info in MongoDB
+        file_id = str(uuid.uuid4())
+        file_entry = {
+            "_id": file_id,
+            "filename": filename,
+            "filepath": file_path,
+            "upload_time": datetime.now(),
+            "pages": num_pages
+        }
+        files_collection.insert_one(file_entry)
+
+        uploaded_files_info.append({
+            "file_id": file_id,
+            "filename": filename,
+            "pages": num_pages
+        })
+
     # Extract entities from uploaded files
     extract_text_from_directory(app.config['UPLOAD_FOLDER'], OUTPUT_FOLDER)
-    
+
     # Extract entities
     entities = extract_entities_from_text(OUTPUT_FOLDER)
     print(entities)
-    
-    #Save extracted entities in MongoDB
+
+    # Save extracted entities in MongoDB
     for entity in entities:
         entity_entry = {
             "_id": str(uuid.uuid4()),
@@ -92,26 +120,45 @@ def upload_file():
             "label": entity["label"],
             "frequency": entity["frequency"],  # Number of times the entity is mentioned
             "pagesFoundIn": entity["pagesFound"],  # Pages where the entity is mentioned
-            "relationships": "123" # Placeholder for relationships
+            "relationships": "123"  # Placeholder for relationships
         }
         entities_collection.insert_one(entity_entry)
-    
+
+    cleanup_folders([OUTPUT_FOLDER])
 
     return jsonify({
-        "message": "File uploaded successfully",
-        "file_id": file_id,
-        "filename": filename,
-        "pages": num_pages,
-
+        "message": "Files uploaded successfully",
+        "files": uploaded_files_info
     })
 
 
 
-# API Endpoint: Get Extracted Entities
-@app.route("/entities/<file_id>", methods=["GET"])
-def get_entities(file_id):
+# API Endpoint: Get Extracted Entities by file_id
+@app.route("/entities/file/<file_id>", methods=["GET"])
+def get_entities_by_file_id(file_id):
     entities = list(entities_collection.find({"file_id": file_id}, {"_id": 0}))
-    return jsonify({"file_id": file_id, "entities": entities})
+    return jsonify({"file_id": file_id, "entities": entities}
+                   )
+
+@app.route("/entities/name/<entity_name>", methods=["GET"])
+def get_entities_by_entity_name(entity_name):
+    if not entity_name:
+        return jsonify({"error": "Entity name is required"}), 400
+
+    try:
+        entities = list(entities_collection.find(
+            {"entity": {"$regex": f"^{entity_name}$", "$options": "i"}},  # Case-insensitive search
+            {"_id": 0}
+        ))
+
+        if not entities:
+            return jsonify({"message": f"No entities found for '{entity_name}'"}), 404
+
+        return jsonify({"entity_name": entity_name, "entities": entities})
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 
 # API Endpoint: List Uploaded Files
 @app.route("/files", methods=["GET"])
