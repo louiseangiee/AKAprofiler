@@ -82,18 +82,19 @@ def upload_file():
     entities = extract_entities_from_text(OUTPUT_FOLDER)
     print(entities)
     
-    # Save extracted entities in MongoDB
-    # for entity in entities:
-    #     entity_entry = {
-    #         "_id": str(uuid.uuid4()),
-    #         "file_id": file_id,
-    #         "file_name": entity["file_name"],
-    #         "entity": entity["entity"],
-    #         "label": entity["label"],
-    #         "frequency": entity["frequency"],  # Number of times the entity is mentioned
-    #         "pages": entity["pages"]  # Pages where the entity is mentioned
-    #     }
-    #     entities_collection.insert_one(entity_entry)
+    #Save extracted entities in MongoDB
+    for entity in entities:
+        entity_entry = {
+            "_id": str(uuid.uuid4()),
+            "file_id": file_id,
+            "file_name": entity["file_name"],
+            "entity": entity["entity"],
+            "label": entity["label"],
+            "frequency": entity["frequency"],  # Number of times the entity is mentioned
+            "pagesFoundIn": entity["pagesFound"],  # Pages where the entity is mentioned
+            "relationships": "123" # Placeholder for relationships
+        }
+        entities_collection.insert_one(entity_entry)
     
 
     return jsonify({
@@ -104,45 +105,6 @@ def upload_file():
 
     })
 
-@app.route("/process_all_files", methods=["POST"])
-def process_all_files():
-    files = files_collection.find({"status": "uploaded"})
-    processed_files = []
-    
-    for file_entry in files:
-        file_id = file_entry["_id"]
-        file_path = os.path.join(app.config['UPLOAD_FOLDER'], file_entry["filename"])
-        output_folder = app.config['OUTPUT_FOLDER']
-        
-        # Extract text from PDF
-        extract_text_from_directory(app.config['UPLOAD_FOLDER'], output_folder)
-        
-        # Extract entities
-        entities = extract_entities_from_text(output_folder)
-        
-        # Save extracted entities in MongoDB as individual entries
-        for entity in entities:
-            entity_entry = {
-                "_id": str(uuid.uuid4()),
-                "file_id": file_id,
-                "file_name": entity["file_name"],
-                "entity": entity["entity"],
-                "label": entity["label"]
-            }
-            entities_collection.insert_one(entity_entry)
-        
-        # Update file status to 'processed'
-        files_collection.update_one(
-            {"_id": file_id},
-            {"$set": {"status": "processed", "processed_pages": 10}}
-        )
-        
-        processed_files.append(file_id)
-    
-    return jsonify({
-        "message": "All uploaded files processed successfully",
-        "processed_files": processed_files
-    })
 
 
 # API Endpoint: Get Extracted Entities
