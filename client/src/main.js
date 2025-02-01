@@ -21,6 +21,7 @@ import Dashboard from "@/views/admin/Dashboard.vue";
 import Tables from "@/views/admin/Tables.vue";
 import Maps from "@/views/admin/Maps.vue";
 import Search from "@/views/admin/Search.vue";
+import Upload from "@/views/admin/Upload.vue";
 
 // views for Auth layout
 
@@ -48,6 +49,10 @@ const routes = [
       {
         path: "/search",
         component: Search,
+      },
+      {
+        path: "/upload",
+        component: Upload,
       },
       {
         path: "/tables",
