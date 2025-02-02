@@ -10,7 +10,7 @@ import uuid
 import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime
-from Data import extract_text_from_directory, extract_entities_from_text
+from server.Functions import extract_text_from_directory, extract_entities_from_text
 import shutil
 from flask_cors import CORS
 
