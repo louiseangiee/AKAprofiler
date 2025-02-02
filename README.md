@@ -35,15 +35,15 @@ This tool utilizes **Flask** for the backend, **MongoDB** for data storage, and 
 
 ### **1. Clone the Repository**  
 ### **2. Backend Setup**  
-cd server
-pip install -r requirements.txt
-1. Ensure Ensure you have a MongoDB database running.
-2. Create a .env file inside the server directory and add your MongoDB URI:
-MONGO_URI=mongodb+srv://yourusername:yourpassword@yourcluster.mongodb.net/yourdb
+- cd server
+- pip install -r requirements.txt
+    1. Ensure Ensure you have a MongoDB database running.
+    2. Create a .env file inside the server directory and add your MongoDB URI:
+        MONGO_URI=mongodb+srv://yourusername:yourpassword@yourcluster.mongodb.net/yourdb
 
-python backend.py
+- python backend.py
 
 ### **3. Frontend Setup** 
-cd client
-npm install
-npm run serve
+- cd client
+- npm install
+- npm run serve
