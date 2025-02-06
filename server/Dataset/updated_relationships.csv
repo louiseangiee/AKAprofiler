@@ -1,0 +1,79 @@
+File Name,Entity1,Entity2,Relationship
+15.txt,Itf Kosovo,Mark Gough, Itf Kosovo and Mark Gough relationship  Mark Gough  participant
+15.txt,Itf Kosovo,Background 2, Itf Kosovo  Background 2  performer
+15.txt,Itf Kosovo,The Cargo Department, Itf Kosovo  Cargo Department  subsidiary  Cargo Department  Itf Kosovo  parent organization
+15.txt,Itf Kosovo,The Cargo Department Of Pristina Airport, Pristina Airport  Kosovo  country
+15.txt,Itf Kosovo,Investigation Task Force, Itf Kosovo  Investigation Task Force  subsidiary  Investigation Task Force  Itf Kosovo  parent organization
+15.txt,Itf Kosovo,Kosovo Investigation Task Force, Itf Kosovo  Kosovo Investigation Task Force  subsidiary  Kosovo Investigation Task Force  Itf Kosovo  parent organization
+15.txt,Itf Kosovo,Airport Cargo Department, Airport Cargo Department  Kosovo  country
+15.txt,Itf Kosovo,United Nations, Kosovo  United Nations  member of
+15.txt,Itf Kosovo,Wolfgang Nikolaus, Itf Kosovo and Wolfgang Nikolaus  Wolfgang Nikolaus  participant
+15.txt,Itf Kosovo,Value Added Tax, Value Added Tax  Kosovo  country
+15.txt,Itf Kosovo,The Investigation Task Force, The Investigation Task Force  Kosovo  country
+15.txt,Itf Kosovo,James Wasserstrom, Itf Kosovo and James Wasserstrom  James Wasserstrom  has part  James Wasserstrom  Itf Kosovo and James Wasserstrom  part of
+15.txt,Mark Gough,Background 2, Mark Gough  Background 2  member of  Background 2  Mark Gough  has part
+15.txt,Mark Gough,The Cargo Department, The Cargo Department  Mark Gough  has part
+15.txt,Mark Gough,The Cargo Department Of Pristina Airport, Mark Gough  Pristina Airport  employer
+15.txt,Mark Gough,Investigation Task Force, Mark Gough  Investigation Task Force  employer
+15.txt,Mark Gough,Kosovo Investigation Task Force, Mark Gough  Kosovo Investigation Task Force  employer
+15.txt,Mark Gough,Airport Cargo Department, Airport Cargo Department  Mark Gough  founded by
+15.txt,Mark Gough,United Nations, Mark Gough  United Nations  employer
+15.txt,Mark Gough,Wolfgang Nikolaus, Mark Gough  Wolfgang Nikolaus  spouse  Wolfgang Nikolaus  Mark Gough  spouse
+15.txt,Mark Gough,Value Added Tax, Mark Gough  Value Added Tax  field of work
+15.txt,Mark Gough,The Investigation Task Force, Mark Gough  Investigation Task Force  member of
+15.txt,Mark Gough,James Wasserstrom, Mark Gough  James Wasserstrom  spouse  James Wasserstrom  Mark Gough  spouse
+15.txt,Background 2,The Cargo Department, Background 2  The Cargo Department  followed by  The Cargo Department  Background 2  follows
+15.txt,Background 2,The Cargo Department Of Pristina Airport, Pristina Airport  Pristina  place served by transport hub
+15.txt,Background 2,Investigation Task Force, Background 2  Investigation Task Force  followed by  Investigation Task Force  Background 2  follows
+15.txt,Background 2,Kosovo Investigation Task Force, Kosovo Investigation Task Force  Kosovo  country
+15.txt,Background 2,Airport Cargo Department, Airport Cargo Department  Airport Cargo Department  has part  Airport Cargo Department  Airport Cargo Department  part of
+15.txt,Background 2,United Nations, United Nations  United Nations  parent organization
+15.txt,Background 2,Wolfgang Nikolaus, Background 2 and Wolfgang Nikolaus  Wolfgang Nikolaus  has part  Wolfgang Nikolaus  Background 2 and Wolfgang Nikolaus  part of
+15.txt,Background 2,Value Added Tax, Background 2  Value Added Tax  facet of
+15.txt,Background 2,The Investigation Task Force, Background 2  The Investigation Task Force  followed by  The Investigation Task Force  Background 2  follows
+15.txt,Background 2,James Wasserstrom, Background 2 and James Wasserstrom  James Wasserstrom  has part  James Wasserstrom  Background 2 and James Wasserstrom  part of
+15.txt,The Cargo Department,The Cargo Department Of Pristina Airport, Cargo Department  Pristina Airport  airline hub  Cargo Department  Pristina Airport  airline hub
+15.txt,The Cargo Department,Investigation Task Force, Cargo Department  Investigation Task Force  subsidiary  Investigation Task Force  Cargo Department  parent organization
+15.txt,The Cargo Department,Kosovo Investigation Task Force, Cargo Department  Kosovo Investigation Task Force  part of  Kosovo Investigation Task Force  Cargo Department  has part
+15.txt,The Cargo Department,Airport Cargo Department, Cargo Department  Airport Cargo Department  subsidiary  Airport Cargo Department  Cargo Department  parent organization  Cargo Department  parent organization  Cargo Department  Airport Cargo Department  subsidiary
+15.txt,The Cargo Department,United Nations, Cargo Department  United Nations  parent organization  United Nations  Cargo Department  subsidiary
+15.txt,The Cargo Department,Wolfgang Nikolaus, Cargo Department  Wolfgang Nikolaus  has part  Wolfgang Nikolaus  Cargo Department  member of
+15.txt,The Cargo Department,Value Added Tax, Cargo Department  Value Added Tax  instance of
+15.txt,The Cargo Department,The Investigation Task Force, Cargo Department  Investigation Task Force  part of  Investigation Task Force  Cargo Department  has part
+15.txt,The Cargo Department,James Wasserstrom, Cargo Department  James Wasserstrom  has part  James Wasserstrom  Cargo Department  member of
+15.txt,The Cargo Department Of Pristina Airport,Investigation Task Force, Cargo Department Of Pristina Airport  Pristina Airport  part of  Pristina Airport  Cargo Department Of Pristina Airport  has part
+15.txt,The Cargo Department Of Pristina Airport,Kosovo Investigation Task Force, Pristina Airport  Kosovo Investigation Task Force  operator
+15.txt,The Cargo Department Of Pristina Airport,Airport Cargo Department, Cargo Department Of Pristina Airport  Pristina Airport  airline hub
+15.txt,The Cargo Department Of Pristina Airport,United Nations, Pristina Airport  Pristina  place served by transport hub
+15.txt,The Cargo Department Of Pristina Airport,Wolfgang Nikolaus, Wolfgang Nikolaus  Pristina Airport  airline hub
+15.txt,The Cargo Department Of Pristina Airport,Value Added Tax, Cargo Department Of Pristina Airport  Pristina Airport  part of  Pristina Airport  Cargo Department Of Pristina Airport  has part
+15.txt,The Cargo Department Of Pristina Airport,The Investigation Task Force, Cargo Department  Pristina Airport  headquarters location
+15.txt,The Cargo Department Of Pristina Airport,James Wasserstrom, James Wasserstrom  Pristina Airport  employer
+15.txt,Investigation Task Force,Kosovo Investigation Task Force, Kosovo Investigation Task Force  Investigation Task Force  part of  Investigation Task Force  part of
+15.txt,Investigation Task Force,Airport Cargo Department, Investigation Task Force  Airport Cargo Department  subsidiary  Airport Cargo Department  Investigation Task Force  parent organization
+15.txt,Investigation Task Force,United Nations, United Nations  Investigation Task Force  subsidiary
+15.txt,Investigation Task Force,Wolfgang Nikolaus, Investigation Task Force and Wolfgang Nikolaus  Wolfgang Nikolaus  participant
+15.txt,Investigation Task Force,Value Added Tax, Investigation Task Force  Value Added Tax  facet of
+15.txt,Investigation Task Force,The Investigation Task Force, Investigation Task Force  Investigation Task Force  part of  Investigation Task Force  part of  Investigation Task Force  Investigation Task Force  has part  Investigation Task Force  has part  Investigation Task Force  Investigation Task Force  has part  Investigation Task Force  has part
+15.txt,Investigation Task Force,James Wasserstrom, Investigation Task Force and James Wasserstrom  James Wasserstrom  has part  James Wasserstrom  Investigation Task Force and James Wasserstrom  part of
+15.txt,Kosovo Investigation Task Force,Airport Cargo Department, Airport Cargo Department  Kosovo Investigation Task Force  part of
+15.txt,Kosovo Investigation Task Force,United Nations, Kosovo Investigation Task Force  United Nations  parent organization  United Nations  Kosovo Investigation Task Force  subsidiary
+15.txt,Kosovo Investigation Task Force,Wolfgang Nikolaus, Wolfgang Nikolaus  Kosovo Investigation Task Force  participant in
+15.txt,Kosovo Investigation Task Force,Value Added Tax, Kosovo Investigation Task Force  Value Added Tax  field of work
+15.txt,Kosovo Investigation Task Force,The Investigation Task Force, Kosovo Investigation Task Force  The Investigation Task Force  part of  The Investigation Task Force  Kosovo Investigation Task Force  has part
+15.txt,Kosovo Investigation Task Force,James Wasserstrom, James Wasserstrom  Kosovo Investigation Task Force  employer
+15.txt,Airport Cargo Department,United Nations, United Nations  Airport Cargo Department  subsidiary
+15.txt,Airport Cargo Department,Wolfgang Nikolaus, Airport Cargo Department and Wolfgang Nikolaus  Wolfgang Nikolaus  has part  Wolfgang Nikolaus  Airport Cargo Department and Wolfgang Nikolaus  part of
+15.txt,Airport Cargo Department,Value Added Tax, Airport Cargo Department  Value Added Tax  instance of
+15.txt,Airport Cargo Department,The Investigation Task Force, Airport Cargo Department  Investigation Task Force  parent organization  Investigation Task Force  Airport Cargo Department  subsidiary
+15.txt,Airport Cargo Department,James Wasserstrom, Airport Cargo Department  James Wasserstrom  owned by  James Wasserstrom  Airport Cargo Department  owner of
+15.txt,United Nations,Wolfgang Nikolaus, Wolfgang Nikolaus  United Nations  employer
+15.txt,United Nations,Value Added Tax, United Nations  Value Added Tax  has part  Value Added Tax  United Nations  part of
+15.txt,United Nations,The Investigation Task Force, United Nations  Investigation Task Force  subsidiary  Investigation Task Force  United Nations  parent organization
+15.txt,United Nations,James Wasserstrom, James Wasserstrom  United Nations  employer
+15.txt,Wolfgang Nikolaus,Value Added Tax, Wolfgang Nikolaus and Value Added Tax relationship  Value Added Tax  facet of
+15.txt,Wolfgang Nikolaus,The Investigation Task Force, Wolfgang Nikolaus  Investigation Task Force  member of
+15.txt,Wolfgang Nikolaus,James Wasserstrom, Wolfgang Nikolaus  James Wasserstrom  spouse  James Wasserstrom  Wolfgang Nikolaus  spouse
+15.txt,Value Added Tax,The Investigation Task Force, Value Added Tax  Investigation Task Force  has part  Investigation Task Force  Value Added Tax  part of
+15.txt,Value Added Tax,James Wasserstrom, James Wasserstrom  Value Added Tax  employer
+15.txt,The Investigation Task Force,James Wasserstrom, Investigation Task Force and James Wasserstrom  James Wasserstrom  has part  James Wasserstrom  Investigation Task Force and James Wasserstrom  part of
