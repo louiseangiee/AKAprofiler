@@ -90,7 +90,6 @@ def extract_text_from_directory(directory_path, output_folder):
         print(f"Saved cleaned text to: {output_file}")
 
 # 2. Main Function to extract entities 
-
 def extract_entities_from_text_files(folder_path, output_csv_path):
     nlp = spacy.load("en_core_web_sm")
     entity_data = []
@@ -151,16 +150,16 @@ def extract_entity_pairs_from_text_files(folder_path, output_csv_path):
                     if len(words) > 2:
                         entity_text = " ".join(words[:2])
                 if is_valid_entity(entity_text, ent.label_) and entity_text not in unique_entities:
-                    unique_entities.add(entity_text)
+                    unique_entities.add((entity_text, ent.label_))
 
             # Generate entity pairs
             entity_pairs = list(itertools.combinations(unique_entities, 2))
 
             # Add entity pairs to the list
             for entity1, entity2 in entity_pairs:
-                entity_pairs_data.append([filename, entity1, entity2, "Unknown"])
+                entity_pairs_data.append([ entity1[0],  entity1[1], entity2[0], entity2[1],  "Unknown"])
 
-    df_pairs = pd.DataFrame(entity_pairs_data, columns=["File Name", "Entity 1", "Entity 2", "Relationship"])
+    df_pairs = pd.DataFrame(entity_pairs_data, columns=[ "Entity 1", "Type 1",  "Entity 2", "Type 2", "Relationship"])
     df_pairs.to_csv(output_csv_path, index=False)
     print(f"Entity pairs extracted and saved to {output_csv_path}")
 
