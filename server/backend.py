@@ -10,7 +10,7 @@ import uuid
 import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime
-from Functions import extract_text_from_directory, extract_entities_from_text
+from Functions import extract_text_from_directory, extract_entities_from_text_files
 import shutil
 from flask_cors import CORS
 
@@ -109,7 +109,7 @@ def upload_file():
     extract_text_from_directory(app.config['UPLOAD_FOLDER'], OUTPUT_FOLDER)
 
     # Extract entities
-    entities = extract_entities_from_text(OUTPUT_FOLDER)
+    entities = extract_entities_from_text_files(OUTPUT_FOLDER)
     print(entities)
 
     # Save extracted entities in MongoDB

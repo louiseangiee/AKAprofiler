@@ -153,7 +153,7 @@ def extract_entity_pairs_from_text_files(folder_path, output_csv_path):
                     unique_entities.add((entity_text, ent.label_))
 
             # Generate entity pairs
-            entity_pairs = list(itertools.combinations(unique_entities, 2))
+            entity_pairs = list(combinations(unique_entities, 2))
 
             # Add entity pairs to the list
             for entity1, entity2 in entity_pairs:
