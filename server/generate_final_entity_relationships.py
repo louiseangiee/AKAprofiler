@@ -14,6 +14,8 @@ from torch.utils.data import DataLoader
 from transformers import Trainer, TrainingArguments
 from sklearn.metrics import accuracy_score
 from typing import List
+import re
+from typing import List, Dict
 
 # Define DEVICE variable
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -61,16 +63,26 @@ def rebel_component(doc):
     results = rebel_pipeline(text, max_length=512, truncation=True)
     
     extracted_relations = {}
-    
-    # HELP FIX THIS PART
+
     for result in results:
-        relation_phrase = result["generated_text"].split(".")[0]  # Extract only the first phrase
-        relation_parts = relation_phrase.split()
-        if len(relation_parts) >= 3:
-            one_way_relation = f"{relation_parts[0]} {relation_parts[1]} {relation_parts[2]}"
-            extracted_relations[hashlib.sha1(one_way_relation.encode()).hexdigest()] = one_way_relation
-    
-    doc._.rel = extracted_relations  # Store relations in spaCy doc
+        words = result["generated_text"].split()  # Split text into words
+
+        # Identify entity (words with capitalized first letter)
+        entity_parts = [word for word in words if word[0].isupper()]
+        relation_parts = [word for word in words if word[0].islower()]  # Everything else is relation
+
+        if entity_parts and relation_parts:  # Ensure both entity and relation exist
+            entity = " ".join(entity_parts)
+            relation = " ".join(relation_parts[-2:])  # Take last 1-2 words as relation
+
+            relation_hash = hashlib.sha1(relation.encode()).hexdigest()
+            extracted_relations[relation_hash] = {
+                "entity": entity,
+                "relation": relation,
+                "full_relation": relation  # Store just the relation as full_relation
+            }
+
+    doc._.rel = extracted_relations  # Store extracted relations in the spaCy doc
     return doc
 
 # Add the custom component to spaCy
