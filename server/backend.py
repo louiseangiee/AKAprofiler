@@ -10,7 +10,7 @@ import uuid
 import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime
-from server.Functions import extract_text_from_directory, extract_entities_from_text
+from Functions import extract_text_from_directory, extract_entities_from_text
 import shutil
 from flask_cors import CORS
 
@@ -141,6 +141,12 @@ def get_entities_by_file_id(file_id):
     entities = list(entities_collection.find({"file_id": file_id}, {"_id": 0}))
     return jsonify({"file_id": file_id, "entities": entities}
                    )
+
+# API Endpoint: Get all people entities
+@app.route("/entities/people", methods=["GET"])
+def get_people_entities():
+    people_entities = list(entities_collection.find({"label": "PERSON"}, {"_id": 0}))
+    return jsonify({"people_entities": people_entities})
 
 @app.route("/entities/name/<entity_name>", methods=["GET"])
 def get_entities_by_entity_name(entity_name):
