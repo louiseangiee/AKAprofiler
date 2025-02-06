@@ -201,6 +201,40 @@ def search_entities():
 
     return jsonify({"query": query, "results": results})
 
+# Get all relationships (new)
+@app.route("/relationships", methods=["GET"])
+def get_all_relationships():
+    # Fetch all relationships from the relationships collection
+    relationships = list(entities_collection.find({}, {"_id": 0}))  
+    return jsonify({"relationships": relationships})
+
+
+# Get relationships if its in entity 1 or 2 (new) 
+@app.route("/relationships/entity/<entity_name>", methods=["GET"])
+def get_relationships_by_entity(entity_name):
+    if not entity_name:
+        return jsonify({"error": "Entity name is required"}), 400
+
+    try:
+        # Find relationships where the entity appears in either 'entity_1' or 'entity_2'
+        relationships = list(entities_collection.find(
+            {
+                "$or": [
+                    {"entity_1": {"$regex": f"^{entity_name}$", "$options": "i"}},  # Case-insensitive search for entity_1
+                    {"entity_2": {"$regex": f"^{entity_name}$", "$options": "i"}}   # Case-insensitive search for entity_2
+                ]
+            },
+            {"_id": 0}  # Exclude the _id field in the response
+        ))
+
+        if not relationships:
+            return jsonify({"message": f"No relationships found for entity '{entity_name}'"}), 404
+
+        return jsonify({"entity_name": entity_name, "relationships": relationships})
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 
 
 if __name__ == "__main__":

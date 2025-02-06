@@ -13,6 +13,7 @@ from datasets import Dataset
 from torch.utils.data import DataLoader
 from transformers import Trainer, TrainingArguments
 from sklearn.metrics import accuracy_score
+from typing import List
 
 # Define DEVICE variable
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
