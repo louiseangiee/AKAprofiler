@@ -62,8 +62,13 @@ def rebel_component(doc):
     
     extracted_relations = {}
     
+    # HELP FIX THIS PART
     for result in results:
-        extracted_relations[hashlib.sha1(result["generated_text"].encode()).hexdigest()] = result["generated_text"]
+        relation_phrase = result["generated_text"].split(".")[0]  # Extract only the first phrase
+        relation_parts = relation_phrase.split()
+        if len(relation_parts) >= 3:
+            one_way_relation = f"{relation_parts[0]} {relation_parts[1]} {relation_parts[2]}"
+            extracted_relations[hashlib.sha1(one_way_relation.encode()).hexdigest()] = one_way_relation
     
     doc._.rel = extracted_relations  # Store relations in spaCy doc
     return doc
