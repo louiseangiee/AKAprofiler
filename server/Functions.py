@@ -96,15 +96,19 @@ def extract_text_from_directory(directory_path, output_folder):
 def extract_entities_from_text_files(folder_path, output_csv_path):
     nlp = spacy.load("en_core_web_sm")
     entity_data = []
+
     # Loop through all files in the folder
     for filename in os.listdir(folder_path):
         if filename.endswith(".txt"):
             file_path = os.path.join(folder_path, filename)
+
             # Read the content of the file
             with open(file_path, "r", encoding="utf-8") as file:
                 text = file.read()
+
             # Process the text with spaCy NLP model
             doc = nlp(text)
+
             # Extract and store entities for the current file
             for ent in doc.ents:
                 entity_text = ent.text.replace('\n', ' ').strip()
@@ -114,36 +118,35 @@ def extract_entities_from_text_files(folder_path, output_csv_path):
                     if len(words) > 2:
                         entity_text = " ".join(words[:2])
                 if is_valid_entity(entity_text, ent.label_):
-                    entity_data.append({
-                        "File Name": filename,
-                        "Entity": entity_text,
-                        "Label": ent.label_,
-                        "Frequency": 1,  # Placeholder for frequency
-                        "Pages Found": [],  # Placeholder for pages found
-                        "Relationships": []  # Placeholder for relationships
-                    })
+                    entity_data.append([filename, entity_text, ent.label_])
+
     # Create a DataFrame to organize the extracted data
-    df = pd.DataFrame(entity_data)
-    df = df.drop_duplicates(subset=["File Name", "Entity", "Label"])
+    df = pd.DataFrame(entity_data, columns=["File Name", "Entity", "Label"])
+    df = df.drop_duplicates()
     df.to_csv(output_csv_path, index=False)
     print(f"Entities extracted and saved to {output_csv_path}")
-    return df.to_dict(orient='records')
+    return df
+
 
 # Main function 3 to extract entity pairs
 def extract_entity_pairs_from_text_files(folder_path, output_csv_path):
     nlp = spacy.load("en_core_web_sm")
     print(folder_path)
     entity_pairs_data = []
+
     # Loop through all files in the folder
     for filename in os.listdir(folder_path):
         if filename.endswith(".txt"):
             file_path = os.path.join(folder_path, filename)
             print(file_path)
+
             # Read the content of the file
             with open(file_path, "r", encoding="utf-8") as file:
                 text = file.read()
+
             # Process the text with spaCy NLP model
             doc = nlp(text)
+
             unique_entities = set()
             for ent in doc.ents:
                 entity_text = ent.text.replace('\n', ' ').strip()
@@ -152,20 +155,17 @@ def extract_entity_pairs_from_text_files(folder_path, output_csv_path):
                     words = entity_text.split()
                     if len(words) > 2:
                         entity_text = " ".join(words[:2])
-                    if is_valid_entity(entity_text, ent.label_) and entity_text not in unique_entities:
-                        unique_entities.add((entity_text, ent.label_))
+                if is_valid_entity(entity_text, ent.label_) and entity_text not in unique_entities:
+                    unique_entities.add((entity_text, ent.label_))
+
             # Generate entity pairs
             entity_pairs = list(combinations(unique_entities, 2))
+
             # Add entity pairs to the list
             for entity1, entity2 in entity_pairs:
-                entity_pairs_data.append({
-                    "Entity 1": entity1[0],
-                    "Type 1": entity1[1],
-                    "Entity 2": entity2[0],
-                    "Type 2": entity2[1],
-                    "Relationship": "Unknown"
-                })
-    df_pairs = pd.DataFrame(entity_pairs_data)
+                entity_pairs_data.append([ entity1[0],  entity1[1], entity2[0], entity2[1],  "Unknown"])
+
+    df_pairs = pd.DataFrame(entity_pairs_data, columns=[ "Entity 1", "Type 1",  "Entity 2", "Type 2", "Relationship"])
     df_pairs.to_csv(output_csv_path, index=False)
     print(f"Entity pairs extracted and saved to {output_csv_path}")
 
@@ -211,32 +211,27 @@ def predict_relationships_from_entity_pairs(entity_pairs_csv, output_csv_path):
 
     @Language.component("rebel")
     def rebel_component(doc):
-        """Custom spaCy component for relation extraction."""
         text = doc.text
         results = rebel_pipeline(text, max_length=512, truncation=True)
+        
         extracted_relations = {}
 
         for result in results:
-            relation_phrase = result["generated_text"].strip()
-            match = re.match(r'^(.+?) (?:is|are) (.+?) (.+)$', relation_phrase)
-            if match:
-                head, tail, relation = match.groups()
-                extracted_relations[hashlib.sha1(relation.encode()).hexdigest()] = {
-                    "head": head.strip(),
-                    "tail": tail.strip(),
-                    "type": relation.strip()
-                }
-            else:
-                match = re.match(r'^(.+?) (.+) (.+?)$', relation_phrase)
-                if match:
-                    head, relation, tail = match.groups()
-                    extracted_relations[hashlib.sha1(relation.encode()).hexdigest()] = {
-                        "head": head.strip(),
-                        "tail": tail.strip(),
-                        "type": relation.strip()
-                    }
+            words = result["generated_text"].split()  # Split text into words
 
-        doc._.rel = extracted_relations
+            # Identify entity (words with capitalized first letter)
+            entity_parts = [word for word in words if word[0].isupper()]
+            relation_parts = [word for word in words if word[0].islower()]  # Everything else is relation
+
+            if entity_parts and relation_parts:  # Ensure both entity and relation exist
+                entity = " ".join(entity_parts)
+                relation = " ".join(relation_parts[-2:])  # Take last 1-2 words as relation
+
+                relation_hash = hashlib.sha1(relation.encode()).hexdigest()
+                extracted_relations[relation_hash] = relation
+                print(extracted_relations)
+
+        doc._.rel = extracted_relations # Store extracted relations in the spaCy doc
         return doc
 
     # Add the custom component to spaCy
@@ -253,19 +248,26 @@ def predict_relationships_from_entity_pairs(entity_pairs_csv, output_csv_path):
 
     def extract_relationships(df):
         """Uses Rebel to extract relationships for given entity pairs."""
+        
         for index, row in df.iterrows():
-            entity1, entity2, relationship = row["Entity 1"], row["Entity 2"], row["Relationship"]
-            # Only process rows where the relationship is "Unknown"
+            entity1, type1, entity2, type2, relationship = row["Entity 1"], row["Type 1"], row["Entity 2"], row["Type 2"], row["Relationship"]
+            
             if relationship == "Unknown":
                 wiki_id1 = call_wiki_api(entity1)
                 wiki_id2 = call_wiki_api(entity2)
-                query_text = f"{entity1} and {entity2} relationship"
+                
+                query_text = f"{entity1} ({type1}) and {entity2} ({type2}) relationship"
                 doc = nlp(query_text)
+                
                 if doc._.rel:
-                    extracted_relation = list(doc._.rel.values())[0]["type"]
-                    print(f"Found relation: {extracted_relation}")
-                    df.at[index, "Relationship"] = extracted_relation  # Update dataframe
+                    found_relationship = list(doc._.rel.values())[0]
+                    print(f"Found relation: {found_relationship}")
+                    
+                    # Update dataframe
+                    df.at[index, "Relationship"] = found_relationship  
+
         return df
+
 
     # Load data and process relationships
     df = load_csv(entity_pairs_csv)
@@ -274,3 +276,4 @@ def predict_relationships_from_entity_pairs(entity_pairs_csv, output_csv_path):
     # Save updated data
     df.to_csv(output_csv_path, index=False)
     print(f"Updated relationships saved to {output_csv_path}")
+    return df

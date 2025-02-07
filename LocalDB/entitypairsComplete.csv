@@ -1,0 +1,254 @@
+Entity 1,Type 1,Entity 2,Type 2,Relationship
+The Public Enterprise Airport Pristina,ORG,The Air Traffic Control Services,ORG,operator operator
+The Public Enterprise Airport Pristina,ORG,The Atcs Employee,ORG,airline hub
+The Public Enterprise Airport Pristina,ORG,Public Procurement,ORG,operator operator
+The Public Enterprise Airport Pristina,ORG,Kosovo Unmi,ORG,airline hub
+The Public Enterprise Airport Pristina,ORG,The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,parent organization
+The Public Enterprise Airport Pristina,ORG,Direct Single Source Procurement,ORG,organization subsidiary
+The Public Enterprise Airport Pristina,ORG,Kosovo Consolidated Budget Fund,ORG,operator
+The Public Enterprise Airport Pristina,ORG,Unmi Pillar Iv,ORG,owned by
+The Public Enterprise Airport Pristina,ORG,The Special Representative,ORG,relationship participant
+The Public Enterprise Airport Pristina,ORG,United Nations Security Council,ORG,parent organization
+The Public Enterprise Airport Pristina,ORG,Kosovo Consolidated Budget Funds,ORG,operator
+The Public Enterprise Airport Pristina,ORG,Bac Ground,ORG,operator
+The Public Enterprise Airport Pristina,ORG,The Kosovo Trust Agency,ORG,operator
+The Public Enterprise Airport Pristina,ORG,The Investigation Task Force,ORG,owned by
+The Public Enterprise Airport Pristina,ORG,United Nations,ORG,member of
+The Public Enterprise Airport Pristina,ORG,Allegation 1,ORG,part of
+The Public Enterprise Airport Pristina,ORG,Unmi Finance Administrative Instruction,ORG,airline hub
+The Public Enterprise Airport Pristina,ORG,The Kosovo Force,ORG,operator operator
+The Public Enterprise Airport Pristina,ORG,Unmi Regulation,ORG,airline hub
+The Public Enterprise Airport Pristina,ORG,Air Traffic Control Services,ORG,airline hub
+The Public Enterprise Airport Pristina,ORG,The Rescue Fire Fighting Service,ORG,territorial entity
+The Public Enterprise Airport Pristina,ORG,The Chartered Accountants,ORG,owner of
+The Air Traffic Control Services,ORG,The Atcs Employee,ORG,part of
+The Air Traffic Control Services,ORG,Public Procurement,ORG,part of
+The Air Traffic Control Services,ORG,Kosovo Unmi,ORG,parent organization
+The Air Traffic Control Services,ORG,The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,organization subsidiary
+The Air Traffic Control Services,ORG,Direct Single Source Procurement,ORG,has part
+The Air Traffic Control Services,ORG,Kosovo Consolidated Budget Fund,ORG,organization subsidiary
+The Air Traffic Control Services,ORG,Unmi Pillar Iv,ORG,parent organization
+The Air Traffic Control Services,ORG,The Special Representative,ORG,facet of
+The Air Traffic Control Services,ORG,United Nations Security Council,ORG,parent organization
+The Air Traffic Control Services,ORG,Kosovo Consolidated Budget Funds,ORG,organization subsidiary
+The Air Traffic Control Services,ORG,Bac Ground,ORG,parent organization
+The Air Traffic Control Services,ORG,The Kosovo Trust Agency,ORG,organization subsidiary
+The Air Traffic Control Services,ORG,The Investigation Task Force,ORG,has part
+The Air Traffic Control Services,ORG,United Nations,ORG,member of
+The Air Traffic Control Services,ORG,Allegation 1,ORG,part of
+The Air Traffic Control Services,ORG,Unmi Finance Administrative Instruction,ORG,organization subsidiary
+The Air Traffic Control Services,ORG,The Kosovo Force,ORG,diplomatic relation
+The Air Traffic Control Services,ORG,Unmi Regulation,ORG,part of
+The Air Traffic Control Services,ORG,Air Traffic Control Services,ORG,facet of
+The Air Traffic Control Services,ORG,The Rescue Fire Fighting Service,ORG,parent organization
+The Air Traffic Control Services,ORG,The Chartered Accountants,ORG,relationship participant
+The Atcs Employee,ORG,Public Procurement,ORG,facet of
+The Atcs Employee,ORG,Kosovo Unmi,ORG,facet of
+The Atcs Employee,ORG,The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,organization subsidiary
+The Atcs Employee,ORG,Direct Single Source Procurement,ORG,parent organization
+The Atcs Employee,ORG,Kosovo Consolidated Budget Fund,ORG,facet of
+The Atcs Employee,ORG,Unmi Pillar Iv,ORG,organization subsidiary
+The Atcs Employee,ORG,The Special Representative,ORG,part of
+The Atcs Employee,ORG,United Nations Security Council,ORG,parent organization
+The Atcs Employee,ORG,Kosovo Consolidated Budget Funds,ORG,facet of
+The Atcs Employee,ORG,Bac Ground,ORG,relationship participant
+The Atcs Employee,ORG,The Kosovo Trust Agency,ORG,part of
+The Atcs Employee,ORG,The Investigation Task Force,ORG,has part
+The Atcs Employee,ORG,United Nations,ORG,facet of
+The Atcs Employee,ORG,Allegation 1,ORG,part of
+The Atcs Employee,ORG,Unmi Finance Administrative Instruction,ORG,organization subsidiary
+The Atcs Employee,ORG,The Kosovo Force,ORG,relationship participant
+The Atcs Employee,ORG,Unmi Regulation,ORG,relationship participant
+The Atcs Employee,ORG,Air Traffic Control Services,ORG,parent organization
+The Atcs Employee,ORG,The Rescue Fire Fighting Service,ORG,part of
+The Atcs Employee,ORG,The Chartered Accountants,ORG,part of
+Public Procurement,ORG,Kosovo Unmi,ORG,parent organization
+Public Procurement,ORG,The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,parent organization
+Public Procurement,ORG,Direct Single Source Procurement,ORG,different from
+Public Procurement,ORG,Kosovo Consolidated Budget Fund,ORG,relationship participant
+Public Procurement,ORG,Unmi Pillar Iv,ORG,parent organization
+Public Procurement,ORG,The Special Representative,ORG,part of
+Public Procurement,ORG,United Nations Security Council,ORG,parent organization
+Public Procurement,ORG,Kosovo Consolidated Budget Funds,ORG,relationship participant
+Public Procurement,ORG,Bac Ground,ORG,part of
+Public Procurement,ORG,The Kosovo Trust Agency,ORG,parent organization
+Public Procurement,ORG,The Investigation Task Force,ORG,part of
+Public Procurement,ORG,United Nations,ORG,subsidiary subsidiary
+Public Procurement,ORG,Allegation 1,ORG,part of
+Public Procurement,ORG,Unmi Finance Administrative Instruction,ORG,parent organization
+Public Procurement,ORG,The Kosovo Force,ORG,relationship participant
+Public Procurement,ORG,Unmi Regulation,ORG,part of
+Public Procurement,ORG,Air Traffic Control Services,ORG,facet of
+Public Procurement,ORG,The Rescue Fire Fighting Service,ORG,parent organization
+Public Procurement,ORG,The Chartered Accountants,ORG,affiliation
+Kosovo Unmi,ORG,The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,subsidiary subsidiary
+Kosovo Unmi,ORG,Direct Single Source Procurement,ORG,organization subsidiary
+Kosovo Unmi,ORG,Kosovo Consolidated Budget Fund,ORG,organization subsidiary
+Kosovo Unmi,ORG,Unmi Pillar Iv,ORG,organization subsidiary
+Kosovo Unmi,ORG,The Special Representative,ORG,facet of
+Kosovo Unmi,ORG,United Nations Security Council,ORG,member of
+Kosovo Unmi,ORG,Kosovo Consolidated Budget Funds,ORG,organization subsidiary
+Kosovo Unmi,ORG,Bac Ground,ORG,parent organization
+Kosovo Unmi,ORG,The Kosovo Trust Agency,ORG,organization subsidiary
+Kosovo Unmi,ORG,The Investigation Task Force,ORG,has part
+Kosovo Unmi,ORG,United Nations,ORG,organization subsidiary
+Kosovo Unmi,ORG,Allegation 1,ORG,different from
+Kosovo Unmi,ORG,Unmi Finance Administrative Instruction,ORG,parent organization
+Kosovo Unmi,ORG,The Kosovo Force,ORG,part of
+Kosovo Unmi,ORG,Unmi Regulation,ORG,part of
+Kosovo Unmi,ORG,Air Traffic Control Services,ORG,facet of
+Kosovo Unmi,ORG,The Rescue Fire Fighting Service,ORG,affiliation
+Kosovo Unmi,ORG,The Chartered Accountants,ORG,affiliation
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,Direct Single Source Procurement,ORG,parent organization
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,Kosovo Consolidated Budget Fund,ORG,parent organization
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,Unmi Pillar Iv,ORG,parent organization
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,The Special Representative,ORG,parent organization
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,United Nations Security Council,ORG,parent organization
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,Kosovo Consolidated Budget Funds,ORG,parent organization
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,Bac Ground,ORG,owned by
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,The Kosovo Trust Agency,ORG,parent organization
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,The Investigation Task Force,ORG,parent organization
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,United Nations,ORG,member of
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,Allegation 1,ORG,parent organization
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,Unmi Finance Administrative Instruction,ORG,parent organization
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,The Kosovo Force,ORG,parent organization
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,Unmi Regulation,ORG,parent organization
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,Air Traffic Control Services,ORG,parent organization
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,The Rescue Fire Fighting Service,ORG,parent organization
+The Transport Sector Of The Unmi Directorate Of Infrastructure Affairs,ORG,The Chartered Accountants,ORG,parent organization
+Direct Single Source Procurement,ORG,Kosovo Consolidated Budget Fund,ORG,parent organization
+Direct Single Source Procurement,ORG,Unmi Pillar Iv,ORG,parent organization
+Direct Single Source Procurement,ORG,The Special Representative,ORG,parent organization
+Direct Single Source Procurement,ORG,United Nations Security Council,ORG,parent organization
+Direct Single Source Procurement,ORG,Kosovo Consolidated Budget Funds,ORG,parent organization
+Direct Single Source Procurement,ORG,Bac Ground,ORG,parent organization
+Direct Single Source Procurement,ORG,The Kosovo Trust Agency,ORG,parent organization
+Direct Single Source Procurement,ORG,The Investigation Task Force,ORG,parent organization
+Direct Single Source Procurement,ORG,United Nations,ORG,parent organization
+Direct Single Source Procurement,ORG,Allegation 1,ORG,opposite of
+Direct Single Source Procurement,ORG,Unmi Finance Administrative Instruction,ORG,parent organization
+Direct Single Source Procurement,ORG,The Kosovo Force,ORG,parent organization
+Direct Single Source Procurement,ORG,Unmi Regulation,ORG,parent organization
+Direct Single Source Procurement,ORG,Air Traffic Control Services,ORG,part of
+Direct Single Source Procurement,ORG,The Rescue Fire Fighting Service,ORG,parent organization
+Direct Single Source Procurement,ORG,The Chartered Accountants,ORG,affiliation
+Kosovo Consolidated Budget Fund,ORG,Unmi Pillar Iv,ORG,parent organization
+Kosovo Consolidated Budget Fund,ORG,The Special Representative,ORG,part of
+Kosovo Consolidated Budget Fund,ORG,United Nations Security Council,ORG,member of
+Kosovo Consolidated Budget Fund,ORG,Kosovo Consolidated Budget Funds,ORG,part of
+Kosovo Consolidated Budget Fund,ORG,Bac Ground,ORG,operator
+Kosovo Consolidated Budget Fund,ORG,The Kosovo Trust Agency,ORG,part of
+Kosovo Consolidated Budget Fund,ORG,The Investigation Task Force,ORG,parent organization
+Kosovo Consolidated Budget Fund,ORG,United Nations,ORG,organization subsidiary
+Kosovo Consolidated Budget Fund,ORG,Allegation 1,ORG,part of
+Kosovo Consolidated Budget Fund,ORG,Unmi Finance Administrative Instruction,ORG,organization subsidiary
+Kosovo Consolidated Budget Fund,ORG,The Kosovo Force,ORG,parent organization
+Kosovo Consolidated Budget Fund,ORG,Unmi Regulation,ORG,parent organization
+Kosovo Consolidated Budget Fund,ORG,Air Traffic Control Services,ORG,parent organization
+Kosovo Consolidated Budget Fund,ORG,The Rescue Fire Fighting Service,ORG,parent organization
+Kosovo Consolidated Budget Fund,ORG,The Chartered Accountants,ORG,affiliation
+Unmi Pillar Iv,ORG,The Special Representative,ORG,has part
+Unmi Pillar Iv,ORG,United Nations Security Council,ORG,parent organization
+Unmi Pillar Iv,ORG,Kosovo Consolidated Budget Funds,ORG,organization subsidiary
+Unmi Pillar Iv,ORG,Bac Ground,ORG,subsidiary subsidiary
+Unmi Pillar Iv,ORG,The Kosovo Trust Agency,ORG,organization subsidiary
+Unmi Pillar Iv,ORG,The Investigation Task Force,ORG,has part
+Unmi Pillar Iv,ORG,United Nations,ORG,organization subsidiary
+Unmi Pillar Iv,ORG,Allegation 1,ORG,different from
+Unmi Pillar Iv,ORG,Unmi Finance Administrative Instruction,ORG,organization subsidiary
+Unmi Pillar Iv,ORG,The Kosovo Force,ORG,diplomatic relation
+Unmi Pillar Iv,ORG,Unmi Regulation,ORG,organization subsidiary
+Unmi Pillar Iv,ORG,Air Traffic Control Services,ORG,organization subsidiary
+Unmi Pillar Iv,ORG,The Rescue Fire Fighting Service,ORG,organization subsidiary
+Unmi Pillar Iv,ORG,The Chartered Accountants,ORG,affiliation
+The Special Representative,ORG,United Nations Security Council,ORG,parent organization
+The Special Representative,ORG,Kosovo Consolidated Budget Funds,ORG,facet of
+The Special Representative,ORG,Bac Ground,ORG,part of
+The Special Representative,ORG,The Kosovo Trust Agency,ORG,parent organization
+The Special Representative,ORG,The Investigation Task Force,ORG,facet of
+The Special Representative,ORG,United Nations,ORG,facet of
+The Special Representative,ORG,Allegation 1,ORG,part of
+The Special Representative,ORG,Unmi Finance Administrative Instruction,ORG,parent organization
+The Special Representative,ORG,The Kosovo Force,ORG,facet of
+The Special Representative,ORG,Unmi Regulation,ORG,parent organization
+The Special Representative,ORG,Air Traffic Control Services,ORG,relationship participant
+The Special Representative,ORG,The Rescue Fire Fighting Service,ORG,part of
+The Special Representative,ORG,The Chartered Accountants,ORG,part of
+United Nations Security Council,ORG,Kosovo Consolidated Budget Funds,ORG,parent organization
+United Nations Security Council,ORG,Bac Ground,ORG,part of
+United Nations Security Council,ORG,The Kosovo Trust Agency,ORG,parent organization
+United Nations Security Council,ORG,The Investigation Task Force,ORG,parent organization
+United Nations Security Council,ORG,United Nations,ORG,has part
+United Nations Security Council,ORG,Allegation 1,ORG,part of
+United Nations Security Council,ORG,Unmi Finance Administrative Instruction,ORG,parent organization
+United Nations Security Council,ORG,The Kosovo Force,ORG,part of
+United Nations Security Council,ORG,Unmi Regulation,ORG,part of
+United Nations Security Council,ORG,Air Traffic Control Services,ORG,part of
+United Nations Security Council,ORG,The Rescue Fire Fighting Service,ORG,part of
+United Nations Security Council,ORG,The Chartered Accountants,ORG,part of
+Kosovo Consolidated Budget Funds,ORG,Bac Ground,ORG,operator
+Kosovo Consolidated Budget Funds,ORG,The Kosovo Trust Agency,ORG,organization subsidiary
+Kosovo Consolidated Budget Funds,ORG,The Investigation Task Force,ORG,part of
+Kosovo Consolidated Budget Funds,ORG,United Nations,ORG,organization subsidiary
+Kosovo Consolidated Budget Funds,ORG,Allegation 1,ORG,part of
+Kosovo Consolidated Budget Funds,ORG,Unmi Finance Administrative Instruction,ORG,parent organization
+Kosovo Consolidated Budget Funds,ORG,The Kosovo Force,ORG,part of
+Kosovo Consolidated Budget Funds,ORG,Unmi Regulation,ORG,parent organization
+Kosovo Consolidated Budget Funds,ORG,Air Traffic Control Services,ORG,facet of
+Kosovo Consolidated Budget Funds,ORG,The Rescue Fire Fighting Service,ORG,parent organization
+Kosovo Consolidated Budget Funds,ORG,The Chartered Accountants,ORG,affiliation
+Bac Ground,ORG,The Kosovo Trust Agency,ORG,organization subsidiary
+Bac Ground,ORG,The Investigation Task Force,ORG,part of
+Bac Ground,ORG,United Nations,ORG,affiliation
+Bac Ground,ORG,Allegation 1,ORG,part of
+Bac Ground,ORG,Unmi Finance Administrative Instruction,ORG,organization subsidiary
+Bac Ground,ORG,The Kosovo Force,ORG,relationship participant
+Bac Ground,ORG,Unmi Regulation,ORG,organization subsidiary
+Bac Ground,ORG,Air Traffic Control Services,ORG,facet of
+Bac Ground,ORG,The Rescue Fire Fighting Service,ORG,organization subsidiary
+Bac Ground,ORG,The Chartered Accountants,ORG,affiliation
+The Kosovo Trust Agency,ORG,The Investigation Task Force,ORG,parent organization
+The Kosovo Trust Agency,ORG,United Nations,ORG,organization subsidiary
+The Kosovo Trust Agency,ORG,Allegation 1,ORG,different from
+The Kosovo Trust Agency,ORG,Unmi Finance Administrative Instruction,ORG,parent organization
+The Kosovo Trust Agency,ORG,The Kosovo Force,ORG,parent organization
+The Kosovo Trust Agency,ORG,Unmi Regulation,ORG,parent organization
+The Kosovo Trust Agency,ORG,Air Traffic Control Services,ORG,parent organization
+The Kosovo Trust Agency,ORG,The Rescue Fire Fighting Service,ORG,parent organization
+The Kosovo Trust Agency,ORG,The Chartered Accountants,ORG,affiliation
+The Investigation Task Force,ORG,United Nations,ORG,facet of
+The Investigation Task Force,ORG,Allegation 1,ORG,part of
+The Investigation Task Force,ORG,Unmi Finance Administrative Instruction,ORG,organization subsidiary
+The Investigation Task Force,ORG,The Kosovo Force,ORG,has part
+The Investigation Task Force,ORG,Unmi Regulation,ORG,parent organization
+The Investigation Task Force,ORG,Air Traffic Control Services,ORG,relationship participant
+The Investigation Task Force,ORG,The Rescue Fire Fighting Service,ORG,part of
+The Investigation Task Force,ORG,The Chartered Accountants,ORG,affiliation
+United Nations,ORG,Allegation 1,ORG,part of
+United Nations,ORG,Unmi Finance Administrative Instruction,ORG,parent organization
+United Nations,ORG,The Kosovo Force,ORG,parent organization
+United Nations,ORG,Unmi Regulation,ORG,part of
+United Nations,ORG,Air Traffic Control Services,ORG,facet of
+United Nations,ORG,The Rescue Fire Fighting Service,ORG,relationship participant
+United Nations,ORG,The Chartered Accountants,ORG,parent organization
+Allegation 1,ORG,Unmi Finance Administrative Instruction,ORG,part of
+Allegation 1,ORG,The Kosovo Force,ORG,relationship participant
+Allegation 1,ORG,Unmi Regulation,ORG,relationship participant
+Allegation 1,ORG,Air Traffic Control Services,ORG,facet of
+Allegation 1,ORG,The Rescue Fire Fighting Service,ORG,relationship participant
+Allegation 1,ORG,The Chartered Accountants,ORG,relationship participant
+Unmi Finance Administrative Instruction,ORG,The Kosovo Force,ORG,has part
+Unmi Finance Administrative Instruction,ORG,Unmi Regulation,ORG,has part
+Unmi Finance Administrative Instruction,ORG,Air Traffic Control Services,ORG,has part
+Unmi Finance Administrative Instruction,ORG,The Rescue Fire Fighting Service,ORG,organization subsidiary
+Unmi Finance Administrative Instruction,ORG,The Chartered Accountants,ORG,publisher
+The Kosovo Force,ORG,Unmi Regulation,ORG,part of
+The Kosovo Force,ORG,Air Traffic Control Services,ORG,part of
+The Kosovo Force,ORG,The Rescue Fire Fighting Service,ORG,part of
+The Kosovo Force,ORG,The Chartered Accountants,ORG,affiliation
+Unmi Regulation,ORG,Air Traffic Control Services,ORG,part of
+Unmi Regulation,ORG,The Rescue Fire Fighting Service,ORG,parent organization
+Unmi Regulation,ORG,The Chartered Accountants,ORG,affiliation
+Air Traffic Control Services,ORG,The Rescue Fire Fighting Service,ORG,part of
+Air Traffic Control Services,ORG,The Chartered Accountants,ORG,affiliation
+The Rescue Fire Fighting Service,ORG,The Chartered Accountants,ORG,affiliation
