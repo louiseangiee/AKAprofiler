@@ -10,7 +10,7 @@ import uuid
 import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime
-from Functions import extract_text_from_directory, extract_entities_from_text_files
+from Functions import extract_entity_pairs_from_text_files, extract_text_from_directory, extract_entities_from_text_files, predict_relationships_from_entity_pairs
 import shutil
 from flask_cors import CORS
 
@@ -33,19 +33,25 @@ except Exception as e:
 
 
 db = client["aka_datathon"]
-files_collection = db["PDFFiles_table"]
-entities_collection = db["Entities_table"]
-entities_summary_collection = db["Entity_summaries"]
+files_collection = db["PDFFiles"]
+entities_collection = db["Entities"]
 
 # NLP Model
 nlp = spacy.load("en_core_web_sm")
 
 UPLOAD_FOLDER = "./LocalDB/uploads"
-OUTPUT_FOLDER = "./LocalDB/output"
+OUTPUT_FOLDER_TXT = "./LocalDB/output_txt"
+OUTPUT_FOLDER_CSV = "./LocalDB/output_csv"
+OUTPUT_FOLDER_CSV_ENTITIES = "./LocalDB/entitypairs_csv.csv"
+OUTPUT_FOLDER_CSV_COMPLETE = "./LocalDB/entitypairsComplete_csv.csv"
+
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+os.makedirs(OUTPUT_FOLDER_TXT, exist_ok=True)
+os.makedirs(OUTPUT_FOLDER_CSV, exist_ok=True)
+
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER
+app.config['OUTPUT_FOLDER_TXT'] = OUTPUT_FOLDER_TXT
+app.config['OUTPUT_FOLDER_CSV'] = OUTPUT_FOLDER_CSV
 
 
 def cleanup_folders(folders):
@@ -106,25 +112,30 @@ def upload_file():
         })
 
     # Extract entities from uploaded files
-    extract_text_from_directory(app.config['UPLOAD_FOLDER'], OUTPUT_FOLDER)
+    extract_text_from_directory(app.config['UPLOAD_FOLDER'], OUTPUT_FOLDER_TXT)
 
     # Extract entities
-    entities = extract_entities_from_text_files(OUTPUT_FOLDER)
+    entities = extract_entities_from_text_files(OUTPUT_FOLDER_TXT, OUTPUT_FOLDER_CSV)
+    extract_entity_pairs_from_text_files(OUTPUT_FOLDER_TXT, OUTPUT_FOLDER_CSV_ENTITIES)
+    predict_relationships_from_entity_pairs(OUTPUT_FOLDER_CSV_ENTITIES, OUTPUT_FOLDER_CSV_COMPLETE)
+    
     print(entities)
 
-    # Save extracted entities in MongoDB
-    for entity in entities:
-        entity_entry = {
-            "_id": str(uuid.uuid4()),
-            "file_id": file_id,
-            "file_name": entity["file_name"],
-            "entity": entity["entity"],
-            "label": entity["label"],
-            "frequency": entity["frequency"],  # Number of times the entity is mentioned
-            "pagesFoundIn": entity["pagesFound"],  # Pages where the entity is mentioned
-            "relationships": entity["relationships"]  # Placeholder for relationships
-        }
-        entities_collection.insert_one(entity_entry)
+    
+
+    # # Save extracted entities in MongoDB
+    # for entity in entities:
+    #     entity_entry = {
+    #         "_id": str(uuid.uuid4()),
+    #         "file_id": file_id,
+    #         "file_name": entity["file_name"],
+    #         "entity": entity["entity"],
+    #         "label": entity["label"],
+    #         "frequency": entity["frequency"],  # Number of times the entity is mentioned
+    #         "pagesFoundIn": entity["pagesFound"],  # Pages where the entity is mentioned
+    #         "relationships": entity["relationships"]  
+    #     }
+    #     entities_collection.insert_one(entity_entry)
 
     
 
