@@ -40,24 +40,19 @@ relationship_collection = db["Relationships"]
 # NLP Model
 nlp = spacy.load("en_core_web_sm")
 
-# Define a base directory for storage
-BASE_DIR = os.path.abspath("./LocalDB")
+UPLOAD_FOLDER = "./LocalDB/uploads"
+OUTPUT_FOLDER_TXT = "./LocalDB/output_txt"
 
-# Define folder paths
-UPLOAD_FOLDER = os.path.join(BASE_DIR, "uploads")
-OUTPUT_FOLDER_TXT = os.path.join(BASE_DIR, "output_txt")
+OUTPUT_FOLDER_CSV_ENTITIES = "./LocalDB/entitypairs_csv.csv"
+OUTPUT_FOLDER_CSV_COMPLETE = "./LocalDB/entitypairsComplete_csv.csv"
 
-# Define file paths
-OUTPUT_FOLDER_CSV_ENTITIES = os.path.join(BASE_DIR, "entitypairs_csv.csv")
-OUTPUT_FOLDER_CSV_COMPLETE = os.path.join(BASE_DIR, "entitypairsComplete_csv.csv")
-
-# Ensure necessary folders exist
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(OUTPUT_FOLDER_TXT, exist_ok=True)
 
-# Configure Flask app paths
-app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
-app.config["OUTPUT_FOLDER_TXT"] = OUTPUT_FOLDER_TXT
+
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['OUTPUT_FOLDER_TXT'] = OUTPUT_FOLDER_TXT
+
 
 def cleanup_folders(folders):
     """Deletes all files in the specified folders"""
