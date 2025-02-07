@@ -7,26 +7,30 @@
 
 <script>
 import * as d3 from "d3";
-
 export default {
   mounted() {
     this.createGraph();
   },
   methods: {
-    createGraph() {
+    async createGraph() {
       console.log("Graph container found:", this.$refs.graphContainer);
-      console.log("Graph data:", data);
+
+      // Fetch relationships from the API
+      const response = await fetch("http://localhost:5000/relationships");
+      const { relationships } = await response.json();
+
+      console.log("Fetched relationships:", relationships);
+
       const container = this.$refs.graphContainer;
       if (!container) {
         console.error("Container not found!");
         return;
       }
-
       container.innerHTML = ""; // Clear previous graph if it exists
 
       // Get the correct width & height
-      const width = window.innerWidth * 0.78321; 
-      const height = window.innerHeight * 0.8; 
+      const width = window.innerWidth * 0.78321;
+      const height = window.innerHeight * 0.8;
 
       console.log("Graph container dimensions:", width, height);
 
@@ -35,79 +39,51 @@ export default {
         .append("svg")
         .attr("width", "100%")
         .attr("height", "100%")
-        .attr("viewBox", `0 0 ${width} ${height}`)  // Ensures everything fits
+        .attr("viewBox", `0 0 ${width} ${height}`)
         .attr("preserveAspectRatio", "xMidYMid meet")
-        .call(d3.zoom().on("zoom", (event) => {  // Enable zoom and pan
+        .call(d3.zoom().on("zoom", (event) => {
           g.attr("transform", event.transform);
         }));
 
       const g = svg.append("g"); // Create group for zooming
 
-      // Mock Data
-      const data = {
-        nodes: [
-          // PEOPLE
-          { id: "Jenna Stones", type: "Person", group: 1 },
-          { id: "James Smith", type: "Person", group: 1 },
-          { id: "Alice Johnson", type: "Person", group: 1 },
-          { id: "Robert White", type: "Person", group: 1 },
+      // Process the relationships into nodes and links
+      const nodesMap = new Map();
+      const links = [];
 
-          // JOBS
-          { id: "Software Engineer", type: "Job", group: 2 },
-          { id: "CEO", type: "Job", group: 2 },
-          { id: "Accountant", type: "Job", group: 2 },
+      relationships.forEach(rel => {
+        // Add entity 1 to nodes if not already present
+        if (!nodesMap.has(rel.entity_1_name)) {
+          nodesMap.set(rel.entity_1_name, { id: rel.entity_1_name, type: rel.entity_1_type });
+        }
 
-          // CRIMES
-          { id: "Fraud", type: "Crime", group: 3 },
-          { id: "Robbery", type: "Crime", group: 3 },
-          { id: "Bribery", type: "Crime", group: 3 },
-          { id: "Money Laundering", type: "Crime", group: 3 },
+        // Add entity 2 to nodes if not already present
+        if (!nodesMap.has(rel.entity_2_name)) {
+          nodesMap.set(rel.entity_2_name, { id: rel.entity_2_name, type: rel.entity_2_type });
+        }
 
-          // LOCATIONS
-          { id: "New York", type: "Location", group: 4 },
-          { id: "Los Angeles", type: "Location", group: 4 },
-          { id: "Chicago", type: "Location", group: 4 },
-          { id: "Miami", type: "Location", group: 4 }
-        ],
-        links: [
-          // Job relationships
-          { source: "Jenna Stones", target: "Software Engineer", relation: "works as" },
-          { source: "James Smith", target: "CEO", relation: "works as" },
-          { source: "Alice Johnson", target: "Accountant", relation: "works as" },
-          { source: "Robert White", target: "CEO", relation: "works as" },
+        // Add the relationship as a link
+        links.push({
+          source: rel.entity_1_name,
+          target: rel.entity_2_name,
+          relation: rel.relationship
+        });
+      });
 
-          // Crimes
-          { source: "Jenna Stones", target: "Fraud", relation: "committed" },
-          { source: "James Smith", target: "Robbery", relation: "committed" },
-          { source: "Alice Johnson", target: "Bribery", relation: "committed" },
-          { source: "Robert White", target: "Money Laundering", relation: "committed" },
+      const nodes = Array.from(nodesMap.values());
 
-          // Crime Locations
-          { source: "Fraud", target: "New York", relation: "crime location" },
-          { source: "Money Laundering", target: "Los Angeles", relation: "crime location" },
-          { source: "Bribery", target: "Chicago", relation: "crime location" },
-          { source: "Money Laundering", target: "Miami", relation: "crime location" },
-
-          // Partnerships in crime
-          { source: "Jenna Stones", target: "James Smith", relation: "partnered with" },
-          { source: "James Smith", target: "Alice Johnson", relation: "partnered with" },
-          { source: "Alice Johnson", target: "Robert White", relation: "partnered with" },
-          { source: "Robert White", target: "Jenna Stones", relation: "partnered with" }
-        ]
-      };
-
-
-      console.log("Graph data:", data);  // **Now it should print correctly**
+      console.log("Processed nodes:", nodes);
+      console.log("Processed links:", links);
 
       // Force Simulation
-      const simulation = d3.forceSimulation(data.nodes)
-        .force("link", d3.forceLink(data.links).id(d => d.id).distance(200)) // Increase distance
-        .force("charge", d3.forceManyBody().strength(-500)) // Spread out nodes
+      const simulation = d3.forceSimulation(nodes)
+        .force("link", d3.forceLink(links).id(d => d.id).distance(200))
+        .force("charge", d3.forceManyBody().strength(-500))
         .force("center", d3.forceCenter(width / 2, height / 2));
 
       // Create Links
       const link = g.selectAll(".link")
-        .data(data.links)
+        .data(links)
         .enter()
         .append("line")
         .attr("stroke", "#aaa")
@@ -115,7 +91,7 @@ export default {
 
       // Create Relationship Labels
       const linkLabels = g.selectAll(".link-label")
-        .data(data.links)
+        .data(links)
         .enter()
         .append("text")
         .attr("class", "link-label")
@@ -126,16 +102,13 @@ export default {
 
       // Create Nodes
       const node = g.selectAll(".node")
-        .data(data.nodes)
+        .data(nodes)
         .enter()
         .append("circle")
         .attr("r", 12)
         .attr("fill", d => {
-          if (d.type === "Person") return "red";
-          if (d.type === "Job") return "blue";
-          if (d.type === "Crime") return "gold";
-          if (d.type === "Location") return "green";
-          return "gray";
+          if (d.type === "ORG") return "blue"; // Organizations
+          return "gray"; // Default color
         })
         .call(
           d3.drag()
@@ -157,7 +130,7 @@ export default {
 
       // Add Node Labels
       const nodeLabels = g.selectAll(".node-label")
-        .data(data.nodes)
+        .data(nodes)
         .enter()
         .append("text")
         .attr("class", "node-label")

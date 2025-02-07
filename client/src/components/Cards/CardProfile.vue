@@ -12,17 +12,11 @@
         <h3
           class="text-xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2"
         >
-          {{ person ? person.name : '' }}
+          {{ person ? person.entity : '' }}
         </h3>
-        <div
-          class="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase"
-        >
-          <i class="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
-          {{ person ? person.location : "" }}
-        </div>
         <div class="mb-2 text-blueGray-600">
           <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i>
-          {{ person ? person.organization : "" }}
+          {{ person ? person?.label : "No known label"  }}
         </div>
       </div>
     </div>

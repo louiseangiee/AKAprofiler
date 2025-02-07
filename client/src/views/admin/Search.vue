@@ -73,17 +73,27 @@ export default {
   },
   methods: {
     async fetchPeopleData() {
-      try {
-        const response = await axios.get('http://localhost:5000/entities/people');
-        this.peopleData = response.data.people_entities;
-      } catch (error) {
-        console.error("Error fetching people data:", error);
-      }
-    },
-    selectPerson(person) {
-      this.selectedPerson = person;
-      this.activeTab = "info"; // Reset to first tab when a person is selected
-    },
+  try {
+    const response = await axios.get('http://localhost:5000/entities');
+    // Ensure the response contains valid data
+    if (Array.isArray(response.data.entities)) {
+      this.peopleData = response.data.entities.map((person) => ({
+        id: person._id, // Adjust based on your API response structure
+        entity: person.entity || "Unknown", // Provide a fallback name
+        label: person.label || "Unknown", // Provide a fallback label
+      }));
+    } else {
+      console.error("Unexpected data format:", response.data);
+      this.peopleData = [];
+    }
+  } catch (error) {
+    console.error("Error fetching people data:", error);
+    this.peopleData = [];
+  }
+},
+selectPerson(person) {
+  this.selectedPerson = person;
+},
   },
 };
 </script>

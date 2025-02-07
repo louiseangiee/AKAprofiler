@@ -80,7 +80,7 @@
         <!-- Navigation -->
 
         <ul class="md:flex-col md:min-w-full flex flex-col list-none">
-          <li class="items-center">
+          <!-- <li class="items-center">
             <router-link
               to="/dashboard"
               v-slot="{ href, navigate, isActive }"
@@ -102,7 +102,7 @@
                 Dashboard
               </a>
             </router-link>
-          </li>
+          </li> -->
 
           <li class="items-center">
             <router-link
@@ -221,7 +221,7 @@
         </h6> -->
         <!-- Navigation -->
 
-        <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
+        <!-- <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
           <li class="items-center">
             <router-link
               class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
@@ -241,7 +241,7 @@
               Profile Page
             </router-link>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </div>
   </nav>

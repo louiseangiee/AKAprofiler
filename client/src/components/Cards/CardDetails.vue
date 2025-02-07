@@ -7,10 +7,10 @@
         <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
           Connections to Crime
         </h6>
-        <div v-if="person.crimes && person.crimes.length > 0">
+        <div v-if="person && person.crimes && person.crimes.length > 0">
           <ul>
             <li v-for="crime in person.crimes" :key="crime.type">
-              <b>{{ crime.type }}</b> - {{ crime.date }} at {{ crime.location }}
+              <b>{{ crime?.type }}</b> - {{ crime?.date }} at {{ crime?.location }}
             </li>
           </ul>
         </div>
@@ -21,7 +21,7 @@
         <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
           Connections to Other People
         </h6>
-        <div v-if="person.partners && person.partners.length > 0">
+        <div v-if="person?.partners && person?.partners.length > 0">
           <ul>
             <li v-for="partner in person.partners" :key="partner">
               <b>{{ partner }}</b> - Partner in crime
@@ -45,7 +45,7 @@
                 class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                 htmlFor="grid-password"
               >
-                Additional Details on {{ person ? person.name : "Unknown" }}
+                Additional Details on {{ person ? person.entity : "Unknown" }}
               </label>
               <textarea
                 type="text"

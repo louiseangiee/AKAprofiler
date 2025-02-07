@@ -182,6 +182,11 @@ def get_people_entities():
     people_entities = list(entities_collection.find({"label": "PERSON"}, {"_id": 0}))
     return jsonify({"people_entities": people_entities})
 
+@app.route("/entities", methods=["GET"])
+def get_entities():
+    entities = list(entities_collection.find({}, {"_id": 0}))
+    return jsonify({"entities": entities})
+
 @app.route("/entities/name/<entity_name>", methods=["GET"])
 def get_entities_by_entity_name(entity_name):
     if not entity_name:
@@ -261,8 +266,8 @@ def get_relationships_by_entity(entity_name):
         relationships = list(relationship_collection.find(
             {
                 "$or": [
-                    {"entity_1": {"$regex": f"^{entity_name}$", "$options": "i"}},  # Case-insensitive search for entity_1
-                    {"entity_2": {"$regex": f"^{entity_name}$", "$options": "i"}}   # Case-insensitive search for entity_2
+                    {"entity_1_name": {"$regex": f"^{entity_name}$", "$options": "i"}},  # Case-insensitive search for entity_1
+                    {"entity_2_name": {"$regex": f"^{entity_name}$", "$options": "i"}}   # Case-insensitive search for entity_2
                 ]
             },
             {"_id": 0}  # Exclude the _id field in the response
