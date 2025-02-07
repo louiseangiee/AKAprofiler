@@ -35,24 +35,29 @@ except Exception as e:
 db = client["aka_datathon"]
 files_collection = db["PDFFiles"]
 entities_collection = db["Entities"]
+relationship_collection = db["Relationships"]
 
 # NLP Model
 nlp = spacy.load("en_core_web_sm")
 
-UPLOAD_FOLDER = "./LocalDB/uploads"
-OUTPUT_FOLDER_TXT = "./LocalDB/output_txt"
-OUTPUT_FOLDER_CSV = "./LocalDB/"
-OUTPUT_FOLDER_CSV_ENTITIES = "./LocalDB/entitypairs_csv.csv"
-OUTPUT_FOLDER_CSV_COMPLETE = "./LocalDB/entitypairsComplete_csv.csv"
+# Define a base directory for storage
+BASE_DIR = os.path.abspath("./LocalDB")
 
+# Define folder paths
+UPLOAD_FOLDER = os.path.join(BASE_DIR, "uploads")
+OUTPUT_FOLDER_TXT = os.path.join(BASE_DIR, "output_txt")
+
+# Define file paths
+OUTPUT_FOLDER_CSV_ENTITIES = os.path.join(BASE_DIR, "entitypairs_csv.csv")
+OUTPUT_FOLDER_CSV_COMPLETE = os.path.join(BASE_DIR, "entitypairsComplete_csv.csv")
+
+# Ensure necessary folders exist
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(OUTPUT_FOLDER_TXT, exist_ok=True)
-os.makedirs(OUTPUT_FOLDER_CSV, exist_ok=True)
 
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['OUTPUT_FOLDER_TXT'] = OUTPUT_FOLDER_TXT
-app.config['OUTPUT_FOLDER_CSV'] = OUTPUT_FOLDER_CSV
-
+# Configure Flask app paths
+app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
+app.config["OUTPUT_FOLDER_TXT"] = OUTPUT_FOLDER_TXT
 
 def cleanup_folders(folders):
     """Deletes all files in the specified folders"""
@@ -115,8 +120,8 @@ def upload_file():
     extract_text_from_directory(app.config['UPLOAD_FOLDER'], OUTPUT_FOLDER_TXT)
 
     # Extract entities
-    entities = extract_entities_from_text_files(OUTPUT_FOLDER_TXT, OUTPUT_FOLDER_TXT)
-    extract_entity_pairs_from_text_files(OUTPUT_FOLDER_TXT, OUTPUT_FOLDER_CSV_ENTITIES)
+    entities = extract_entities_from_text_files(app.config['OUTPUT_FOLDER_TXT'], OUTPUT_FOLDER_TXT)
+    extract_entity_pairs_from_text_files(app.config['OUTPUT_FOLDER_TXT'], OUTPUT_FOLDER_CSV_ENTITIES)
     predict_relationships_from_entity_pairs(OUTPUT_FOLDER_CSV_ENTITIES, OUTPUT_FOLDER_CSV_COMPLETE)
     
     print(entities)

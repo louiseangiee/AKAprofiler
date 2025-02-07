@@ -143,12 +143,14 @@ def extract_entities_from_text_files(folder_path, output_csv_path):
 # Main function 3 to extract entity pairs
 def extract_entity_pairs_from_text_files(folder_path, output_csv_path):
     nlp = spacy.load("en_core_web_sm")
+    print(folder_path)
     entity_pairs_data = []
 
     # Loop through all files in the folder
     for filename in os.listdir(folder_path):
         if filename.endswith(".txt"):
             file_path = os.path.join(folder_path, filename)
+            print(file_path)
 
             # Read the content of the file
             with open(file_path, "r", encoding="utf-8") as file:
