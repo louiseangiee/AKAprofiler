@@ -2,20 +2,36 @@
 # pip install PyPDF2
 # pip install pytesseract
 # pip install pdfminer.six
+from __future__ import annotations
 from collections import defaultdict
+from spacy.util import compile_infix_regex
+from itertools import combinations
 import os
 import requests
 import fitz
 import spacy
 import pandas as pd
-from itertools import combinations
 import pymongo
-from spacy.util import compile_infix_regex
 import matplotlib.pyplot as plt
 import seaborn as sns
-from testModelPrediction import predict_relationship_from_entities
 import pdfplumber
 import re
+import spacy
+import pandas as pd
+import requests
+import torch
+import re
+import hashlib
+from typing import List
+from spacy.tokens import Doc
+from spacy.language import Language
+from transformers import pipeline
+from datasets import Dataset
+from torch.utils.data import DataLoader
+from transformers import Trainer, TrainingArguments
+from sklearn.metrics import accuracy_score
+from typing import List, Dict
+
 
 # Helper functions
 # 1. Helper Function to extract text from a single PDF file
@@ -100,7 +116,7 @@ def extract_entities_from_text_files(folder_path, output_csv_path):
             file_path = os.path.join(folder_path, filename)
 
             # Read the content of the file
-            with open(file_path, "r") as file:
+            with open(file_path, "r", encoding="utf-8") as file:
                 text = file.read()
 
             # Process the text with spaCy NLP model
@@ -127,12 +143,14 @@ def extract_entities_from_text_files(folder_path, output_csv_path):
 # Main function 3 to extract entity pairs
 def extract_entity_pairs_from_text_files(folder_path, output_csv_path):
     nlp = spacy.load("en_core_web_sm")
+    print(folder_path)
     entity_pairs_data = []
 
     # Loop through all files in the folder
     for filename in os.listdir(folder_path):
         if filename.endswith(".txt"):
             file_path = os.path.join(folder_path, filename)
+            print(file_path)
 
             # Read the content of the file
             with open(file_path, "r", encoding="utf-8") as file:
@@ -163,153 +181,116 @@ def extract_entity_pairs_from_text_files(folder_path, output_csv_path):
     df_pairs.to_csv(output_csv_path, index=False)
     print(f"Entity pairs extracted and saved to {output_csv_path}")
 
+# Main function 4 to predict relationships between entities
 
+def predict_relationships_from_entity_pairs(entity_pairs_csv, output_csv_path):
+    """Predict relationships from entity pairs using the REBEL model and save results to a CSV."""
+    
+    # Define DEVICE variable
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# # Old Function to extract text from all PDFs in a directory
-# def extract_text_from_directory(directory_path, output_folder):
-#     if not os.path.exists(output_folder):  
-#         os.makedirs(output_folder)
+    # Load Rebel model from Hugging Face
+    rebel_pipeline = pipeline("text2text-generation", model="Babelscape/rebel-large", device=0 if torch.cuda.is_available() else -1)
 
-#     pdf_text_data = {}  # Stores extracted text per file
+    # Register custom spaCy extension
+    if not Doc.has_extension("rel"):
+        Doc.set_extension("rel", default={})
 
-#     for pdf_file in os.listdir(directory_path):
-#         if pdf_file.endswith(".pdf"):
-#             pdf_path = os.path.join(directory_path, pdf_file)
-#             print(f"Processing: {pdf_file}")
+    def call_wiki_api(item):
+        """Fetches Wikidata ID for an entity."""
+        try:
+            url = f"https://www.wikidata.org/w/api.php?action=wbsearchentities&search={item}&language=en&format=json"
+            data = requests.get(url).json()
+            return data['search'][0]['id']
+        except:
+            return 'id-less'
 
-#             # Open PDF and extract text per page
-#             doc = fitz.open(pdf_path)
-#             text_per_page = {}
+    def set_annotations(doc: Doc, triplets: List[dict]):
+        """Annotates document with extracted relationships."""
+        for triplet in triplets:
+            if triplet['head'] == triplet['tail']:
+                continue  # Remove self-loops
 
-#             for page_num in range(len(doc)):
-#                 text = doc[page_num].get_text()
-#                 text_per_page[page_num + 1] = text  # Store text by page number
+            head_span = re.search(triplet["head"], doc.text)
+            tail_span = re.search(triplet["tail"], doc.text)
+            if not head_span or not tail_span:
+                continue
 
-#             pdf_text_data[pdf_file] = text_per_page
+            index = hashlib.sha1("".join([triplet['head'], triplet['tail'], triplet['type']]).encode('utf-8')).hexdigest()
+            if index not in doc._.rel:
+                doc._.rel[index] = {
+                    "relation": triplet["type"],
+                    "head_span": {'text': triplet['head'], 'id': call_wiki_api(triplet['head'])},
+                    "tail_span": {'text': triplet['tail'], 'id': call_wiki_api(triplet['tail'])}
+                }
 
-#             # Save full extracted text to a .txt file
-#             full_text = "\n".join(text_per_page.values())
-#             output_file = os.path.join(output_folder, f"{os.path.splitext(pdf_file)[0]}.txt")
-#             with open(output_file, "w", encoding="utf-8") as f:
-#                 f.write(full_text)
-#             print(f"Saved extracted text to: {output_file}")
+    # Load spaCy model
+    nlp = spacy.load('en_core_web_sm', disable=['ner', 'lemmatizer', 'attribute_rules', 'tagger'])
 
-#     return pdf_text_data  # Returns extracted text by file & page
+    @Language.component("rebel")
+    def rebel_component(doc):
+        """Custom spaCy component for relation extraction."""
+        text = doc.text
+        results = rebel_pipeline(text, max_length=512, truncation=True)
+        extracted_relations = {}
 
-# Old function to extract entities
+        for result in results:
+            words = result["generated_text"].split()
+            entity_parts = [word for word in words if word[0].isupper()]
+            relation_parts = [word for word in words if word[0].islower()]
 
-# def extract_entities_from_text(output_folder):
-#     # Check if output folder exists
-#     if not os.path.exists(output_folder) or not os.path.isdir(output_folder):
-#         print(f"Invalid folder path: {output_folder}")
-#         return []  # Return an empty list if the folder is invalid
+            if entity_parts and relation_parts:
+                entity = " ".join(entity_parts)
+                relation = " ".join(relation_parts[-2:])  # Take last 1-2 words as relation
+                relation_hash = hashlib.sha1(relation.encode()).hexdigest()
+                extracted_relations[relation_hash] = {
+                    "entity": entity,
+                    "relation": relation,
+                    "full_relation": relation
+                }
 
-#     # Load SpaCy model and configure tokenizer
-#     nlp = spacy.load("en_core_web_sm")
-#     infixes = list(nlp.Defaults.infixes)
-#     infixes.append(r'k')
-#     infix_re = compile_infix_regex(infixes)
-#     nlp.tokenizer = Tokenizer(nlp.vocab, infix_finditer=infix_re.finditer)
+        doc._.rel = extracted_relations
+        return doc
 
-#     entity_data = []
+    # Add the custom component to spaCy
+    nlp.add_pipe("rebel", last=True)
 
-#     # Process each text file in the output folder
-#     for filename in os.listdir(output_folder):
-#         if filename.endswith(".txt"):
-#             file_path = os.path.join(output_folder, filename)
+    def load_csv(file_path):
+        """Loads entity pairs from a CSV file."""
+        df = pd.read_csv(file_path)
+        print(f"Original columns: {df.columns.tolist()}")  # Debugging check
 
-#             # Read file content
-#             with open(file_path, "r", encoding="utf-8") as file:
-#                 text = file.read()
+        # Ensure we only have the correct 5 columns
+        df = df.iloc[:, :5]  
+        df.columns = ["Entity 1", "Type 1", "Entity 2", "Type 2", "Relationship"]
 
-#             doc = nlp(text)
-#             cleaned_text = ' '.join([token.text for token in doc if token.text != 'K'])
-#             doc_cleaned = nlp(cleaned_text)
+        return df
 
-#             # Count entity occurrences
-#             entity_count = defaultdict(lambda: {"count": 0, "pages": set()})
+    def extract_relationships(df):
+        """Uses Rebel to extract relationships for given entity pairs."""
+        for index, row in df.iterrows():
+            entity1, entity2, relationship = row["Entity 1"], row["Entity 2"], row["Relationship"]
+            
+            # Only process rows where the relationship is "Unknown"
+            if relationship == "Unknown":
+                wiki_id1 = call_wiki_api(entity1)
+                wiki_id2 = call_wiki_api(entity2)
+                query_text = f"{entity1} and {entity2} relationship"
+                doc = nlp(query_text)
 
-#             # Simulate page numbers by splitting text into chunks
-#             page_size = 1000  # Approximate characters per page
-#             pages = [cleaned_text[i:i+page_size] for i in range(0, len(cleaned_text), page_size)]
+                if doc._.rel:
+                    extracted_relation = list(doc._.rel.values())[0]["relation"]
+                    print(f"Found relation: {extracted_relation}")
+                    df.at[index, "Relationship"] = extracted_relation  # Update dataframe
 
-#             for page_num, page_text in enumerate(pages, start=1):
-#                 doc_page = nlp(page_text)
-#                 for ent in doc_page.ents:
-#                     clean_entity = ent.text.strip().replace("\n", " ")  # Clean entity text
-#                     entity_count[clean_entity]["count"] += 1
-#                     entity_count[clean_entity]["pages"].add(page_num)
+        return df
 
-#             # Store entity data
-#             for entity_text, data in entity_count.items():
-#                 entity_data.append({
-#                     "file_name": filename,
-#                     "entity": entity_text,
-#                     "label": nlp(entity_text).ents[0].label_ if nlp(entity_text).ents else "UNKNOWN",
-#                     "frequency": data["count"],
-#                     "pagesFound": sorted(data["pages"]),
-#                     "relationships": []  # Placeholder for relationships
-#                 })
+    # Load data and process relationships
+    df = load_csv(entity_pairs_csv)
+    df = extract_relationships(df)
+    print(df.head())
 
-#     if not entity_data:
-#         print("No entities were extracted.")
-#         return []  # Return an empty list if no entities were found
-
-#     # Convert entity data to DataFrame
-#     df = pd.DataFrame(entity_data)
-
-#     # Clean and preprocess the extracted entity data
-#     df = df[df['entity'].str.strip() != '']
-#     df['entity'] = df['entity'].str.replace(r'\n', ' ', regex=True).str.strip()
-#     df['entity'] = df['entity'].apply(lambda x: ''.join(e for e in x if e.isalnum() or e.isspace()))
-#     df['entity'] = df['entity'].str.lower()
-#     df['label'] = df['label'].str.upper()
-
-#     # Remove duplicates (this should now work without any list issues)
-#     df = df.drop_duplicates(subset=['file_name', 'entity', 'label'])
-
-#     # Process and filter people entities
-#     grouped = df.groupby('file_name')
-#     entity_pairs = []
-
-#     # Generate entity pairs for each file
-#     for file_name, group in grouped:
-#         person_entities = group[group['label'] == 'PERSON']
-        
-#         # Create all unique combinations of entity pairs where one is 'PERSON'
-#         for entity1, entity2 in combinations(person_entities['entity'], 2):
-#             entity_pairs.append({'file_name': file_name, 'entity1': entity1, 'entity2': entity2})
-
-#     # Convert the list to a DataFrame
-#     pairs_df = pd.DataFrame(entity_pairs)
-
-#     # Save the entity pairs to a new CSV file
-#     pairs_df.to_csv('entity_pairs.csv', index=False)
-#     print("Entity pairs generated and saved to entity_pairs.csv!")
-
-#     # Determine relationships and update entity data
-#     # Separate the relationships to prevent issues with unhashable types
-#     relationships = []
-
-#     for index, row in pairs_df.iterrows():
-#         relationship = predict_relationship_from_entities(row['entity1'], row['entity2'])
-#         relationships.append({
-#             "file_name": row['file_name'],
-#             "entity1": row['entity1'],
-#             "entity2": row['entity2'],
-#             "relationship": relationship
-#         })
-
-#     # Now update the entity data with relationships
-#     for entity in entity_data:
-#         for rel in relationships:
-#             if entity['file_name'] == rel['file_name'] and entity['entity'] in [rel['entity1'], rel['entity2']]:
-#                 entity['relationships'].append({
-#                     "entity1": rel['entity1'],
-#                     "entity2": rel['entity2'],
-#                     "relationship": rel['relationship']
-#                 })
-
-#     # Return the entity data
-#     return entity_data
+    # Save updated data
+    df.to_csv(output_csv_path, index=False)
+    print(f"Updated relationships saved to {output_csv_path}")
 
