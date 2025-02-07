@@ -183,16 +183,17 @@ def extract_entity_pairs_from_text_files(folder_path, output_csv_path):
 
 def predict_relationships_from_entity_pairs(entity_pairs_csv, output_csv_path):
     """Predict relationships from entity pairs using the REBEL model and save results to a CSV."""
+    
     # Define DEVICE variable
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    
+
     # Load Rebel model from Hugging Face
     rebel_pipeline = pipeline("text2text-generation", model="Babelscape/rebel-large", device=0 if torch.cuda.is_available() else -1)
-    
+
     # Register custom spaCy extension
     if not Doc.has_extension("rel"):
         Doc.set_extension("rel", default={})
-    
+
     def call_wiki_api(item):
         """Fetches Wikidata ID for an entity."""
         try:
@@ -201,8 +202,9 @@ def predict_relationships_from_entity_pairs(entity_pairs_csv, output_csv_path):
             return data['search'][0]['id']
         except:
             return 'id-less'
-    
+
     def set_annotations(doc: Doc, triplets: List[dict]):
+        """Annotates document with extracted relationships."""
         for triplet in triplets:
             if triplet['head'] == triplet['tail']:
                 continue  # Remove self-loops
@@ -219,21 +221,22 @@ def predict_relationships_from_entity_pairs(entity_pairs_csv, output_csv_path):
                     "head_span": {'text': triplet['head'], 'id': call_wiki_api(triplet['head'])},
                     "tail_span": {'text': triplet['tail'], 'id': call_wiki_api(triplet['tail'])}
                 }
-    
+
     # Load spaCy model
     nlp = spacy.load('en_core_web_sm', disable=['ner', 'lemmatizer', 'attribute_rules', 'tagger'])
-    
+
     @Language.component("rebel")
     def rebel_component(doc):
+        """Custom spaCy component for relation extraction."""
         text = doc.text
         results = rebel_pipeline(text, max_length=512, truncation=True)
         extracted_relations = {}
-        
+
         for result in results:
-            words = result["generated_text"].split()  # Split text into words
+            words = result["generated_text"].split()
             entity_parts = [word for word in words if word[0].isupper()]
             relation_parts = [word for word in words if word[0].islower()]
-            
+
             if entity_parts and relation_parts:
                 entity = " ".join(entity_parts)
                 relation = " ".join(relation_parts[-2:])  # Take last 1-2 words as relation
@@ -243,41 +246,48 @@ def predict_relationships_from_entity_pairs(entity_pairs_csv, output_csv_path):
                     "relation": relation,
                     "full_relation": relation
                 }
-        
-        doc._.rel = extracted_relations  # Store extracted relations in the spaCy doc
+
+        doc._.rel = extracted_relations
         return doc
-    
+
     # Add the custom component to spaCy
     nlp.add_pipe("rebel", last=True)
-    
+
     def load_csv(file_path):
         """Loads entity pairs from a CSV file."""
         df = pd.read_csv(file_path)
         print(f"Original columns: {df.columns.tolist()}")  # Debugging check
-        df = df.iloc[:, :4]  # Ensure we only have the correct 4 columns
-        df.columns = ["File Name", "Entity1", "Entity2", "Relationship"]
+
+        # Ensure we only have the correct 5 columns
+        df = df.iloc[:, :5]  
+        df.columns = ["Entity 1", "Type 1", "Entity 2", "Type 2", "Relationship"]
+
         return df
-    
+
     def extract_relationships(df):
         """Uses Rebel to extract relationships for given entity pairs."""
         for index, row in df.iterrows():
-            entity1, entity2, relationship = row["Entity1"], row["Entity2"], row["Relationship"]
+            entity1, entity2, relationship = row["Entity 1"], row["Entity 2"], row["Relationship"]
+            
+            # Only process rows where the relationship is "Unknown"
             if relationship == "Unknown":
                 wiki_id1 = call_wiki_api(entity1)
                 wiki_id2 = call_wiki_api(entity2)
                 query_text = f"{entity1} and {entity2} relationship"
                 doc = nlp(query_text)
-                
+
                 if doc._.rel:
-                    print(f"Found relation: {list(doc._.rel.values())[0]}")
-                    df.at[index, "Relationship"] = list(doc._.rel.values())[0]  # Update dataframe
+                    extracted_relation = list(doc._.rel.values())[0]["relation"]
+                    print(f"Found relation: {extracted_relation}")
+                    df.at[index, "Relationship"] = extracted_relation  # Update dataframe
+
         return df
-    
+
     # Load data and process relationships
     df = load_csv(entity_pairs_csv)
     df = extract_relationships(df)
     print(df.head())
-    
+
     # Save updated data
     df.to_csv(output_csv_path, index=False)
     print(f"Updated relationships saved to {output_csv_path}")

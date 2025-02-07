@@ -41,7 +41,7 @@ nlp = spacy.load("en_core_web_sm")
 
 UPLOAD_FOLDER = "./LocalDB/uploads"
 OUTPUT_FOLDER_TXT = "./LocalDB/output_txt"
-OUTPUT_FOLDER_CSV = "./LocalDB/output_csv"
+OUTPUT_FOLDER_CSV = "./LocalDB/"
 OUTPUT_FOLDER_CSV_ENTITIES = "./LocalDB/entitypairs_csv.csv"
 OUTPUT_FOLDER_CSV_COMPLETE = "./LocalDB/entitypairsComplete_csv.csv"
 
@@ -115,7 +115,7 @@ def upload_file():
     extract_text_from_directory(app.config['UPLOAD_FOLDER'], OUTPUT_FOLDER_TXT)
 
     # Extract entities
-    entities = extract_entities_from_text_files(OUTPUT_FOLDER_TXT, OUTPUT_FOLDER_CSV)
+    entities = extract_entities_from_text_files(OUTPUT_FOLDER_TXT, OUTPUT_FOLDER_TXT)
     extract_entity_pairs_from_text_files(OUTPUT_FOLDER_TXT, OUTPUT_FOLDER_CSV_ENTITIES)
     predict_relationships_from_entity_pairs(OUTPUT_FOLDER_CSV_ENTITIES, OUTPUT_FOLDER_CSV_COMPLETE)
     
