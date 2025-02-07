@@ -4,9 +4,11 @@ from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 from dotenv import load_dotenv
 import os
-import fitz  # PyMuPDF
+import fitz
 import spacy
 import uuid
+import matplotlib.pyplot as plt
+import seaborn as sns
 from datetime import datetime
 from Functions import extract_entity_pairs_from_text_files, extract_text_from_directory, extract_entities_from_text_files, predict_relationships_from_entity_pairs
 import shutil
@@ -29,7 +31,7 @@ except Exception as e:
 db = client["aka_datathon"]
 files_collection = db["PDFFiles"]
 entities_collection = db["Entities"]
-relationship_collection = db["Relationships"]
+relationships_collection = db["Relationships"]
 
 # NLP Model
 nlp = spacy.load("en_core_web_sm")
@@ -84,7 +86,7 @@ def upload_file():
         file.save(file_path)
         # Extract text from PDF to get the number of pages
         with fitz.open(file_path) as doc:
-            num_pages = len(doc)
+            num_pages = doc.page_count
         # Save file info in MongoDB
         file_id = str(uuid.uuid4())
         file_entry = {
@@ -106,20 +108,15 @@ def upload_file():
     print(app.config['OUTPUT_FOLDER_TXT'])
     print(OUTPUT_FOLDER_CSV_ENTITIES)
     entities = extract_entities_from_text_files(app.config['OUTPUT_FOLDER_TXT'], OUTPUT_FOLDER_CSV_ENTITIES)
-    extract_entity_pairs_from_text_files(app.config['OUTPUT_FOLDER_TXT'], OUTPUT_FOLDER_CSV_ENTITIES)
-    predict_relationships_from_entity_pairs(OUTPUT_FOLDER_CSV_ENTITIES, OUTPUT_FOLDER_CSV_COMPLETE)
+    entity_pairs_df = extract_entity_pairs_from_text_files(app.config['OUTPUT_FOLDER_TXT'], OUTPUT_FOLDER_CSV_ENTITIES)
+    predict_relationships_from_entity_pairs(OUTPUT_FOLDER_CSV_ENTITIES, OUTPUT_FOLDER_CSV_COMPLETE, entities_collection, relationships_collection)
     print(entities)
     # Save extracted entities in MongoDB
     for entity in entities:
         entity_entry = {
             "_id": str(uuid.uuid4()),
-            "file_id": file_id,
-            "file_name": entity["File Name"],
-            "entity": entity["Entity"],
             "label": entity["Label"],
-            "frequency": entity["Frequency"],  # Number of times the entity is mentioned
-            "pagesFoundIn": entity["Pages Found"],  # Pages where the entity is mentioned
-            "relationships": entity["Relationships"]  # Placeholder for relationships
+            "name": entity["Entity"]
         }
         entities_collection.insert_one(entity_entry)
     return jsonify({
@@ -145,7 +142,7 @@ def get_entities_by_entity_name(entity_name):
         return jsonify({"error": "Entity name is required"}), 400
     try:
         entities = list(entities_collection.find(
-            {"entity": {"$regex": f"^{entity_name}$", "$options": "i"}},  # Case-insensitive search
+            {"name": {"$regex": f"^{entity_name}$", "$options": "i"}},  # Case-insensitive search
             {"_id": 0}
         ))
         if not entities:
@@ -178,8 +175,8 @@ def search_entities():
         return jsonify({"error": "Query parameter is required"}), 400
     # Case-insensitive search for entities containing the query
     results = list(entities_collection.find(
-        {"entity_text": {"$regex": query, "$options": "i"}},  # Case-insensitive regex search
-        {"_id": 0, "file_id": 1, "filename": 1, "entity_text": 1, "label": 1, "frequency": 1}
+        {"name": {"$regex": query, "$options": "i"}},  # Case-insensitive regex search
+        {"_id": 0, "file_id": 1, "filename": 1, "name": 1, "label": 1, "frequency": 1}
     ))
     return jsonify({"query": query, "results": results})
 
@@ -187,7 +184,7 @@ def search_entities():
 @app.route("/relationships", methods=["GET"])
 def get_all_relationships():
     # Fetch all relationships from the relationships collection
-    relationships = list(entities_collection.find({}, {"_id": 0}))  
+    relationships = list(relationships_collection.find({}, {"_id": 0}))
     return jsonify({"relationships": relationships})
 
 # Get relationships if its in entity 1 or 2 (new) 
@@ -197,11 +194,11 @@ def get_relationships_by_entity(entity_name):
         return jsonify({"error": "Entity name is required"}), 400
     try:
         # Find relationships where the entity appears in either 'entity_1' or 'entity_2'
-        relationships = list(entities_collection.find(
+        relationships = list(relationships_collection.find(
             {
                 "$or": [
-                    {"entity_1": {"$regex": f"^{entity_name}$", "$options": "i"}},  # Case-insensitive search for entity_1
-                    {"entity_2": {"$regex": f"^{entity_name}$", "$options": "i"}}   # Case-insensitive search for entity_2
+                    {"a_entity_name": {"$regex": f"^{entity_name}$", "$options": "i"}},  # Case-insensitive search for entity_1
+                    {"b_entity_name": {"$regex": f"^{entity_name}$", "$options": "i"}}   # Case-insensitive search for entity_2
                 ]
             },
             {"_id": 0}  # Exclude the _id field in the response

@@ -1,0 +1,16 @@
+Entity 1,Type 1,Entity 2,Type 2,Relationship
+Vendor 2,PERSON,Vendor 1,PERSON,Unknown
+Vendor 2,PERSON,Cramer Antenna,PERSON,Unknown
+Vendor 2,PERSON,Vendor 3,PERSON,Unknown
+Vendor 2,PERSON,Economic Law,PERSON,Unknown
+Vendor 2,PERSON,Vendor 4,PERSON,Unknown
+Vendor 1,PERSON,Cramer Antenna,PERSON,Unknown
+Vendor 1,PERSON,Vendor 3,PERSON,Unknown
+Vendor 1,PERSON,Economic Law,PERSON,Unknown
+Vendor 1,PERSON,Vendor 4,PERSON,Unknown
+Cramer Antenna,PERSON,Vendor 3,PERSON,Unknown
+Cramer Antenna,PERSON,Economic Law,PERSON,Unknown
+Cramer Antenna,PERSON,Vendor 4,PERSON,Unknown
+Vendor 3,PERSON,Economic Law,PERSON,Unknown
+Vendor 3,PERSON,Vendor 4,PERSON,Unknown
+Economic Law,PERSON,Vendor 4,PERSON,Unknown

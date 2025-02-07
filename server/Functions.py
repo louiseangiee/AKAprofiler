@@ -1,10 +1,11 @@
 # Module imports
+from __future__ import annotations
 from collections import defaultdict
 from spacy.util import compile_infix_regex
 from itertools import combinations
 import os
 import requests
-import fitz  # PyMuPDF
+import fitz
 import spacy
 import pandas as pd
 import pymongo
@@ -26,6 +27,8 @@ from datasets import Dataset
 from torch.utils.data import DataLoader
 from transformers import Trainer, TrainingArguments
 from sklearn.metrics import accuracy_score
+from typing import List, Dict
+import uuid
 
 # Helper functions
 # 1. Helper Function to extract text from a single PDF file
@@ -165,12 +168,13 @@ def extract_entity_pairs_from_text_files(folder_path, output_csv_path):
                     "Type 2": entity2[1],
                     "Relationship": "Unknown"
                 })
-    df_pairs = pd.DataFrame(entity_pairs_data)
+    df_pairs = pd.DataFrame(entity_pairs_data, columns=["Entity 1", "Type 1", "Entity 2", "Type 2", "Relationship"])
     df_pairs.to_csv(output_csv_path, index=False)
     print(f"Entity pairs extracted and saved to {output_csv_path}")
+    return df_pairs
 
 # Main function 4 to predict relationships between entities
-def predict_relationships_from_entity_pairs(entity_pairs_csv, output_csv_path):
+def predict_relationships_from_entity_pairs(entity_pairs_csv, output_csv_path, entities_collection, relationships_collection):
     """Predict relationships from entity pairs using the REBEL model and save results to a CSV."""
     # Define DEVICE variable
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -189,69 +193,19 @@ def predict_relationships_from_entity_pairs(entity_pairs_csv, output_csv_path):
         except:
             return 'id-less'
 
-    def set_annotations(doc: Doc, triplets: List[Dict]):
-        """Annotates document with extracted relationships."""
-        for triplet in triplets:
-            if triplet['head'] == triplet['tail']:
-                continue  # Remove self-loops
-            head_span = re.search(triplet["head"], doc.text)
-            tail_span = re.search(triplet["tail"], doc.text)
-            if not head_span or not tail_span:
-                continue
-            index = hashlib.sha1("".join([triplet['head'], triplet['tail'], triplet['type']]).encode('utf-8')).hexdigest()
-            if index not in doc._.rel:
-                doc._.rel[index] = {
-                    "relation": triplet["type"],
-                    "head_span": {'text': triplet['head'], 'id': call_wiki_api(triplet['head'])},
-                    "tail_span": {'text': triplet['tail'], 'id': call_wiki_api(triplet['tail'])}
-                }
+    def get_entity_info(entities_collection, entity_name):
+        """Fetches the entity ID, name, and label from the entities collection."""
+        entity = entities_collection.find_one({"name": entity_name})
+        if entity:
+            return {
+                "entity_id": str(entity["_id"]),
+                "entity_name": entity["name"],
+                "entity_label": entity["label"]
+            }
+        return None
 
-    # Load spaCy model
-    nlp = spacy.load('en_core_web_sm', disable=['ner', 'lemmatizer', 'attribute_rules', 'tagger'])
-
-    @Language.component("rebel")
-    def rebel_component(doc):
-        """Custom spaCy component for relation extraction."""
-        text = doc.text
-        results = rebel_pipeline(text, max_length=512, truncation=True)
-        extracted_relations = {}
-
-        for result in results:
-            relation_phrase = result["generated_text"].strip()
-            match = re.match(r'^(.+?) (?:is|are) (.+?) (.+)$', relation_phrase)
-            if match:
-                head, tail, relation = match.groups()
-                extracted_relations[hashlib.sha1(relation.encode()).hexdigest()] = {
-                    "head": head.strip(),
-                    "tail": tail.strip(),
-                    "type": relation.strip()
-                }
-            else:
-                match = re.match(r'^(.+?) (.+) (.+?)$', relation_phrase)
-                if match:
-                    head, relation, tail = match.groups()
-                    extracted_relations[hashlib.sha1(relation.encode()).hexdigest()] = {
-                        "head": head.strip(),
-                        "tail": tail.strip(),
-                        "type": relation.strip()
-                    }
-
-        doc._.rel = extracted_relations
-        return doc
-
-    # Add the custom component to spaCy
-    nlp.add_pipe("rebel", last=True)
-
-    def load_csv(file_path):
-        """Loads entity pairs from a CSV file."""
-        df = pd.read_csv(file_path)
-        print(f"Original columns: {df.columns.tolist()}")  # Debugging check
-        # Ensure we only have the correct 5 columns
-        df = df.iloc[:, :5]
-        df.columns = ["Entity 1", "Type 1", "Entity 2", "Type 2", "Relationship"]
-        return df
-
-    def extract_relationships(df):
+    def extract_relationships(df, entities_collection, relationships_collection):
+        nlp = spacy.load("en_core_web_sm")
         """Uses Rebel to extract relationships for given entity pairs."""
         for index, row in df.iterrows():
             entity1, entity2, relationship = row["Entity 1"], row["Entity 2"], row["Relationship"]
@@ -265,12 +219,40 @@ def predict_relationships_from_entity_pairs(entity_pairs_csv, output_csv_path):
                     extracted_relation = list(doc._.rel.values())[0]["type"]
                     print(f"Found relation: {extracted_relation}")
                     df.at[index, "Relationship"] = extracted_relation  # Update dataframe
+
+                    # Get entity information
+                    entity1_info = get_entity_info(entities_collection, entity1)
+                    entity2_info = get_entity_info(entities_collection, entity2)
+
+                    if entity1_info and entity2_info:
+                        # Insert relationship into the relationships collection
+                        relationship_entry = {
+                            "_id": str(uuid.uuid4()),
+                            "a_entity_id": entity1_info["entity_id"],
+                            "a_entity_name": entity1_info["entity_name"],
+                            "a_entity_label": entity1_info["entity_label"],
+                            "b_entity_id": entity2_info["entity_id"],
+                            "b_entity_name": entity2_info["entity_name"],
+                            "b_entity_label": entity2_info["entity_label"],
+                            "relationship": extracted_relation
+                        }
+                        relationships_collection.insert_one(relationship_entry)
+                        print(f"Inserted relationship: {relationship_entry}")
         return df
 
     # Load data and process relationships
     df = load_csv(entity_pairs_csv)
-    df = extract_relationships(df)
+    df = extract_relationships(df, entities_collection, relationships_collection)
     print(df.head())
     # Save updated data
     df.to_csv(output_csv_path, index=False)
     print(f"Updated relationships saved to {output_csv_path}")
+
+def load_csv(file_path):
+    """Loads entity pairs from a CSV file."""
+    df = pd.read_csv(file_path)
+    print(f"Original columns: {df.columns.tolist()}")  # Debugging check
+    # Ensure we only have the correct 5 columns
+    df = df.iloc[:, :5]
+    df.columns = ["Entity 1", "Type 1", "Entity 2", "Type 2", "Relationship"]
+    return df
