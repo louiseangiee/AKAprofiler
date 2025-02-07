@@ -16,11 +16,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pdfplumber
 import re
-import spacy
-import pandas as pd
 import requests
 import torch
-import re
 import hashlib
 from typing import List
 from spacy.tokens import Doc
@@ -105,81 +102,115 @@ def extract_text_from_directory(directory_path, output_folder):
             f.write(cleaned_text)
         print(f"Saved cleaned text to: {output_file}")
 
-# 2. Main Function to extract entities 
 def extract_entities_from_text_files(folder_path, output_csv_path):
+    """Extracts named entities from text files in a folder and saves them to a CSV."""
     nlp = spacy.load("en_core_web_sm")
     entity_data = []
 
+    # Ensure absolute paths
+    folder_path = os.path.abspath(folder_path)
+    output_csv_path = os.path.abspath(output_csv_path)
+
+    if not os.path.exists(folder_path):
+        print(f"❌ Error: Folder not found -> {folder_path}")
+        return
+
     # Loop through all files in the folder
     for filename in os.listdir(folder_path):
-        if filename.endswith(".txt"):
-            file_path = os.path.join(folder_path, filename)
+        file_path = os.path.join(folder_path, filename)
 
-            # Read the content of the file
-            with open(file_path, "r", encoding="utf-8") as file:
-                text = file.read()
+        if filename.endswith(".txt") and os.path.isfile(file_path):
+            try:
+                with open(file_path, "r", encoding="utf-8") as file:
+                    text = file.read()
+            except Exception as e:
+                print(f"❌ Error reading {file_path}: {e}")
+                continue
 
             # Process the text with spaCy NLP model
             doc = nlp(text)
 
-            # Extract and store entities for the current file
             for ent in doc.ents:
-                entity_text = ent.text.replace('\n', ' ').strip()
-                entity_text = entity_text.title()  # Normalize capitalisation
+                entity_text = ent.text.replace('\n', ' ').strip().title()
+
                 if ent.label_ == "PERSON":
                     words = entity_text.split()
                     if len(words) > 2:
                         entity_text = " ".join(words[:2])
+
                 if is_valid_entity(entity_text, ent.label_):
                     entity_data.append([filename, entity_text, ent.label_])
 
-    # Create a DataFrame to organize the extracted data
-    df = pd.DataFrame(entity_data, columns=["File Name", "Entity", "Label"])
-    df = df.drop_duplicates()
-    df.to_csv(output_csv_path, index=False)
-    print(f"Entities extracted and saved to {output_csv_path}")
+    if not entity_data:
+        print("⚠️ No entities found. Skipping CSV creation.")
+        return
+
+    # Save to CSV
+    try:
+        df = pd.DataFrame(entity_data, columns=["File Name", "Entity", "Label"])
+        df.drop_duplicates(inplace=True)
+        df.to_csv(output_csv_path, index=False)
+        print(f"✅ Entities extracted and saved to: {output_csv_path}")
+    except Exception as e:
+        print(f"❌ Error saving CSV: {e}")
 
 
-# Main function 3 to extract entity pairs
 def extract_entity_pairs_from_text_files(folder_path, output_csv_path):
+    """Extracts entity pairs from text files in a folder and saves them to a CSV."""
     nlp = spacy.load("en_core_web_sm")
-    print(folder_path)
     entity_pairs_data = []
 
-    # Loop through all files in the folder
+    # Ensure absolute paths
+    folder_path = os.path.abspath(folder_path)
+    output_csv_path = os.path.abspath(output_csv_path)
+
+    if not os.path.exists(folder_path):
+        print(f"❌ Error: Folder not found -> {folder_path}")
+        return
+
     for filename in os.listdir(folder_path):
-        if filename.endswith(".txt"):
-            file_path = os.path.join(folder_path, filename)
-            print(file_path)
+        file_path = os.path.join(folder_path, filename)
 
-            # Read the content of the file
-            with open(file_path, "r", encoding="utf-8") as file:
-                text = file.read()
+        if filename.endswith(".txt") and os.path.isfile(file_path):
+            try:
+                with open(file_path, "r", encoding="utf-8") as file:
+                    text = file.read()
+            except Exception as e:
+                print(f"❌ Error reading {file_path}: {e}")
+                continue
 
-            # Process the text with spaCy NLP model
+            # Process text with spaCy
             doc = nlp(text)
-
             unique_entities = set()
+
             for ent in doc.ents:
-                entity_text = ent.text.replace('\n', ' ').strip()
-                entity_text = entity_text.title()
+                entity_text = ent.text.replace('\n', ' ').strip().title()
+
                 if ent.label_ == "PERSON":
                     words = entity_text.split()
                     if len(words) > 2:
                         entity_text = " ".join(words[:2])
-                if is_valid_entity(entity_text, ent.label_) and entity_text not in unique_entities:
+
+                if is_valid_entity(entity_text, ent.label_) and (entity_text, ent.label_) not in unique_entities:
                     unique_entities.add((entity_text, ent.label_))
 
             # Generate entity pairs
             entity_pairs = list(combinations(unique_entities, 2))
 
-            # Add entity pairs to the list
             for entity1, entity2 in entity_pairs:
-                entity_pairs_data.append([ entity1[0],  entity1[1], entity2[0], entity2[1],  "Unknown"])
+                entity_pairs_data.append([entity1[0], entity1[1], entity2[0], entity2[1], "Unknown"])
 
-    df_pairs = pd.DataFrame(entity_pairs_data, columns=[ "Entity 1", "Type 1",  "Entity 2", "Type 2", "Relationship"])
-    df_pairs.to_csv(output_csv_path, index=False)
-    print(f"Entity pairs extracted and saved to {output_csv_path}")
+    if not entity_pairs_data:
+        print("⚠️ No entity pairs found. Skipping CSV creation.")
+        return
+
+    # Save to CSV
+    try:
+        df_pairs = pd.DataFrame(entity_pairs_data, columns=["Entity 1", "Type 1", "Entity 2", "Type 2", "Relationship"])
+        df_pairs.to_csv(output_csv_path, index=False)
+        print(f"✅ Entity pairs extracted and saved to: {output_csv_path}")
+    except Exception as e:
+        print(f"❌ Error saving CSV: {e}")
 
 # Main function 4 to predict relationships between entities
 
