@@ -14,6 +14,7 @@ from datetime import datetime
 from Functions import extract_entity_pairs_from_text_files, extract_text_from_directory, extract_entities_from_text_files, predict_relationships_from_entity_pairs
 import shutil
 from flask_cors import CORS
+import threading
 
 # Load environment variables
 load_dotenv()
@@ -28,7 +29,6 @@ try:
     print("Pinged your deployment. You successfully connected to MongoDB!")
 except Exception as e:
     print(e)
-
 db = client["aka_datathon"]
 files_collection = db["PDFFiles"]
 entities_collection = db["Entities"]
@@ -71,7 +71,6 @@ def cleanup_folders(folders):
                 except Exception as e:
                     print(f"Failed to delete {file_path}: {e}")
 
-# API Endpoint: Upload PDF
 @app.route("/upload", methods=["POST"])
 def upload_file():
     if "file" not in request.files:
@@ -89,14 +88,15 @@ def upload_file():
         # Extract text from PDF to get the number of pages
         with fitz.open(file_path) as doc:
             num_pages = len(doc)
-        # Save file info in MongoDB
+        # Save file info in MongoDB with initial processing status
         file_id = str(uuid.uuid4())
         file_entry = {
             "_id": file_id,
             "filename": filename,
             "filepath": file_path,
             "upload_time": datetime.now(),
-            "pages": num_pages
+            "pages": num_pages,
+            "processing_status": "pending"  # Initial status
         }
         files_collection.insert_one(file_entry)
         uploaded_files_info.append({
@@ -104,71 +104,89 @@ def upload_file():
             "filename": filename,
             "pages": num_pages
         })
-    # # Extract entities from uploaded files (ACTUAL - UNCOMMENT LATER)
-    # extract_text_from_directory(app.config['UPLOAD_FOLDER'], app.config['OUTPUT_FOLDER_TXT'])
-    # # Extract entities
-    # print(app.config['OUTPUT_FOLDER_TXT'])
-    # print(OUTPUT_FOLDER_CSV_ENTITIES)
-    # entities = extract_entities_from_text_files(app.config['OUTPUT_FOLDER_TXT'], OUTPUT_FOLDER_CSV_ENTITIES)
-    # extract_entity_pairs_from_text_files(app.config['OUTPUT_FOLDER_TXT'], OUTPUT_FOLDER_CSV_ENTITIES_PAIR)
-    # relationships = predict_relationships_from_entity_pairs(OUTPUT_FOLDER_CSV_ENTITIES_PAIR, OUTPUT_FOLDER_CSV_COMPLETE)
-    
-   #Use Preloaded CSV files (test)
-    entities = pd.read_csv(OUTPUT_FOLDER_CSV_ENTITIES)
-    relationships = pd.read_csv(OUTPUT_FOLDER_CSV_COMPLETE)
-
-    entities.head()
-    relationships.head()
-
-
-     # Save extracted entities in MongoDB
-    # Convert DataFrames to lists of dictionaries for easier processing
-    entities_list = entities.to_dict(orient="records")
-    relationships_list = relationships.to_dict(orient="records")
-
-    # Process entities and relationships
-    for entity in entities_list:
-        # Create a list to store relationship IDs for this entity
-        relationship_ids = []
-
-        # Iterate through all relationships to find those related to this entity
-        for relation in relationships_list:
-            # Check if the current entity is involved in the relationship (as Entity 1 or Entity 2)
-            if entity["Entity"] == relation["Entity 1"] or entity["Entity"] == relation["Entity 2"]:
-                # Generate a unique ID for the relationship
-                full_uuid = str(uuid.uuid4())
-                relationship_id = generate(size=8)  # Generate an 8-character ID  
-                relationship_ids.append(relationship_id)
-
-                # Insert the relationship entry into the relationship_collection
-                relationship_entry = {
-                    "_id": relationship_id,
-                    "entity_1_name": relation["Entity 1"],
-                    "entity_1_type": relation["Type 1"],
-                    "entity_2_name": relation["Entity 2"],
-                    "entity_2_type": relation["Type 2"],
-                    "relationship": relation["Relationship"]
-                }
-                relationship_collection.insert_one(relationship_entry)
-
-        # Create the entity_entry with the relationships array
-        entity_entry = {
-            "_id": str(uuid.uuid4()),
-            "file_id": file_id,
-            "file_name": entity["File Name"],
-            "entity": entity["Entity"],
-            "label": entity["Label"],
-            "frequency": 0,  # You can calculate frequency later if needed
-            "relationships": relationship_ids  # Array of relationship IDs
-        }
-
-        # Insert the entity_entry into the entities_collection
-        entities_collection.insert_one(entity_entry)
-    
+        # Start processing in the background
+        threading.Thread(target=process_file, args=(file_path, file_id)).start()
     return jsonify({
-        "message": "Files uploaded successfully",
+        "message": "Files uploaded successfully and are being processed in the background",
         "files": uploaded_files_info
     })
+
+def process_file(file_path, file_id):
+    try:
+        # Update processing status to 'in_progress'
+        files_collection.update_one(
+            {"_id": file_id},
+            {"$set": {"processing_status": "in_progress"}}
+        )
+        
+        # Extract text from uploaded files
+        extract_text_from_directory(app.config['UPLOAD_FOLDER'], app.config['OUTPUT_FOLDER_TXT'])
+        # Extract entities
+        entities = extract_entities_from_text_files(app.config['OUTPUT_FOLDER_TXT'], OUTPUT_FOLDER_CSV_ENTITIES)
+        extract_entity_pairs_from_text_files(app.config['OUTPUT_FOLDER_TXT'], OUTPUT_FOLDER_CSV_ENTITIES_PAIR)
+        relationships = predict_relationships_from_entity_pairs(OUTPUT_FOLDER_CSV_ENTITIES_PAIR, OUTPUT_FOLDER_CSV_COMPLETE)
+        
+        # Save extracted entities in MongoDB
+        # Convert DataFrames to lists of dictionaries for easier processing
+        entities_list = entities.to_dict(orient="records")
+        relationships_list = relationships.to_dict(orient="records")
+        
+        # Process entities and relationships
+        for entity in entities_list:
+            # Create a list to store relationship IDs for this entity
+            relationship_ids = []
+            # Iterate through all relationships to find those related to this entity
+            for relation in relationships_list:
+                # Check if the current entity is involved in the relationship (as Entity 1 or Entity 2)
+                if entity["Entity"] == relation["Entity 1"] or entity["Entity"] == relation["Entity 2"]:
+                    # Generate a unique ID for the relationship
+                    full_uuid = str(uuid.uuid4())
+                    relationship_id = generate(size=8)  # Generate an 8-character ID  
+                    relationship_ids.append(relationship_id)
+                    # Insert the relationship entry into the relationship_collection
+                    relationship_entry = {
+                        "_id": relationship_id,
+                        "entity_1_name": relation["Entity 1"],
+                        "entity_1_type": relation["Type 1"],
+                        "entity_2_name": relation["Entity 2"],
+                        "entity_2_type": relation["Type 2"],
+                        "relationship": relation["Relationship"]
+                    }
+                    relationship_collection.insert_one(relationship_entry)
+            # Create the entity_entry with the relationships array
+            entity_entry = {
+                "_id": str(uuid.uuid4()),
+                "file_id": file_id,
+                "file_name": entity["File Name"],
+                "entity": entity["Entity"],
+                "label": entity["Label"],
+                "frequency": 0,  # You can calculate frequency later if needed
+                "relationships": relationship_ids  # Array of relationship IDs
+            }
+            # Insert the entity_entry into the entities_collection
+            entities_collection.insert_one(entity_entry)
+        
+        # Update processing status to 'completed'
+        files_collection.update_one(
+            {"_id": file_id},
+            {"$set": {"processing_status": "completed"}}
+        )
+    except Exception as e:
+        # Update processing status to 'failed' in case of an error
+        files_collection.update_one(
+            {"_id": file_id},
+            {"$set": {"processing_status": "failed", "error_message": str(e)}}
+        )
+        print(f"Error processing file {file_id}: {e}")
+
+
+@app.route("/files/status/<file_id>", methods=["GET"])
+def get_file_status(file_id):
+    file = files_collection.find_one({"_id": file_id}, {"_id": 0, "processing_status": 1, "error_message": 1})
+    if file:
+        return jsonify(file)
+    else:
+        return jsonify({"error": "File not found"}), 404
 
 # API Endpoint: Get Extracted Entities by file_id
 @app.route("/entities/file/<file_id>", methods=["GET"])

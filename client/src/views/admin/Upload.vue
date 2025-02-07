@@ -2,8 +2,8 @@
     <div>
         <div class="relative flex flex-wrap mt-4">
             <div>
-            <h1 class="text-3xl font-semibold text-white">Upload PDF Files</h1>
-            <p class="mt-2 text-sm text-blueGray-200">Upload Your Case Files Here</p>
+                <h1 class="text-3xl font-semibold text-white">Upload PDF Files</h1>
+                <p class="mt-2 text-sm text-blueGray-200">Upload Your Case Files Here</p>
             </div>
             <!-- Upload multiple PDF files -->
             <div class="w-full lg:w-12 pb-4 mt-10">
@@ -58,7 +58,6 @@
                     </svg>
                 </button>
             </div>
-
             <!-- Error Toast -->
             <div
                 v-if="showErrorToast"
@@ -106,8 +105,20 @@
                 </button>
             </div>
         </div>
+        <!-- Progress Bars -->
+        <div v-for="file in uploadedFiles" :key="file.file_id" class="mt-4">
+            <div class="flex items-center justify-between mb-2">
+                <span>{{ file.filename }}</span>
+                <span>{{ file.processingStatus }}</span>
+            </div>
+            <div class="w-full bg-blueGray-200 rounded-full h-2.5">
+                <div
+                    class="bg-emerald-400 h-2.5 rounded-full"
+                    :style="{ width: file.progress + '%' }"
+                ></div>
+            </div>
+        </div>
     </div>
-
 </template>
 
 <script>
@@ -120,51 +131,86 @@ export default {
     },
     data() {
         return {
-        showSuccessToast: false,
-        showErrorToast: false,
-        successMessage: "",
-        errorMessage: "",
+            showSuccessToast: false,
+            showErrorToast: false,
+            successMessage: "",
+            errorMessage: "",
+            uploadedFiles: []
         };
     },
     methods: {
         uploadFiles(e) {
-            // e is the event object coming from FileInput
             const files = e.target.files;
             console.log("Files selected:", files);
-            
-            // Create a FormData instance and append each file using the key "file"
             const formData = new FormData();
             for (let i = 0; i < files.length; i++) {
                 formData.append("file", files[i]);
             }
-
-            // Send a POST request to the /upload endpoint
-            // Adjust the URL if your backend is on a different origin or port.
             axios.post("http://127.0.0.1:5000/upload", formData, {
                 headers: {
-                "Content-Type": "multipart/form-data"
+                    "Content-Type": "multipart/form-data"
                 }
             })
             .then(response => {
                 console.log("Upload successful:", response.data);
-                // You can add additional logic here to update your UI.
                 this.successMessage = "Files uploaded successfully.";
                 this.showSuccessToast = true;
-                // Automatically hide the success toast after 3 seconds.
                 setTimeout(() => {
                     this.showSuccessToast = false;
                 }, 3000);
+                // Add uploaded files to the list
+                this.uploadedFiles = this.uploadedFiles.concat(response.data.files.map(file => ({
+                    ...file,
+                    processingStatus: "Pending",
+                    progress: 0
+                })));
+                // Start polling for status
+                this.pollForStatus();
             })
             .catch(error => {
                 console.error("Upload failed:", error);
                 this.errorMessage = "Upload failed. Please try again.";
                 this.showErrorToast = true;
-                // Automatically hide the error toast after 3 seconds.
                 setTimeout(() => {
                     this.showErrorToast = false;
                 }, 3000);
             });
+        },
+        pollForStatus() {
+            const interval = setInterval(() => {
+                this.uploadedFiles.forEach(file => {
+                    axios.get(`http://127.0.0.1:5000/files/status/${file.file_id}`)
+                    .then(response => {
+                        const status = response.data.processing_status;
+                        if (status === "in_progress") {
+                            file.processingStatus = "Processing...";
+                            // Update progress value dynamically (placeholder)
+                            file.progress = Math.min(file.progress + 10, 90); // Increment progress by 10% up to 90%
+                        } else if (status === "completed") {
+                            file.processingStatus = "Completed";
+                            file.progress = 100;
+                            clearInterval(interval);  // Stop polling once completed
+                        } else if (status === "failed") {
+                            file.processingStatus = "Failed";
+                            file.progress = 0;
+                            clearInterval(interval);  // Stop polling in case of failure
+                            this.errorMessage = `Processing failed for ${file.filename}: ${response.data.error_message}`;
+                            this.showErrorToast = true;
+                            setTimeout(() => {
+                                this.showErrorToast = false;
+                            }, 3000);
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error checking status:", error);
+                    });
+                });
+            }, 5000);  // Poll every 5 seconds
         }
     }
 }
 </script>
+
+<style scoped>
+/* Add any custom styles here if needed */
+</style>
